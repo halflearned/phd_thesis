@@ -22,11 +22,6 @@
 \date{December 2017}
 \maketitle
 \begin{abstract}
-%\noindent Placeholder\\
-%\vspace{0in}\\
-%\noindent\textbf{Keywords:} key1, key2, key3\\
-%\vspace{0in}\\
-%\noindent\textbf{JEL Codes:} key1, key2, key3\\
 
 \bigskip
 \end{abstract}
@@ -95,6 +90,9 @@ In the computer science and operations research literature, \cite{abraham2007cle
 
 
 \subsection{Machine learning and Artificial Intelligence}
+
+
+
 \subsubsection{Neural Networks}
 
 Neural networks are created by composing simpler parametric building blocks such as linear functions and simple nonlinear ones\cite{goodfellow2016deep}. Although they have existed for more than a half-century, in recent years they have received an enormous amount of attention in the statistical, computer science and optimization literatures. In this work, we will use \emph{multilayer feedforward networks}, \emph{recurrent neural networks} (with and without an extra property named \emph{attention}) and \emph{graph convolutional networks}. While a comprehensive survey on the motivation and use-cases of all these types of neural networks is outside the scope of this work, in the next paragraphs we will give an abridged overview of their definition and their immediate application to our problem. 
@@ -106,7 +104,7 @@ Neural networks are created by composing simpler parametric building blocks such
 \paragraph{Recurrent Neural Networks and Sequence-to-sequence models}
 \paragraph{Embedding non-euclidean domains} \label{par:embedding}
 \subsubsection{Search algorithms}
-\subsubsection{Multiarmed bandits}
+
 
 
 \section{Models, Environments and Data} \label{sec:data}
@@ -175,19 +173,34 @@ Once in the pool, the pair immediately forms directed edges with the existing pa
 
 \subsection{OPTN Environment}
 
-In this scenario, patients and donors are drawn from historical data collected by the United Network for Organ Sharing (UNOS) data as provided in the Standard Research and Analysis (STAR) dataset. The STAR dataset contains information from all patients that were ever registered to the kidney waiting list in the United States for the past three decades, as well as from all living donors that actually went to transplant. 
+Here we use historical data collected by the United Network for Organ Sharing (UNOS) data provided in the Standard Research and Analysis (STAR) dataset. The STAR dataset contains information from all patients that were ever registered to the kidney waiting list in the United States for the past three decades, as well as from all living donors that actually went to transplant. 
 
-Here we must emphasize that these are \emph{not} the patients that belong to the Kidney Paired Donation Pilot Program, and pairs that belong to kidney exchanges may have different characteristics from patients who were only waiting for a living donor (for example, \cite{ashlagi2013kidney} states that patients are much more likely to be highly sensitized). However, we believe that, as exchanges get larger, the distribution of pair characteristics should grow similar to their historical counterpart in the STAR dataset. 
 
-The simulation process consists of drawing pairs of donors and patients from the historical data and allowing them into the pool if they are incompatible. Upon entrance, they immediately form directed edges with existing pairs.
+\paragraph{Compatibility} In this environment, a donor and a patient are deemed \emph{compatible} if they are blood-type compatible and the donor's HLA profile exhibits no antigens that are unacceptable for the patient in any of the HLA-A, HLA-BW, HLA-C, HLA-DR, HLA-DPB, HLA-DQ, and HLA-DQA loci.
 
-A donor and a patient are deemed compatible if the donor does not possess antigens that are unacceptable for the patient in any of the HLA-A, HLA-B, HLA-C, and HLA-DR loci. We admit that in real life this is not the only reason for why pairs may be deemed incompatible. Most notably, doctors may be conceivably less willing to conduct transplants when patients are HLA mismatched, or when the donor has undesirable characteristics such as diabetes, advanced age, and so on. We will revisit this issue in section \ref{sec:discussion}.
+\paragraph{Simulation} We first created an artificial data set by randomly drawing patients from the historical waiting list, drawing donors from the historical living donor list, and checking for compatibility as explained in the previous paragraph. Compatible pairs were discarded. We iterated in this manner to construct a dataset of about one million incompatible pairs.
+
+When simulation this environment, at each period pairs are drawn from this artificial data set. Once a pair enters the pool, it immediately forms directed edges with existing compatible pairs.
+
+\paragraph{Observable characteristics} The agent observes 
+
+
+
+% Here we must emphasize that these are \emph{not} the patients that belong to the Kidney Paired Donation Pilot Program, and pairs that belong to kidney exchanges may have different characteristics from patients who were only waiting for a living donor (for example, \cite{ashlagi2013kidney} states that patients are much more likely to be highly sensitized). However, we believe that, as exchanges get larger, the distribution of pair characteristics should grow similar to their historical counterpart in the STAR dataset. 
+
+
+
+
+[[[Historical donor and patient cPRA]]].
+
 
 
 \subsection{Benchmarks}
 
 
 In this work, we focus on maximizing the cardinality of matchings over $T$ periods. 
+
+
 
 
 \subsubsection{Myopic}
