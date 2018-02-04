@@ -1,4 +1,4 @@
-PWD /Users/vitorhadad/Documents/kidney/matching/paper
+PWD /Users/vitorhadad/Documents/kidney/matching/phd_thesis
 INPUT /usr/local/texlive/2015/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -187,6 +187,19 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /Users/vitorhadad/Documents/kidney/matching/figures/computed_cpra.pdf
+INPUT /Users/vitorhadad/Documents/kidney/matching/figures/computed_cpra.pdf
+INPUT /Users/vitorhadad/Documents/kidney/matching/figures/computed_cpra.pdf
+INPUT /Users/vitorhadad/Documents/kidney/matching/figures/direct_prediction.pdf
+INPUT /Users/vitorhadad/Documents/kidney/matching/figures/direct_prediction.pdf
+INPUT /Users/vitorhadad/Documents/kidney/matching/figures/direct_prediction.pdf
+INPUT /Users/vitorhadad/Documents/kidney/matching/figures/mab.pdf
+INPUT /Users/vitorhadad/Documents/kidney/matching/figures/mab.pdf
+INPUT /Users/vitorhadad/Documents/kidney/matching/figures/mab.pdf
+INPUT /Users/vitorhadad/Documents/kidney/matching/figures/mab_step.pdf
+INPUT /Users/vitorhadad/Documents/kidney/matching/figures/mab_step.pdf
+INPUT /Users/vitorhadad/Documents/kidney/matching/figures/mab_step.pdf
 INPUT paper.bbl
 INPUT paper.bbl
 INPUT paper.aux
@@ -194,8 +207,10 @@ INPUT ./paper.out
 INPUT ./paper.out
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb

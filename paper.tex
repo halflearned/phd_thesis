@@ -12,7 +12,7 @@
 
 \normalem
 
-%\geometry{left=1.0in,right=1.0in,top=1.0in,bottom=1.0in}
+\geometry{left=1.5in,right=1.5in,top=1.0in,bottom=1.0in}
 
 \begin{document}
 
@@ -173,52 +173,40 @@ Once in the pool, the pair immediately forms directed edges with the existing pa
 
 \subsection{OPTN Environment}
 
-Here we use historical data collected by the United Network for Organ Sharing (UNOS) data provided in the Standard Research and Analysis (STAR) dataset. The STAR dataset contains information from all patients that were ever registered to the kidney waiting list in the United States for the past three decades, as well as from all living donors that actually went to transplant. 
+Here we use historical data collected by the United Network for Organ Sharing (UNOS) data provided in the Standard Research and Analysis (STAR) dataset. The STAR dataset contains information from all patients that were ever registered to the kidney waiting list in the United States for the past three decades, as well as from all living donors that actually went to transplant. We excluded individuals with missing HLA profile information, 
+we had access to a detailed historical dataset containing 117813 patients and 9337 donors.
 
+The data set about was used in two ways. First, we created an artificial data set by randomly drawing patients from the historical waiting list, drawing donors from the historical living donor list, and checking for blood- and tissue-type compatibility as explained below. Compatible pairs were discarded. We iterated in this manner to construct a dataset of about one million incompatible pairs.
 
-\paragraph{Compatibility} In this environment, a donor and a patient are deemed \emph{compatible} if they are blood-type compatible and the donor's HLA profile exhibits no antigens that are unacceptable for the patient in any of the HLA-A, HLA-BW, HLA-C, HLA-DR, HLA-DPB, HLA-DQ, and HLA-DQA loci.
+Second, we  used the historical data set to calculate two additional variables, a \emph{patient cPRA} and  a \emph{donor cPRA}.\footnote{We thank Itai Ashlagi for the suggestion of a donor cPRA.} As explained before, the patient cumulative panel reactive antibody, or cPRA, represents a measure of patient tissue-type incompatibility with a random donor, the donor cPRA is a novel measure of the opposite direction -- how frequently a donor is tissue-type incompatible with a random patient. We computed both measures empirically in our data set, using the definiton of compatibility below.
 
-\paragraph{Simulation} We first created an artificial data set by randomly drawing patients from the historical waiting list, drawing donors from the historical living donor list, and checking for compatibility as explained in the previous paragraph. Compatible pairs were discarded. We iterated in this manner to construct a dataset of about one million incompatible pairs.
+\begin{figure}
+\centering
+\includegraphics[width=1textwidth]{/Users/vitorhadad/Documents/kidney/matching/figures/computed_cpra.pdf}.
+\caption{Computed patient and donor cPRA.}
+\label{fig:cpra}
+\end{figure}
 
-When simulation this environment, at each period pairs are drawn from this artificial data set. Once a pair enters the pool, it immediately forms directed edges with existing compatible pairs.
+\paragraph{Compatibility} A donor and a patient are deemed \emph{compatible} if they are blood-type compatible and tissue-type compatible. The latter is true when the donor's HLA profile exhibits no antigens that are unacceptable for the patient in any of the A, B, Bw, C, DR, DPB, DQ, and DQA loci.
 
-\paragraph{Observable characteristics} The agent observes 
+\paragraph{Simulation} During a simulation, pairs are drawn from this artificial data set. Once a pair enters the pool, it immediately forms directed edges with existing compatible pairs.
 
+\paragraph{Observable characteristics} For each pair, the agent observes the entry time, the waiting time, and 375 dummies corresponding to blood type and HLA profile of patient and donor. 
 
-
-% Here we must emphasize that these are \emph{not} the patients that belong to the Kidney Paired Donation Pilot Program, and pairs that belong to kidney exchanges may have different characteristics from patients who were only waiting for a living donor (for example, \cite{ashlagi2013kidney} states that patients are much more likely to be highly sensitized). However, we believe that, as exchanges get larger, the distribution of pair characteristics should grow similar to their historical counterpart in the STAR dataset. 
-
-
-
-
-[[[Historical donor and patient cPRA]]].
 
 
 
 \subsection{Benchmarks}
 
-
-In this work, we focus on maximizing the cardinality of matchings over $T$ periods. 
-
-
-
+In this work, we focus on maximizing the average number of matched pairs over $T$ periods, where $T$ is a large number relative to the rates of patient entry and death. 
 
 \subsubsection{Myopic}
 
-The \emph{myopic}\footnote{In the computer science literature, algorithms that optimize locally at every step are usually called \emph{greedy}. However, in the kidney exchange literature this name is already reserved to an algorithm that matches incoming pairs at random, without necessarily optimizing the cardinality of matchings at every period.} algorithm is one that finds the maximal number of matchings at every period, ignoring that it might be useful to keep certain pairs in the pool for later use. As a result, the graph at the end of every period has no cycles shorter than the maximal allowed cycle length, for they would have been already cleared.
-
-This algorithm also does not take into consideration any of the observables in the data. In particular, it makes no use of the fact that some pairs may be harder to match in the future, and therefore it might be advantageous to match them today if the opportunity arises. Conversely, it will not be less likely to carry out matchings involving easy-to-match pairs that could be postponed to the future at low expected cost.
-
-\begin{align}
-   &\max_{x} \sum_{c \in C} w_{c} x_{c} \\
-      s.t. &\sum_{v \in c'} x_{c'} = 1 \qquad \forall v \in V\\
-        &x_c \in \{ 0, 1\}  \qquad \forall c \in C
-\end{align}
-
+The \emph{myopic} algorithm finds the maximal number of matchings at every period, and clears it immediately. It disregards all observable characteristics of each pair, and in particular it disregards that some pairs might be useful to keep certain pairs may be easier or harder to match. In doing so, it may forgo the opportunity of matching a hard-to-match patient today, or postpone an easy-to-match pair for later.
 
 \subsubsection{Infeasible Optimal (OPT)}
 
-The infeasible optimal algorithm (henceforth OPT) does away with the uncertainty arising from the temporal structure of the problem: it knows exactly which pairs will come into the pool, as well as their arrival, and the duration of their sojourns. In effect, this algorithm simply solves the static integer programming problem described at the beginning of section \ref{sec:literature:subsec:kidney}, except that the set of cycles has the additional constraint that a cycle cannot exist between two vertices if their sojourns fail to overlap.
+The infeasible optimal algorithm (henceforth OPT) does away with the uncertainty arising from the temporal structure of the problem: it knows exactly which pairs will come into the pool, as well as their arrival, and the duration of their sojourns. This algorithm is essentially a large static kidney matching problem, except that the set of available exchanges has the additional constraint that a cycle cannot exist between two vertices if their sojourns fail to overlap.
 
 
 
@@ -230,6 +218,55 @@ The infeasible optimal algorithm (henceforth OPT) does away with the uncertainty
 % 
 % A more interesting remark is that in all of our three environments, when 3-cycles are allowed myopic does relative worse to OPT than when only 2-cycles are allowed. 
 % 
+
+
+\subsection{Algorithms}
+
+We divide our algorithms into three classes: \emph{direct prediction} methods, \emph{multi-armed bandit} methods and \emph{reinforcement learning} methods. They are explained next.
+
+\subsubsection{Direct prediction} \label{subsubsec:estimation}
+
+Dynamic and static algorithms can split their work: the former can determine which pairs should be matched at each period, while the latter decides how they should be matched among themselves. The \emph{direct prediction} exploits this insight, essentially reducing the problem to a classification task: at each period, they aim to produce a 0-1 label for each node indicating whether is should be matched in this period (1) or left for later (0). Selected nodes are then passed to a static solver that finds the maximal matching among them. Once these nodes are cleared, time evolves to the next period. This is illustrated in Figure \ref{fig:direct_prediction}.
+
+\begin{figure}
+\centering
+\hspace*{-1cm}
+\includegraphics[width=1.1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf}.
+\caption{Direct prediction methods.}
+\label{fig:direct_prediction}
+\end{figure}
+
+In order to produce data to feed into our ``classifier", each environment was simulated and solved using OPT, with each pair's observable characteristics as regressors, and a binary variable indicating whether they were matched or not. Each resulting artifical dataset of approximately 2 million observations was then fed to a series of predictive algorithms, including penalized logistic regression\cite{wu2009genome}, support vector machines with radial basis function kernels\cite{cortes1995support}, random forest classifiers\cite{breiman2001random}, gradient tree boosting classifiers\cite{friedman2001greedy} and deep feedforward networks\cite{goodfellow2016deep}. The performance of these algorithms as classification methods is compared in Table \ref{tab:direct_prediction}.
+
+[[[The poor performance?? could be attributable to not having represented the data properly etc. Non-euclidean spaces big challenge etc]]]
+
+ In order to represent information about the graph and how the nodes fit within it, we augment the original dataset using one or both of the following. First, vertex properties for each node such as the number of in and out-edges, average neighbor degree, some centrality measures (betweenness, in-degree, out-degree, harmonic, closeness) and more exotic indices such as the core number and pagerank of each node\cite{newman2010networks}. Second, using the \emph{node2vec} graph embedding algorithm of \cite{grover2016node2vec}, a continuous feature representation algorithm inspired by the skip-gram model.[[[More on this?]]]. These algorithms will produce auxiliary matrices $E_t^{1}$ and $E_t^2$ that are concatenated to the original data regressor matrix $X_t$, and the entire augmented data set can again be fed to the predictive algorithms above. Their performance is compared on the bottom half of Table \ref{tab:direct_prediction}.
+ 
+ 
+ \subsection{Multi-armed bandits}
+ 
+ 
+
+ \begin{figure}
+ \centering
+ \hspace*{-1cm}
+ \includegraphics[width=1.1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf}.
+ \caption{Multi-armed bandit methods.}
+ \label{fig:mab}
+ \end{figure}
+
+ \begin{figure}
+ \centering
+ \includegraphics[width=1.1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf}.
+ \caption{Pseudo-reward computation in one step of a multi-armed bandit algorithm.}
+ \label{fig:mab_step}
+ \end{figure}
+ 
+  
+
+
+
+
 % \subsection{Methods}
 % 
 % In this work, we propose a new kidney exchange algorithm that combines simulation-based search with a policy parametrized by neural networks. In the next paragraphs, we will explain each of these components in detail. However, first let us provide some motivation.
@@ -247,11 +284,6 @@ The infeasible optimal algorithm (henceforth OPT) does away with the uncertainty
 % 
 % 
 
-
-
-\subsubsection{Estimation} \label{subsubsec:estimation}
-
-As explained in section \ref{subsubsec:embedding}, one of our main challenges is that we must deal not only with information about each patient-donor pair, but also 
 
 %\insert{algo1.tex}
 
