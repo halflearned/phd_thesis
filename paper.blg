@@ -2,7 +2,7 @@ This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper.aux
 I couldn't open style file /Users/vitorhadad/Documents/kidney/matching/paper/te.bst.bst
----line 111 of file paper.aux
+---line 114 of file paper.aux
  : \bibstyle{/Users/vitorhadad/Documents/kidney/matching/paper/te.bst
  :                                                                   }
 I'm skipping whatever remains of this command

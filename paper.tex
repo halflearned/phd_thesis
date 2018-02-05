@@ -1,12 +1,13 @@
 \documentclass[12pt]{article}
 
-\usepackage{amssymb,amsmath,amsfonts,eurosym,geometry,ulem,graphicx,caption,color,setspace,sectsty,comment,footmisc,caption,pdflscape,subfigure,array,hyperref}
+\usepackage{amssymb,amsmath,amsfonts,eurosym,geometry,ulem,graphicx,caption,color,setspace,sectsty,comment,footmisc,pdflscape,subfigure,array,hyperref}
 \usepackage{cite}
 \usepackage{natbib}
 \usepackage{etoolbox}
 \usepackage{float}
 \usepackage{algpseudocode}
 \usepackage{booktabs}
+\usepackage[font=footnotesize]{caption}
 
 \AtBeginEnvironment{algorithm}{\setstretch{1}}
 
@@ -208,23 +209,27 @@ The \emph{myopic} algorithm finds the maximal number of matchings at every perio
 
 The infeasible optimal algorithm (henceforth OPT) does away with the uncertainty arising from the temporal structure of the problem: it knows exactly which pairs will come into the pool, as well as their arrival, and the duration of their sojourns. This algorithm is essentially a large static kidney matching problem, except that the set of available exchanges has the additional constraint that a cycle cannot exist between two vertices if their sojourns fail to overlap.
 
+\subsubsection{Empirical comparison between myopic and OPT}
+
+Figure \ref{}
 
 
-% \subsubsection{Empirical comparison between myopic and OPT}
-% 
-% We simulated each environment for 3000 periods for each given environment and for each combination of entry rate, death rate and maximum available cycle length. Next, we analyzed the performance of OPT and myopic in each setup, as measured by the average number of pairs they were able to match per period. In order to avoid mixing problems, we discarded the first 1000 periods as burn-in.\footnote{While we refrain from a formal analysis of mixing time here, our thousand-period burn-in may be fairly conservative, as we empirically observe that for all our parameter combinations the size of the graph quick grows from zero to a stable level in (sometimes much) fewer than one hundred periods.}
-% 
-% The results are seen on Figure \ref{???}, where we show the performance ratio between the two algorithms. It is perhaps surprising that myopic's performance is often very close to OPT. In particular, when entry rates are relatively large or death rates are relatively low, the pool becomes thick enough that  opportunities for a reasonably good matching abound, so even a simple heuristic like myopic is able to do well. A bit less remarkably, high death rates also allow myopic to thrive, since dynamic considerations play a much smaller role when pairs leave the pool more often.
-% 
-% A more interesting remark is that in all of our three environments, when 3-cycles are allowed myopic does relative worse to OPT than when only 2-cycles are allowed. 
-% 
+
+ \begin{figure}
+ \centering
+ \hspace*{-4cm}
+ \includegraphics[width=1.5\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2.pdf}
+ \caption{\texttt{Myopic} matches roughly the same number of pairs per period as \texttt{OPT} when the death rate is high (moving rightwards on the graphs), or when entry rate is high (moving downwards on the graphs).}
+ \label{fig:mab}
+ \end{figure}
+
 
 
 \subsection{Algorithms}
 
 We divide our algorithms into three classes: \emph{direct prediction} methods, \emph{multi-armed bandit} methods and \emph{reinforcement learning} methods. They are explained next.
 
-\subsubsection{Direct prediction} \label{subsubsec:estimation}
+\subsubsection{Direct prediction} \label{subsubsec:direct_prediction}
 
 Dynamic and static algorithms can split their work: the former can determine which pairs should be matched at each period, while the latter decides how they should be matched among themselves. The \emph{direct prediction} exploits this insight, essentially reducing the problem to a classification task: at each period, they aim to produce a 0-1 label for each node indicating whether is should be matched in this period (1) or left for later (0). Selected nodes are then passed to a static solver that finds the maximal matching among them. Once these nodes are cleared, time evolves to the next period. This is illustrated in Figure \ref{fig:direct_prediction}.
 
@@ -240,24 +245,41 @@ In order to produce data to feed into our ``classifier", each environment was si
 
 [[[The poor performance?? could be attributable to not having represented the data properly etc. Non-euclidean spaces big challenge etc]]]
 
- In order to represent information about the graph and how the nodes fit within it, we augment the original dataset using one or both of the following. First, vertex properties for each node such as the number of in and out-edges, average neighbor degree, some centrality measures (betweenness, in-degree, out-degree, harmonic, closeness) and more exotic indices such as the core number and pagerank of each node\cite{newman2010networks}. Second, using the \emph{node2vec} graph embedding algorithm of \cite{grover2016node2vec}, a continuous feature representation algorithm inspired by the skip-gram model.[[[More on this?]]]. These algorithms will produce auxiliary matrices $E_t^{1}$ and $E_t^2$ that are concatenated to the original data regressor matrix $X_t$, and the entire augmented data set can again be fed to the predictive algorithms above. Their performance is compared on the bottom half of Table \ref{tab:direct_prediction}.
+ In order to represent information about the graph and how the nodes fit within it, we augment the original dataset using one or both of the following. First, with vertex properties for each node such as the number of in and out-edges, average neighbor degree, some centrality measures (betweenness, in-degree, out-degree, harmonic, closeness) and more exotic indices such as the core number and pagerank of each node\cite{newman2010networks}. Second, we augment the data using the \emph{node2vec} graph embedding algorithm of \cite{grover2016node2vec}, a continuous feature representation algorithm inspired by the skip-gram model.[[[More on this?]]]. These algorithms will produce auxiliary matrices $E_t^{1}$ and $E_t^2$ that are concatenated to the original data regressor matrix $X_t$, and the entire augmented data set can again be fed to the predictive algorithms above. Their performance is compared on the bottom half of Table \ref{tab:direct_prediction}.
+ 
+
  
  
- \subsection{Multi-armed bandits}
+\subsection{Multi-armed bandits}
  
- 
+We have access to the data-generating process (\emph{environments}) and an algorithm that is able to find the best matching for any data in hindsight (\texttt{OPT}). Therefore, in principle we could estimate the best choice of cycle to clear by simulating several periods ahead in the future, running \texttt{OPT}, and measuring the performance of our choice under any desired criterion. 
+
+The approach outlined above turns out to be naive and incomplete, but it essentially contains the insight under which we will be working in this section. It is naive because simulations are computationally expensive, and in practice we cannot repeat them enough times get reliable estimates of the average performance for each cycle choice, especially in large graphs. It is also incomplete because it does not specify exactly what is the best information we should extract from \texttt{OPT} results. In order to solve the first problem, we leverage theory and algorithms from the multi-armed bandit (MAB) literature. For the second, we propose a secondary objective based on what we call \emph{pseudo-rewards}.
+
+Our procedure is illustrated in Figures \ref{fig:mab} and \ref{fig:mab_step}. At the beginning of the period $t$, the agent receives a set of cycles $C$ that are available to be cleared. If $C$ is empty, nothing happens and we move to the next period. Otherwise, the agent then picks a cycle $c \in C$ and simulates the future, including new entries and deaths, up to a horizon $h$. Next, \texttt{OPT} is run twice, once normally, and once with the additional constraint that $c$ be removed today. The size of the resulting matching in these two scenarios is compared. Naturally, the constrained version of \texttt{OPT} cannot achieve anything better than its unconstrained counterpart, but it might get to be equal. If it is, the agent receives a \emph{pseudo-reward} of one, otherwise it receives zero. This process is repeated: at each iteration $\ell$, a cycle $c_{\ell}$ is chosen and its pseudo-reward $r_{c, \ell}$ is revealed. When a preset computational budget of $L(|C|)$ iterations is hit, the agent then analyses the whole history of cycle choices and pseudo-rewards $H_{t} = \{ (c_{\ell}, r_{c\ell} ) \}_{\ell=1}^{L}$, and decides whether to match one of the cycles or move on to the next period. If a cycle $c$ is chosen it is immediately cleared, however the environment does not evolve to the next period yet. Instead, the history $H_t$ is discarded the procedure is repeated again with a reduced set of actions $C' \subset C$ that produces a new history $H_t'$ and so on, until either there are no more available choices or the agent decides to allow the environment to move on to time $t+1$. When that at last happens, entries and deaths are revealed, the agent receives a new set of cycles, and the process begin anew. All past information is ignored.
+
+
+Two important details were left out of the explanation above. First, how does the agent chooses the next cycle to test? Second, how does it decide which cycle to choose (or no cycle at all)? 
+
+
+Let $c^{*}$ be a cycle that maximizes expected pseudo-rewards during one round of the algorithm:
+$$c^{*} \in \arg\max_{c} E[r_{c\ell}] $$
+
+
+ A \emph{multi-armed bandit} algorithm is a procedure to minimize \emph{regret} 
+
 
  \begin{figure}
  \centering
  \hspace*{-1cm}
- \includegraphics[width=1.1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf}.
+ \includegraphics[width=1.1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf}
  \caption{Multi-armed bandit methods.}
  \label{fig:mab}
  \end{figure}
 
  \begin{figure}
  \centering
- \includegraphics[width=1.1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf}.
+ \includegraphics[width=1.1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf}
  \caption{Pseudo-reward computation in one step of a multi-armed bandit algorithm.}
  \label{fig:mab_step}
  \end{figure}
