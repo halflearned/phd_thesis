@@ -12,14 +12,15 @@
 \BOOKMARK [3][-]{subsubsection.3.4.1}{Myopic}{subsection.3.4}% 12
 \BOOKMARK [3][-]{subsubsection.3.4.2}{Infeasible Optimal \(OPT\)}{subsection.3.4}% 13
 \BOOKMARK [3][-]{subsubsection.3.4.3}{Empirical comparison between myopic and OPT}{subsection.3.4}% 14
-\BOOKMARK [2][-]{subsection.3.5}{Algorithms}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.5}{Methods}{section.3}% 15
 \BOOKMARK [3][-]{subsubsection.3.5.1}{Direct prediction}{subsection.3.5}% 16
 \BOOKMARK [2][-]{subsection.3.6}{Multi-armed bandits}{section.3}% 17
 \BOOKMARK [1][-]{section.4}{Results}{}% 18
-\BOOKMARK [2][-]{subsection.4.1}{Short-run gains}{section.4}% 19
-\BOOKMARK [1][-]{section.5}{Discussions and Extensions}{}% 20
-\BOOKMARK [1][-]{section.6}{Conclusion}{}% 21
-\BOOKMARK [1][-]{section.7}{Acknowledgements}{}% 22
-\BOOKMARK [1][-]{section*.23}{Tables}{}% 23
-\BOOKMARK [1][-]{section*.24}{Figures}{}% 24
-\BOOKMARK [1][-]{section*.25}{Appendix A}{}% 25
+\BOOKMARK [2][-]{subsection.4.1}{Direct method}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.2}{Multi-armed bandits}{section.4}% 20
+\BOOKMARK [1][-]{section.5}{Discussions and Extensions}{}% 21
+\BOOKMARK [1][-]{section.6}{Conclusion}{}% 22
+\BOOKMARK [1][-]{section.7}{Acknowledgements}{}% 23
+\BOOKMARK [1][-]{section*.23}{Tables}{}% 24
+\BOOKMARK [1][-]{section*.26}{Figures}{}% 25
+\BOOKMARK [1][-]{section*.27}{Appendix A}{}% 26
