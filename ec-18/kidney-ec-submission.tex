@@ -13,6 +13,8 @@
 \SetAlCapNameFnt{\small}
 \SetAlCapHSkip{0pt}
 \IncMargin{-\parindent}
+\newcommand\mycommfont[1]{\footnotesize\upshape\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
 
 \begin{document}
 % Title portion. Note the short title for running heads 
@@ -126,8 +128,39 @@ This algorithm finds the maximal matchings at every period, and clears it immedi
 \hspace*{-3.5cm}
 \includegraphics[width=1.4\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf}
 \caption{Ratio of \texttt{Myopic} has better chances of achieving performances similar to \texttt{OPT} when the death rate is high (moving rightwards on the graphs), or when entry rate is high (moving downwards on the graphs).}
-\label{fig:greedy_opt_compariso}
+\label{fig:greedy_opt_comparison}
 \end{figure}
+
+
+
+\begin{algorithm}[htbp]
+	\SetAlgoLined
+  \DontPrintSemicolon
+	
+  \KwData{Environment simulator object \textsc{Env}; \\
+          Integer programming solver object \textsc{Solver}; \\
+          Statistical method \textsc{Classifier} \\
+          Threshold $thres$; }
+
+  \SetKwFunction{FChoose}{\textsc{direct\_prediction}}
+  \SetKwProg{Fn}{Function}{:}{}
+  \Fn{\FChoose{\textsc{Env}, \ \textsc{Solver}, \ \textsc{Classifier}, \ $thres$}}{
+    \tcp{Retrieve data about nodes and (potentially) graph from current environment} \\
+    $X, E_1, E_2$ \gets \textsc{Env.get\_data}()  \\
+    \tcp{Pass data through classifier, predict matching probability for each pair} \\
+    $prob$ \gets \textsc{Classifier}($X$, \ $E_1$, $E_2$)  \\
+    \tcp{Get index of pairs whose probability is higher than threshold} \\
+    $index$ $\gets$ \textsc{which}($prob > thres$) \\
+    \tcp{Find maximal matching restricted to this subset} \\
+    chosen\_cycles $\gets$ \textsc{Solver.solve(Env, subset=$index$)}  \\  
+    \tcp{Return chosen cycles to be cleared} \\
+    \KwRet chosen\_cycles \;
+  }
+	\caption{Function \textsc{direct\_prediction}}
+	\label{alg:direct_prediction}
+\end{algorithm}
+
+
 
 
 \section{Algorithms}
@@ -140,9 +173,8 @@ Dynamic and static algorithms can work in tandem: the former can determine which
 
 \begin{figure}[H]
 \centering
-\hspace*{-1cm}
-\includegraphics[width=1.1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf}.
-\caption{Direct prediction methods.}
+\includegraphics[width=\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf}.
+\caption{One period of simulation using direct prediction methods to choose cycles.}
 \label{fig:direct_prediction}
 \end{figure}
 
@@ -175,23 +207,39 @@ $$c_{\ell}^{*} \in \arg\max_{c} E[r_{c,\ell}] $$
  A \emph{multi-armed bandit} (MAB) algorithm is a procedure to minimize the cumulative regret over $L$ rounds. A good MAB algorithm will act so as to balance exploration (trying out different choices to get high-quality estimates of their rewards) and exploitation (using out better choices more often to increase total rewards). 
  
  The literature on bandit algorithms is extensive and spans at least seventy years of research \citep{lattimore2018bandits}. Here we will focus on binary 
+ 
+ 
+ 
 
  \begin{figure}
   \centering
-  \hspace*{-1cm}
-  \includegraphics[width=1.1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf}
-  \caption{\textbf{Function} \textsc{choose\_cycle}}
+  %\hspace{-1cm}
+  \includegraphics[width=1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf}
+  \caption{One period of simulation using multi-armed bandit methods to choose cycles.}
   \label{fig:mab}
   \end{figure}
 
   \begin{figure}
   \centering
-  \includegraphics[width=1.1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf}
-  \caption{\textbf{Function} \textsc{get\_pseudo\_reward} }
+  %\hspace*{-0.5cm}
+  \includegraphics[width=1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf}
+  \caption{\textbf{Function} \textsc{get\_pseudo\_reward} \\ Multi-armed bandits evaluate if a cycle should be cleared by checking if there is a high chance that the cycle will be used in the future. Such cycles get a \emph{lower} reward, and are left for later.}
   \label{fig:get_pseudo_reward}
   \end{figure}
 
 
+
+
+  
+\paragraph{What are pseudo-rewards?} Figure \ref{fig:pseudo_reward_intuition}
+
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.95\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf}
+\caption{Pseudo-reward intuition}
+\label{fig:pseudo_reward_intuition}
+\end{figure}
 
 
 \section{Conclusion}
@@ -201,11 +249,8 @@ $$c_{\ell}^{*} \in \arg\max_{c} E[r_{c,\ell}] $$
 \paragraph{Extensions} In reality, some exchanges are more or less desirable than others, either for ethical concerns or because of predicted health benefit. For example, it is common for pediatric patients and previous organ donors receive higher priority, as do exchanges involving patients with no HLA mismatch. 
 
 
-\newcommand\mycommfont[1]{\footnotesize\upshape\textcolor{blue}{#1}}
-\SetCommentSty{mycommfont}
-
 % Algorithm
-\begin{algorithm}[t]
+\begin{algorithm}[htbp]
 	\SetAlgoLined
 	\KwData{Cycle $c$; Horizon $h$; \\
           Lists pseudo-reward statistics $Avg$, $Std$; \\
@@ -230,7 +275,7 @@ $$c_{\ell}^{*} \in \arg\max_{c} E[r_{c,\ell}] $$
 
 
 
-\begin{algorithm}[t]
+\begin{algorithm}[htbp]
 	
   \SetAlgoLined
   \DontPrintSemicolon
