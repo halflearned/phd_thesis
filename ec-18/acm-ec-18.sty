@@ -1,0 +1,28 @@
+% formatting commands for ACM-EC 2018
+% hacks to the acmart class by Kevin Leyton-Brown; Jan 1 2017
+% updated by Edith Elkind, Jan 2018
+
+%\setcopyright{none}
+%\acmConference{EC '18}{June 18--22, 2017}{Ithaca, NY, USA}
+%\acmYear{2018}
+%\copyrightyear{2018} 
+%%\acmISBN{978-1-4503-4527-9/17/06}
+%%\acmDOI{http://dx.doi.org/10.1145/3033274.3033277}
+%\acmPrice{}
+\startPage{1}
+\settopmatter{printacmref=false, printcss=false, printfolios=false}
+\fancypagestyle{firstpagestyle}{% needed to override acmart
+	\renewcommand{\headrulewidth}{0pt}%
+	\fancyhf{}%
+	\fancyfoot[L]{\footnotesize{\emph{Manuscript submitted for review to ACM Economics \& Computation 2018 (EC '18).}}}%
+}
+\fancypagestyle{acmec}{% the header and footer styles for every other page
+	\renewcommand{\headrulewidth}{0pt}%
+	\fancyhf{}%
+	\fancyhead[C]{\footnotesize{\mbox{\shortauthors}}}
+	\fancyhead[R]{\thepage}%
+}
+\pagestyle{acmec}
+%\thispagestyle{standardpagestyle}
+\renewcommand{\footnotetextcopyrightpermission}[1]{\thankses}%}
+\setcitestyle{authoryear}

@@ -1,0 +1,21 @@
+\BOOKMARK [1][-]{section*.1}{Abstract}{}% 1
+\BOOKMARK [1][-]{section.1}{1 Introduction}{}% 2
+\BOOKMARK [2][-]{subsection.1.1}{1.1 Related literature}{section.1}% 3
+\BOOKMARK [1][-]{section.2}{2 Simulation environments}{}% 4
+\BOOKMARK [2][-]{subsection.2.1}{2.1 Common features across environments}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.2}{2.2 ABO Environment}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.3}{2.3 RSU Environment}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.4}{2.4 OPTN Environment}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{3 Methods}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{3.1 Objective and benchmarks}{section.3}% 10
+\BOOKMARK [1][-]{section.4}{4 Algorithms}{}% 11
+\BOOKMARK [2][-]{subsection.4.1}{4.1 Direct prediction}{section.4}% 12
+\BOOKMARK [1][-]{section.5}{5 Results}{}% 13
+\BOOKMARK [2][-]{subsection.5.1}{5.1 Direct estimation policy}{section.5}% 14
+\BOOKMARK [2][-]{subsection.5.2}{5.2 MAB-based policy}{section.5}% 15
+\BOOKMARK [1][-]{section.6}{6 Conclusion}{}% 16
+\BOOKMARK [1][-]{section.7}{7 Conclusions}{}% 17
+\BOOKMARK [1][-]{appendix.A}{A Sections}{}% 18
+\BOOKMARK [1][-]{appendix.B}{B Supplementary materials}{}% 19
+\BOOKMARK [1][-]{section*.25}{Acknowledgments}{}% 20
+\BOOKMARK [1][-]{section*.27}{References}{}% 21

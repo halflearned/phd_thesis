@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  8 FEB 2018 01:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  10 FEB 2018 22:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -378,23 +378,40 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@thisruleclass=\count132
 \@lastruleclass=\count133
 \@thisrulewidth=\dimen153
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count134
+\output=\toks27
+\linenoprevgraf=\count135
+\linenumbersep=\dimen154
+\linenumberwidth=\dimen155
+\c@linenumber=\count136
+\c@pagewiselinenumber=\count137
+\c@LN@truepage=\count138
+\c@internallinenumber=\count139
+\c@internallinenumbers=\count140
+\quotelinenumbersep=\dimen156
+\bframerule=\dimen157
+\bframesep=\dimen158
+\bframebox=\box34
+LaTeX Info: Redefining \\ on input line 3056.
 ) (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -437,17 +454,17 @@ Package caption Info: subfigure package is loaded.
 Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count134
-\scratchdimen=\dimen154
-\scratchbox=\box34
-\nofMPsegments=\count135
-\nofMParguments=\count136
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count137
-\MPscratchDim=\dimen155
-\MPnumerator=\count138
-\makeMPintoPDFobject=\count139
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count141
+\scratchdimen=\dimen159
+\scratchbox=\box35
+\nofMPsegments=\count142
+\nofMParguments=\count143
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count144
+\MPscratchDim=\dimen160
+\MPnumerator=\count145
+\makeMPintoPDFobject=\count146
+\everyMPtoPDFconversion=\toks29
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
  (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -459,38 +476,38 @@ Package grfext Info: Graphics extension search list:
  (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring OFF on input line 19.
+\AtBeginShipoutBox=\box36
+Package hyperref Info: Link coloring OFF on input line 20.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count140
+\c@section@level=\count147
 )
-LaTeX Info: Redefining \ref on input line 19.
-LaTeX Info: Redefining \pageref on input line 19.
-LaTeX Info: Redefining \nameref on input line 19.
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
  (./paper.out) (./paper.out)
 \@outlinefile=\write4
 \openout4 = `paper.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 26.
+LaTeX Font Info:    Try loading font information for U+msa on input line 27.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 26.
+LaTeX Font Info:    Try loading font information for U+msb on input line 27.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 26.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 27.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <7> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 26.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 27.
  [0
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [1] [2]
@@ -502,57 +519,60 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no œ in font cmr12!
  [5] [6]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 121.
- [7] [8] [9] [10] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cpra.pdf, id=276, 867.24pt x 289.08pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 124.
+ [7] [8]
+
+LaTeX Warning: Reference `tab:abo_blood_type' on page 9 undefined on input line 145.
+
+[9] [10] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cpra.pdf, id=267, 867.24pt x 289.08pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cpra.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cpra.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cpra.pdf used on input line 164.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cpra.pdf used on input line 167.
 (pdftex.def)             Requested size: 397.485pt x 132.4976pt.
- [11] [12 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cpra.pdf>]
-</Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2.pdf, id=317, 1300.86pt x 361.35pt>
+ [11] [12 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cpra.pdf>] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2.pdf, id=308, 1300.86pt x 361.35pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2.pdf used on input line 199.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2.pdf used on input line 202.
 (pdftex.def)             Requested size: 596.2275pt x 165.62201pt.
 
-Overfull \hbox (87.54256pt too wide) in paragraph at lines 198--200
+Overfull \hbox (87.54256pt too wide) in paragraph at lines 201--203
  []|  [] 
  []
 
-[13 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2.pdf>] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf, id=382, 569.25975pt x 136.01515pt>
+[13 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2.pdf>] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf, id=373, 569.25975pt x 136.01515pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf used on input line 219.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf used on input line 222.
 (pdftex.def)             Requested size: 437.23592pt x 104.47047pt.
 
-Overfull \hbox (17.17311pt too wide) in paragraph at lines 218--220
+Overfull \hbox (17.17311pt too wide) in paragraph at lines 221--223
  []|  []\OT1/cmr/m/n/12 . 
  []
 
 
-LaTeX Warning: Reference `tab:direct_prediction' on page 14 undefined on input line 224.
+LaTeX Warning: Reference `tab:direct_prediction' on page 14 undefined on input line 227.
 
 [14 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf>]
 
-LaTeX Warning: Reference `tab:direct_prediction' on page 15 undefined on input line 228.
+LaTeX Warning: Reference `tab:direct_prediction' on page 15 undefined on input line 231.
 
-[15] [16] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf, id=497, 520.6411pt x 135.80737pt>
+[15] [16] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf, id=489, 520.6411pt x 135.80737pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf used on input line 260.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf used on input line 263.
 (pdftex.def)             Requested size: 437.23592pt x 114.05461pt.
 
-Overfull \hbox (13.90926pt too wide) in paragraph at lines 259--261
+Overfull \hbox (13.90926pt too wide) in paragraph at lines 262--264
  []|  [] 
  []
 
-</Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf, id=498, 488.59137pt x 149.45135pt>
+</Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf, id=490, 488.59137pt x 149.45135pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf used on input line 267.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf used on input line 270.
 (pdftex.def)             Requested size: 437.23592pt x 133.75014pt.
 
-Overfull \hbox (39.75092pt too wide) in paragraph at lines 267--268
+Overfull \hbox (39.75092pt too wide) in paragraph at lines 270--271
  [][] 
  []
 
@@ -571,61 +591,28 @@ Underfull \hbox (badness 1102) in paragraph at lines 58--62
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ” in font cmti12!
- [21]) [22] (./tables/traditional_ml.tex)
-Overfull \hbox (87.54631pt too wide) in paragraph at lines 342--348
- []|  [] 
- []
+ [21]) [22]
 
+! LaTeX Error: File `tables/traditional_ml.tex' not found.
 
-LaTeX Warning: Reference `sec:???' on page 23 undefined on input line 348.
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
 
+Enter file name: 
+./paper.tex:346: Emergency stop.
+<read *> 
+         
+l.346   \input{tables/traditional_ml.tex}
+                                         ^^M
+*** (cannot \read from terminal in nonstop modes)
 
-LaTeX Warning: Reference `sec:??' on page 23 undefined on input line 348.
-
-
-LaTeX Warning: Reference `sec:???' on page 23 undefined on input line 348.
-
-
-LaTeX Warning: Reference `sec:??' on page 23 undefined on input line 348.
-
-
-LaTeX Warning: Float too large for page by 1.99072pt on input line 350.
-
-[23
-
-] [24] [25
-
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 369.
- [26
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 369.
- (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 369.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 369.
-Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 6F0E7E0535486B83565145E882F68789;1669.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 369.
- ) 
+ 
 Here is how much of TeX's memory you used:
- 9695 strings out of 493089
- 144845 string characters out of 6134842
- 246392 words of memory out of 5000000
- 12880 multiletter control sequences out of 15000+600000
- 15100 words of font info for 59 fonts, out of 8000000 for 9000
+ 9872 strings out of 493089
+ 147618 string characters out of 6134842
+ 238121 words of memory out of 5000000
+ 13065 multiletter control sequences out of 15000+600000
+ 15092 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,11n,38p,1801b,482s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on paper.pdf (27 pages, 2663313 bytes).
-PDF statistics:
- 802 PDF objects out of 1000 (max. 8388607)
- 577 compressed objects within 6 object streams
- 111 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 36i,11n,38p,1801b,498s stack positions out of 5000i,500n,10000p,200000b,80000s
+./paper.tex:346:  ==> Fatal error occurred, no output PDF file produced!

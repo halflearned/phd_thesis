@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: kidney-ec-submission.aux
+The style file: ACM-Reference-Format.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Database file #1: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/references.bib
+I was expecting a `,' or a `}'---line 2 of file /Users/vitorhadad/Documents/kidney/matching/phd_thesis/references.bib
+ :   
+ :   author = {{Organ Procurement and Transplantation Network}},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 462 of file /Users/vitorhadad/Documents/kidney/matching/phd_thesis/references.bib
+ : @book{goodfellow2016deep
+ :                         ,
+I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no number and no volume in friedman2001greedy
+Warning--empty address in goodfellow2016deep
+You've used 12 entries,
+            5551 wiz_defined-function locations,
+            1364 strings with 16959 characters,
+and the built_in function-call counts, 13561 in all, are:
+= -- 2074
+> -- 403
+< -- 0
++ -- 112
+- -- 236
+* -- 911
+:= -- 1362
+add.period$ -- 61
+call.type$ -- 12
+change.case$ -- 74
+chr.to.int$ -- 12
+cite$ -- 14
+duplicate$ -- 929
+empty$ -- 689
+format.name$ -- 168
+if$ -- 3354
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 38
+newline$ -- 140
+num.names$ -- 96
+pop$ -- 311
+preamble$ -- 1
+purify$ -- 134
+quote$ -- 0
+skip$ -- 299
+stack$ -- 0
+substring$ -- 1315
+swap$ -- 105
+text.length$ -- 194
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 162
+warning$ -- 2
+while$ -- 105
+width$ -- 0
+write$ -- 247
+(There were 2 error messages)

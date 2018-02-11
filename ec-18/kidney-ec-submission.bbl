@@ -1,0 +1,183 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{00}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{{\tt DOI:}\penalty0{#1}\ }
+  \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       #1{#1}          \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Breiman}{Breiman}{2001}]%
+        {breiman2001random}
+\bibfield{author}{\bibinfo{person}{Leo Breiman}.}
+  \bibinfo{year}{2001}\natexlab{}.
+\newblock \showarticletitle{Random forests}.
+\newblock \bibinfo{journal}{{\em Machine learning\/}} \bibinfo{volume}{45},
+  \bibinfo{number}{1} (\bibinfo{year}{2001}), \bibinfo{pages}{5--32}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cecka}{Cecka}{2010}]%
+        {cecka2010calculated}
+\bibfield{author}{\bibinfo{person}{JM Cecka}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Calculated PRA (CPRA): the new measure of
+  sensitization for transplant candidates}.
+\newblock \bibinfo{journal}{{\em American journal of transplantation\/}}
+  \bibinfo{volume}{10}, \bibinfo{number}{1} (\bibinfo{year}{2010}),
+  \bibinfo{pages}{26--29}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cortes and Vapnik}{Cortes and Vapnik}{1995}]%
+        {cortes1995support}
+\bibfield{author}{\bibinfo{person}{Corinna Cortes} {and}
+  \bibinfo{person}{Vladimir Vapnik}.} \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{Support-vector networks}.
+\newblock \bibinfo{journal}{{\em Machine learning\/}} \bibinfo{volume}{20},
+  \bibinfo{number}{3} (\bibinfo{year}{1995}), \bibinfo{pages}{273--297}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Friedman}{Friedman}{2001}]%
+        {friedman2001greedy}
+\bibfield{author}{\bibinfo{person}{Jerome~H Friedman}.}
+  \bibinfo{year}{2001}\natexlab{}.
+\newblock \showarticletitle{Greedy function approximation: a gradient boosting
+  machine}.
+\newblock \bibinfo{journal}{{\em Annals of statistics\/}}
+  (\bibinfo{year}{2001}), \bibinfo{pages}{1189--1232}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Goodfellow, Bengio, and Courville}{Goodfellow
+  et~al\mbox{.}}{2016}]%
+        {goodfellow2016deep}
+\bibfield{author}{\bibinfo{person}{Ian Goodfellow}, \bibinfo{person}{Yoshua
+  Bengio}, {and} \bibinfo{person}{Aaron Courville}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \bibinfo{booktitle}{{\em Deep learning}}.
+\newblock \bibinfo{publisher}{MIT press}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Lattimore and Szepesvari}{Lattimore and
+  Szepesvari}{2018}]%
+        {lattimore2018bandits}
+\bibfield{author}{\bibinfo{person}{Tor Lattimore} {and} \bibinfo{person}{Csaba
+  Szepesvari}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \bibinfo{title}{Bandit Algorithms}.
+\newblock   (\bibinfo{year}{2018}).
+\newblock
+\showURL{%
+\url{http://banditalgs.com/}}
+
+
+\bibitem[\protect\citeauthoryear{{Organ Procurement and Transplantation
+  Network}}{{Organ Procurement and Transplantation Network}}{2013}]%
+        {optn2013cpra}
+\bibfield{author}{\bibinfo{person}{{Organ Procurement and Transplantation
+  Network}}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \bibinfo{title}{Current CPRA calculation, Updated 2013}.
+\newblock   (\bibinfo{year}{2013}).
+\newblock
+\showURL{%
+\url{http://transplantpro.org/wp-content/uploads/Current-CPRA-Calculation-2.ppt}}
+
+
+\bibitem[\protect\citeauthoryear{Roth, S{\"o}nmez, and {\"U}nver}{Roth
+  et~al\mbox{.}}{2005}]%
+        {roth2005pairwise}
+\bibfield{author}{\bibinfo{person}{Alvin~E Roth}, \bibinfo{person}{Tayfun
+  S{\"o}nmez}, {and} \bibinfo{person}{M~Utku {\"U}nver}.}
+  \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Pairwise kidney exchange}.
+\newblock \bibinfo{journal}{{\em Journal of Economic theory\/}}
+  \bibinfo{volume}{125}, \bibinfo{number}{2} (\bibinfo{year}{2005}),
+  \bibinfo{pages}{151--188}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Roth, S{\"o}nmez, and {\"U}nver}{Roth
+  et~al\mbox{.}}{2007}]%
+        {roth2007efficient}
+\bibfield{author}{\bibinfo{person}{Alvin~E Roth}, \bibinfo{person}{Tayfun
+  S{\"o}nmez}, {and} \bibinfo{person}{M~Utku {\"U}nver}.}
+  \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Efficient kidney exchange: Coincidence of wants in
+  markets with compatibility-based preferences}.
+\newblock \bibinfo{journal}{{\em American Economic Review\/}}
+  \bibinfo{volume}{97}, \bibinfo{number}{3} (\bibinfo{year}{2007}),
+  \bibinfo{pages}{828--851}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{{\"U}nver}{{\"U}nver}{2010}]%
+        {unver2010dynamic}
+\bibfield{author}{\bibinfo{person}{M~Utku {\"U}nver}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Dynamic kidney exchange}.
+\newblock \bibinfo{journal}{{\em The Review of Economic Studies\/}}
+  \bibinfo{volume}{77}, \bibinfo{number}{1} (\bibinfo{year}{2010}),
+  \bibinfo{pages}{372--414}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Wu, Chen, Hastie, Sobel, and Lange}{Wu
+  et~al\mbox{.}}{2009}]%
+        {wu2009genome}
+\bibfield{author}{\bibinfo{person}{Tong~Tong Wu}, \bibinfo{person}{Yi~Fang
+  Chen}, \bibinfo{person}{Trevor Hastie}, \bibinfo{person}{Eric Sobel}, {and}
+  \bibinfo{person}{Kenneth Lange}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Genome-wide association analysis by lasso penalized
+  logistic regression}.
+\newblock \bibinfo{journal}{{\em Bioinformatics\/}} \bibinfo{volume}{25},
+  \bibinfo{number}{6} (\bibinfo{year}{2009}), \bibinfo{pages}{714--721}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Zenios, Woodle, and Ross}{Zenios
+  et~al\mbox{.}}{2001}]%
+        {zenios2001primum}
+\bibfield{author}{\bibinfo{person}{Stefanos Zenios}, \bibinfo{person}{E~Steve
+  Woodle}, {and} \bibinfo{person}{Lainie~Friedman Ross}.}
+  \bibinfo{year}{2001}\natexlab{}.
+\newblock \showarticletitle{Primum non nocere: avoiding increased waiting times
+  for individual racial and blood-type subsets of kidney wait list candidates
+  in a living donor/cadaveric donor exchange program}.
+\newblock \bibinfo{journal}{{\em Transplantation\/}} \bibinfo{volume}{72},
+  \bibinfo{number}{4} (\bibinfo{year}{2001}), \bibinfo{pages}{648--654}.
+\newblock
+
+
+\end{thebibliography}

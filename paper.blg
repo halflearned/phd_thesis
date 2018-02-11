@@ -3,29 +3,34 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper.aux
 The style file: te.bst.bst
 Database file #1: references.bib
+I was expecting a `,' or a `}'---line 2 of file references.bib
+ :   
+ :   author = {{Organ Procurement and Transplantation Network}},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Warning--entry type for "lattimore2018bandits" isn't style-file defined
---line 9 of file references.bib
-Repeated entry---line 164 of file references.bib
+--line 20 of file references.bib
+Repeated entry---line 184 of file references.bib
  : @inproceedings{dickerson2016position
  :                                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 315 of file references.bib
+Repeated entry---line 335 of file references.bib
  : @techreport{ashlagi2012need
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 345 of file references.bib
+Repeated entry---line 365 of file references.bib
  : @inproceedings{rapaport1986case
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 393 of file references.bib
+Repeated entry---line 413 of file references.bib
  : @article{ashlagi2011nonsimultaneous
  :                                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 405 of file references.bib
+Repeated entry---line 425 of file references.bib
  : @article{ashlagi2013kidney
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 442 of file references.bib
+Repeated entry---line 462 of file references.bib
  : @book{goodfellow2016deep
  :                         ,
 I'm skipping whatever remains of this entry
@@ -76,4 +81,4 @@ warning$ -- 2
 while$ -- 142
 width$ -- 0
 write$ -- 369
-(There were 7 error messages)
+(There were 8 error messages)

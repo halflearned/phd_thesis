@@ -9,6 +9,7 @@
 \usepackage{algpseudocode}
 \usepackage{booktabs}
 \usepackage[font=footnotesize]{caption}
+\usepackage{lineno}
 
 \AtBeginEnvironment{algorithm}{\setstretch{1}}
 
@@ -34,11 +35,13 @@
 
 \doublespacing
 
+\linenumbers
+
 
 \section{Introduction} \label{sec:introduction}
 
 
-\paragraph{Main idea} We propose a new dynamic kidney matching algorithm that takes as input a pool of patient-donor pairs and computes, for each cycle that is currently available for matching, a probability that it should be chosen to be cleared today, as well as another probability indicating whether we should not match any more cycles. In order to get these probabilities, our algorithm first produces a prior distribution estimated by observing past choices made by an infeasible optimal algorithm, and then updates these priors with simulations. 
+\paragraph{Main idea} We study new dynamic kidney matching algorithm that takes as input a pool of patient-donor pairs and computes, for each cycle that is currently available for matching, a probability that it should be chosen to be cleared today, as well as another probability indicating whether we should not match any more cycles. In order to get these probabilities, our algorithm first produces a prior distribution estimated by observing past choices made by an infeasible optimal algorithm, and then updates these priors with simulations. 
 
 Our algorithm faces two main challenges. The first challenge is the input data representation, because the relevant information consists not only of the characteristics of each donor-patient pair, but also the underlying structure of their compatibility graph. For example, we need it to be the case that the same cycle will have different probabilities of being matched depending on what who are all the other patient-pairs in the graph, what characteristics they have, and how compatible their are to each other. Our solution to this obstacle involves using mapping the raw input data and the compatibility graph to points on the euclidean space, and then using these as regressors.
 
@@ -139,7 +142,7 @@ The space where a dynamic kidney exchange problem tuple lives is called a \textb
 
 The \emph{ABO environment} is the barest: each pair in the pool is solely characterized by their entry time, the length of their sojourn, and the ABO blood types of its patient and donor. Compatibility between two pairs is also decided only on blood-type compatibility. However, we make an assumption previously used in \cite{unver2010dynamic} and allow for incompatibility between a donor and their own patient. The reason for this additional assumption is that, if there were truly no tissue type compatibilities, we would never see pairs of type (AB,$\cdot$), ($\cdot$, O), or (A,A), (O,O), (B,B), and (AB,AB), since their donors would be automatically compatible with their patients and they would never participate in an exchange. Let's explain the effect of this assumption in more detail.
 
-The distribution of blood types in the US population is roughly O:48\%, A:36\%, B:11\%, AB:4\%. If we initially independently draw two people from this distribution and they form, say, an (A,B) pair (which happens with probability $0.36 \cdot 0.12 \approx 0.0432$), then we allow them to the pool immediately, since their B-donor is blood-type incompatible with their A-patient. However, if they happen to form an (A,O) pair (with probability $0.36 \cdot 0.48 \approx 0.172$), then they should only enter the pool if the donor and patient are tissue-type incompatible, otherwise the O donor would immediately donate their kidney to the patient and they would not need to enter the exchange pool at all. So we assume the probability of a positive crossmatch is $p_c = 0.11$ as in \cite{zenios2001primum}, then the probability that two people form an (A,O) and enter the pool becomes in fact $0.36 \cdot 0.48  \cdot 0.11 \approx 0.019$. By computing the probabilities of each pair in this manner and then normalizing so that they add up to one, we arrive at the numbers displayed on Table \ref{tab:abo_blood_type}. 
+The distribution of blood types in the US population is roughly O:48\%, A:36\%, B:11\%, AB:4\%. If we initially independently draw two people from this distribution and they form, say, an (A,B) pair (which happens with probability $0.36 \cdot 0.12 \approx 0.0432$), then we allow them to the pool immediately, since their B-donor is blood-type incompatible with their A-patient. However, if they happen to form an (A,O) pair (with probability $0.36 \cdot 0.48 \approx 0.172$), then they should only enter the pool if the donor and patient are tissue-type incompatible, otherwise the O donor would immediately donate their kidney to the patient and they would not need to enter the exchange pool at all. So we assume the probability of a positive crossmatch is $p_c = 0.11$ as in \cite{zenios2001primum}, then the probability that two people form an (A,O) and enter the pool becomes in fact proportional to $0.36 \cdot 0.48  \cdot 0.11 \approx 0.019$. By computing the probabilities of each pair in this manner and then normalizing so that they add up to one, we arrive at the numbers displayed on Table \ref{tab:abo_blood_type}. 
 
 
 \subsection{RSU Environment}
@@ -168,7 +171,7 @@ Second, we  used the historical data set to calculate two additional variables, 
 
 
 
-\paragraph{Compatibility} A donor and a patient are deemed \emph{compatible} if they are blood-type compatible and tissue-type compatible. The latter is true             when the donor's HLA profile exhibits no antigens that are unacceptable for the patient in any of the A, B, Bw, C, DR, DPB, DQ, and DQA loci.
+\paragraph{Compatibility} A donor and a patient are deemed \emph{compatible} if they are blood-type compatible and tissue-type compatible. The latter is true when the donor's HLA profile exhibits no antigens that are unacceptable for the patient in any of the A, B, Bw, C, DR, DPB, DQ, and DQA loci.
 
 \paragraph{Simulation} During a simulation, pairs are drawn from this artificial data set. Once a pair enters the pool, it immediately forms directed edges with existing compatible pairs.
 

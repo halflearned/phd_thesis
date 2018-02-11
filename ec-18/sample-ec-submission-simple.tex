@@ -1,0 +1,36 @@
+\documentclass[format=acmsmall, review=false]{acmart}
+
+\usepackage{acm-ec-18}
+\usepackage{booktabs} % For formal tables
+
+\begin{document}
+% Title portion. Note the short title for running heads 
+\title[A VCG-Based Mechanism for Electronic Commerce]{A VCG-Based Mechanism for Electronic Commerce Applications}  
+\author{Submission 42}
+
+% note that the abstract must come before \maketitle
+\begin{abstract}
+In auction theory, a Vickrey--Clarke--Groves (VCG) auction is a type of sealed-bid auction of multiple items. Bidders submit bids that report their valuations for the items, without knowing the bids of the other people in the auction. The auction system assigns the items in a socially optimal manner: it charges each individual the harm they cause to other bidders. It also gives bidders an incentive to bid their true valuations, by ensuring that the optimal strategy for each bidder is to bid their true valuations of the items. (Thanks for this text, Wikipedia.) This paper shows that the same idea works for electronic commerce applications.
+\end{abstract}
+
+\maketitle
+
+% Renew this after \maketitle if the default list of authors is too long for headers
+%\renewcommand{\shortauthors}{W.\ Vickrey et.\ al.}
+
+\section{Introduction}
+
+From here on it's straightforward \LaTeX. You should know that the style uses Natbib author--year citations. 
+That means citations that work like footnotes use ``cite'' \cite{Abril07} and citations that work like a part of speech
+are cited as we do \citet{Abril07}.
+
+\begin{acks}
+	
+This is where we put acknowledgements.
+\end{acks}
+
+% Bibliography
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample-bibliography}
+
+\end{document}
