@@ -10,52 +10,68 @@ I was expecting a `,' or a `}'---line 2 of file /Users/vitorhadad/Documents/kidn
  :   author = {{Organ Procurement and Transplantation Network}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Repeated entry---line 425 of file /Users/vitorhadad/Documents/kidney/matching/phd_thesis/references.bib
+ : @article{ashlagi2013kidney
+ :                           ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 462 of file /Users/vitorhadad/Documents/kidney/matching/phd_thesis/references.bib
  : @book{goodfellow2016deep
  :                         ,
 I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--no journal in akbarpour2017thickness
+Warning--no number and no volume in akbarpour2017thickness
+Warning--page numbers missing in both pages and numpages fields in akbarpour2017thickness
+Warning--no number and no volume in ashlagi2013kidney
+Warning--page numbers missing in both pages and numpages fields in ashlagi2013kidney
+Warning--empty publisher in awasthi2009online
+Warning--empty address in awasthi2009online
+Warning--empty publisher in dickerson2015futurematch
+Warning--empty address in dickerson2015futurematch
 Warning--no number and no volume in friedman2001greedy
 Warning--empty address in goodfellow2016deep
-You've used 12 entries,
+Warning--empty publisher in grover2016node2vec
+Warning--empty address in grover2016node2vec
+Warning--empty address in newman2010networks
+You've used 19 entries,
             5551 wiz_defined-function locations,
-            1364 strings with 16959 characters,
-and the built_in function-call counts, 13561 in all, are:
-= -- 2074
-> -- 403
+            1400 strings with 17948 characters,
+and the built_in function-call counts, 20355 in all, are:
+= -- 2883
+> -- 660
 < -- 0
-+ -- 112
-- -- 236
-* -- 911
-:= -- 1362
-add.period$ -- 61
-call.type$ -- 12
-change.case$ -- 74
-chr.to.int$ -- 12
-cite$ -- 14
-duplicate$ -- 929
-empty$ -- 689
-format.name$ -- 168
-if$ -- 3354
++ -- 188
+- -- 328
+* -- 1390
+:= -- 2115
+add.period$ -- 97
+call.type$ -- 19
+change.case$ -- 118
+chr.to.int$ -- 19
+cite$ -- 33
+duplicate$ -- 1516
+empty$ -- 1113
+format.name$ -- 284
+if$ -- 4987
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 38
-newline$ -- 140
-num.names$ -- 96
-pop$ -- 311
+missing$ -- 67
+newline$ -- 193
+num.names$ -- 152
+pop$ -- 564
 preamble$ -- 1
-purify$ -- 134
+purify$ -- 213
 quote$ -- 0
-skip$ -- 299
+skip$ -- 468
 stack$ -- 0
-substring$ -- 1315
-swap$ -- 105
+substring$ -- 1802
+swap$ -- 158
 text.length$ -- 194
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 162
-warning$ -- 2
-while$ -- 105
+type$ -- 254
+warning$ -- 14
+while$ -- 161
 width$ -- 0
-write$ -- 247
-(There were 2 error messages)
+write$ -- 363
+(There were 3 error messages)

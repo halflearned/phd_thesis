@@ -38,6 +38,42 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
+\bibitem[\protect\citeauthoryear{Akbarpour, Li, and Oveis~Gharan}{Akbarpour
+  et~al\mbox{.}}{2017}]%
+        {akbarpour2017thickness}
+\bibfield{author}{\bibinfo{person}{Mohammad Akbarpour},
+  \bibinfo{person}{Shengwu Li}, {and} \bibinfo{person}{Shayan Oveis~Gharan}.}
+  \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Thickness and information in dynamic matching
+  markets}.
+\newblock  (\bibinfo{year}{2017}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Ashlagi, Jaillet, and Manshadi}{Ashlagi
+  et~al\mbox{.}}{2013}]%
+        {ashlagi2013kidney}
+\bibfield{author}{\bibinfo{person}{Itai Ashlagi}, \bibinfo{person}{Patrick
+  Jaillet}, {and} \bibinfo{person}{Vahideh~H Manshadi}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Kidney exchange in dynamic sparse heterogenous
+  pools}.
+\newblock \bibinfo{journal}{{\em arXiv preprint arXiv:1301.3509\/}}
+  (\bibinfo{year}{2013}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Awasthi and Sandholm}{Awasthi and
+  Sandholm}{2009}]%
+        {awasthi2009online}
+\bibfield{author}{\bibinfo{person}{Pranjal Awasthi} {and}
+  \bibinfo{person}{Tuomas Sandholm}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{Online Stochastic Optimization in the Large:
+  Application to Kidney Exchange.}. In \bibinfo{booktitle}{{\em IJCAI}},
+  Vol.~\bibinfo{volume}{9}. \bibinfo{pages}{405--411}.
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Breiman}{Breiman}{2001}]%
         {breiman2001random}
 \bibfield{author}{\bibinfo{person}{Leo Breiman}.}
@@ -69,6 +105,17 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{Dickerson and Sandholm}{Dickerson and
+  Sandholm}{2015}]%
+        {dickerson2015futurematch}
+\bibfield{author}{\bibinfo{person}{John~P Dickerson} {and}
+  \bibinfo{person}{Tuomas Sandholm}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{FutureMatch: Combining Human Value Judgments and
+  Machine Learning to Match in Dynamic Environments.}. In
+  \bibinfo{booktitle}{{\em AAAI}}. \bibinfo{pages}{622--628}.
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Friedman}{Friedman}{2001}]%
         {friedman2001greedy}
 \bibfield{author}{\bibinfo{person}{Jerome~H Friedman}.}
@@ -91,6 +138,18 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{Grover and Leskovec}{Grover and
+  Leskovec}{2016}]%
+        {grover2016node2vec}
+\bibfield{author}{\bibinfo{person}{Aditya Grover} {and} \bibinfo{person}{Jure
+  Leskovec}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{node2vec: Scalable feature learning for networks}.
+  In \bibinfo{booktitle}{{\em Proceedings of the 22nd ACM SIGKDD international
+  conference on Knowledge discovery and data mining}}. ACM,
+  \bibinfo{pages}{855--864}.
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Lattimore and Szepesvari}{Lattimore and
   Szepesvari}{2018}]%
         {lattimore2018bandits}
@@ -103,6 +162,15 @@
 \url{http://banditalgs.com/}}
 
 
+\bibitem[\protect\citeauthoryear{Newman}{Newman}{2010}]%
+        {newman2010networks}
+\bibfield{author}{\bibinfo{person}{Mark Newman}.}
+  \bibinfo{year}{2010}\natexlab{}.
+\newblock \bibinfo{booktitle}{{\em Networks: an introduction}}.
+\newblock \bibinfo{publisher}{Oxford university press}.
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{{Organ Procurement and Transplantation
   Network}}{{Organ Procurement and Transplantation Network}}{2013}]%
         {optn2013cpra}
@@ -113,6 +181,19 @@
 \newblock
 \showURL{%
 \url{http://transplantpro.org/wp-content/uploads/Current-CPRA-Calculation-2.ppt}}
+
+
+\bibitem[\protect\citeauthoryear{Roth, S{\"o}nmez, and {\"U}nver}{Roth
+  et~al\mbox{.}}{2004}]%
+        {roth2004kidney}
+\bibfield{author}{\bibinfo{person}{Alvin~E Roth}, \bibinfo{person}{Tayfun
+  S{\"o}nmez}, {and} \bibinfo{person}{M~Utku {\"U}nver}.}
+  \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{Kidney exchange}.
+\newblock \bibinfo{journal}{{\em The Quarterly Journal of Economics\/}}
+  \bibinfo{volume}{119}, \bibinfo{number}{2} (\bibinfo{year}{2004}),
+  \bibinfo{pages}{457--488}.
+\newblock
 
 
 \bibitem[\protect\citeauthoryear{Roth, S{\"o}nmez, and {\"U}nver}{Roth

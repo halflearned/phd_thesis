@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex paper"] 1518345041 "paper.aux" "paper.bbl" "paper" 1518345045
-  "paper.aux" 1518345044 10697 ec3859f4000411ee9791457f7261611a ""
+["bibtex paper"] 1518345041 "paper.aux" "paper.bbl" "paper" 1518379320
+  "paper.aux" 1518379319 10697 ec3859f4000411ee9791457f7261611a ""
   "paper.bcf" 0 -1 0 ""
   "references.bib" 1518322518 14697 405851e123d8d64f5f1ffd697d7d1b95 ""
   "te.bst.bst" 0 -1 0 ""
   (generated)
-  "paper.blg"
   "paper.bbl"
-["pdflatex"] 1518345042 "paper.tex" "paper.pdf" "paper" 1518345045
-  "./paper.out" 1518345044 1532 da7a6a4d8c4acbd3edb4866368d90d7b ""
+  "paper.blg"
+["pdflatex"] 1518379316 "paper.tex" "paper.pdf" "paper" 1518379320
+  "./paper.out" 1518379319 1532 da7a6a4d8c4acbd3edb4866368d90d7b ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -107,18 +107,18 @@
   "figures/computed_cpra.pdf" 1517715339 12391 41eaaabcc22bfbd56a099427be019f7b ""
   "figures/direct_prediction.pdf" 1517734461 864573 7bef753879f602a2150ad19523b71972 ""
   "figures/greedy_opt_comparison_mcl2.pdf" 1517795366 33559 1ffbffc30a2c8c3811c567206eac8cd9 ""
-  "figures/mab.pdf" 1517735467 809343 00a6ed5ad8db5a7a05c32cad2e20ffb5 ""
+  "figures/mab.pdf" 1518379302 829779 ae8e185b4f8952e9a35b9e7939b58be7 ""
   "figures/mab_step.pdf" 1517739102 862775 fe24195e4176977cf8499eb943dc7b19 ""
   "figures/pseudo_reward_intuition.pdf" 1518344953 789845 306ee5f27e919443faa1e172e867c2da ""
-  "paper.aux" 1518345044 10697 ec3859f4000411ee9791457f7261611a ""
+  "paper.aux" 1518379319 10697 ec3859f4000411ee9791457f7261611a ""
   "paper.bbl" 1518345042 9289 3168cd473bcf8a6ec571e6118f055757 "bibtex paper"
-  "paper.out" 1518345044 1532 da7a6a4d8c4acbd3edb4866368d90d7b ""
+  "paper.out" 1518379319 1532 da7a6a4d8c4acbd3edb4866368d90d7b ""
   "paper.tex" 1518345036 33406 36f91a6271a7318d031be3afc21e9209 ""
   "tables/traditional_ml.tex" 0 -1 0 ""
   (generated)
-  "paper.pdf"
-  "paper.out"
-  "paper-blx.bib"
+  "paper.run.xml"
   "paper.aux"
   "paper.log"
-  "paper.run.xml"
+  "paper.out"
+  "paper.pdf"
+  "paper-blx.bib"

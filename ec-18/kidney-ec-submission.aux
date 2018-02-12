@@ -20,88 +20,109 @@
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}}
 \@writefile{toc}{\contentsline {paragraph}{\textbf  {Main idea}}{1}{section*.2}}
 \@writefile{toc}{\contentsline {paragraph}{\textbf  {Main results}}{1}{section*.3}}
+\citation{roth2004kidney,roth2005pairwise,roth2007efficient}
+\citation{unver2010dynamic}
+\citation{awasthi2009online}
+\citation{dickerson2015futurematch}
+\citation{akbarpour2017thickness}
+\citation{ashlagi2013kidney}
 \citation{roth2005pairwise}
 \citation{unver2010dynamic}
 \citation{zenios2001primum}
 \citation{roth2007efficient}
 \citation{roth2007efficient}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Related literature}{2}{subsection.1.1}}
-\@writefile{toc}{\contentsline {paragraph}{Dynamic kidney exchange}{2}{section*.4}}
-\@writefile{toc}{\contentsline {paragraph}{Computer science}{2}{section*.5}}
+\@writefile{toc}{\contentsline {paragraph}{Matching theory}{2}{section*.4}}
+\@writefile{toc}{\contentsline {paragraph}{Computer science and machine learning}{2}{section*.5}}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Simulation environments}{2}{section.2}}
-\@writefile{toc}{\contentsline {paragraph}{Notation}{2}{section*.6}}
+\@writefile{toc}{\contentsline {paragraph}{Basic definitions and notation}{2}{section*.6}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Common features across environments}{2}{subsection.2.1}}
 \@writefile{toc}{\contentsline {paragraph}{Poisson entry, Geometric death}{2}{section*.7}}
-\@writefile{toc}{\contentsline {paragraph}{Minimum set of observable characteristics}{2}{section*.8}}
-\@writefile{toc}{\contentsline {paragraph}{Binary preferences}{2}{section*.9}}
+\@writefile{toc}{\contentsline {paragraph}{Binary preferences}{2}{section*.8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.2}ABO Environment}{2}{subsection.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}RSU Environment}{2}{subsection.2.3}}
 \citation{cecka2010calculated}
 \citation{optn2013cpra}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}RSU Environment}{3}{subsection.2.3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}OPTN Environment}{3}{subsection.2.4}}
-\@writefile{toc}{\contentsline {paragraph}{Patient and donor cPRA}{3}{section*.10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Patient and donor cPRA computed from historical data.\relax }}{4}{figure.caption.11}}
+\@writefile{toc}{\contentsline {paragraph}{Patient and donor cPRA}{3}{section*.9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \textbf  {Patient and donor cPRA}   Computed from historical data. Our patient cPRA is the frequency of living donors that exhibit antigens that are unacceptable to the patient. We also define a donor cPRA by calculating the frequency of patients that have antibodies against the donors antigens.\relax }}{4}{figure.caption.10}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:cpra}{{1}{4}{Patient and donor cPRA computed from historical data.\relax }{figure.caption.11}{}}
-\@writefile{toc}{\contentsline {paragraph}{Artificial dataset}{4}{section*.12}}
+\newlabel{fig:cpra}{{1}{4}{\textbf {Patient and donor cPRA} \\ Computed from historical data. Our patient cPRA is the frequency of living donors that exhibit antigens that are unacceptable to the patient. We also define a donor cPRA by calculating the frequency of patients that have antibodies against the donors antigens.\relax }{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {paragraph}{Artificial dataset}{4}{section*.11}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Methods}{4}{section.3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Objective and benchmarks}{4}{subsection.3.1}}
-\@writefile{toc}{\contentsline {paragraph}{\textsc  {Myopic}}{4}{section*.13}}
-\@writefile{toc}{\contentsline {paragraph}{Optimal (\textsc  {OPT})}{4}{section*.14}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Ratio of \texttt  {Myopic} has better chances of achieving performances similar to \texttt  {OPT} when the death rate is high (moving rightwards on the graphs), or when entry rate is high (moving downwards on the graphs).\relax }}{5}{figure.caption.15}}
-\newlabel{fig:greedy_opt_comparison}{{2}{5}{Ratio of \texttt {Myopic} has better chances of achieving performances similar to \texttt {OPT} when the death rate is high (moving rightwards on the graphs), or when entry rate is high (moving downwards on the graphs).\relax }{figure.caption.15}{}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Function \textsc  {direct\_prediction}\relax }}{5}{algocf.1}}
-\newlabel{alg:direct_prediction}{{1}{5}{Optimal (\textsc {OPT})}{algocf.1}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Algorithms}{5}{section.4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Direct prediction}{5}{subsection.4.1}}
-\newlabel{subsec:direct_prediction}{{4.1}{5}{Direct prediction}{subsection.4.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{\textsc  {Myopic}}{4}{section*.12}}
+\@writefile{toc}{\contentsline {paragraph}{Optimal (\textsc  {OPT})}{4}{section*.13}}
+\@writefile{toc}{\contentsline {paragraph}{\textbf  {Remark}}{4}{section*.14}}
 \citation{wu2009genome}
 \citation{cortes1995support}
 \citation{breiman2001random}
 \citation{friedman2001greedy}
 \citation{goodfellow2016deep}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces One period of simulation using direct prediction methods to choose cycles.\relax }}{6}{figure.caption.17}}
-\newlabel{fig:direct_prediction}{{3}{6}{One period of simulation using direct prediction methods to choose cycles.\relax }{figure.caption.17}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{6}{section.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Direct estimation policy}{6}{subsection.5.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}MAB-based policy}{6}{subsection.5.2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces \textbf  {Comparing \textsc  {Myopic} and \textsc  {OPT}}   Ratio of average per-period matched pairs for different entry and death rates, over 3000 periods (darker hues are better). \texttt  {Myopic} has better chances of achieving performances similar to \texttt  {OPT} when the death rate is high (moving rightwards on the graphs), or when entry rate is high (moving downwards on the graphs).\relax }}{5}{figure.caption.15}}
+\newlabel{fig:greedy_opt_comparison}{{2}{5}{\textbf {Comparing \textsc {Myopic} and \textsc {OPT}} \\ Ratio of average per-period matched pairs for different entry and death rates, over 3000 periods (darker hues are better). \texttt {Myopic} has better chances of achieving performances similar to \texttt {OPT} when the death rate is high (moving rightwards on the graphs), or when entry rate is high (moving downwards on the graphs).\relax }{figure.caption.15}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Algorithms}{5}{section.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Direct prediction}{5}{subsection.4.1}}
+\newlabel{subsec:direct_prediction}{{4.1}{5}{Direct prediction}{subsection.4.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces \textbf  {Direct prediction method}   One period of simulation using direct prediction methods to choose cycles. See Algorithm \ref  {alg:direct_prediction} for details.\relax }}{5}{figure.caption.16}}
+\newlabel{fig:direct_prediction}{{3}{5}{\textbf {Direct prediction method} \\ One period of simulation using direct prediction methods to choose cycles. See Algorithm \ref {alg:direct_prediction} for details.\relax }{figure.caption.16}{}}
+\citation{newman2010networks}
+\citation{grover2016node2vec}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Function \textsc  {direct\_prediction}\relax }}{6}{algocf.1}}
+\newlabel{alg:direct_prediction}{{1}{6}{Direct prediction}{algocf.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Direct prediction methods}{6}{subsection.4.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Multi-armed bandit methods}{6}{subsection.4.3}}
 \citation{lattimore2018bandits}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces One period of simulation using multi-armed bandit methods to choose cycles.\relax }}{7}{figure.caption.18}}
-\newlabel{fig:mab}{{4}{7}{One period of simulation using multi-armed bandit methods to choose cycles.\relax }{figure.caption.18}{}}
-\@writefile{toc}{\contentsline {paragraph}{What are pseudo-rewards?}{7}{section*.20}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{7}{section.6}}
-\@writefile{toc}{\contentsline {paragraph}{Summary}{7}{section*.22}}
-\@writefile{toc}{\contentsline {paragraph}{Extensions}{7}{section*.23}}
+\@writefile{toc}{\contentsline {paragraph}{What are pseudo-rewards?}{7}{section*.22}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Function \textsc  {get\_pseudo\_reward}\relax }}{8}{algocf.2}}
+\newlabel{alg:get_pseudo_reward}{{2}{8}{Multi-armed bandit methods}{algocf.2}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces Function \texttt  {choose\_cycle}\relax }}{8}{algocf.3}}
+\newlabel{alg:choose_cycle}{{3}{8}{Multi-armed bandit methods}{algocf.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces \textbf  {Multi-armed bandit methods}   One period of simulation using multi-armed bandit methods to choose cycles.\relax }}{9}{figure.caption.20}}
+\newlabel{fig:mab}{{4}{9}{\textbf {Multi-armed bandit methods} \\ One period of simulation using multi-armed bandit methods to choose cycles.\relax }{figure.caption.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {Function} \textsc  {get\_pseudo\_reward}   Multi-armed bandits evaluate if a cycle should be cleared by checking if there is a high chance that the cycle will be used in the future. Such cycles get a \emph  {lower} reward, and are left for later.\relax }}{9}{figure.caption.21}}
+\newlabel{fig:get_pseudo_reward}{{5}{9}{\textbf {Function} \textsc {get\_pseudo\_reward} \\ Multi-armed bandits evaluate if a cycle should be cleared by checking if there is a high chance that the cycle will be used in the future. Such cycles get a \emph {lower} reward, and are left for later.\relax }{figure.caption.21}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces \textbf  {Intuition for pseudo-rewards}   In the example above, at time $t$ we have three available cycles to choose from: $(1,2)$, $(1,3)$ and $(3,4)$, and we are contemplating choosing cycle $(1,2)$ at $t$. If we constrain ourselves to do so, several other future cycles become unavailable (in red). Nevertheless, in three out of our four simulations we were able to clear the same number of cycles in the constrained scenario, so the running pseudo-reward average is $\frac  {3}{4}$. \relax }}{9}{figure.caption.23}}
+\newlabel{fig:pseudo_reward_intuition}{{6}{9}{\textbf {Intuition for pseudo-rewards} \\ In the example above, at time $t$ we have three available cycles to choose from: $(1,2)$, $(1,3)$ and $(3,4)$, and we are contemplating choosing cycle $(1,2)$ at $t$. If we constrain ourselves to do so, several other future cycles become unavailable (in red). Nevertheless, in three out of our four simulations we were able to clear the same number of cycles in the constrained scenario, so the running pseudo-reward average is $\frac {3}{4}$. \relax }{figure.caption.23}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Results}{9}{section.5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Direction prediction methods}{9}{subsection.5.1}}
+\citation{grover2016node2vec}
+\citation{grover2016node2vec}
 \bibstyle{ACM-Reference-Format}
 \bibdata{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/references}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces \textbf  {Function} \textsc  {get\_pseudo\_reward}   Multi-armed bandits evaluate if a cycle should be cleared by checking if there is a high chance that the cycle will be used in the future. Such cycles get a \emph  {lower} reward, and are left for later.\relax }}{8}{figure.caption.19}}
-\newlabel{fig:get_pseudo_reward}{{5}{8}{\textbf {Function} \textsc {get\_pseudo\_reward} \\ Multi-armed bandits evaluate if a cycle should be cleared by checking if there is a high chance that the cycle will be used in the future. Such cycles get a \emph {lower} reward, and are left for later.\relax }{figure.caption.19}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Pseudo-reward intuition\relax }}{8}{figure.caption.21}}
-\newlabel{fig:pseudo_reward_intuition}{{6}{8}{Pseudo-reward intuition\relax }{figure.caption.21}{}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Function \textsc  {get\_pseudo\_reward}\relax }}{8}{algocf.2}}
-\newlabel{alg:get_pseudo_reward}{{2}{8}{Extensions}{algocf.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusions}{8}{section.7}}
-\@writefile{toc}{\contentsline {section}{\numberline {A}Sections}{8}{appendix.A}}
-\@writefile{toc}{\contentsline {section}{\numberline {B}Supplementary materials}{8}{appendix.B}}
-\@writefile{toc}{\contentsline {section}{Acknowledgments}{8}{section*.27}}
-\bibcite{breiman2001random}{{1}{2001}{{Breiman}}{{Breiman}}}
-\bibcite{cecka2010calculated}{{2}{2010}{{Cecka}}{{Cecka}}}
-\bibcite{cortes1995support}{{3}{1995}{{Cortes and Vapnik}}{{Cortes and Vapnik}}}
-\bibcite{friedman2001greedy}{{4}{2001}{{Friedman}}{{Friedman}}}
-\bibcite{goodfellow2016deep}{{5}{2016}{{Goodfellow et~al\unhbox \voidb@x \hbox {.}}}{{Goodfellow, Bengio, and Courville}}}
-\bibcite{lattimore2018bandits}{{6}{2018}{{Lattimore and Szepesvari}}{{Lattimore and Szepesvari}}}
-\bibcite{optn2013cpra}{{7}{2013}{{{Organ Procurement and Transplantation Network}}}{{{Organ Procurement and Transplantation Network}}}}
-\bibcite{roth2005pairwise}{{8}{2005}{{Roth et~al\unhbox \voidb@x \hbox {.}}}{{Roth, S{\"o}nmez, and {\"U}nver}}}
-\bibcite{roth2007efficient}{{9}{2007}{{Roth et~al\unhbox \voidb@x \hbox {.}}}{{Roth, S{\"o}nmez, and {\"U}nver}}}
-\bibcite{unver2010dynamic}{{10}{2010}{{{\"U}nver}}{{{\"U}nver}}}
-\bibcite{wu2009genome}{{11}{2009}{{Wu et~al\unhbox \voidb@x \hbox {.}}}{{Wu, Chen, Hastie, Sobel, and Lange}}}
-\bibcite{zenios2001primum}{{12}{2001}{{Zenios et~al\unhbox \voidb@x \hbox {.}}}{{Zenios, Woodle, and Ross}}}
+\bibcite{akbarpour2017thickness}{{1}{2017}{{Akbarpour et~al\unhbox \voidb@x \hbox {.}}}{{Akbarpour, Li, and Oveis~Gharan}}}
+\bibcite{ashlagi2013kidney}{{2}{2013}{{Ashlagi et~al\unhbox \voidb@x \hbox {.}}}{{Ashlagi, Jaillet, and Manshadi}}}
+\bibcite{awasthi2009online}{{3}{2009}{{Awasthi and Sandholm}}{{Awasthi and Sandholm}}}
+\bibcite{breiman2001random}{{4}{2001}{{Breiman}}{{Breiman}}}
+\bibcite{cecka2010calculated}{{5}{2010}{{Cecka}}{{Cecka}}}
+\bibcite{cortes1995support}{{6}{1995}{{Cortes and Vapnik}}{{Cortes and Vapnik}}}
+\bibcite{dickerson2015futurematch}{{7}{2015}{{Dickerson and Sandholm}}{{Dickerson and Sandholm}}}
+\bibcite{friedman2001greedy}{{8}{2001}{{Friedman}}{{Friedman}}}
+\bibcite{goodfellow2016deep}{{9}{2016}{{Goodfellow et~al\unhbox \voidb@x \hbox {.}}}{{Goodfellow, Bengio, and Courville}}}
+\bibcite{grover2016node2vec}{{10}{2016}{{Grover and Leskovec}}{{Grover and Leskovec}}}
+\bibcite{lattimore2018bandits}{{11}{2018}{{Lattimore and Szepesvari}}{{Lattimore and Szepesvari}}}
+\bibcite{newman2010networks}{{12}{2010}{{Newman}}{{Newman}}}
+\bibcite{optn2013cpra}{{13}{2013}{{{Organ Procurement and Transplantation Network}}}{{{Organ Procurement and Transplantation Network}}}}
+\bibcite{roth2004kidney}{{14}{2004}{{Roth et~al\unhbox \voidb@x \hbox {.}}}{{Roth, S{\"o}nmez, and {\"U}nver}}}
+\bibcite{roth2005pairwise}{{15}{2005}{{Roth et~al\unhbox \voidb@x \hbox {.}}}{{Roth, S{\"o}nmez, and {\"U}nver}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Multi-armed bandit methods}{10}{subsection.5.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{10}{section.6}}
+\@writefile{toc}{\contentsline {paragraph}{Summary}{10}{section*.24}}
+\@writefile{toc}{\contentsline {paragraph}{Extensions}{10}{section*.25}}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Conclusions}{10}{section.7}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}Sections}{10}{appendix.A}}
+\@writefile{toc}{\contentsline {section}{\numberline {B}Supplementary materials}{10}{appendix.B}}
+\@writefile{toc}{\contentsline {section}{Acknowledgments}{10}{section*.28}}
+\@writefile{toc}{\contentsline {section}{References}{10}{section*.30}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces \textbf  {Traditional methods}   Performance of traditional econometric and classification methods when predicting whether a node will be matched (1) or not (0). \emph  {Additional} refers to extra information about graph structure passed to the classifier: \emph  {Graph Stats} are graph-theoretical measures of node characteristics such as centrality; \emph  {Embedding} is a 10-dimensional real embedding of the node provided by node2vec \citep  {grover2016node2vec}. Recall is true positive rate $\frac  {tp}{tp+fn}$; Specificity is true negative rate $\frac  {tp}{tn+fp}$; Precision is $\frac  {tp}{tp+fp}$; Accuracy is $\frac  {tp+tn}{tp+tn+fp+fn}$. See section \ref  {sec:[[[]]]} for methodology and section \ref  {sec:[[[]]]} for discussion of results. \relax }}{11}{table.caption.26}}
+\newlabel{tab:tradional_ml_classifier}{{1}{11}{\textbf {Traditional methods} \\ Performance of traditional econometric and classification methods when predicting whether a node will be matched (1) or not (0). \emph {Additional} refers to extra information about graph structure passed to the classifier: \emph {Graph Stats} are graph-theoretical measures of node characteristics such as centrality; \emph {Embedding} is a 10-dimensional real embedding of the node provided by node2vec \citep {grover2016node2vec}. Recall is true positive rate $\frac {tp}{tp+fn}$; Specificity is true negative rate $\frac {tp}{tn+fp}$; Precision is $\frac {tp}{tp+fp}$; Accuracy is $\frac {tp+tn}{tp+tn+fp+fn}$. See section \ref {sec:[[[]]]} for methodology and section \ref {sec:[[[]]]} for discussion of results. \relax }{table.caption.26}{}}
+\bibcite{roth2007efficient}{{16}{2007}{{Roth et~al\unhbox \voidb@x \hbox {.}}}{{Roth, S{\"o}nmez, and {\"U}nver}}}
+\bibcite{unver2010dynamic}{{17}{2010}{{{\"U}nver}}{{{\"U}nver}}}
+\bibcite{wu2009genome}{{18}{2009}{{Wu et~al\unhbox \voidb@x \hbox {.}}}{{Wu, Chen, Hastie, Sobel, and Lange}}}
+\bibcite{zenios2001primum}{{19}{2001}{{Zenios et~al\unhbox \voidb@x \hbox {.}}}{{Zenios, Woodle, and Ross}}}
 \newlabel{tocindent-1}{0pt}
 \newlabel{tocindent0}{0pt}
 \newlabel{tocindent1}{0pt}
 \newlabel{tocindent2}{0pt}
 \newlabel{tocindent3}{0pt}
-\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces Function \texttt  {choose\_cycle}\relax }}{9}{algocf.3}}
-\newlabel{alg:choose_cycle}{{3}{9}{Extensions}{algocf.3}{}}
-\@writefile{toc}{\contentsline {section}{References}{9}{section*.29}}
-\newlabel{TotPages}{{9}{9}{}{page.9}{}}
+\newlabel{TotPages}{{12}{12}{}{page.12}{}}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  11 FEB 2018 02:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  11 FEB 2018 22:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -630,67 +630,67 @@ subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
 ) (./kidney-ec-submission.aux)
 \openout1 = `kidney-ec-submission.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 19.
-LaTeX Font Info:    Try loading font information for OML+nxlmi on input line 19.
+LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 20.
+LaTeX Font Info:    Try loading font information for OML+nxlmi on input line 20.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/newtx/omlnxlmi.fd
 File: omlnxlmi.fd 2013/11/19 Fontinst v1.933 font definitions for OML/nxlmi.
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/ntxsy/m/n on input line 19.
-LaTeX Font Info:    Try loading font information for OMS+ntxsy on input line 19.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/ntxsy/m/n on input line 20.
+LaTeX Font Info:    Try loading font information for OMS+ntxsy on input line 20.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/newtx/omsntxsy.fd
 File: omsntxsy.fd 2012/11/14 Fontinst v1.933 font definitions for OMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 19.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 19.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 20.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 20.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 19.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 20.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 19.
+(Font)              scaled to size 8.0pt on input line 20.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.2pt on input line 19.
+(Font)              scaled to size 6.2pt on input line 20.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.5pt on input line 19.
-LaTeX Font Info:    Try loading font information for U+msa on input line 19.
+(Font)              scaled to size 5.5pt on input line 20.
+LaTeX Font Info:    Try loading font information for U+msa on input line 20.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 19.
+LaTeX Font Info:    Try loading font information for U+msb on input line 20.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 19.
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 20.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 19.
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 20.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 19.
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 20.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
-LaTeX Info: Redefining \microtypecontext on input line 19.
+LaTeX Info: Redefining \microtypecontext on input line 20.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -706,7 +706,7 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
  ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box42
-Package hyperref Info: Link coloring OFF on input line 19.
+Package hyperref Info: Link coloring OFF on input line 20.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -714,9 +714,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count133
 )
-LaTeX Info: Redefining \ref on input line 19.
-LaTeX Info: Redefining \pageref on input line 19.
-LaTeX Info: Redefining \nameref on input line 19.
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
  (./kidney-ec-submission.out) (./kidney-ec-submission.out)
 \@outlinefile=\write4
 \openout4 = `kidney-ec-submission.out'.
@@ -819,21 +819,23 @@ LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
 (Font)              scaled to size 10.0pt on input line 42.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/it' will be
 (Font)              scaled to size 10.0pt on input line 42.
-
-Underfull \vbox (badness 7151) has occurred while \output is active []
-
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
+(Font)              scaled to size 10.0pt on input line 51.
+Package microtype Info: Character `013' is missing
+(microtype)             in font `OT1/LinuxLibertineT-TLF/m/sc/10'.
+(microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 58.
+(Font)              scaled to size 8.0pt on input line 57.
  [1.1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 71.
+(Font)              scaled to size 7.3pt on input line 77.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 ) [2.2]
-./kidney-ec-submission.tex:93: Undefined control sequence.
-l.93 ...onor \cite{cecka2010calculated}, our \meph
+./kidney-ec-submission.tex:97: Undefined control sequence.
+l.97 ...onor \cite{cecka2010calculated}, our \meph
                                                   {donor cPRA} is a novel me...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -841,29 +843,38 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-</Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cPRA.pdf, id=142, 867.24pt x 289.08pt>
+</Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cPRA.pdf, id=171, 867.24pt x 289.08pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cPRA.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cPRA.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cPRA.pdf used on input line 98.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cPRA.pdf used on input line 102.
 (pdftex.def)             Requested size: 395.8225pt x 131.94182pt.
 LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 99.
+(Font)              scaled to size 9.0pt on input line 104.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/bx/n' in size <9> not available
+(Font)              Font shape `OT1/LinuxBiolinumT-TLF/b/n' tried instead on input line 104.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 9.0pt on input line 104.
  [3.3]
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/scit' will be
-(Font)              scaled to size 10.0pt on input line 120.
-LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 124.
- </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf, id=155, 1300.86pt x 361.35pt>
+(Font)              scaled to size 10.0pt on input line 125.
+ [4.4 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cPRA.pdf>] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf, id=222, 1300.86pt x 361.35pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf used on input line 129.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf used on input line 134.
 (pdftex.def)             Requested size: 554.14906pt x 153.93286pt.
 
-Overfull \hbox (60.40894pt too wide) in paragraph at lines 128--130
+Overfull \hbox (60.40894pt too wide) in paragraph at lines 133--136
  []|  [] 
  []
 
-LaTeX Font Info:    Try loading font information for OT1+zi4 on input line 130.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/bx/sc' in size <9> not available
+(Font)              Font shape `OT1/LinuxBiolinumT-TLF/b/sc' tried instead on input line 136.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/sc' will be
+(Font)              scaled to size 9.0pt on input line 136.
+Package microtype Info: Character `013' is missing
+(microtype)             in font `OT1/LinuxBiolinumT-TLF/b/sc/9'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Try loading font information for OT1+zi4 on input line 136.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/inconsolata/ot1zi4.fd
 File: ot1zi4.fd 2014/06/22 OT1/zi4 (Inconsolata)
 )
@@ -871,616 +882,647 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `zi4' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4.4 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cPRA.pdf>]
+ </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf, id=225, 569.25975pt x 136.01515pt>
+File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf Graphic file (type pdf)
+ <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf>
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf used on input line 156.
+(pdftex.def)             Requested size: 395.8225pt x 94.57487pt.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 143.
+(Font)              scaled to size 9.0pt on input line 169.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 9.0pt on input line 143.
+(Font)              scaled to size 9.0pt on input line 169.
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/LinuxLibertineT-TLF/m/sc/9'.
 (microtype)             Ignoring protrusion settings for this character.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 158.
+(Font)              scaled to size 9.0pt on input line 184.
 
 
 LaTeX Font Warning: Font shape `OT1/zi4/m/sc' undefined
-(Font)              using `OT1/zi4/m/n' instead on input line 158.
+(Font)              using `OT1/zi4/m/n' instead on input line 184.
 
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/scit' will be
-(Font)              scaled to size 9.0pt on input line 158.
+(Font)              scaled to size 9.0pt on input line 184.
 
-./kidney-ec-submission.tex:158: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:184: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.158   }
+l.184   }
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./kidney-ec-submission.tex:158: Missing $ inserted.
+./kidney-ec-submission.tex:184: Missing $ inserted.
 <inserted text> 
                 $
-l.158   }
+l.184   }
          
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./kidney-ec-submission.tex:158: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:184: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.158   }
+l.184   }
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./kidney-ec-submission.tex:158: Missing $ inserted.
+./kidney-ec-submission.tex:184: Missing $ inserted.
 <inserted text> 
                 $
-l.158   }
+l.184   }
          
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./kidney-ec-submission.tex:158: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:184: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.158   }
+l.184   }
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./kidney-ec-submission.tex:158: Missing $ inserted.
+./kidney-ec-submission.tex:184: Missing $ inserted.
 <inserted text> 
                 $
-l.158   }
+l.184   }
          
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./kidney-ec-submission.tex:158: Missing $ inserted.
+./kidney-ec-submission.tex:184: Missing $ inserted.
 <inserted text> 
                 $
-l.158   }
-         
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-./kidney-ec-submission.tex:158: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.158   }
-         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./kidney-ec-submission.tex:158: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.158   }
-         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./kidney-ec-submission.tex:158: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.158   }
-         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-</Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf, id=193, 569.25975pt x 136.01515pt>
-File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf Graphic file (type pdf)
- <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf used on input line 176.
-(pdftex.def)             Requested size: 395.8225pt x 94.57487pt.
- [5.5 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf>]
-
-LaTeX Warning: Reference `tab:direct_prediction' on page 6 undefined on input line 186.
-
-
-LaTeX Warning: Reference `fig:mab_step' on page 6 undefined on input line 194.
-
-[6.6 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf>] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf, id=357, 520.6411pt x 135.80737pt>
-File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf Graphic file (type pdf)
- <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf used on input line 217.
-(pdftex.def)             Requested size: 395.8225pt x 103.2499pt.
- </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf, id=358, 488.59137pt x 149.45135pt>
-File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf Graphic file (type pdf)
- <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf used on input line 225.
-(pdftex.def)             Requested size: 395.8225pt x 121.08pt.
-LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/bx/n' in size <9> not available
-(Font)              Font shape `OT1/LinuxBiolinumT-TLF/b/n' tried instead on input line 226.
-LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 226.
-LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/sc' will be
-(Font)              scaled to size 9.0pt on input line 226.
-Package microtype Info: Character `013' is missing
-(microtype)             in font `OT1/LinuxBiolinumT-TLF/m/sc/9'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 9.0pt on input line 226.
- </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf, id=360, 372.72551pt x 54.02605pt>
-File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf Graphic file (type pdf)
- <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf used on input line 239.
-(pdftex.def)             Requested size: 376.03015pt x 54.50568pt.
-
-
-./kidney-ec-submission.tex:271: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.271   }
-         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./kidney-ec-submission.tex:271: Missing $ inserted.
-<inserted text> 
-                $
-l.271   }
+l.184   }
          
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./kidney-ec-submission.tex:271: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:184: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.271   }
+l.184   }
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./kidney-ec-submission.tex:271: Missing $ inserted.
-<inserted text> 
-                $
-l.271   }
-         
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-
-./kidney-ec-submission.tex:271: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:184: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.271   }
+l.184   }
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./kidney-ec-submission.tex:271: Missing $ inserted.
-<inserted text> 
-                $
-l.271   }
-         
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-
-./kidney-ec-submission.tex:271: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:184: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.271   }
+l.184   }
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./kidney-ec-submission.tex:271: Missing $ inserted.
-<inserted text> 
-                $
-l.271   }
-         
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
+LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 185.
+[5.5 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf> </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf
+
+pdfTeX warning: pdflatex (file /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+
+LaTeX Warning: Reference `tab:direct_prediction' on page 6 undefined on input line 194.
+
+[6.6]
+
+LaTeX Warning: Reference `fig:mab_step' on page 7 undefined on input line 203.
 
 
-./kidney-ec-submission.tex:271: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:239: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.271   }
-         
+l.239    }
+          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./kidney-ec-submission.tex:239: Missing $ inserted.
+<inserted text> 
+                $
+l.239    }
+          
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./kidney-ec-submission.tex:239: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239    }
+          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./kidney-ec-submission.tex:239: Missing $ inserted.
+<inserted text> 
+                $
+l.239    }
+          
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./kidney-ec-submission.tex:239: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239    }
+          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./kidney-ec-submission.tex:239: Missing $ inserted.
+<inserted text> 
+                $
+l.239    }
+          
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./kidney-ec-submission.tex:239: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239    }
+          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./kidney-ec-submission.tex:239: Missing $ inserted.
+<inserted text> 
+                $
+l.239    }
+          
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./kidney-ec-submission.tex:239: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.239    }
+          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
 LaTeX Font Warning: Font shape `OT1/zi4/m/it' undefined
-(Font)              using `OT1/zi4/m/n' instead on input line 314.
+(Font)              using `OT1/zi4/m/n' instead on input line 282.
 
 
-./kidney-ec-submission.tex:314: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.314     }
-           
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./kidney-ec-submission.tex:314: Missing $ inserted.
-<inserted text> 
-                $
-l.314     }
-           
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-./kidney-ec-submission.tex:314: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:282: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314     }
-           
+l.282      }
+            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./kidney-ec-submission.tex:314: Missing $ inserted.
+./kidney-ec-submission.tex:282: Missing $ inserted.
 <inserted text> 
                 $
-l.314     }
-           
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./kidney-ec-submission.tex:314: Missing $ inserted.
-<inserted text> 
-                $
-l.314     }
-           
+l.282      }
+            
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./kidney-ec-submission.tex:314: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:282: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314     }
-           
+l.282      }
+            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./kidney-ec-submission.tex:314: Missing $ inserted.
+./kidney-ec-submission.tex:282: Missing $ inserted.
 <inserted text> 
                 $
-l.314     }
-           
+l.282      }
+            
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./kidney-ec-submission.tex:314: Missing $ inserted.
+./kidney-ec-submission.tex:282: Missing $ inserted.
 <inserted text> 
                 $
-l.314     }
-           
+l.282      }
+            
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./kidney-ec-submission.tex:314: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:282: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314     }
-           
+l.282      }
+            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./kidney-ec-submission.tex:314: Missing $ inserted.
+./kidney-ec-submission.tex:282: Missing $ inserted.
 <inserted text> 
                 $
-l.314     }
-           
+l.282      }
+            
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./kidney-ec-submission.tex:282: Missing $ inserted.
+<inserted text> 
+                $
+l.282      }
+            
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./kidney-ec-submission.tex:314: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:282: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314     }
-           
+l.282      }
+            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+./kidney-ec-submission.tex:282: Missing $ inserted.
+<inserted text> 
+                $
+l.282      }
+            
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
-./kidney-ec-submission.tex:314: LaTeX Error: There's no line here to end.
+
+./kidney-ec-submission.tex:282: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314     }
-           
+l.282      }
+            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./kidney-ec-submission.tex:314: Missing $ inserted.
-<inserted text> 
-                $
-l.314     }
-           
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-
-./kidney-ec-submission.tex:314: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:282: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314     }
-           
+l.282      }
+            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./kidney-ec-submission.tex:314: Missing $ inserted.
+./kidney-ec-submission.tex:282: Missing $ inserted.
 <inserted text> 
                 $
-l.314     }
-           
+l.282      }
+            
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./kidney-ec-submission.tex:314: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:282: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314     }
-           
+l.282      }
+            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./kidney-ec-submission.tex:314: Missing $ inserted.
+./kidney-ec-submission.tex:282: Missing $ inserted.
 <inserted text> 
                 $
-l.314     }
-           
+l.282      }
+            
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./kidney-ec-submission.tex:314: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:282: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314     }
-           
+l.282      }
+            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./kidney-ec-submission.tex:314: Missing $ inserted.
+./kidney-ec-submission.tex:282: Missing $ inserted.
 <inserted text> 
                 $
-l.314     }
-           
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./kidney-ec-submission.tex:314: Missing $ inserted.
-<inserted text> 
-                $
-l.314     }
-           
+l.282      }
+            
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./kidney-ec-submission.tex:314: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:282: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314     }
-           
+l.282      }
+            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./kidney-ec-submission.tex:314: Missing $ inserted.
+./kidney-ec-submission.tex:282: Missing $ inserted.
 <inserted text> 
                 $
-l.314     }
-           
+l.282      }
+            
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./kidney-ec-submission.tex:314: Missing $ inserted.
+./kidney-ec-submission.tex:282: Missing $ inserted.
 <inserted text> 
                 $
-l.314     }
-           
+l.282      }
+            
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./kidney-ec-submission.tex:314: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:282: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314     }
-           
+l.282      }
+            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./kidney-ec-submission.tex:314: Missing $ inserted.
+./kidney-ec-submission.tex:282: Missing $ inserted.
 <inserted text> 
                 $
-l.314     }
-           
+l.282      }
+            
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./kidney-ec-submission.tex:282: Missing $ inserted.
+<inserted text> 
+                $
+l.282      }
+            
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./kidney-ec-submission.tex:314: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:282: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314     }
-           
+l.282      }
+            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./kidney-ec-submission.tex:314: Missing $ inserted.
+./kidney-ec-submission.tex:282: Missing $ inserted.
 <inserted text> 
                 $
-l.314     }
-           
+l.282      }
+            
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./kidney-ec-submission.tex:314: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:282: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314     }
-           
+l.282      }
+            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./kidney-ec-submission.tex:314: Missing $ inserted.
+./kidney-ec-submission.tex:282: Missing $ inserted.
 <inserted text> 
                 $
-l.314     }
-           
+l.282      }
+            
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./kidney-ec-submission.tex:314: LaTeX Error: There's no line here to end.
+./kidney-ec-submission.tex:282: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.314     }
-           
+l.282      }
+            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./kidney-ec-submission.tex:282: Missing $ inserted.
+<inserted text> 
+                $
+l.282      }
+            
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./kidney-ec-submission.tex:282: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.282      }
+            
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (3.33401pt too wide) detected at line 318
+Overfull \hbox (3.33401pt too wide) detected at line 286
 [][] [][] []
  []
 
-./kidney-ec-submission.tex:318: Extra }, or forgotten \endgroup.
+./kidney-ec-submission.tex:286: Extra }, or forgotten \endgroup.
 \@algocf@finish ... {\skipalgocfslide }}{}\egroup 
                                                   \end {lrbox}\algocf@maketh...
-l.318 \end{algorithm}
-                     
+l.286  \end{algorithm}
+                      
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
+</Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf, id=398, 520.6411pt x 135.80737pt>
+File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf Graphic file (type pdf)
+ <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf>
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf used on input line 292.
+(pdftex.def)             Requested size: 395.8225pt x 103.2499pt.
+ </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf, id=399, 488.59137pt x 149.45135pt>
+File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf Graphic file (type pdf)
+ <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf>
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf used on input line 301.
+(pdftex.def)             Requested size: 395.8225pt x 121.08pt.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/sc' will be
+(Font)              scaled to size 9.0pt on input line 302.
+Package microtype Info: Character `013' is missing
+(microtype)             in font `OT1/LinuxBiolinumT-TLF/m/sc/9'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `OT1/LinuxBiolinumT-TLF/m/it' will be
+(Font)              scaled to size 9.0pt on input line 302.
+ </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf, id=401, 376.68932pt x 54.09259pt>
+File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf Graphic file (type pdf)
+ <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf>
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf used on input line 312.
+(pdftex.def)             Requested size: 376.03015pt x 53.99753pt.
+ [7.7]
+
+LaTeX Warning: Reference `tab:traditional_ml_classifier' on page 8 undefined on input line 331.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8.8] [9.9 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf> </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf
+
+pdfTeX warning: pdflatex (file /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+> </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf>]
+./kidney-ec-submission.tex:372: Undefined control sequence.
+l.372   \singlespacing
+                      
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+(/Users/vitorhadad/Documents/kidney/matching/phd_thesis/tables/traditional_ml_classifier.tex)
+Overfull \hbox (17.99123pt too wide) in paragraph at lines 373--375
+ []|  [] 
+ []
+
+
+LaTeX Warning: Reference `sec:[[[]]]' on page 10 undefined on input line 375.
+
+
+LaTeX Warning: Reference `sec:[[[]]]' on page 10 undefined on input line 375.
+
+
+LaTeX Warning: Reference `sec:[[[]]]' on page 10 undefined on input line 375.
+
+
+LaTeX Warning: Reference `sec:[[[]]]' on page 10 undefined on input line 375.
+
 Processing 'acks' comment.
 \openout3 = `comment.cut'.
 
- Comment 'acks' writing to comment.cut. Straight input of comment.cut. (./comment.cut
-Underfull \vbox (badness 1158) has occurred while \output is active []
-
- [7.7 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf>]) (./kidney-ec-submission.bbl [8.8 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf> </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf>]) [9.9]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 348.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 348.
+ Comment 'acks' writing to comment.cut. Straight input of comment.cut. (./comment.cut) (./kidney-ec-submission.bbl [10.10] [11.11]) [12.12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 394.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 394.
  (./kidney-ec-submission.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 348.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 348.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 394.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 394.
 Package rerunfilecheck Info: File `kidney-ec-submission.out' has not changed.
-(rerunfilecheck)             Checksum: 38CBF495BD622D3FEB64C886D694FB27;1258.
+(rerunfilecheck)             Checksum: 340BE9FF5C5C12EFF4AACF22CCED6020;1431.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1488,23 +1530,23 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 348.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 394.
  ) 
 Here is how much of TeX's memory you used:
- 15449 strings out of 493089
- 241441 string characters out of 6134842
- 380154 words of memory out of 5000000
- 18038 multiletter control sequences out of 15000+600000
- 138030 words of font info for 433 fonts, out of 8000000 for 9000
+ 15562 strings out of 493089
+ 244479 string characters out of 6134842
+ 392285 words of memory out of 5000000
+ 18071 multiletter control sequences out of 15000+600000
+ 145630 words of font info for 477 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,19n,94p,1838b,578s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_c6xmqr.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_p657rp.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_tltjc6.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/inconsolata/i4-ot1-4.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_lu7m2n.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_w6afmj.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_xogrpz.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_zajy4r.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinBi
-olinumT.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineTBI.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newtx/fxlri-7letters.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newtx/rtxmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newtx/zxlr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newtx/zxlri.pfb>
-Output written on kidney-ec-submission.pdf (9 pages, 3755588 bytes).
+ 60i,19n,94p,1838b,583s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_c6xmqr.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_p657rp.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/newtx/libertinealt.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_lu7m2n.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/inconsolata/i4-ot1-4.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_s5bq4i.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_w6afmj.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_tltjc6.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_xogrpz.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_zajy4r.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/libertine/lbtn_c7kyj5.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/inconsolata/Inconsolata-z
+i4r.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinBiolinumT.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinBiolinumTI.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineT.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineTB.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineTBI.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/libertine/LinLibertineTI.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/newtx/fxlri-7letters.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newtx/rtxmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newtx/zxlr.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/newtx/zxlri.pfb>
+Output written on kidney-ec-submission.pdf (12 pages, 3808517 bytes).
 PDF statistics:
- 687 PDF objects out of 1000 (max. 8388607)
- 465 compressed objects within 5 object streams
- 77 named destinations out of 1000 (max. 500000)
- 67271 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 752 PDF objects out of 1000 (max. 8388607)
+ 522 compressed objects within 6 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 71895 words of extra memory for PDF output out of 74296 (max. 10000000)
 
