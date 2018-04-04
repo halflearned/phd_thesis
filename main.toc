@@ -1,0 +1,79 @@
+\contentsline {chapter}{Abstract}{ii}
+\contentsline {chapter}{Acknowledgements}{iii}
+\contentsline {chapter}{List of Figures}{vi}
+\contentsline {chapter}{List of Tables}{viii}
+\contentsline {chapter}{List of Abbreviations}{xi}
+\contentsline {part}{I\hspace {1em}Heterogeneous}{1}
+\contentsline {chapter}{\numberline {1}Heterogenous Production Functions, Panel Data, and Productivity Dispersion}{2}
+\contentsline {section}{\numberline {1}Introduction}{2}
+\contentsline {section}{\numberline {2}Literature review}{3}
+\contentsline {section}{\numberline {3}Model and assumptions}{6}
+\contentsline {section}{\numberline {4}Identifying random coefficient moments}{7}
+\contentsline {subsection}{\numberline {4.1}First period moments}{8}
+\contentsline {paragraph}{Step 1}{8}
+\contentsline {paragraph}{Step 2}{9}
+\contentsline {paragraph}{Step 3}{9}
+\contentsline {paragraph}{Step 4}{10}
+\contentsline {subsection}{\numberline {4.2}Second period moments}{10}
+\contentsline {paragraph}{Step 1}{10}
+\contentsline {paragraph}{Steps 2-3}{11}
+\contentsline {paragraph}{Step 4}{11}
+\contentsline {subsection}{\numberline {4.3}Identifying further moments}{11}
+\contentsline {paragraph}{Assumption 3.1'}{12}
+\contentsline {subsection}{\numberline {4.4}Extension: fixed coefficients}{12}
+\contentsline {subsection}{\numberline {4.5}Identifying the marginal distribution of random coefficients}{12}
+\contentsline {section}{\numberline {5}Estimation}{13}
+\contentsline {paragraph}{First moments}{13}
+\contentsline {paragraph}{Second moments}{14}
+\contentsline {paragraph}{Conditional moments of $Y_1$ and $Y_2$}{14}
+\contentsline {paragraph}{Solving for first moments}{14}
+\contentsline {section}{\numberline {6}Simulations}{15}
+\contentsline {subsection}{\numberline {6.1}Bootstrap coverage}{17}
+\contentsline {section}{\numberline {7}Empirical application}{18}
+\contentsline {section}{\numberline {8}Appendix}{26}
+\contentsline {subsection}{\numberline {8.1}Summary statistics}{26}
+\contentsline {subsection}{\numberline {8.2}Simulation results}{27}
+\contentsline {subsection}{\numberline {8.3}Python module \texttt {FHHPS}}{31}
+\contentsline {part}{II\hspace {1em}Kidney Exchange}{34}
+\contentsline {chapter}{\numberline {2}Two novel algorithms for dynamic kidney exchange}{35}
+\contentsline {section}{\numberline {1}Introduction}{35}
+\contentsline {paragraph}{\textbf {Main idea}}{36}
+\contentsline {paragraph}{\textbf {Main results}}{37}
+\contentsline {subsection}{\numberline {1.1}Related literature}{38}
+\contentsline {subsubsection}{\numberline {1.1.1}Kidney Exchange}{38}
+\contentsline {paragraph}{Early years}{38}
+\contentsline {paragraph}{Recent advances in static exchange}{38}
+\contentsline {paragraph}{Dynamic kidney exchange}{39}
+\contentsline {paragraph}{Computer science and machine learning}{40}
+\contentsline {paragraph}{Sequential decision problems}{41}
+\contentsline {section}{\numberline {2}Background and definitions}{43}
+\contentsline {paragraph}{Medical background}{43}
+\contentsline {paragraph}{Technical definitions}{43}
+\contentsline {subsection}{\numberline {2.1}Environments}{44}
+\contentsline {subsection}{\numberline {2.2}ABO Environment}{45}
+\contentsline {subsection}{\numberline {2.3}RSU Environment}{45}
+\contentsline {subsection}{\numberline {2.4}OPTN Environment}{46}
+\contentsline {paragraph}{Patient and donor cPRA}{47}
+\contentsline {paragraph}{Artificial dataset}{48}
+\contentsline {section}{\numberline {3}Methods}{48}
+\contentsline {subsection}{\numberline {3.1}Objective and benchmarks}{48}
+\contentsline {paragraph}{Objective}{48}
+\contentsline {paragraph}{Benchmarks}{49}
+\contentsline {paragraph}{\textsc {Myopic}}{49}
+\contentsline {paragraph}{Optimal (\textsc {OPT})}{50}
+\contentsline {paragraph}{\textbf {Remark}}{50}
+\contentsline {section}{\numberline {4}Algorithms}{51}
+\contentsline {subsection}{\numberline {4.1}Direct prediction}{51}
+\contentsline {paragraph}{Training the classifier}{52}
+\contentsline {subsection}{\numberline {4.2}Multi-armed bandit methods}{53}
+\contentsline {paragraph}{UCB1}{55}
+\contentsline {paragraph}{Thompson sampling}{56}
+\contentsline {paragraph}{What are pseudo-rewards?}{56}
+\contentsline {section}{\numberline {5}Results}{61}
+\contentsline {subsection}{\numberline {5.1}Direct prediction methods}{61}
+\contentsline {subsection}{\numberline {5.2}Multi-armed bandit methods}{62}
+\contentsline {section}{\numberline {6}Extensions and future work}{64}
+\contentsline {paragraph}{Improving the direct prediction method}{64}
+\contentsline {section}{\numberline {7}Conclusion}{67}
+\contentsline {section}{\numberline {8}Tables}{68}
+\contentsline {chapter}{Bibliography}{78}

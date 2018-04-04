@@ -1,0 +1,262 @@
+\begin{thebibliography}{}
+
+\bibitem[sli, 2011]{slivkins2018introduction}
+ (2011).
+\newblock In {\em Advances in neural information processing systems}, pages
+  2249--2257.
+
+\bibitem[Abdulkadiro{\u{g}}lu and S{\"o}nmez, 1999]{abdulkadirouglu1999house}
+Abdulkadiro{\u{g}}lu, A. and S{\"o}nmez, T. (1999).
+\newblock House allocation with existing tenants.
+\newblock {\em Journal of Economic Theory}, 88(2):233--260.
+
+\bibitem[Abraham et~al., 2007]{abraham2007clearing}
+Abraham, D.~J., Blum, A., and Sandholm, T. (2007).
+\newblock Clearing algorithms for barter exchange markets: Enabling nationwide
+  kidney exchanges.
+\newblock In {\em Proceedings of the 8th ACM conference on Electronic
+  commerce}, pages 295--304. ACM.
+
+\bibitem[Agrawal, 1995]{agrawal1995sample}
+Agrawal, R. (1995).
+\newblock Sample mean based index policies by o (log n) regret for the
+  multi-armed bandit problem.
+\newblock {\em Advances in Applied Probability}, 27(4):1054--1078.
+
+\bibitem[Agrawal and Goyal, 2012]{agrawal2012analysis}
+Agrawal, S. and Goyal, N. (2012).
+\newblock Analysis of thompson sampling for the multi-armed bandit problem.
+\newblock In {\em Conference on Learning Theory}, pages 39--1.
+
+\bibitem[Akbarpour et~al., 2017]{akbarpour2017thickness}
+Akbarpour, M., Li, S., and Oveis~Gharan, S. (2017).
+\newblock Thickness and information in dynamic matching markets.
+
+\bibitem[Anderson et~al., 2015]{anderson2015finding}
+Anderson, R., Ashlagi, I., Gamarnik, D., and Roth, A.~E. (2015).
+\newblock Finding long chains in kidney exchange using the traveling salesman
+  problem.
+\newblock {\em Proceedings of the National Academy of Sciences},
+  112(3):663--668.
+
+\bibitem[Ashlagi et~al., 2012]{ashlagi2012need}
+Ashlagi, I., Gamarnik, D., Rees, M.~A., and Roth, A.~E. (2012).
+\newblock The need for (long) chains in kidney exchange.
+\newblock Technical report, National Bureau of Economic Research.
+
+\bibitem[Ashlagi et~al., 2011]{ashlagi2011nonsimultaneous}
+Ashlagi, I., Gilchrist, D.~S., Roth, A.~E., and Rees, M.~A. (2011).
+\newblock Nonsimultaneous chains and dominos in kidney-paired
+  donation—revisited.
+\newblock {\em American Journal of transplantation}, 11(5):984--994.
+
+\bibitem[Ashlagi et~al., 2013]{ashlagi2013kidney}
+Ashlagi, I., Jaillet, P., and Manshadi, V.~H. (2013).
+\newblock Kidney exchange in dynamic sparse heterogenous pools.
+\newblock {\em arXiv preprint arXiv:1301.3509}.
+
+\bibitem[Auer et~al., 2002]{auer2002finite}
+Auer, P., Cesa-Bianchi, N., and Fischer, P. (2002).
+\newblock Finite-time analysis of the multiarmed bandit problem.
+\newblock {\em Machine learning}, 47(2-3):235--256.
+
+\bibitem[Awasthi and Sandholm, 2009]{awasthi2009online}
+Awasthi, P. and Sandholm, T. (2009).
+\newblock Online stochastic optimization in the large: Application to kidney
+  exchange.
+\newblock In {\em IJCAI}, volume~9, pages 405--411.
+
+\bibitem[Breiman, 2001]{breiman2001random}
+Breiman, L. (2001).
+\newblock Random forests.
+\newblock {\em Machine learning}, 45(1):5--32.
+
+\bibitem[Buitinck et~al., 2013]{sklearn_api}
+Buitinck, L., Louppe, G., Blondel, M., Pedregosa, F., Mueller, A., Grisel, O.,
+  Niculae, V., Prettenhofer, P., Gramfort, A., Grobler, J., Layton, R.,
+  VanderPlas, J., Joly, A., Holt, B., and Varoquaux, G. (2013).
+\newblock {API} design for machine learning software: experiences from the
+  scikit-learn project.
+\newblock In {\em ECML PKDD Workshop: Languages for Data Mining and Machine
+  Learning}, pages 108--122.
+
+\bibitem[Cecka, 2010]{cecka2010calculated}
+Cecka, J. (2010).
+\newblock Calculated pra (cpra): the new measure of sensitization for
+  transplant candidates.
+\newblock {\em American journal of transplantation}, 10(1):26--29.
+
+\bibitem[Defferrard et~al., 2016]{defferrard2016convolutional}
+Defferrard, M., Bresson, X., and Vandergheynst, P. (2016).
+\newblock Convolutional neural networks on graphs with fast localized spectral
+  filtering.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  3844--3852.
+
+\bibitem[Dickerson et~al., 2017]{dickerson2017small}
+Dickerson, J.~P., Kazachkov, A.~M., Procaccia, A.~D., and Sandholm, T. (2017).
+\newblock Small representations of big kidney exchange graphs.
+\newblock In {\em AAAI}, pages 487--493.
+
+\bibitem[Dickerson et~al., 2016]{dickerson2016position}
+Dickerson, J.~P., Manlove, D.~F., Plaut, B., Sandholm, T., and Trimble, J.
+  (2016).
+\newblock Position-indexed formulations for kidney exchange.
+\newblock In {\em Proceedings of the 2016 ACM Conference on Economics and
+  Computation}, pages 25--42. ACM.
+
+\bibitem[Dickerson et~al., 2012]{dickerson2012dynamic}
+Dickerson, J.~P., Procaccia, A.~D., and Sandholm, T. (2012).
+\newblock Dynamic matching via weighted myopia with application to kidney
+  exchange.
+\newblock In {\em AAAI}.
+
+\bibitem[Dickerson and Sandholm, 2015]{dickerson2015futurematch}
+Dickerson, J.~P. and Sandholm, T. (2015).
+\newblock Futurematch: Combining human value judgments and machine learning to
+  match in dynamic environments.
+\newblock In {\em AAAI}, pages 622--628.
+
+\bibitem[Friedman, 2001]{friedman2001greedy}
+Friedman, J.~H. (2001).
+\newblock Greedy function approximation: a gradient boosting machine.
+\newblock {\em Annals of statistics}, pages 1189--1232.
+
+\bibitem[Hoderlein et~al., 2010]{hoderlein2010analyzing}
+Hoderlein, S., Klemel{\"a}, J., and Mammen, E. (2010).
+\newblock Analyzing the random coefficient model nonparametrically.
+\newblock {\em Econometric Theory}, 26(3):804--837.
+
+\bibitem[Kaelbling et~al., 1996]{kaelbling1996reinforcement}
+Kaelbling, L.~P., Littman, M.~L., and Moore, A.~W. (1996).
+\newblock Reinforcement learning: A survey.
+\newblock {\em Journal of artificial intelligence research}, 4:237--285.
+
+\bibitem[Kaufmann et~al., 2012]{kaufmann2012thompson}
+Kaufmann, E., Korda, N., and Munos, R. (2012).
+\newblock Thompson sampling: An asymptotically optimal finite-time analysis.
+\newblock In {\em International Conference on Algorithmic Learning Theory},
+  pages 199--213. Springer.
+
+\bibitem[Kipf and Welling, 2016]{kipf2016semi}
+Kipf, T.~N. and Welling, M. (2016).
+\newblock Semi-supervised classification with graph convolutional networks.
+\newblock {\em arXiv preprint arXiv:1609.02907}.
+
+\bibitem[Lai and Robbins, 1985]{lai1985asymptotically}
+Lai, T.~L. and Robbins, H. (1985).
+\newblock Asymptotically efficient adaptive allocation rules.
+\newblock {\em Advances in applied mathematics}, 6(1):4--22.
+
+\bibitem[Lattimore and Szepesvari, 2018]{lattimore2018bandits}
+Lattimore, T. and Szepesvari, C. (2018).
+\newblock Bandit algorithms.
+
+\bibitem[LeCun et~al., 2015]{lecun2015deep}
+LeCun, Y., Bengio, Y., and Hinton, G. (2015).
+\newblock Deep learning.
+\newblock {\em nature}, 521(7553):436.
+
+\bibitem[Montgomery et~al., 2006]{montgomery2006domino}
+Montgomery, R.~A., Gentry, S.~E., Marks, W.~H., Warren, D.~S., Hiller, J.,
+  Houp, J., Zachary, A.~A., Melancon, J.~K., Maley, W.~R., Rabb, H., et~al.
+  (2006).
+\newblock Domino paired kidney donation: a strategy to make best use of live
+  non-directed donation.
+\newblock {\em The Lancet}, 368(9533):419--421.
+
+\bibitem[{Organ Procurement and Transplantation Network}, 2013]{optn2013cpra}
+{Organ Procurement and Transplantation Network} (2013).
+\newblock Current cpra calculation, updated 2013.
+
+\bibitem[Rapaport, 1986]{rapaport1986case}
+Rapaport, F.~T. (1986).
+\newblock The case for a living emotionally related international kidney donor
+  exchange registry.
+\newblock In {\em Transplantation proceedings}, volume~18, pages 5--9.
+
+\bibitem[Rees et~al., 2009]{rees2009nonsimultaneous}
+Rees, M.~A., Kopke, J.~E., Pelletier, R.~P., Segev, D.~L., Rutter, M.~E.,
+  Fabrega, A.~J., Rogers, J., Pankewycz, O.~G., Hiller, J., Roth, A.~E., et~al.
+  (2009).
+\newblock A nonsimultaneous, extended, altruistic-donor chain.
+\newblock {\em New England Journal of Medicine}, 360(11):1096--1101.
+
+\bibitem[Roth, 2015]{roth2015gets}
+Roth, A.~E. (2015).
+\newblock {\em Who Gets What—and Why: The New Economics of Matchmaking and
+  Market Design}.
+\newblock Houghton Mifflin Harcourt.
+
+\bibitem[Roth et~al., 2004]{roth2004kidney}
+Roth, A.~E., S{\"o}nmez, T., and {\"U}nver, M.~U. (2004).
+\newblock Kidney exchange.
+\newblock {\em The Quarterly Journal of Economics}, 119(2):457--488.
+
+\bibitem[Roth et~al., 2005]{roth2005pairwise}
+Roth, A.~E., S{\"o}nmez, T., and {\"U}nver, M.~U. (2005).
+\newblock Pairwise kidney exchange.
+\newblock {\em Journal of Economic theory}, 125(2):151--188.
+
+\bibitem[Roth et~al., 2007]{roth2007efficient}
+Roth, A.~E., S{\"o}nmez, T., and {\"U}nver, M.~U. (2007).
+\newblock Efficient kidney exchange: Coincidence of wants in markets with
+  compatibility-based preferences.
+\newblock {\em American Economic Review}, 97(3):828--851.
+
+\bibitem[Saidman et~al., 2006]{saidman2006increasing}
+Saidman, S.~L., Roth, A.~E., S{\"o}nmez, T., {\"U}nver, M.~U., and Delmonico,
+  F.~L. (2006).
+\newblock Increasing the opportunity of live kidney donation by matching for
+  two-and three-way exchanges.
+\newblock {\em Transplantation}, 81(5):773--782.
+
+\bibitem[Shapley and Scarf, 1974]{shapley1974cores}
+Shapley, L. and Scarf, H. (1974).
+\newblock On cores and indivisibility.
+\newblock {\em Journal of mathematical economics}, 1(1):23--37.
+
+\bibitem[Shuman et~al., 2013]{shuman2013emerging}
+Shuman, D.~I., Narang, S.~K., Frossard, P., Ortega, A., and Vandergheynst, P.
+  (2013).
+\newblock The emerging field of signal processing on graphs: Extending
+  high-dimensional data analysis to networks and other irregular domains.
+\newblock {\em IEEE Signal Processing Magazine}, 30(3):83--98.
+
+\bibitem[Thompson, 1933]{thompson1933likelihood}
+Thompson, W.~R. (1933).
+\newblock On the likelihood that one unknown probability exceeds another in
+  view of the evidence of two samples.
+\newblock {\em Biometrika}, 25(3/4):285--294.
+
+\bibitem[Tonelli et~al., 2011]{tonelli2011systematic}
+Tonelli, M., Wiebe, N., Knoll, G., Bello, A., Browne, S., Jadhav, D.,
+  Klarenbach, S., and Gill, J. (2011).
+\newblock Systematic review: kidney transplantation compared with dialysis in
+  clinically relevant outcomes.
+\newblock {\em American journal of transplantation}, 11(10):2093--2109.
+
+\bibitem[{\"U}nver, 2010]{unver2010dynamic}
+{\"U}nver, M.~U. (2010).
+\newblock Dynamic kidney exchange.
+\newblock {\em The Review of Economic Studies}, 77(1):372--414.
+
+\bibitem[Wooldridge, 2010]{wooldridge2010econometric}
+Wooldridge, J.~M. (2010).
+\newblock {\em Econometric analysis of cross section and panel data}.
+\newblock MIT press.
+
+\bibitem[Wu et~al., 2009]{wu2009genome}
+Wu, T.~T., Chen, Y.~F., Hastie, T., Sobel, E., and Lange, K. (2009).
+\newblock Genome-wide association analysis by lasso penalized logistic
+  regression.
+\newblock {\em Bioinformatics}, 25(6):714--721.
+
+\bibitem[Zenios et~al., 2001]{zenios2001primum}
+Zenios, S., Woodle, E.~S., and Ross, L.~F. (2001).
+\newblock Primum non nocere: avoiding increased waiting times for individual
+  racial and blood-type subsets of kidney wait list candidates in a living
+  donor/cadaveric donor exchange program.
+\newblock {\em Transplantation}, 72(4):648--654.
+
+\end{thebibliography}

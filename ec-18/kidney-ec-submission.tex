@@ -4,9 +4,12 @@
 
 \usepackage{booktabs} % For formal tables
 
+\usepackage{textgreek}
+
 \usepackage[ruled]{algorithm2e} % For algorithms
 
 \usepackage{ textcomp }
+\usepackage[demo]{graphicx}
 
 \renewcommand{\algorithmcfname}{ALGORITHM}
 \SetAlFnt{\small}
@@ -19,12 +22,12 @@
 
 \begin{document}
 % Title portion. Note the short title for running heads 
-\title[New strategies for dynamic kidney exchange]{New strategies for dynamic kidney exchange}  
+\title[Novel algorithms for dynamic kidney exchange]{Novel algorithms for dynamic kidney exchange}  
 \author{Submission 42}
 
 % note that the abstract must come before \maketitle
 \begin{abstract}
-[[Kidney exchange is great, provides a way to increase number of lives saved]] [[Most algorithms static, don't think about future]] [[There might be ways to improve, but literature still small]] [[This work adds two contributions to the literature]] [[Direct prediction method, MAB-based methods]] [[The latter can improve the average number of kidneys exchange by 3\% over the myopic algorithm]]
+In recent years, kidney paired donation (KPD) has emerged as an alternative for end-stage renal disease patients with incompatible living donors. However, we argue that a larger number of patients may be reached if kidney transplant centers take into consideration how their pool of patients and donors will evolve over time. To that end, we contribute to the matching literature in dynamic settings by proposing two novel kidney exchange methods, and empirically evaluate these methods using simulations. Our objective function is the average number of matched patients per period. We restrict our experiments to pairwise kidney exchange, but the methods described here are easily extensible, computational constraints permitting. We find that at least one of our methods, based on multi-armed bandit algorithms, is able to outperform the myopic method that is used by kidney transplants in practice, sometimes by as much as 4\%.
 \end{abstract}
 
 % note: this command has been disabled to remove the ACM copyright block. Sorry...
@@ -35,48 +38,56 @@
 
 \section{Introduction}
 
-[[Kidney exchange]]
+Patients suffering from end-stage renal disease have two available treatments: dialysis and renal transplant. While transplant is associated with ``lower mortality rates and improved quality of life compared to chronic dialysis treatment" \citep{tonelli2011systematic}, severe kidney shortage prevents tens of thousands of patients every year from receiving a transplant. In the US alone, there are currently over 90,000 patients in the kidney transplant waiting list, and patients often must wait several years before finding an available donor.
 
-[[Will interchangeably use the words 'node', 'vertex' and 'pair']]
+In order to overcome this challenge, in recent years \emph{kidney paired donation} (KPD) has emerged as an alternative option for patients who have an incompatible but otherwise willing living donor. The approach involves pooling patient-donor pairs and swapping or exchanging donors so as to increase the overall number of matched patients.
 
-\paragraph{\textbf{Main idea}} We propose and empirically evaluate two novel approaches for increasing the cardinality of matched pairs in a discrete time dynamic model of kidney exchange. Our two methods are named the \emph{direction estimation} and \emph{multi-armed-bandit} methods. The former recasts the dynamic kidney exchange problem as a binary classification task: for each pair in the pool, we predict a binary label representing whether they should be matched today (one), or left for the future (zero), given their observable characteristics. The latter uses simulations to select exchanges that are less likely to decrease the size of an optimal future matching. We restrict our analyses to pairwise exchanges (i.e., only two-cycles are allowed), but the ideas introduced here can be easily extended to more complex exchanges, computational constraints permitting.
+Kidney paired donation was proposed about three decades ago by \cite{rapaport1986case}, but its implementation in the United States began only in the early 2000s. At the same time, \cite{roth2004kidney} helped elevate KPD as an object of academic study, and since then it has evolved and expanded rapidly both in academic and outside of it. \citep{sonmez2013market}.
 
-Each of our two approaches faces their own challenges. In the \emph{direct estimation} method, one challenge is that an important part of our data -- the compatibility graph -- lives in a non-Euclidean space, and it is not obvious how to use it as an input to a classification algorithm. We attempt to apply a variety of new methods from the graphical signal processing literature to tackle this problem. [[[An additional challenge is that traditional classification algorithms are not equipped to produce dependent labels, but in our setting whether or not we decide that a certain pair is to be matched today ought to be related to our decisions about everyone else in the pool.]]]] 
+Nevertheless, even today the amount of kidney exchanges remains smaller than its potential, due to several reasons. As we will argue in this paper, one source of inefficiency in kidney exchange is that most transplant centers do not take into consideration the evolution of their kidney pool over time and, as we will demonstrate shortly via simulations, this can lead to large losses in terms of the overall number of pairs matched over time.
 
-In the \emph{multi-armed bandit} method, we would like to predict how likely it is that a certain pair should be reserved for a future exchange, and match those less frequently. However, computationally costly simulations and the enormous branching factor of our problem precludes us from accurately estimating of this probability. In order to overcome this challenge, we employ multi-armed bandit (MAB) algorithms that optimally choose which exchange to collect statistics about under a relatively small computational budget.
+To this end we contribute to the \emph{dynamic} kidney matching literature by introducing two novel algorithms for kidney exchange. They are explained next.
+
+\paragraph{\textbf{Main idea}} We propose two novel approaches for increasing the cardinality of matched pairs in a discrete-time dynamic model of kidney exchange: the \emph{direction prediction} and the \emph{multi-armed-bandit} methods. We also empirically evaluated these methods using simulations, under a variety of data-generating processes that we call \emph{environments}. 
+
+Let's see how these methods work, and some of the challenges they overcome.
+
+First, our \emph{direct prediction} method recasts the dynamic kidney exchange problem as a binary classification task: for each pair in the pool, we predict a binary label representing whether they should be matched today (one), or left for the future (zero), given their observable characteristics. The estimator used here was trained in data extracted from simulations under a variety of setups.
+
+The main challenge with this approach is how to represent the data: while covariates such as ABO bloody type and current waiting time can be naturally represented by real numbers, it is not immediately clear how to represent their relationship to other nodes in the graph.  We attempt to overcome this issue by augmenting the data set with graph-theoretic notions such as measures of node centrality, size of graph, average degree, and so on. 
+
+Our second method, named the \emph{multi-armed bandit} method, uses simulations to answer the question: ``if we take a particular action today, how likely are we to decrease the number of matched pairs between now and a horizon $h$?". Naturally, actions for which this probability is large should be left for the future, while actions for which this probability is low should be prioritized. The main challenge here is that simulations are so computationally costly, and the number of available actions so vast, that we are cannot realistically produce accurate estimates of this probability for all points in the action space. To overcome this issue, we employ multi-armed bandit (MAB) algorithms. Their role is to manage a relatively small computational budget and determine which actions are likely attractive (and should be explored further), and which are not (and thus not worth exploring much).
 
 
 \paragraph{\textbf{Main results}} Our methods are evaluated via simulations. The simulation setups, which we call \emph{environments}, are inspired by models used the kidney exchange literature, and differ by their rules regarding blood- and tissue-type compatibility.
 
-We apply our methods to each simulation setup and compare them to a \textsc{myopic} algorithm that clears the maximal matching at each period, and to an infeasible \textsc{OPT} algorithm that is able to observe future states of the world and act optimally. Our metric for comparison is the per-period average number of matched pairs over a long period of time.
+We have to benchmarks against which we compare our methods. First, a \textsc{myopic} algorithm that clears the maximal matching at each period. This benchmarks represents roughly what most organ clearinghouses are doing today. Second, in order to know what is the maximal payoff we could have achieve, had we been able to know the future, we also compare to an infeasible offline optimal algorithm \textsc{OPT}. Our metric for comparison is the per-period average number of matched pairs over a long period of time.
 
-In all environments, we observe that the \emph{direct estimation} unfortunately does equally well or worse than the myopic algorithm. However, the \emph{multi-armed bandit} method is able to improve substantially upon the \textsc{Myopic} benchmark, [[[suggesting that we could save more lives etc. ]]]]
+In all environments, we observe that our implementation of the \emph{direct estimation} method improve upon \textsc{Myopic}, but only under restricted conditions. However, the \emph{multi-armed bandit} method is able to improve uniformly and substantially upon the \textsc{Myopic} benchmark, in particular in environments of moderate sparsity.
 
-\subsection{Related literature} This paper pulls ideas from microeconomics and matching theory, and uses methods drawn from computer science, machine learning, and operations research. Let us take a brief look at these fields in turn. 
+\subsection{Related literature} This paper pulls ideas from microeconomics, matching theory, and operations research, and uses methods drawn from computer science and machine learning. Let us take a brief look at these fields in turn. 
 
-\paragraph{Matching theory} Kidney exchange as an economic problem was first studied in a series of papers by \citet{roth2004kidney, roth2005pairwise, roth2007efficient}, but the fist paper on dynamic kidney exchange was written a few years later by \citet{unver2010dynamic}, who derived an optimal matching mechanism in a simple continuous time model. Two of the simulation setups in our work follows a modified, discrete-time version of the models in these seminal papers.
-
-In the computer science literature, \citet{awasthi2009online} and later \citet{dickerson2015futurematch} wrote computational alternatives to simple myopic kidney exchange. Our methods are similar to the \emph{weighted myopia} scheme seen in these papers. Other papers that influence ours are \citet{akbarpour2017thickness} and \citet{ashlagi2013kidney}.
+\paragraph{Matching theory} Kidney exchange as an economic problem was first studied in a series of papers by \citet{roth2004kidney, roth2005pairwise, roth2007efficient}, but the fist paper on dynamic kidney exchange was written a few years later by \citet{unver2010dynamic}, who derived an optimal matching mechanism in a simple continuous time model. Two of the simulation setups in our work follows a modified, discrete-time version of the models in these seminal papers. Other papers that influence ours are \citet{akbarpour2017thickness} and \citet{ashlagi2013kidney}.
 
 
+\paragraph{Computer science and machine learning} We were inspired by several computational alternatives to dynamic kidney exchange that have been proposed in the past few years. In particular, the \emph{multi-armed bandit method} described here is reminiscent Algorithm 1 in \citet{awasthi2009online}, inasmuch it also selects the best actions today by repeatedly simulating the future, solving the offline problem, producing a ``score" for each cycle, and selecting actions with maximum score. However, our simulation system and ``scoring" differ importantly in their details because we leverage multi-armed bandit algorithms to decrease the computational burden of producing multiple simulations. 
 
-\paragraph{Computer science and machine learning}
+\citet{dickerson2012dynamic, dickerson2015futurematch} propose a related method that they call \emph{weighted myopia}. The idea is to use simulations for learning ``potentials" of specific elements of the graph. Much like the ``scores" in \citet{awasthi2009online}, the set of ``potentials" associated with a specific exchange encodes how desirable each exchange is in terms of its future value. The authors then use these pre-learned numbers to revise the weights in a myopic algorithm, forcing it to select more desirable exchanges where it would be otherwise indifferent. Our \emph{direct prediction method} works similarly, with three crucial differences. First, we do not directly predict how ``desirable" a matching will be, but instead we predict whether or not an offline, optimal algorithm would choose the node or not. Second, our method uses a more aggressive thresholding mechanism to select which nodes should be matched today, and which should be left for later. Third, we optionally make use of information about how the node fits inside the compatibility graph, so that the information about the node (e.g., the blood type and HLA profile of patient and donor) is augmented with graph-theoretic notions (e.g., measures of node centrality, degree, etc).
 
 
 
 %%%%%%%%%
-\section{Simulation environments}
+\section{Environments} 
 
-\paragraph{Basic definitions and notation} 
+Informally speaking, an \emph{environment} is a simulation setup. It includes the rules for which pairs are deemed compatible, the entry and death processes that govern the evolution of the pool, which characteristics are observable to the algorithm at each period, and what utility the agent gets as it matches the pairs.
 
-An \emph{agent} is an algorithm that decides who should be matched. 
-
+In our paper we have three environments inspired by previous works on dynamic kidney exchange. In what follows we will explain how they differ.
 
 \subsection{Common features across environments}
 
 \paragraph{Poisson entry, Geometric death} At each period, the number of new incoming pairs is drawn from the $Poisson(\lambda)$ distribution, where $\lambda \in \mathbb{N}$ denotes the \emph{entry rate}, and equals the expected number of entrants per period. Upon entrance, each pair independently draws the length of their sojourn from the $Geometric(d)$ distribution. The parameter $d \in \mathbb{R}$ is the \emph{death rate}, and its reciprocal $\frac{1}{d}$ is the expected sojourn length. We note that, due to the memoryless property\footnote{If $X \sim Geometric(p)$, then $P(X > t+s | X > s) = P(X > t)$} of the Geometric distribution, the amount of time a pair has waited in the pool gives us no information about how much time they have until their death.
 
-\paragraph{Binary preferences} In this work we abstract from these concerns and consider every exchange to be equally desirable, so long as it is available. This is the same assumption as used in \cite{roth2005pairwise}. 
+\paragraph{Binary preferences} In this work we abstract from these concerns and consider every exchange to be equally desirable, so long as it is available. This assumption was previously used by \citet{roth2005pairwise}. 
 
 \subsection{ABO Environment}
 
@@ -84,7 +95,7 @@ In the \emph{ABO environment}, compatibility between two distinct pairs is based
 
 \subsection{RSU Environment}
 
-The \emph{RSU} environment is named after the simulation model in \citet*{roth2007efficient}. Each pair is characterized by patient and donor ABO blood types, current waiting time, and a \emph{calculated panel reactive antibody (cPRA)} level that governs the probability of a crossmatch with a random donor.\footnote{The original \citet{roth2007efficient} paper called this simply \emph{PRA}. In real life there is an important distinction between the two measures, but for the purposes of a simulation model this distinction is immaterial. We keep the name \emph{cPRA} for consistency with OPTN environment later.} The lower the cPRA, the higher the number of potentially compatible pairs.
+The \emph{RSU} environment is named after the simulation model in \citet*{roth2007efficient}. Each pair is characterized by patient and donor ABO blood types, current waiting time, and a \emph{calculated panel reactive antibody (cPRA)} level that represents the probability of a crossmatch with a random donor.\footnote{The original \citet{roth2007efficient} paper called this simply \emph{PRA}. In real life there is an important distinction between the two measures, but for the purposes of a simulation model this distinction is immaterial. We keep the name \emph{cPRA} for consistency with OPTN environment later.} The lower the cPRA, the higher the number of potentially compatible pairs.
 
 The simulation process is as follows. First, we draw a pair in the same manner as in the ABO environment. Next, we draw if the patient is a female (with probability around 41\%), and if so we also draw whether her donor is her husband (spouses comprise about 49\% of donors). Finally, we draw a  cPRA level for the patient (Low: 70.1\%, Medium: 20\%, High: 9.9\%). This cPRA level determines the probability that they can receive a kidney from any donor, including their own: patients with low cPRA have a 5\% probability of positive crossmatch with a random donor; patients with medium cPRA have a 45\% chance, and patients with high cPRA have a 90\% chance of a crossmatch. If a patient is bloody or tissue-type incompatible with their own donor, they enter the pool. In addition, if the patient is female and her husband is the donor, the probability of positive crossmatch for low, medium and high cPRA patients goes up to 28.75\%, 58.75\% and 92.25\%. This last adjustment reflects the fact that women tend to produce antibodies against their husbands' antigens during pregnancy.
 
@@ -92,9 +103,9 @@ Once in the pool, the pair immediately forms directed edges with the existing pa
 
 \subsection{OPTN Environment}
 
-In the \emph{OPTN environment}, we use historical data collected by the United Network for Organ Sharing (UNOS) data provided in the Standard Research and Analysis (STAR) dataset. The STAR dataset contains information from all patients that were ever registered to the kidney waiting list in the United States for the past three decades, as well as from living donors that participated in an transplant. From this original dataset, we excluded patients that were registered for more than one organ (including kidney+pancreas), patients that were not waiting for their first kidney transplant, and patients and donors with incomplete HLA profile information. The resulting dataset contained 117813 patients and 9337 living donors.
+In the \emph{OPTN environment}, we use historical data collected by the United Network for Organ Sharing (UNOS) data provided in the Standard Research and Analysis (STAR) dataset. The STAR dataset contains information from all patients that were ever registered to the kidney waiting list in the United States for the past three decades, as well as from living donors that participated in an transplant. From this original dataset, we excluded patients that were registered for more than one organ (including kidney+pancreas), patients that were not waiting for their first kidney transplant, and patients and donors with incomplete tissue-type profile information. The resulting dataset contained 117813 patients and 9337 living donors.
 
-\paragraph{Patient and donor cPRA} We added two additional variables to the original dataset: a \emph{patient cPRA} and a \emph{donor cPRA}. While the patient cPRA is a measure of patient tissue-type incompatibility with a random donor \cite{cecka2010calculated}, our \meph{donor cPRA} is a novel measure of the opposite direction -- how frequently a donor is tissue-type incompatible with a random patient.\footnote{We thank Itai Ashlagi for the suggestion of a donor cPRA.} Both were computed empirically: for each patient our dataset, we checked the how many donors exhibited antigens that are unacceptable for the patient in any of the A, B, Bw, C, DR, DPB, DQ, and DQA loci, and assigned this positive crossmatch probability as their patient cPRA; for the donors, we worked in the opposite direction by calculating the frequency of patients who exhibited antibodies against their donor's antigens, and that became their donor cPRA. Figure \ref{fig:cpra} shows the distribution across the entire population.\footnote{We should remark that we found a very different patient cPRA distribution than the one in the OPTN dataset. This may have been because: in real life cPRA is computed using deceased donor data, while we used living donor data; we may have used different HLA equivalence tables; OPTN uses a more sophisticated model based on population genetics.\cite{optn2013cpra}}
+\paragraph{Patient and donor cPRA} We added two additional variables to the original dataset: a \emph{patient cPRA} and a \emph{donor cPRA}. While the patient cPRA is a measure of patient tissue-type incompatibility with a random donor \cite{cecka2010calculated}, our \meph{donor cPRA} is a novel measure of the opposite direction -- how frequently a donor is tissue-type incompatible with a random patient.\footnote{We thank Itai Ashlagi for the suggestion of a donor cPRA.} Both were computed empirically: for each patient our dataset, we checked the how many donors exhibited antigens that are unacceptable for the patient in any of the A, B, Bw, C, DR, DPB, DQ, and DQA loci, and assigned this positive crossmatch probability as their patient cPRA\footnote{A genetic \emph{locus} is a specific position on a chromossome. The loci above encodes a donor tissue type.}; for the donors, we worked in the opposite direction by calculating the frequency of patients who exhibited antibodies against their donor's antigens, and that became their donor cPRA. Figure \ref{fig:cpra} shows the distribution across the entire population.\footnote{We should remark that we found a very different patient cPRA distribution than the one in the OPTN dataset. This may have been because: in real life cPRA is computed using deceased donor data, while we used living donor data; we may have used different HLA equivalence tables; OPTN uses a more sophisticated model based on population genetics.\cite{optn2013cpra}}
 
 
 \begin{figure}
@@ -106,11 +117,7 @@ In the \emph{OPTN environment}, we use historical data collected by the United N
 \end{figure}
 
 
-\paragraph{Artificial dataset} Next, we created an artificial dataset by randomly drawing patients and living donors from the historical dataset and checking for blood-type compatibility, and tissue-type compatibility as explained above. Compatible pairs were discarded. We iterated in this manner to construct a dataset of about one million incompatible pairs. Its columns are a set of dummies representing patient and donor blood times, a set of dummies for each allele in each HLA locus, and 
-
-At every simulation period, a random number of pairs are drawn from this dataset.
-
-[[[[Algorhtm can still see original alleles. Patient and donor cPRA offer "long-run" measure of compatibility]]]]
+\paragraph{Artificial dataset} We created an artificial dataset by randomly drawing patients and living donors from the historical dataset and checking for blood-type compatibility, and tissue-type compatibility as explained above. Compatible pairs were discarded. We iterated in this manner to construct a dataset of about one million incompatible pairs. At every simulation period, a random number of pairs is drawn from this dataset.
 
 
 %%%%%%%%
@@ -128,7 +135,7 @@ This algorithm finds the maximal matchings at every period, and clears it immedi
 
 \paragraph{\textbf{Remark}} \textit{How much is there to be improved upon?} In Figure \ref{fig:greedy_opt_comparison}, we compare \textsc{Myopic} and \textsc{OPT} for a grid of different entry and death rates. These results show that the performance gap between the two can be fairly large, in particular in sparser environments like \emph{RSU} and \emph{OPTN}. We also note that the gap is narrower when: the death rate is high, because if most pairs will die soon, dynamic considerations play a smaller role; and when the entry rate is very large, because in a thicker market pairs are able to encounter a suitable match more easily.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
 \hspace*{-3.5cm}
 \includegraphics[width=1.4\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf}
@@ -151,7 +158,7 @@ We now present two novel methods to determine which patients should be matched.
 
 Dynamic and static algorithms can work in tandem: the former can determine which pairs should be matched today, while the latter decides how they should be matched among themselves. The \emph{direct prediction}, exploits this insight, essentially reducing the problem to a classification task: at each period, we aim to produce a binary label for each node indicating whether is should be matched in this period (1) or left for later (0). Selected nodes are then passed to a static solver that finds the maximal matching among them. Once these nodes are cleared, time evolves to the next period. The procedure is formalized in Algorithm \ref{alg:direct_prediction}, and also illustrated in Figure \ref{fig:direct_prediction}.
 
-\begin{figure}[H]
+\begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf}.
 \caption{\textbf{Direct prediction method} \\ One period of simulation using direct prediction methods to choose cycles. See Algorithm \ref{alg:direct_prediction} for details.}
@@ -186,12 +193,10 @@ Dynamic and static algorithms can work in tandem: the former can determine which
 	\label{alg:direct_prediction}
 \end{algorithm}
 
+\paragraph{Training the classifier} In order to produce data to feed into our ``classifier", we repeatedly created 1000-period simulation runs and solved them offline using \textsc{OPT}. Then, for every period $t$ in simulation $k$, we stored: a matrix $X_t^{k}$ whose rows represent each pairs observable characteristics; an additional matrices $E_{t}^{1k}$ containing additional graph-theoretical information such as several centrality measures (betweenness, in-degree, out-degree, harmonic, closeness), in- and out-degrees, and average neighbor degree; a conforming matrix $E_{t}^{2k}$ containing the entry and death rates used in that simulation; a binary vector $y_t^{k}$ indicating which nodes \textsc{OPT} chose to match in period $t$. Finally, we vertically concatenated each one of these matrices to create the final data set.
 
-\subsection{Direct prediction methods}
+We repeated this procedure for each environment, and produced three artificial data sets, each containing approximately 2 million observations. These data sets were then fed to a series of predictive algorithms: penalized logistic regression \citep{wu2009genome}, random forest classifiers \citep{breiman2001random}, and gradient tree boosting classifiers \citep{friedman2001greedy}. 
 
-In order to produce data to feed into our ``classifier", we repeatedly created 1000-period simulation runs and solved using them OPT using with each each node's observable characteristics as regressors, and a binary variable indicating whether they were matched or not as the regressand. The resulting artificial dataset of approximately 2 million observations was then fed to a series of predictive algorithms, including penalized logistic regression \citep{wu2009genome}, support vector machines with radial basis function kernels \citep{cortes1995support}, random forest classifiers \citep{breiman2001random}, gradient tree boosting classifiers \citep{friedman2001greedy} and deep feedforward networks \citep{goodfellow2016deep}. 
-
-Moreover, in order to represent information about the graph and how the nodes fit within it, we augment the original dataset using one or both of the following. First, with vertex properties for each node such as the number of in and out-edges, average neighbor degree, some centrality measures (betweenness, in-degree, out-degree, harmonic, closeness) and more exotic indices such as the core number and pagerank of each node\cite{newman2010networks}. Second, we augment the data using the \emph{node2vec} graph embedding algorithm of \cite{grover2016node2vec}, a continuous feature representation algorithm inspired by the skip-gram model.[[[More on this?]]]. These algorithms will produce auxiliary matrices $E_t^{1}$ and $E_t^2$ that are concatenated to the original data regressor matrix $X_t$, and the entire augmented data set can again be fed to the predictive algorithms above. Their performance is compared on the bottom half of Table \ref{tab:direct_prediction}.
 
 
 \subsection{Multi-armed bandit methods}
@@ -200,22 +205,20 @@ We have access to the data-generating process (\emph{environments}) and an algor
 
 The approach outlined above turns out to be naive and incomplete, but it essentially contains the insight under which we will be working in this section. It is naive because simulations are computationally expensive, and in practice we cannot repeat them enough times get reliable estimates of the average performance for each cycle choice, especially in large graphs. It is also incomplete because it does not specify exactly what is the best information we should extract from \texttt{OPT} results. In order to solve the first problem, we leverage theory and algorithms from the multi-armed bandit (MAB) literature. For the second, we propose a secondary objective based on what we call \emph{pseudo-rewards}.
 
-Our procedure is illustrated in Figures \ref{fig:mab} and \ref{fig:mab_step}. At the beginning of the period $t$, the agent receives a set of cycles $C$ that are available to be cleared. If $C$ is empty, nothing happens and we move to the next period. Otherwise, the agent then picks a cycle $c \in C$ and simulates the future, including new entries and deaths, up to a horizon $h$. Next, \texttt{OPT} is run twice, once normally, and once with the additional constraint that $c$ be removed today. The size of the resulting matching in these two scenarios is compared. Naturally, the constrained version of \texttt{OPT} cannot achieve anything better than its unconstrained counterpart, but it might get to be equal. If it is, the agent receives a \emph{pseudo-reward} of one, otherwise it receives zero. This process is repeated: at each iteration $\ell$, a cycle $c_{\ell}$ is chosen and its pseudo-reward $r_{c, \ell}$ is revealed. When a preset computational budget of $L(|C|)$ iterations is hit, the agent then analyses the whole history of cycle choices and pseudo-rewards $H_{t} = \{ (c_{\ell}, r_{c\ell} ) \}_{\ell=1}^{L}$, and decides whether to match one of the cycles or move on to the next period. If a cycle $c$ is chosen it is immediately cleared, however the environment does not evolve to the next period yet. Instead, the history $H_t$ is discarded the procedure is repeated again with a reduced set of actions $C' \subset C$ that produces a new history $H_t'$ and so on, until either there are no more available choices or the agent decides to allow the environment to move on to time $t+1$. When that at last happens, entries and deaths are revealed, the agent receives a new set of cycles, and the process begin anew. All past information is ignored.
+Our procedure is illustrated in Figures \ref{fig:mab} and \ref{fig:get_pseudo_reward}. At the beginning of the period $t$, the agent receives a set of cycles $C$ that are available to be cleared. If $C$ is empty, nothing happens and we move to the next period. Otherwise, the agent then picks a cycle $c \in C$ and simulates the future, including new entries and deaths, up to a horizon $h$. Next, \texttt{OPT} is run twice, once normally, and once with the additional constraint that $c$ be removed today. The size of the resulting matching in these two scenarios is compared. Naturally, the constrained version of \texttt{OPT} cannot achieve anything better than its unconstrained counterpart, but it might get to be equal. If it is, the agent receives a \emph{pseudo-reward} of one, otherwise it receives zero. This process is repeated: at each iteration $\ell$, a cycle $c_{\ell}$ is chosen and its pseudo-reward $r_{c, \ell}$ is revealed. When a preset computational budget of $L(|C|)$ iterations is hit, the agent then analyses the whole history of cycle choices and pseudo-rewards $H_{t} = \{ (c_{\ell}, r_{c\ell} ) \}_{\ell=1}^{L}$, and decides whether to match one of the cycles or move on to the next period. If a cycle $c$ is chosen it is immediately cleared, however the environment does not evolve to the next period yet. Instead, the history $H_t$ is discarded the procedure is repeated again with a reduced set of actions $C' \subset C$ that produces a new history $H_t'$ and so on, until either there are no more available choices or the agent decides to allow the environment to move on to time $t+1$. When that at last happens, entries and deaths are revealed, the agent receives a new set of cycles, and the process begin anew. All past information is ignored.
 
 
 Two important details were left out of the explanation above. First, how does the agent chooses the next cycle to test? Second, how does it decide which cycle to choose (or no cycle at all)? 
 
 Let $c^{*}$ be a cycle that maximizes expected pseudo-rewards during one round of the algorithm:
 $$c_{\ell}^{*} \in \arg\max_{c} E[r_{c,\ell}] $$
-
-
  Also, let \emph{regret} be defined as the difference between expected reward of the optimal choice $c^*$ and its own selected choice $c_{\ell}$.
- 
  $$\Delta_\ell := E[r_{c^{*},\ell}] - E[r_{c,\ell}]$$
  
- A \emph{multi-armed bandit} (MAB) algorithm is a procedure to minimize the cumulative regret over $L$ rounds. A good MAB algorithm will act so as to balance exploration (trying out different choices to get high-quality estimates of their rewards) and exploitation (using out better choices more often to increase total rewards). 
+ A \emph{multi-armed bandit} (MAB) algorithm is a procedure to minimize the cumulative regret over $L$ rounds. A good MAB algorithm will act so as to balance exploration (trying out different choices to get high-quality estimates of their rewards) and exploitation (using out better choices more often to increase total rewards), and produce regret that grows asymptotically logarithmically with the horizon. Here, we will be experimenting with three common bandits algorithms, named \emph{UCB1}, \emph{EXP3} and \emph{Thompson sampling}.
  
- The literature on bandit algorithms is extensive and spans at least seventy years of research \citep{lattimore2018bandits}. Here we will focus on binary 
+The literature on bandit algorithms is extensive and spans at least seventy years of research, and an in-depth review is outside the score of this paper. We refer the reader to \citep{lattimore2018bandits} for a survey.
+ 
  
  % Algorithm
  \begin{algorithm}[htbp]
@@ -326,61 +329,91 @@ Pseudo-rewards are a natural way for us to control which patients should be matc
 
 \section{Results}
 
-\subsection{Direction prediction methods} 
+\subsection{Direct prediction methods} 
 
-Table \ref{tab:traditional_ml_classifier} shows the performance results for direct prediction methods as classification methods, i.e., how accurately they are able to predict whether a node should be matched or not. Results imply the following. 
+Table \ref{tab:traditional_ml_classifier} shows the performance results for direct prediction methods as estimators, i.e., how accurately they are able to predict whether a node should be matched or not. We see that while overall accuracy can be relatively high at 70-80\%, precision (defined as the ratio between true positives and both true and false positives) is low even for simpler environments like $ABO$, indicating that the models are over-predicting matchings. Also, augmenting the data with information about the graph has little discernible effect under any of the performance criteria. This suggests that there might be gains from using other algorithms that make better use of information about the compatibility graph. 
 
-First, while overall accuracy can be relatively high at 70-80\%, precision (defined as the ratio between true positives and both true and false positives) is low even for simpler environments like $ABO$, indicating that the models are over-predicting matchings. Second, augmenting the data with information about the graph has no discernible effect under any of the performance criteria. This suggests that there might be gains from using other algorithms that make better use of information about the compatibility graph. 
+In order to empirically evaluate the performance of our proposed direct prediction method, we proceeded as follow. First, we simulated data using our environments, and applied Algorithm \ref{alg:direct_prediction} at each step, following the outline on Figure \ref{fig:direct_prediction}. Next, using the \emph{same} random seed, we simulated each environment and solved it again using \textsc{Myopic} in lieu of our method. Finally, we computed the average number of matched patients between periods 250 and 1000 (the first 250 periods were used as burn-in) for each algorithm and compared the two. 
 
-Unfortunately, the algorithms' substandard performance as classifiers translates into poor performance as policy as well. 
+This process was repeated several times for: each classifier (logistic regression, gradient tree boosting, random forests), each environment ($ABO$, $RSU$, $OPTN$) and nine entry and death rate combinations. The threshold variable was fixed at $thres = 3$ everywhere.
+
+The result is shown on Figures \ref{fig:traditional_ml_mdp_algo_grb}-\ref{fig:traditional_ml_mdp_algo_rf}, where we show the average performance ratio computed as above for each combination of environment, algorithm and entry/death rate configuration. \footnote{Traditional tables are also available as part of the Supplementary Materials. They will be made available online later.}
+
+Unfortunately, as we predicted in the beginning of the section, the poor predictive performance of the algorithms translates into poor performance as the classifier in our direct prediction method. Random forests, in particular, have the lowest rate of accuracy (Table \ref{tab:traditional_ml_classifier}), and also exhibit the lowest performance in the direct prediction method.
 
 
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_grb}
+\caption{\textbf{Performance of gradient boosting in direct prediction method} \\
+    Ratio of average matched patients against \textsc{Myopic}. Simulations ran over 750 periods (after a 250-period burn-in sequence). Lower row is when data was augmented with information about graph.}
+\label{fig:traditional_ml_mdp_algo_grb}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_lr}
+\caption{\textbf{Performance of logistic regression in direct prediction method} \\
+    Similar to gradient boosting shown in Figure \ref{fig:traditional_ml_mdp_algo_grb}, logistic regression is only able to perform better than \textsc{Myopic} when the death rate is large.}
+\label{fig:traditional_ml_mdp_algo_lr}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_rf}
+\caption{\textbf{Performance of random forests in direct prediction method} \\
+    Random Forests's poor performance is likely due to its low accuracy (shown on table in online supplement)}
+\label{fig:traditional_ml_mdp_algo_rf}
+\end{figure}
 
 \subsection{Multi-armed bandit methods}
 
+We evaluated the performance of our \emph{multi-armed bandit} in an analogous manner to the direct prediction method described in the previous section, except that we used Algorithms \ref{alg:choose_cycle} and \ref{alg:get_pseudo_reward} when selecting nodes to be matched at each period.
+
+The average ratio between our method and \textsc{Myopic} is shown on Figure \ref{fig:mab} and elaborated upon on Table \ref{tab:ucb1} in the appendix.\footnote{For reasons of space, in the main paper we present only Table \ref{tab:ucb1}. The remaining tables will be made available in a supplementary online appendix.} The results suggest that, for the entry and death rate combinations we experimented on, the \emph{multi-armed bandit} method uniformly dominates \textsc{Myopic} in terms of average number of matched patients per period.
+
+In sparser environments ($RSU$ and $OPTN$), for particular entry and death rate combinations, our method improve upon \textsc{Myopic} by up to about 4\%. This reflects an earlier observation we did when analyzing Figure \ref{fig:greedy_opt_comparison}: gains from taking dynamic consideration into account are larger in situations of moderate sparsity, because that is where \textsc{Myopic} forces the pool to be too thin, and drives the performance away from optimality.
 
 
+
+
+
+\begin{figure}
+\centering
+\hspace*{-1.6cm}
+\includegraphics[width=1.1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_ABO.pdf}
+\hspace*{-1.6cm}
+\includegraphics[width=1.1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_RSU.pdf}
+\hspace*{-1.6cm}
+\includegraphics[width=1.1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_OPTN.pdf}
+\caption{\textbf{Performance multi-armed bandit methods across environments} \\
+Average percent improvement by the \emph{multi-armed bandit} method over \textsc{Myopic}. Averages were taken over 750 periods, after a 250-period burn-in sequence. See also Table \ref{tab:ucb1} and additional tables in online supplement. \\
+{\scriptsize Note: In $RSU$ row, white entries are missing (they are not zero).}}
+\label{fig:mab}
+\end{figure}
 
 
 \section{Conclusion}
 
-\paragraph{Summary}
+In this paper, we examined two novel algorithms for dynamic matching in a discrete-time model of kidney exchange: a \emph{direct prediction method} that tries to predict which pair should be matched at each period; and a \emph{multi-armed bandit method}, that uses simulations to score available exchanges in terms of their desirability. We evaluate these methods them using simulations under a variety of different settings, and compared them in terms of average number of matched pairs per period to a \textsc{Myopic} algorithm that finds and immediately clears the maximal matching at each period.
+  
+We find that our \emph{multi-armed bandit} method is able to uniformly dominate \textsc{Myopic} in all our simulation settings, including one where we draw pairs from the historical list of patients and donors that have undergone transplants in the United States.
 
-\paragraph{Extensions}
-Another source of error is the fact that we are predicting a label for each node independently from the labels we have predicted for other nodes.
+Our methods suggest a variety of extensions. First, the relatively weak performance of our \emph{direct prediction} method could be improved in two ways: by improving our ability to use information about graph structure when predicting if a node should be matched or not; and, by making sure that what we predict for one pair should be dependent on what we predict for the other pairs in the same graph. The former could be done using new statistical methods on non-euclidean spaces \citep{shuman2013emerging}, and the latter using algorithms that output joint distributions of arbitrary length such as recurrent neural networks \citep{lecun2015deep}. We will be turning our attention to these methods next.
 
+Second, while we see that the performance of our \emph{multi-armed bandit} methods was already satisfactory, we note that it uses only simulations and no data to decide which exchange to clear at each period. In that sense, it worked in a diametrically opposite way to the \emph{direct prediction} method that used only data and no simulations. In fact, an intermediate approach, using \emph{contextual bandits} \citep{lattimore2018bandits} could be used, blending information about data and simulations.
 
- In reality, some exchanges are more or less desirable than others, either for ethical concerns or because of predicted health benefit. For example, it is common for pediatric patients and previous organ donors receive higher priority, as do exchanges involving patients with no HLA mismatch. 
+Thirdly, we would like to experiment with different objective functions, since, in reality, different exchanges may have different levels of desirability or priority. For example, it is common for pediatric patients and previous organ donors receive higher priority, as do \emph{ABDR0} exchanges involving ``perfectly matched" patients and donors.
 
-
-
-
-
-\section{Conclusions}
+Lastly, we remark that there still remains a moderately large gap between what could be optimally achieved if we could perfectly predict the evolution of the pool. It is conceivable that as better predictive methods arise, this gap will become smaller. 
 
 
-
-% Appendix
-\appendix
-\section{Sections}
-
-\section{Supplementary materials}
-
-
-\begin{table}
-  \centering
-  \singlespacing
-  \hspace*{-1cm}
-  \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/tables/traditional_ml_classifier.tex}
-   \caption{\textbf{Traditional methods} \\ Performance of traditional econometric and classification methods when predicting whether a node will be matched (1) or not (0). \emph{Additional} refers to extra information about graph structure passed to the classifier: \emph{Graph Stats} are graph-theoretical measures of node characteristics such as centrality; \emph{Embedding} is a 10-dimensional real embedding of the node provided by node2vec \citep{grover2016node2vec}. Recall is true positive rate $\frac{tp}{tp+fn}$; Specificity is true negative rate $\frac{tp}{tn+fp}$; Precision is $\frac{tp}{tp+fp}$; Accuracy is $\frac{tp+tn}{tp+tn+fp+fn}$. See section \ref{sec:[[[]]]} for methodology and section \ref{sec:[[[]]]} for discussion of results. }
-  \label{tab:tradional_ml_classifier}
-\end{table}
 
 \begin{acks}
 	
 % The author would like to thank Utku \"{U}nver, Stefan Hoderlein, Arthur Lewbel, Mohammad Akbarpour, Itai Ashlagi, David Parkes, John Dickerson, Enkhmanlai Amarsaikhan and Sainbayar Sukhbaatar for helpful discussions.
 
-The author would like to thank Itai Ashlagi for the idea of including a donor cPRA in the OPTN environment.
+The author would like to thank Itai Ashlagi for the idea of a donor cPRA.
 
 This work was supported in part by Health Resources and Services Administration contract 234-2005-37011C. The content is the responsibility of the authors alone and does not necessarily reflect the views or policies of the Department of Health and Human Services, nor does mention of trade names, commercial products, or organizations imply endorsement by the U.S. Government.
 
@@ -390,5 +423,127 @@ This work was supported in part by Health Resources and Services Administration 
 % Bibliography
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/references}
+
+\appendix
+
+\section{Tables}
+
+
+
+\begin{table}
+  \centering
+  \singlespacing
+  \hspace*{-0.5cm}
+  \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/tables/traditional_ml_classifier.tex}
+   \caption{\textbf{Performance of statistical methods as classifiers} \\ 
+   We experiment with three variations on the \emph{direct prediction} method by implementing it using different statistical. Here we see their performance as classifiers, that is, how well they are able to predict that the node was chosen to be matched by an offline algorithm. \\
+  }
+  \label{tab:traditional_ml_classifier}
+\end{table}
+
+\begin{table}
+  \centering
+  \singlespacing
+  \hspace*{-0.5cm}
+  \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/tables/mab_UCB1.tex}
+   \caption{\textbf{Multi-armed bandit algorithm UCB1} \\ 
+  \textsc{Environ} is the environment used for simulation. \textsc{Entry} and \textsc{Death} are the Poisson entry rate of entry and the the Geometric rate of departure (times 100), respectively.  \textsc{Mean} and \textsc{Std} refers to the average number of matched patients over 750 periods (after 250 periods of burn-in). \textsc{Difference} and \textsc{Ratio} compare the average improvement between the algorithm and \textsc{Myopic}. \textsc{N} is the number of 1000-period simulations that used that particular configuration. Tables for other bandits are similar, and can be found in the online supplement that will be available online.}
+  \label{tab:ucb1}
+\end{table}
+
+% 
+% 
+% \section{Supplementary materials}
+% 
+% 
+% 
+% \begin{table}
+%   \centering
+%   \singlespacing
+%   \hspace*{-0.5cm}
+%   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/tables/mab_Thompson.tex}
+%   \caption{\textbf{Multi-armed bandit algorithm Thompson Sampling} \\ 
+%  \textsc{Environ} is the environment used for simulation. \textsc{Entry} and \textsc{Death} are the Poisson entry rate of entry and the the Geometric rate of departure (times 100), respectively.  \textsc{Mean} and \textsc{Std} refers to the average number of matched patients over 750 periods (after 250 periods of burn-in). \textsc{Difference} and \textsc{Ratio} compare the average improvement between the algorithm and \textsc{Myopic}. \textsc{N} is the number of 1000-period simulations that used that particular configuration.}
+%   \label{tab:thompson}
+% \end{table}
+% 
+% \begin{table}
+%   \centering
+%   \singlespacing
+%   \hspace*{-0.5cm}
+%   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/tables/mab_EXP3.tex}
+%   \caption{\textbf{Multi-armed bandit algorithm EXP3} \\ 
+%  \textsc{Environ} is the environment used for simulation. \textsc{Entry} and \textsc{Death} are the Poisson entry rate of entry and the the Geometric rate of departure (times 100), respectively.  \textsc{Mean} and \textsc{Std} refers to the average number of matched patients over 750 periods (after 250 periods of burn-in). \textsc{Difference} and \textsc{Ratio} compare the average improvement between the algorithm and \textsc{Myopic}. \textsc{N} is the number of 1000-period simulations that used that particular configuration.}
+%   \label{tab:exp3}
+% \end{table}
+% 
+% 
+% 
+% 
+% \begin{table}
+%   \centering
+%   \singlespacing
+%   \hspace*{-0.5cm}
+%   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/tables/traditional_mdp_grb_none.tex}
+%    \caption{\textbf{Gradient Boosting (no graph information)} \\ }
+%   \label{tab:grb_none}
+% \end{table}
+% 
+% 
+% \begin{table}
+%   \centering
+%   \singlespacing
+%   \hspace*{-0.5cm}
+%   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/tables/traditional_mdp_grb_networkx.tex}
+%    \caption{\textbf{Gradient Boosting (augmented with graph information)} \\ }
+%   \label{tab:grb_networkx}
+% \end{table}
+% 
+% 
+% \begin{table}
+%   \centering
+%   \singlespacing
+%   \hspace*{-0.5cm}
+%   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/tables/traditional_mdp_lr_none.tex}
+%    \caption{\textbf{Logistic Regression (no graph information)} \\ }
+%   \label{tab:lr_none}
+% \end{table}
+% 
+% 
+% \begin{table}
+%   \centering
+%   \singlespacing
+%   \hspace*{-0.5cm}
+%   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/tables/traditional_mdp_lr_networkx.tex}
+%    \caption{\textbf{Logistic Regression (augmented with graph information)} \\ }
+%   \label{tab:lr_networkx}
+% \end{table}
+% 
+% 
+% \begin{table}
+%   \centering
+%   \singlespacing
+%   \hspace*{-0.5cm}
+%   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/tables/traditional_mdp_rf_none.tex}
+%    \caption{\textbf{Random Forests (no graph information)} \\ }
+%   \label{tab:rf_none}
+% \end{table}
+% 
+% 
+% \begin{table}
+%   \centering
+%   \singlespacing
+%   \hspace*{-0.5cm}
+%   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/tables/traditional_mdp_rf_networkx.tex}
+%    \caption{\textbf{Random Forests (augmented with graph information)} \\ }
+%   \label{tab:rf_networkx}
+% \end{table}
+% 
+
+
+
+
+
+
 
 \end{document}

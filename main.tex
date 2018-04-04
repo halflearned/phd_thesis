@@ -1,0 +1,191 @@
+\documentclass[12pt,a4paper,oneside]{book}
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{cite}
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage[space]{grffile}
+\usepackage[font=small,label
+font=bf]{caption}
+\usepackage{array}
+\usepackage{textgreek}
+\usepackage{booktabs}
+\usepackage{wrapfig}
+\usepackage{textcomp}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{chngcntr}
+\usepackage[11pt]{moresize}
+\usepackage{ragged2e}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{amsthm, amssymb}
+\usepackage{textcomp}
+\usepackage{lscape}
+\usepackage[usenames, dvipsnames]{color}
+
+\usepackage[ruled]{algorithm2e} % For algorithms
+
+
+\renewcommand{\algorithmcfname}{ALGORITHM}
+\SetAlFnt{\small}
+\SetAlCapFnt{\small}
+\SetAlCapNameFnt{\small}
+\SetAlCapHSkip{0pt}
+\IncMargin{-\parindent}
+\newcommand\mycommfont[1]{\footnotesize\upshape\textcolor{blue}{#1}}
+\SetCommentSty{mycommfont}
+
+
+
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+%\graphicspath{{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/}}
+
+\setcounter{secnumdepth}{3}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{}
+\lhead{}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\geometry{papersize={8.5in,11in},top=1in,bottom=1in,left=1.25in,right=1.25in}
+%\geometry{papersize={8.5in,11in},left=1.5in,right=1.0in,top=1.0in,bottom=1.0in}
+
+\newcommand{\mytilde}{\raise.17ex\hbox{$\scriptstyle\mathtt{\sim}$}}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+
+\renewcommand{\contentsname}{Table of Contents}
+
+
+\newcommand{\mychapter}[2]{
+  \newpage
+  \begin{centering}
+    \setcounter{chapter}{#1}
+    \setcounter{section}{0}
+    % %\chapter*{#2}
+    % {\vspace*{10cm}\Huge\doublespacing  {\fontfamily{qpl}\selectfont {#2}} }
+    {\vspace*{10cm} \Huge\doublespacing\fontfamily{qpl}\selectfont {#2}}
+    \addcontentsline{toc}{chapter}{#2}
+    \newpage
+  \end{centering}
+}
+
+
+% ---------
+% Section title style
+% --------
+
+\titleformat{\section}
+   {\fontfamily{qpl}\selectfont\Large\bfseries\singlespacing}
+   {\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\fontfamily{qpl}\selectfont\large\bfseries\singlespacing}
+  {\thesubsection}{1em}{}
+
+  \titleformat{\subsubsection}
+    {\fontfamily{qpl}\selectfont\large\bfseries\singlespacing}
+    {\thesubsubsection}{1em}{}
+\renewcommand*\thesection{\arabic{section}}
+
+% ---------
+% Table of contents / figures / tables font styling
+% --------
+\usepackage{tocloft}
+\renewcommand\cftloftitlefont{\clearpage\hfill\huge\fontfamily{qpl}\selectfont\bfseries\hfill}
+\renewcommand{\cftafterloftitle}{\hfill\hfill}
+
+\renewcommand\cftlottitlefont{\clearpage\hfill\huge\fontfamily{qpl}\selectfont\bfseries\hfill}
+\renewcommand{\cftafterlottitle}{\hfill\hfill}
+
+\renewcommand\cfttoctitlefont{\hfill\huge\fontfamily{qpl}\selectfont\bfseries\hfill}
+\renewcommand{\cftaftertoctitle}{\hfill\hfill}
+
+\setlength{\cftbeforetoctitleskip}{0pt}
+
+% ---------
+% Bibliography title
+% --------
+%\renewcommand\bibname{References}
+\renewcommand\bibname{\fontfamily{qpl}\selectfont\bfseries\huge\centerline{Bibliography}}
+
+\captionsetup{justification=raggedright, singlelinecheck=false}
+
+
+%---------
+% Theorem package stuff
+%--------
+
+\newtheorem{theorem}{Theorem}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+
+\theoremstyle{Assumption}
+\newtheorem{assumption}{Assumption}[section]
+
+
+
+
+
+%---------
+% BEGIN DOCUMENT
+%--------
+
+
+\begin{document}
+
+\frontmatter
+\input{titlepage.tex}
+\setcounter{page}{2}
+
+\input{abstract.tex}
+\input{acknowledgements.tex}
+
+\clearpage
+\onehalfspacing
+\tableofcontents
+ 
+%\listoffigures
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+
+%\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
+
+\clearpage
+\input{abbreviations.tex}
+\renewcommand{\thetable}{\arabic{table}}
+\setcounter{table}{0}
+
+ 
+\mainmatter
+\part{Heterogeneous}
+% %\input{Introduction}
+\input{chapter1/chapter1.tex}
+\part{Kidney Exchange}
+\input{Chapter2/Chapter2.tex}
+
+ 
+\appendix
+\backmatter
+
+\singlespacing
+\bibliographystyle{apalike}
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliography{references}
+
+\end{document}

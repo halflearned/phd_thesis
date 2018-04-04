@@ -1,0 +1,97 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: apalike.bst
+Database file #1: references.bib
+Repeated entry---line 127 of file references.bib
+ : @misc{slivkins2018introduction
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 206 of file references.bib
+ : @article{agrawal1995sample
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 217 of file references.bib
+ : @article{auer2002finite
+ :                        ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 261 of file references.bib
+ :   
+ :   author = {{Organ Procurement and Transplantation Network}},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "optn2013cpra" isn't style-file defined
+--line 269 of file references.bib
+Warning--entry type for "lattimore2018bandits" isn't style-file defined
+--line 279 of file references.bib
+Repeated entry---line 443 of file references.bib
+ : @inproceedings{dickerson2016position
+ :                                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 629 of file references.bib
+ : @techreport{ashlagi2012need
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 659 of file references.bib
+ : @inproceedings{rapaport1986case
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 685 of file references.bib
+ : @article{saidman2006increasing
+ :                               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 707 of file references.bib
+ : @article{ashlagi2011nonsimultaneous
+ :                                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 719 of file references.bib
+ : @article{ashlagi2013kidney
+ :                           ,
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in slivkins2018introduction
+Warning--empty author in slivkins2018introduction
+Warning--empty title in slivkins2018introduction
+Warning--empty journal in akbarpour2017thickness
+Warning--can't use both volume and number fields in rapaport1986case
+You've used 45 entries,
+            1935 wiz_defined-function locations,
+            740 strings with 11772 characters,
+and the built_in function-call counts, 20170 in all, are:
+= -- 1999
+> -- 867
+< -- 32
++ -- 306
+- -- 298
+* -- 1728
+:= -- 3382
+add.period$ -- 134
+call.type$ -- 45
+change.case$ -- 370
+chr.to.int$ -- 45
+cite$ -- 51
+duplicate$ -- 770
+empty$ -- 1389
+format.name$ -- 358
+if$ -- 4005
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 44
+newline$ -- 224
+num.names$ -- 132
+pop$ -- 358
+preamble$ -- 1
+purify$ -- 372
+quote$ -- 0
+skip$ -- 590
+stack$ -- 0
+substring$ -- 1488
+swap$ -- 150
+text.length$ -- 14
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 266
+warning$ -- 5
+while$ -- 171
+width$ -- 0
+write$ -- 575
+(There were 10 error messages)

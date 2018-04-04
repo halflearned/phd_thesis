@@ -5,18 +5,18 @@ The style file: ACM-Reference-Format.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/references.bib
-I was expecting a `,' or a `}'---line 2 of file /Users/vitorhadad/Documents/kidney/matching/phd_thesis/references.bib
+I was expecting a `,' or a `}'---line 60 of file /Users/vitorhadad/Documents/kidney/matching/phd_thesis/references.bib
  :   
  :   author = {{Organ Procurement and Transplantation Network}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 425 of file /Users/vitorhadad/Documents/kidney/matching/phd_thesis/references.bib
+Repeated entry---line 458 of file /Users/vitorhadad/Documents/kidney/matching/phd_thesis/references.bib
+ : @inproceedings{rapaport1986case
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 518 of file /Users/vitorhadad/Documents/kidney/matching/phd_thesis/references.bib
  : @article{ashlagi2013kidney
  :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 462 of file /Users/vitorhadad/Documents/kidney/matching/phd_thesis/references.bib
- : @book{goodfellow2016deep
- :                         ,
 I'm skipping whatever remains of this entry
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Warning--no journal in akbarpour2017thickness
@@ -26,52 +26,55 @@ Warning--no number and no volume in ashlagi2013kidney
 Warning--page numbers missing in both pages and numpages fields in ashlagi2013kidney
 Warning--empty publisher in awasthi2009online
 Warning--empty address in awasthi2009online
+Warning--empty publisher in dickerson2012dynamic
+Warning--empty address in dickerson2012dynamic
+Warning--page numbers missing in both pages and numpages fields in dickerson2012dynamic
 Warning--empty publisher in dickerson2015futurematch
 Warning--empty address in dickerson2015futurematch
 Warning--no number and no volume in friedman2001greedy
-Warning--empty address in goodfellow2016deep
-Warning--empty publisher in grover2016node2vec
-Warning--empty address in grover2016node2vec
-Warning--empty address in newman2010networks
-You've used 19 entries,
+Warning--can't use both volume and number fields in rapaport1986case
+Warning--empty publisher in rapaport1986case
+Warning--empty address in rapaport1986case
+Warning--no number and no volume in sonmez2013market
+You've used 21 entries,
             5551 wiz_defined-function locations,
-            1400 strings with 17948 characters,
-and the built_in function-call counts, 20355 in all, are:
-= -- 2883
-> -- 660
+            1417 strings with 18574 characters,
+and the built_in function-call counts, 23425 in all, are:
+= -- 3372
+> -- 822
 < -- 0
-+ -- 188
-- -- 328
-* -- 1390
-:= -- 2115
-add.period$ -- 97
-call.type$ -- 19
-change.case$ -- 118
-chr.to.int$ -- 19
-cite$ -- 33
-duplicate$ -- 1516
-empty$ -- 1113
-format.name$ -- 284
-if$ -- 4987
++ -- 244
+- -- 376
+* -- 1648
+:= -- 2415
+add.period$ -- 104
+call.type$ -- 21
+change.case$ -- 140
+chr.to.int$ -- 21
+cite$ -- 38
+duplicate$ -- 1715
+empty$ -- 1257
+format.name$ -- 340
+if$ -- 5814
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 67
-newline$ -- 193
-num.names$ -- 152
-pop$ -- 564
+missing$ -- 80
+newline$ -- 208
+num.names$ -- 168
+pop$ -- 641
 preamble$ -- 1
-purify$ -- 213
+purify$ -- 245
 quote$ -- 0
-skip$ -- 468
+skip$ -- 520
 stack$ -- 0
-substring$ -- 1802
-swap$ -- 158
+substring$ -- 1983
+swap$ -- 179
 text.length$ -- 194
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 254
-warning$ -- 14
-while$ -- 161
+type$ -- 294
+warning$ -- 17
+while$ -- 172
 width$ -- 0
-write$ -- 363
+write$ -- 395
 (There were 3 error messages)

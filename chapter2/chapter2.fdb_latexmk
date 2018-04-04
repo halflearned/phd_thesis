@@ -1,0 +1,18 @@
+# Fdb version 3
+["pdflatex"] 1522612293 "chapter2.tex" "chapter2.pdf" "chapter2" 1522612296
+  "/Users/vitorhadad/Documents/kidney/matching/phd_thesis/tables/mab_UCB1.tex" 1522176240 3137 ac7df756f6ea87640f482b51f0927e7f ""
+  "/Users/vitorhadad/Documents/kidney/matching/phd_thesis/tables/traditional_ml_classifier.tex" 1518490980 4354 4dd66876f17626e1e1397527c846eb2b ""
+  "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
+  "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm" 1136768653 1300 63a6111ee6274895728663cf4b4e7e81 ""
+  "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1136768653 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1136768653 768 1321e9409b4137d6fb428ac9dc956269 ""
+  "/usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf" 1428852030 31983 18aeec08f48baa3cf3508d538dd5f459 ""
+  "/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1432479641 1764542 91654ba72bdb667e84ea24f076ae16d8 ""
+  "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1432479681 3849859 39a7d258195bde2394e244961601fbc5 ""
+  "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
+  "chapter2.aux" 1520829450 8 a94a2480d3289e625eea47cd1b285758 ""
+  "chapter2.tex" 1522612292 48060 2dc4b99b4b22ad50137772466311c318 ""
+  (generated)
+  "chapter2.pdf"
+  "chapter2.log"

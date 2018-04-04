@@ -95,13 +95,14 @@
 \newblock
 
 
-\bibitem[\protect\citeauthoryear{Cortes and Vapnik}{Cortes and Vapnik}{1995}]%
-        {cortes1995support}
-\bibfield{author}{\bibinfo{person}{Corinna Cortes} {and}
-  \bibinfo{person}{Vladimir Vapnik}.} \bibinfo{year}{1995}\natexlab{}.
-\newblock \showarticletitle{Support-vector networks}.
-\newblock \bibinfo{journal}{{\em Machine learning\/}} \bibinfo{volume}{20},
-  \bibinfo{number}{3} (\bibinfo{year}{1995}), \bibinfo{pages}{273--297}.
+\bibitem[\protect\citeauthoryear{Dickerson, Procaccia, and Sandholm}{Dickerson
+  et~al\mbox{.}}{2012}]%
+        {dickerson2012dynamic}
+\bibfield{author}{\bibinfo{person}{John~P Dickerson}, \bibinfo{person}{Ariel~D
+  Procaccia}, {and} \bibinfo{person}{Tuomas Sandholm}.}
+  \bibinfo{year}{2012}\natexlab{}.
+\newblock \showarticletitle{Dynamic Matching via Weighted Myopia with
+  Application to Kidney Exchange.}. In \bibinfo{booktitle}{{\em AAAI}}.
 \newblock
 
 
@@ -127,29 +128,6 @@
 \newblock
 
 
-\bibitem[\protect\citeauthoryear{Goodfellow, Bengio, and Courville}{Goodfellow
-  et~al\mbox{.}}{2016}]%
-        {goodfellow2016deep}
-\bibfield{author}{\bibinfo{person}{Ian Goodfellow}, \bibinfo{person}{Yoshua
-  Bengio}, {and} \bibinfo{person}{Aaron Courville}.}
-  \bibinfo{year}{2016}\natexlab{}.
-\newblock \bibinfo{booktitle}{{\em Deep learning}}.
-\newblock \bibinfo{publisher}{MIT press}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Grover and Leskovec}{Grover and
-  Leskovec}{2016}]%
-        {grover2016node2vec}
-\bibfield{author}{\bibinfo{person}{Aditya Grover} {and} \bibinfo{person}{Jure
-  Leskovec}.} \bibinfo{year}{2016}\natexlab{}.
-\newblock \showarticletitle{node2vec: Scalable feature learning for networks}.
-  In \bibinfo{booktitle}{{\em Proceedings of the 22nd ACM SIGKDD international
-  conference on Knowledge discovery and data mining}}. ACM,
-  \bibinfo{pages}{855--864}.
-\newblock
-
-
 \bibitem[\protect\citeauthoryear{Lattimore and Szepesvari}{Lattimore and
   Szepesvari}{2018}]%
         {lattimore2018bandits}
@@ -162,12 +140,15 @@
 \url{http://banditalgs.com/}}
 
 
-\bibitem[\protect\citeauthoryear{Newman}{Newman}{2010}]%
-        {newman2010networks}
-\bibfield{author}{\bibinfo{person}{Mark Newman}.}
-  \bibinfo{year}{2010}\natexlab{}.
-\newblock \bibinfo{booktitle}{{\em Networks: an introduction}}.
-\newblock \bibinfo{publisher}{Oxford university press}.
+\bibitem[\protect\citeauthoryear{LeCun, Bengio, and Hinton}{LeCun
+  et~al\mbox{.}}{2015}]%
+        {lecun2015deep}
+\bibfield{author}{\bibinfo{person}{Yann LeCun}, \bibinfo{person}{Yoshua
+  Bengio}, {and} \bibinfo{person}{Geoffrey Hinton}.}
+  \bibinfo{year}{2015}\natexlab{}.
+\newblock \showarticletitle{Deep learning}.
+\newblock \bibinfo{journal}{{\em nature\/}} \bibinfo{volume}{521},
+  \bibinfo{number}{7553} (\bibinfo{year}{2015}), \bibinfo{pages}{436}.
 \newblock
 
 
@@ -181,6 +162,17 @@
 \newblock
 \showURL{%
 \url{http://transplantpro.org/wp-content/uploads/Current-CPRA-Calculation-2.ppt}}
+
+
+\bibitem[\protect\citeauthoryear{Rapaport}{Rapaport}{1986}]%
+        {rapaport1986case}
+\bibfield{author}{\bibinfo{person}{Felix~T Rapaport}.}
+  \bibinfo{year}{1986}\natexlab{}.
+\newblock \showarticletitle{The case for a living emotionally related
+  international kidney donor exchange registry.}. In \bibinfo{booktitle}{{\em
+  Transplantation proceedings}}, Vol.~\bibinfo{volume}{18}.
+  \bibinfo{pages}{5--9}.
+\newblock
 
 
 \bibitem[\protect\citeauthoryear{Roth, S{\"o}nmez, and {\"U}nver}{Roth
@@ -220,6 +212,48 @@
 \newblock \bibinfo{journal}{{\em American Economic Review\/}}
   \bibinfo{volume}{97}, \bibinfo{number}{3} (\bibinfo{year}{2007}),
   \bibinfo{pages}{828--851}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Shuman, Narang, Frossard, Ortega, and
+  Vandergheynst}{Shuman et~al\mbox{.}}{2013}]%
+        {shuman2013emerging}
+\bibfield{author}{\bibinfo{person}{David~I Shuman}, \bibinfo{person}{Sunil~K
+  Narang}, \bibinfo{person}{Pascal Frossard}, \bibinfo{person}{Antonio Ortega},
+  {and} \bibinfo{person}{Pierre Vandergheynst}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{The emerging field of signal processing on graphs:
+  Extending high-dimensional data analysis to networks and other irregular
+  domains}.
+\newblock \bibinfo{journal}{{\em IEEE Signal Processing Magazine\/}}
+  \bibinfo{volume}{30}, \bibinfo{number}{3} (\bibinfo{year}{2013}),
+  \bibinfo{pages}{83--98}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{S{\"o}nmez and {\"U}nver}{S{\"o}nmez and
+  {\"U}nver}{2013}]%
+        {sonmez2013market}
+\bibfield{author}{\bibinfo{person}{Tayfun S{\"o}nmez} {and}
+  \bibinfo{person}{M~Utku {\"U}nver}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Market design for kidney exchange}.
+\newblock \bibinfo{journal}{{\em The Handbook of Market Design\/}}
+  (\bibinfo{year}{2013}), \bibinfo{pages}{93--137}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Tonelli, Wiebe, Knoll, Bello, Browne, Jadhav,
+  Klarenbach, and Gill}{Tonelli et~al\mbox{.}}{2011}]%
+        {tonelli2011systematic}
+\bibfield{author}{\bibinfo{person}{M Tonelli}, \bibinfo{person}{N Wiebe},
+  \bibinfo{person}{G Knoll}, \bibinfo{person}{A Bello}, \bibinfo{person}{S
+  Browne}, \bibinfo{person}{D Jadhav}, \bibinfo{person}{S Klarenbach}, {and}
+  \bibinfo{person}{J Gill}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Systematic review: kidney transplantation compared
+  with dialysis in clinically relevant outcomes}.
+\newblock \bibinfo{journal}{{\em American journal of transplantation\/}}
+  \bibinfo{volume}{11}, \bibinfo{number}{10} (\bibinfo{year}{2011}),
+  \bibinfo{pages}{2093--2109}.
 \newblock
 
 

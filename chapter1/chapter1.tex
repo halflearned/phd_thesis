@@ -1,0 +1,777 @@
+\chapter{Heterogenous Production Functions, Panel Data, and Productivity Dispersion}
+
+\doublespacing
+
+\section{Introduction}
+
+[Primary motivations of panel data: controlling for unobserved heterogeneity]
+
+[Correlated random coefficients]
+
+[]
+Random coefficients
+ Consumer panels with heterogeneous consumers
+ Production function parameters (A,B) vary across firms in
+same industry
+
+
+Random coefficients (A,B) can be correlated with inputs (X1,X2)
+  Estimator allows arbitrary correlations of production function parameters (A1,B1) with inputs (X1,X2)
+  Timing assumptions with random coefficients (A,B)
+  Input decisions made in period t − 1 with knowledge of t − 1
+production function
+  Estimation, consistency: censoring for unconditional means
+  India: log TFP dispersion increases in random coefficients vs OLS
+
+\section{Literature review}
+
+In its most general form, the basic linear panel model used in econometrics can be described as
+
+\begin{align}
+  Y_{it} = A_{it} + \sum_{k=1}^{K} X_{it}^{(k)}B_{it}^{(k)}
+\end{align}
+
+\noindent where $Y_{it}, X_{it}, \{A_{it}, B_{it}\}_{k=1}^{K}$ are random variables associated with individual $i$ at period $t$. The parameters $B_{it}^{(k)}$ represent the causal effect of an increase in their associated regressor, while $A_{it}$ is a disturbance term whose interpretation depends on the specific application. When they have a nondegerate probability distribution, they receive various names in the literature, such as ``\emph{unobserved component}, \emph{latent variable}, or \emph{unobserved heterogeneity}"\citep[~p.251]{wooldridge2010econometric}.
+
+ but here we call them \emph{random coefficients}.
+
+Without further restrictions, nothing can be said about the objects $A_{it}$ and $B_{it}$, or even its moments. In the linear panel data literature, common identifying assumptions include the following three.
+
+\begin{enumerate}
+  \item $A_{it} = a + \epsilon_{it}$ and $B_{it} = b$, where $a, b$ are constants and $E[\epsilon_{it}|X_{it}] = 0 \forall t$.
+  \item $A_{it} = A_{i} + \epsilon_{it}$ and $B_{it} = b$, where $b$ is a constant and $E[\epsilon_{it}|X_{is}] = 0 \forall t, s$.
+  \item $A_{it} = A_{i} + \epsilon_{it}$ and $B_{it} = b$, where $b$ is a constant and $E[\epsilon_{it}|X_{is}] \neq 0 \forall t, s$.
+\end{enumerate}
+
+The first one is the standard linear model that can be consistently estimated by simply running a standard linear regression of $Y_{it}$ on $X_{it}$. The second and third are called \emph{random} and \emph{fixed} panel data models, and have received a great deal of attention in the literature (see [???] for a review). Figure \ref{fig:panel_data_models} illustrates the difference between them.
+
+
+\begin{figure}
+  \includegraphics[width=1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/panel_data_models.pdf}
+  \caption[Linear panel data models]{\textbf{Linear panel data models} \\ Different assumptions leading to different panel data models. Each different marker type and color indicates a different individual. \emph{Pooled}: all observations share same intercept and slope; \emph{Random effects}: each observation possesses their own time-invariant slope, but all share the same slope; \emph{Fixed effects}: same as random effects, but intercept and regressors can be correlated (figure shows positive correlation); \emph{FHHPS}: our paper generalizes the model by 1) allowing for intercept and slope to be correlated with regressors, and 2) allowing both intercept and slope to drift according to a specific Markovian process.}
+  \label{fig:panel_data_models}
+\end{figure}
+
+
+In this paper we focus on the more general case where we allow for more than one random coefficient, and also allow them to be correlated with the regressor. The literature dealing with this more general case is substantially smaller. \citet{hoderlein2010analyzing} analyzed a for any number of random coefficients, but required the stronger assumption that the coefficients are independent from the regressors. 
+
+> [Chamberlain (1982), Arellano and Bonhomme (2011), Graham
+and Powell (2012), Evdokimov (2011)]
+
+> Recent papers on heterogeneous production functions Kasahara, Shrimpf and Suzuki (2016), Balat, Brambilla and Sazaki (2016)
+  Extend proxy variable approaches but require variables to be chosen in period t − 1 with only static considerations, as in FOCs. Ackerberg and Hahn (2016)
+  Scalar unobservable enters into nonparametric production function
+  
+  
+  
+  Cobb-Douglas
+  Yi,t =Ai,t +BKKi,t +BLLi,t
+    Productivity dispersion: standard deviation of Ai,t across plants or firms in same industry
+    Syverson (2011) surveys empirical findings on dispersion
+    Typical finding: some plants produce more than twice as much
+  output for same inputs
+    Assuming  BK,BL  is the same across plants in a 4- or 2-digit industry classification may be too restrictive
+    If BK,BL  varybyplanti andtimet andabove i,t i,t
+  specification is estimated, much of this heterogeneity enters into Ai,t
+  
+  
+  Estimate BK as expenditure share on capital input i,t
+  Based on static profit maximizing FOC for Cobb-Douglas
+  Treats input as having no adjustment costs, opposite of our
+approach
+  Based on strong conduct assumption: static profit maximization
+  We do not impose profit maximization, important for studying unproductive firms
+  We allow unobservables outside production function to affect input choice
+  Firm-specific input prices
+  Adjustment costs
+  Product demand
+
+
+\section{Model and assumptions}
+
+In order to reduce clutter we will drop the $i$ subscript. For $1 \leq t \leq T$, define
+\begin{align*}
+Y_{t} &= A_{t} + B_{t}X_{t}
+\end{align*}
+%$Z_{t}$ (a $k \times 1$ vector)
+%and $\beta_t$  is a $k \times 1$ vector of fixed coefficients, 
+where $X_{t}$ is a scalar, and $A_{t}, B_{t}$ are scalar random coefficients that evolve according to an AR(1) Markov process.
+\begin{align}
+  A_{t} &= A_{t-1} + U_{t} \\
+  B_{t} &= B_{t-1} + V_{t}  
+\end{align}
+% 
+% Let $r$ be a positive integer and for $t \geq 2$ define $W_t = (X_{t-1}, X_{t})$. We will say that $(U_t, V_t)$ are \emph{r\textsuperscript{th}-moment independent} of $W_t$ if 
+%   \begin{align}
+%     \text{For }1 \leq j \leq r,
+%     \quad     
+%     E[U_{t}^{r-j} V_{t}^{j} | W_t] = E[U_{t}^{r-j} V_{t}^{j}]
+%   \end{align}
+% \end{definition}
+
+We will make the following sufficient assumptions for identifiability. Some of these are known to be stronger than necessary, and we will mention how to relax them later on. For ease of notation, let us denote $W_t = [X_t, X_{t-1}]^{T}$
+
+\begin{assumption}{} \label{a:timeindependence}
+  Conditional on recent covariates $W_t$, contemporaneous shocks are independent from past shocks.
+  \begin{align}
+    \text{For }2 \leq t \leq T ,
+    \quad     
+    (U_t, V_t) \perp \{ U_s, V_s \}_{s=0}^{t-1} \  | \ W_t
+  \end{align}
+\end{assumption}
+
+
+\begin{assumption}{} \label{a:sequentialindependence}
+  Shocks are sequentially independent from all covariates
+  % \begin{align}
+  %   \text{For }1 \leq j \leq r,
+  %   \quad     
+  %   E[U_{t}^{r-j} V_{t}^{j} | W_t] = E[U_{t}^{r-j} V_{t}^{j}]
+  % \end{align}
+  \begin{align}
+    \forall t, \qquad U_t, V_t \perp (X_{1}, \cdots, X_{T})
+  \end{align}
+\end{assumption}
+
+
+\begin{assumption}{}  \label{a:support}
+  The covariate associated with the random coefficient is continuously distributed and is supported on the entire real line for all periods. Furthermore, their joint distribution is non-degenerate.
+  \begin{align}
+    \text{supp}(X_1) = \cdots = \text{supp}(X_T) = \mathbb{R} \qquad \text{and} \qquad \forall s \neq t, \ \ P(X_s = X_t) = 0 
+  \end{align}
+\end{assumption}
+
+\begin{assumption}{}  \label{a:fullrank}
+  Nonsingularity of the covariate matrix.
+  \begin{align}
+    \text{For }2 \leq t \leq T ,
+    \quad     
+    E[W_tW_t^{T}] \text{is nonsingular}
+  \end{align}
+\end{assumption}
+
+
+We should note that assumptions \ref{a:timeindependence} and \ref{a:sequentialindependence} allow for future regressors to be correlated with past shocks. In the context of firm profit maximization, this means that a firm is allowed to choose future inputs based on their previous productivity. In a different context, they would also allow for a dynamic model with $X_t = Y_{t-1}$. Crucially, we have not made any assumptions about contemporaneous independence between random coefficients and regressors, thus allowing for a unobserved heterogeneity of a general type.
+
+Assumption \ref{a:support} is a simplifying ``no-stayer" assumption that will facilitate some of the asymptotic derivations below. Assumption \ref{a:fullrank} is a common technical assumption often used for generic identification in linear models.
+
+\section{Identifying random coefficient moments}
+
+In this section, we show how to identify the $r^{th}$ moments of the random coefficients $(A_{t}, B_{t})$. Broadly, our identification strategy will follow the next steps.
+
+\begin{enumerate}
+  \item Identify shock moments $E[U_{t}^{\ell}V_{t}^{r-\ell}]$ 
+  
+  \item Express the conditional moments of the regressand $E[Y_{1}^\ell Y_{2}^{r - \ell} | W_{2i}]$ as a function of conditional moments of random coefficients $E[A_{t}^{\ell}B_{t}^{r-\ell}|W_{2}]$ and shocks $E[U_{t}^{\ell}V_{t}^{r-\ell}]$ 
+  
+  \item Invert the above so as to represent conditional moments of random coefficients as a function of conditional moments of the regressand and shocks $E[U_{t}^{\ell}V_{t}^{r-\ell}|W_{2}]$ 
+  
+  \item Integrate out to get unconditional moments $E[A_{t}^{\ell}B_{t}^{r-\ell}]$
+\end{enumerate}
+
+\subsection{First period moments}
+
+Let us start with the first moment ($r = 1$). In this case, we are required to have $T \geq 2$ consecutive waves of panel data. 
+
+
+We begin by simply reminding ourselves of the system of equations for these two periods.
+\begin{align}
+  \begin{cases}
+    %Y_{1} = A_{1} + B_{1}X_{1} + Z_1^{T}\beta_1 \\ 
+    %Y_{2} = A_{2} + B_{2}X_{2} + Z_2^{T}\beta_2
+    Y_{1} = A_{1} + B_{1}X_{1} \\ 
+    Y_{2} = A_{2} + B_{2}X_{2} 
+  \end{cases}
+\end{align}
+
+Let's expand the coefficients according to our model equations \ref{}.
+\begin{align}
+  \begin{cases}
+    %Y_{1} = A_{1} + B_{1}X_{1}  + Z_1^{T}\beta_1 \\ 
+    %Y_{2} = A_{1} + U_{2} + B_{1}X_{2} + V_{2}X_{t} + Z_2^{T}\beta_2 \label{eq:expanded}
+    Y_{1} = A_{1} + B_{1}X_{1} \\ 
+    Y_{2} = A_{1} + U_{2} + B_{1}X_{2} + V_{2}X_{t} \label{eq:expanded}
+  \end{cases}
+\end{align}
+
+
+\paragraph{Step 1} In order to identify shocks, we consider the expectation of the difference between the two periods, conditioning on some point $W_2 = w_2 = (x, x)$.
+\begin{align}
+  %E[Y_{2} - Y_{1} \ | \  W_{2} = w_{2}] = 
+  %E[U_{2}] + E[V_{2}]x_2 + z_2^{T}\beta_2 - z_1^{T}\beta_{1}
+  E[Y_{2} - Y_{1} \ | \  W_{2} = w_{2}] = 
+  E[U_{2}] + E[V_{2}]x
+\end{align}
+
+\noindent The expression above contains two caveats. First, that thanks our full support assumption \ref{a:support}, we can choose any point on $\mathbb{R}^2$ to condition on, including a point where $X_1 = X_2 = x$ as we just did. Second, that Assumption \ref{a:timeindependence} allowed us to drop the conditioning for the shocks.
+
+Now, note that the moments $E[U_2]$ and $E[V_2]$ on the right-hand side are solutions to this minimization problem
+\begin{align}
+%\min_{a, b, \beta_1, \beta_2}
+  \min_{\theta_u, \theta_v}  
+  %E[(Y_{2} - Y_{1} - a - bx_2 - z_2^{T}\beta_2 + z_1^{T}\beta_{1})^2 | W_2 = w_2]
+  E[(Y_{2} - Y_{1} - \theta_u -  x\theta_v)^2 \  | \ W_2 = w_2]
+\end{align}
+\noindent and that the solution is unique, by virtue of the strict convexity of the quadratic function and the full rank assumption \ref{a:full_rank}. It follows that the shock moments $E[U_2]$ and $E[V_2]$ are generically identified, and so are $\beta_1$ and $\beta_2$.
+
+
+\paragraph{Step 2} For this step, we simply have to take expectations of \ref{eq:expanded}, now conditioning on $W_2 = w_2 = (x_1, x_2)$. (Note we have dropped the constraint $X_1 = X_2$).
+\begin{align}
+  \begin{cases}
+    % E[Y_{1}|W_{2}]
+    %   = E[A_{1}|W_{2}] + E[B_{1}|W_{2}]x_{1} + z_1^{T}\beta_1 \\ 
+    % E[Y_{2}|W_{2}]
+    %   = E[A_{1}|W_{2}] + E[U_{2}] + E[B_{1}|W_{2}]x_{2} + E[V_{2}]x_{t} + z_2^{T}\beta_2
+      E[Y_{1}|W_{2}]
+        = E[A_{1}|W_{2}] + E[B_{1}|W_{2}]x_{1} \\ 
+      E[Y_{2}|W_{2}]
+        = E[A_{1}|W_{2}] + E[U_{2}] + E[B_{1} \ | \ W_{2}]x_{2} + E[V_{2}]x_{2} 
+  \end{cases}
+\end{align}
+
+\paragraph{Step 3} Writing the previous equation in matrices after a little rearranging, we get:
+\begin{align}
+  \begin{bmatrix}
+   %  E[Y_{1}|W_{2}] - z_1^{T}\beta_1 \\  
+  %  E[Y_{2}|W_{2}] - E[U_{2}] -  E[V_{2}]x_{t} - z_2^{T}\beta_1
+    E[Y_{1}|W_{2}] \\  
+    E[Y_{2}|W_{2}] - E[U_{2}] -  E[V_{2}]x_{t} 
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+    1 & x_1 \\
+    1 & x_2  
+  \end{bmatrix}
+  \begin{bmatrix}
+    E[A_{1}|W_{2}] \\
+    E[B_{1}|W_{2}]
+  \end{bmatrix}
+\end{align}
+
+\noindent As long as $x_1 \neq x_2$, we can invert the first matrix on the right-hand side. 
+\begin{align}
+  \begin{bmatrix}
+    E[A_{1}|W_{2}] \\
+    E[B_{1}|W_{2}]
+  \end{bmatrix}
+  =
+  \begin{bmatrix}
+    1 & x_1 \\
+    1 & x_2  
+  \end{bmatrix}^{-1}
+  \begin{bmatrix}
+    % E[Y_{1}|W_{2}]  - z_1^{T}\beta_1  \\  
+    % E[Y_{2}|W_{2}] - E[U_{2}] -  E[V_{2}]x_{t} - z_2^{T}\beta_1
+    E[Y_{1}|W_{2}] \\  
+    E[Y_{2}|W_{2}] - E[U_{2}] -  E[V_{2}]x_{2}  \label{eq:inversion}
+  \end{bmatrix}
+\end{align}
+
+\noindent since all the quantities on the right-hand side are known, we have identified all the conditional first moment of our random coefficients outside the line $X_1 = X_2$. Since our ``no-stayer" assumption \ref{a:support} guarantees that a randomly drawn point from the joint distribution of $X_1$ and $X_2$ will not be on the diagonal, we have generic identification.
+
+Conditional second-period moments are also automatically identified, since due to our \ref{a:sequentialindependence} assumption we have that shocks are mean-independent from contemporaneous regressors, which allows us to write
+\begin{align}
+  E[A_2 | W_2 = w_2] = E[A_1|W_2 = w_2] + E[U_2] \\
+  E[B_2 | W_2 = w_2] = E[B_1|W_2 = w_2] + E[V_2] \\
+\end{align}
+
+\paragraph{Step 4} The final step is simply to integrate out over the distribution of $W_2$ to get unconditional moments. 
+
+\subsection{Second period moments} The identification procedure is analogous, but this time we use the square of our model equations.
+
+\paragraph{Step 1} Identify shock second moments on the diagonal $W_2 = w_2 = (x, x)$ using the following equation
+\begin{align}
+  %E[Y_{2} - Y_{1} \ | \  W_{2} = w_{2}] = 
+  %E[U_{2}] + E[V_{2}]x_2 + z_2^{T}\beta_2 - z_1^{T}\beta_{1}
+  E[(Y_{2} - Y_{1})^2 \ | \  W_{2} = w_{2}] = 
+  E[U_{2}^2] + E[V_{2}^2]x^2 + 2E[U_{2}V_{2}]x
+\end{align}
+
+\noindent The analogous minimization procedure is
+\begin{align}
+%\min_{a, b, \beta_1, \beta_2}
+E[U_2^2], E[V_2^2], E[U_2V_2] =
+  \min_{\theta_{uu}, \theta_{vv}, \theta_{uv}}  
+  %E[(Y_{2} - Y_{1} - a - bx_2 - z_2^{T}\beta_2 + z_1^{T}\beta_{1})^2 | W_2 = w_2]
+  E[(Y_{2} - Y_{1} - \theta_{uu} -  x^2\theta_{vv} - 2x\theta_{uv})^2 \  | \ W_2 = w_2]
+\end{align}
+
+\noindent point identification is once more possible because the solution to this minimization problem is unique.
+
+\paragraph{Steps 2-3} Again drop the constraint $X_1 = X_2$, and conditioning on $W_2 = w_2 = (x_1, x_2)$ consider the expectation of the square of our model equations.
+
+\begin{align}
+\begin{bmatrix}
+  E[A_1^2 | x_{1}, x_{2}] \\ 
+  E[B_1^2 | x_{1}, x_{2}]  \\ 
+  E[A_1 B_1 | x_{1}, x_{2}]
+\end{bmatrix}
+=
+\begin{bmatrix}
+  1 & x_{1}^2 & 2x_{1} \\ 
+  1 & x_{2}^2 & 2x_{2} \\ 
+  1 & x_{1}x_{2} & x_{1} + x_{2} \\ 
+\end{bmatrix}^{-1}
+\begin{bmatrix}
+  E[Y_1^2 | x_{1}, x_{2}] \\
+  E[Y_2^2 | x_{1}, x_{2}] - C_{1i} \\
+  E[Y_1 Y_2 | x_{1}, x_{2}] - C_{2i} \\
+\end{bmatrix}
+\end{align}
+
+\noindent where $C_{1i}$ and $C_{2i}$ involve only quantities that were already estimated in previous steps.
+\begin{align}
+C_{1i} &= E[U^2] + 2E[U_2 V_2] x_{2} +  E[V_2^2]x_{2}^2 \\
+      &- 2\{
+E[A_1 | x_{1}, x_{2}] +
+E[B_1 | x_{1}, x_{2}]x_{2}
+\}
+\{
+E[U_2] + E[V_2]x_{2}
+\}
+\\
+C_{2i} &= 
+\{ 
+  E[A_1 | x_{1}, x_{2}] + E[B_1 | x_{1}, x_{2}]x_{1}
+\}
+\{
+E[U_2] + E[V_2]x_{2}
+\}
+\end{align}
+
+Note that the relevant matrix above is invertible whenever $x_1 \neq x_2$. 
+
+\paragraph{Step 4} Analogous to step 4 in the first moment case.
+
+
+\subsection{Identifying further moments}
+
+The argument above generalizes for arbitrary moments. In fact, if we are only after moments a finite number of moments of the distribution, then assumption \ref{a:sequentialindependence} as follows. Let $r$ be a positive integer and for $t \geq 2$ define $W_t = (X_{t-1}, X_{t})$. We will say that $(U_t, V_t)$ are \emph{r\textsuperscript{th}-moment independent} of $W_t$ if 
+  \begin{align}
+    \text{For }1 \leq j \leq r,
+    \quad     
+    E[U_{t}^{r-j} V_{t}^{j} | W_t] = E[U_{t}^{r-j} V_{t}^{j}]
+  \end{align}
+\end{definition}
+
+We can replace assumption \ref{a:sequentialindependence} by the following weaker assumption.
+
+\paragraph{Assumption 3.1'} \label{a:sequentialindependence}
+  \textot{Shocks are r\textsuperscript{th}-moment independent from all covariates}
+  \begin{align}
+    \text{For }1 \leq j \leq r,
+    \quad     
+    E[U_{t}^{r-j} V_{t}^{j} | W_t] = E[U_{t}^{r-j} V_{t}^{j}]
+  \end{align}
+  
+  
+
+\subsection{Extension: fixed coefficients}
+
+Our model can be augmented with an arbitrary number of regressors associated with coefficients that are individual-invariant -- but not necessarily time-invariant. The model equations become
+\begin{align*}
+Y_{t} &= A_{t} + B_{t}X_{t} + Z_{t}^T \beta_{t} \qquad \beta_{t}: \text{fixed}
+\end{align*}
+
+Identification of the fixed coefficients happens on Step 1, when the minimization problem becomes
+\begin{align}
+ E[U_2], E[V_2], \beta_1, \beta_2  = \min_{\theta_u, \theta_v, \theta_{b_1}, \theta_{b_2}}  
+  E[(Y_{2} - Y_{1} - a - bx_2 + z_2^{T}\theta_{b_1} - z_1^{T}\theta_{b_2})^2 | W_2 = w_2]
+\end{align}
+and the argument follows for the same reasons that were previously explained. Once we have identified $\beta_1, \beta_2$, we remove them from future computations using the modified regressand $\tilde{Y_t} := Y_{t} - Z_{t}\beta_{t}$, and the rest of the process delineated above goes through without further change.
+
+
+
+\subsection{Identifying the marginal distribution of random coefficients}
+
+In this section we will prove that we can identify the marginal density of random coefficients $f_{A_tB_t}$. We begin by strengthening the 
+
+
+%--------------
+% ESTIMATION
+%------------- 
+
+
+\section{Estimation} \label{sec:estimation}
+
+Our estimation procedure follows three steps:
+
+\begin{enumerate}
+  \item Use local polynomial regression to estimate shock moments and individual-invariant coefficients
+  \item Use any nonparametric estimator to retrieve estimates of random coefficient moments conditional on observables
+  \item Average out conditional random moments by averaging out conditional moments, taking care to avoid
+  observations for which $X_1 \approx X_2$.
+\end{enumerate}
+
+Let us consider each one of these steps in detail.
+
+\subsection*{Estimating shocks}
+
+\paragraph{First moments} Regress $\Delta Y_2$ on $X_2$ locally at the diagonal $X_1 \approx X_2$:
+\begin{align}
+  \hspace*{-1cm}
+  (\widehat{E}[U_2], \widehat{E}[V_2], \ \cdot \ ) = \arg \min_{\theta_{U} ,\theta_{V}, \gamma}
+\sum_{i} K_h (\Delta X_{2i}) \cdot 
+      \left( \Delta Y_{2i} - \theta_{U} - X_{2i}\theta_{V} - g_1(X_{2i}, \Delta X_{2i}; \gamma \right)^2
+\end{align}
+
+\noindent where $K_h(\cdot)$ is a standard kernel with asymptotically zero bandwidth:
+\begin{align}
+  h_{shocks}(n) = c_{shocks}n^{−\alpha_{shocks}} \qquad \text{where } \lim_{n\rightarrow \infty} h_{n} = 0
+\end{align}
+\noindent and $g_1$ is a $K$-order polynomial in $X_2$ and $\Delta X_2$ with coefficients $\gamma$. In theory its inclusion is optional, but we have observed that its presence substantially improves the quality of the estimates. 
+
+If our model included time-invariant coefficients, they would also be estimated in this step.
+
+
+
+\paragraph{Second moments} We estimate the uncentered moments by proceeding similarly to above:
+\begin{align}
+  (\widehat{E}[U_2^2], \widehat{E}[U_2 V_2] &\widehat{E}[V_2^2], \ \cdot \ ) = \\  
+  \arg \min_{\theta_{U_2} , \theta_{UV}, \theta_{V_2}, \gamma}
+\sum_{i} K_h(\Delta X_{2i}) &\cdot 
+      \left( \Delta Y_{2i}^2 - \theta_{U_2} - 2X_{2i}\theta_{UV}  - X_{2i}^2\theta_{V_2} - g_2(X_{2i}, \Delta X_{2i}; \gamma) \right)^2
+\end{align}
+
+Naturally, once we have uncentered second moments and first moments, we can compute estimates of centered moments using the usual formulas for centered moments, e.g. $\widehat{Var}[U_2] = \widehat{E}[U_2^2] - \widehat{E}[U_2]^2$. 
+
+\subsection*{Conditional random coefficient moments}
+
+
+
+\paragraph{Conditional moments of $Y_1$ and $Y_2$} Here we begin by estimating $E[Y_1^{m} Y_2^{n}|X_1 = x_1, X_2 = x_2]$ for $m,n \in \{ (1,0), (0,1), (1,1), (2,0), (0,2)\}$. This can be done using any nonparametric estimator, but we choose the Nadaraya-Watson for simplicity.
+\begin{align}
+  \widehat{E}[Y_1|X_1 = X_1, X_2 = X_2] =
+  \frac{\sum_i Y_{1i}K_h(X_{1i} - x_1) K_h(X_{2i} - x_2)}
+  {\sum_i K_h(X_{1i} - x_1) K_h(X_{2i} - x_2)}
+\end{align}
+
+\noindent where $K_h$ is again a standard kernel endowed with asymptotically vanishing bandwidth.
+\begin{align}
+  h_{nw}(n) = c_{nw}\hat{\sigma} n^{-\alpha_{nw}}
+\end{align}
+
+\noindent where $\hat{\sigma}$ is an estimate of $Std(X_1) = Std(X_2)$. Note that for the theoretical MISE-minimizing bandwidth, one should set $\alpha_{nw} = \frac{1}{6}$. 
+
+\paragraph{Solving for first moments} Once in possession of all the previous estimates, we can solve for estimates of conditional random coefficient moments using the empirical analogs of equations \ref{eq:first_moment_inversion} and \ref{eq:second_moment_inversion}.
+  
+
+\subsection*{Unconditional random coefficient moments}
+
+In this final step, we must exclude observations near the diagonal $X_1 ≈ X_2$, and then average the conditional moments associated with the remaining observations. According to our asymptotic results, included observations must satisfy the following conditions:
+\begin{align}
+  |\Delta X_{2i}| &> c_{cens1} \hat{\sigma}_{X_2} n^{-\alpha_{cens1}} \quad \text{ for first moments}\\
+  |\Delta X_{2i}| &> c_{cens1} \hat{\sigma}_{X_2} n^{-\alpha_{cens2}} \quad \text{ for second moments}
+\end{align}
+  
+As shown in section \ref{\asymptotic_results}, the optimal thresholds can be shown to be associated with exponents $\alpha_{cens1} = \frac{1}{4}$ and $\alpha_{cens2} = \frac{1}{8}$. However, theory gives us no guidance regarding the choice of constants $c_{cens1}$ and $c_{cens2}$, so we resort to experimentation in the next section.
+
+
+
+
+% -------------
+%  Simulations
+% -------------
+
+
+\section{Simulations} \label{sec:simulation}
+
+The purpose of this sections is to provide a simulation study in a setting that is similar to our empirical application. We begin by generating the first period random coefficients $(A_1, B_1)$, their second-period shocks $(U_2, V_2)$,
+and regressors for both periods $(X_1, X_2)$. They are drawn from a jointly Normal distribution:
+
+\begin{align} \label{eq:simulation_model}
+\begin{bmatrix}
+  A_1\\
+  B_1\\
+  X_1\\
+  X_2\\
+  U_2\\
+  V_2 
+\end{bmatrix}
+\sim
+\mathcal{N}\left(
+\begin{bmatrix}
+2 \\ 
+1 \\ 
+0 \\ 
+0 \\ 
+.3 \\
+.1 
+\end{bmatrix}
+,
+\begin{bmatrix}
+  9 & 0.95 & 1.5 & 1.5 & 0 & 0 \\
+  0.95 & 0.4 & 0.32 & 0.32 & 0 & 0 \\
+  1.5 & 0.32 & 1 & 0.5 & 0 & 0 \\
+  1.5 & 0.32 & 0.50 & 1 & 0 & 0 \\ 
+  0 & 0 & 0 & 0 & 1 & 0.16 \\
+  0 & 0 & 0 & 0 & 0.16 & 0.1 
+\end{bmatrix}
+\right)
+\end{align}
+
+These number were chosen to roughly reflect the characteristics that we expect them to have in a real data
+application. The implied correlation matrix has a very simple structure.
+
+\begin{align}  \label{eq:simulation_correlation}
+  \begin{bmatrix}
+      1&  0.5& 0.5&  0.5&  0&  0 \\
+      0.5&  1& 0.5&  0.5&  0&  0 \\
+      0.5& 0.5&  1&  0.5&  0&  0 \\
+      0.5& 0.5& 0.5&   1&  0&  0 \\
+      0&   0&  0&   0&  1& 0.5 \\
+      0&   0&  0&   0& 0.5&  1
+  \end{bmatrix}  
+\end{align}
+
+The remaining variables were created from these in the obvious manner. In order to understand how our estimator behaves as the number of observation increases, we used $n \in \{500, 2000, 5000, 10000, 20000 \}$.
+
+As seen in Section \ref{sec:estimation}, our method requires the careful tuning of many different parameters. Since our methods are not amenable to cross-validation, we simulated the model in section 1 over a large grid of parameter combinations, which were then compared according to their RMSE against the true value. The RMSE-minimizing parameter configuration for each number of observations is shown on Table \ref{tab:best_parameters}.
+
+\begin{table}[htdp]
+  \centering
+  \renewcommand{\arraystretch}{1.6}
+  \begin{tabular}{l|cccc}
+    n & $c_{shocks}$ & $\alpha_{shocks}$ & $c_{nw}$ & $\alpha_{nw}$ \\  \hline
+    500 & 2 & $\frac{1}{5}$ & $\frac{1}{2}$ & $\frac{1}{6}$ \\
+    2000 & 3 & $\frac{1}{5}$ & $\frac{1}{2}$ & $\frac{1}{6}$ \\
+    5000 & 4 & $\frac{1}{5}$ & $\frac{1}{2}$ & $\frac{1}{6}$ \\
+    10000 & 4 & $\frac{1}{5}$ & $\frac{1}{2}$ & $\frac{1}{6}$ \\
+    20000 & 3 & $\frac{1}{5}$ & $\frac{1}{2}$ & $\frac{1}{3}$ \\
+  \end{tabular}
+  \caption{RMSE-minimizing parameter configurations for our DGP.}
+  \label{tab:best_parameters}
+\end{table}
+ 
+Note that the best parameters remain fairly stable as we increase the number of observations. The most notable variation is in $\alpha_{nw}$: intuitively, when the number observations is large enough, a much smaller bandwidth is preferred, and that is translated into a more aggressive choice of exponent. We will use these numbers to guide our choice of tuning parameters in our empirical application in the next section.
+
+The performance of our estimators is illustrated on Figures \ref{fig:simulation_shocks} and \ref{fig:simulation_random_coefficients} and on the accompanying tables on the Appendix. We observe that indeed the distribution tends to collapse to its true value as the number of observations increases. 
+
+
+\subsection{Bootstrap coverage}
+
+Tables \ref{tab:bs_coverage_shocks}-\ref{tab:bs_coverage_random_coefficients} show the coverage of bootstrap confidence intervals for all estimated parameters. To produce these tables, we generated 2000 datasets using different seeds, computed 500 bootstrap estimates in each of these datasets, and calculated their 0.025 and 0.975 quantiles. The numbers in each cell are the proportion of times that quantiles straddled the true value.
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Bootstrap coverage for shock moments}
+  \input{chapter1/tables/bs_coverage_shocks.tex}
+  \label{tab:bs_coverage_shocks}
+\end{table}
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Bootstrap coverage for random coefficient conditional moments}
+  \input{chapter1/tables/bs_conditional_coverage.tex}
+  \label{tab:bs_conditional_coverage}
+\end{table}
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Bootstrap coverage for random coefficient unconditional moments}
+  \input{chapter1/tables/bs_coverage_random_coefficients.tex}
+  \label{tab:bs_coverage_random_coefficients}
+\end{table}
+
+\section{Empirical application}
+
+Now we provide an illustration of our methods by estimating a Cobb-Douglas production function with random elasticity for a large number of Indian plants. We will be using the Annual Survey of Industries (ASI) dataset, released by the Central Statistical Organization of India for the years 2008 and 2009. This yearly survey collects data from sampled Indian economic units of production (individual factories, workshops, and establishments, hereafter called ``plants") that employ more than 10 regular workers. From this data we extract four variables: \emph{gross sale value} (value of the products sold by the plant, as purchased by their clients) $S_{t}$; \emph{capital} (fixed assets with a productive life of more than one year) $K_{t}$; \emph{wages} $W_{t}$; and production \emph{materials} $M_{t}$. All variables are in 2005 rupees. We keep only observations that we present in both years of analysis, and we are left with 13298 observations. Summary statistics are in subsection \ref{sec:summary_statistics} in the Appendix.
+
+
+In addition to the variables above, we generate our model variables:
+\begin{align}
+  Y_{t} = \log\left( \frac{S_{t} - M_{t}}{W_{t}}\right) \qquad X_{t} = \log \left( \frac{K_{t}}{W_{t}} \right)
+\end{align}
+\noindent where $Y_{t}$ represents production value-added after sales normalized by wages, and $X_t$ represents normalized capital. 
+
+[[Interpretation]]
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Empirical application: Shock Estimates}
+  \input{chapter1/tables/bootstrap_shock_empirical.tex}
+\end{table}
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Empirical application: Random Coefficient Estimates (first period)}
+  \input{chapter1/tables/bootstrap_random_coefficients_1_empirical.tex}
+\end{table}
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Empirical application: Random Coefficient Estimates (second period)}
+  \input{chapter1/tables/bootstrap_random_coefficients_2_empirical.tex}
+\end{table}
+
+
+
+
+\begin{figure}
+  \centering
+  \includegraphics[height=0.8\textheight]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_shocks.pdf}
+  \label{fig:simulation_shocks}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[height=0.8\textheight]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_random_coefficients.pdf}
+  \label{fig:simulation_random_coefficients}
+\end{figure}
+
+
+\begin{figure}
+  \centering
+  \includegraphics[height=0.8\textheight]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc1_empirical.pdf}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[height=0.8\textheight]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc2_empirical.pdf}
+\end{figure}
+
+
+\begin{figure}
+  \centering
+  \includegraphics[height=0.8\textheight]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/shocks_empirical.pdf}
+\end{figure}
+
+
+\clearpage
+
+\section{Appendix}
+
+\subsection{Summary statistics} \label{sec:summary_statistics}
+
+
+
+\begin{table}[H]
+  \singlespacing
+  \caption{ASI survey data: summary statistics}
+  \input{chapter1/tables/summary_statistics_raw1.tex}
+  \label{tab:summary_statistics_raw1}
+\end{table}
+
+\begin{table}[H]
+  \singlespacing
+  \caption{ASI survey data: correlations}
+  \input{chapter1/tables/summary_statistics_raw2.tex}
+  \label{tab:summary_statistics_raw2}
+\end{table}
+
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Transformed variables: summary statistics}
+  \input{chapter1/tables/summary_statistics_processed1.tex}
+  \label{tab:summary_statistics_processed1}
+\end{table}
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Transformed variables: correlations}
+  \input{chapter1/tables/summary_statistics_processed2.tex}
+  \label{tab:summary_statistics_processed2}
+\end{table}
+
+
+\subsection{Simulation results}
+
+Here we show how our estimates of shock and random coefficient moments change as we increase the number of observations. Throughout, we used the RMSE-minimizing parameters shown in table \ref{tab:best_parameters}. To produce the tables below, we generated 8000 datasets for each number different number of observations, produced the relevant estimates and computed the performance measures.
+
+\subsubsection*{Shock moments}
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Performance measures for estimates of E[U_2]}
+  \input{chapter1/tables/simulation_statistics_EU.tex}
+\end{table}
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Performance measures for estimates of E[V_2]}
+  \input{chapter1/tables/simulation_statistics_EV.tex}
+\end{table}
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Performance measures for estimates of Std[U_2]}
+  \input{chapter1/tables/simulation_statistics_SU.tex}
+\end{table}
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Performance measures for estimates of Std[B_2]}
+  \input{chapter1/tables/simulation_statistics_SB.tex}
+\end{table}
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Performance measures for estimates of Cov[U_2, V_2]}
+  \input{chapter1/tables/simulation_statistics_CUV.tex}
+\end{table}
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Performance measures for estimates of Corr[U_2, V_2]}
+  \input{chapter1/tables/simulation_statistics_CorrUV.tex}
+\end{table}
+
+
+\subsection*{Random coefficient moments}
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Performance measures for estimates of E[A_1]}
+  \input{chapter1/tables/simulation_statistics_EA.tex}
+\end{table}
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Performance measures for estimates of E[B_1]}
+  \input{chapter1/tables/simulation_statistics_EB.tex}
+\end{table}
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Performance measures for estimates of Std[A_1]}
+  \input{chapter1/tables/simulation_statistics_SA.tex}
+\end{table}
+ 
+\begin{table}[H]
+  \singlespacing
+  \caption{Performance measures for estimates of Std[B_1]}
+  \input{chapter1/tables/simulation_statistics_SB.tex}
+\end{table}
+
+\begin{table}[H]
+  \singlespacing
+  \caption{Performance measures for estimates of Cov[A_1, B_1]}
+  \input{chapter1/tables/simulation_statistics_CAB.tex}
+\end{table}
+ 
+\begin{table}[H]
+  \singlespacing
+  \caption{Performance measures for estimates of Corr[A_1, B_1]}
+  \input{chapter1/tables/simulation_statistics_CorrAB.tex}
+\end{table}
+
+ 
+\subsection{Python module \texttt{FHHPS}}
+
+In order to facilitate the adoption of the methods described in this paper by other researchers, I have developed the Python module \texttt{FHHPS}. Instructions for installations and usage can be found in the github repository\footnote{Url: https://github.com/halflearned/FHHPS}. Its API is inspired by the celebrated \texttt{scikit-learn} library\cite{sklearn_api}, and it should be familiar to statisticians and machine learning practitioners that use Python. The webpage linked above also contains one-line instructions for reproducing all of our figures and tables. 
+
+\clearpage
+\begin{landscape}
+\begin{table}[H]
+  \singlespacing
+  \caption{Panel regressions}
+  \input{chapter1/tables/panel_lm_table.tex}
+  \label{tab:panel_lm_table}
+\end{table}
+\end{landscape}
+
+
+ 
+
+

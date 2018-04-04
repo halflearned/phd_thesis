@@ -1,0 +1,12 @@
+# Fdb version 3
+["pdflatex"] 1520808420 "titlepage.tex" "titlepage.pdf" "titlepage" 1520808420
+  "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
+  "/usr/local/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm" 1136768653 1300 63a6111ee6274895728663cf4b4e7e81 ""
+  "/usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf" 1428852030 31983 18aeec08f48baa3cf3508d538dd5f459 ""
+  "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1432479681 3849859 39a7d258195bde2394e244961601fbc5 ""
+  "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
+  "titlepage.aux" 1520808420 8 a94a2480d3289e625eea47cd1b285758 ""
+  "titlepage.tex" 1520808419 983 bc3f553c91d51b777b8552cf851e6e27 ""
+  (generated)
+  "titlepage.pdf"
+  "titlepage.log"

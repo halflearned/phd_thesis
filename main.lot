@@ -1,0 +1,38 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {1}{\ignorespaces RMSE-minimizing parameter configurations for our DGP.\relax }}{17}
+\contentsline {table}{\numberline {2}{\ignorespaces Bootstrap coverage for shock moments\relax }}{18}
+\contentsline {table}{\numberline {3}{\ignorespaces Bootstrap coverage for random coefficient conditional moments\relax }}{18}
+\contentsline {table}{\numberline {4}{\ignorespaces Bootstrap coverage for random coefficient unconditional moments\relax }}{18}
+\contentsline {table}{\numberline {5}{\ignorespaces Empirical application: Shock Estimates\relax }}{19}
+\contentsline {table}{\numberline {6}{\ignorespaces Empirical application: Random Coefficient Estimates (first period)\relax }}{19}
+\contentsline {table}{\numberline {7}{\ignorespaces Empirical application: Random Coefficient Estimates (second period)\relax }}{20}
+\contentsline {table}{\numberline {8}{\ignorespaces ASI survey data: summary statistics\relax }}{26}
+\contentsline {table}{\numberline {9}{\ignorespaces ASI survey data: correlations\relax }}{26}
+\contentsline {table}{\numberline {10}{\ignorespaces Transformed variables: summary statistics\relax }}{27}
+\contentsline {table}{\numberline {11}{\ignorespaces Transformed variables: correlations\relax }}{27}
+\contentsline {table}{\numberline {12}{\ignorespaces Performance measures for estimates of E[U_2]\relax }}{28}
+\contentsline {table}{\numberline {13}{\ignorespaces Performance measures for estimates of E[V_2]\relax }}{28}
+\contentsline {table}{\numberline {14}{\ignorespaces Performance measures for estimates of Std[U_2]\relax }}{28}
+\contentsline {table}{\numberline {15}{\ignorespaces Performance measures for estimates of Std[B_2]\relax }}{29}
+\contentsline {table}{\numberline {16}{\ignorespaces Performance measures for estimates of Cov[U_2, V_2]\relax }}{29}
+\contentsline {table}{\numberline {17}{\ignorespaces Performance measures for estimates of Corr[U_2, V_2]\relax }}{29}
+\contentsline {table}{\numberline {18}{\ignorespaces Performance measures for estimates of E[A_1]\relax }}{30}
+\contentsline {table}{\numberline {19}{\ignorespaces Performance measures for estimates of E[B_1]\relax }}{30}
+\contentsline {table}{\numberline {20}{\ignorespaces Performance measures for estimates of Std[A_1]\relax }}{30}
+\contentsline {table}{\numberline {21}{\ignorespaces Performance measures for estimates of Std[B_1]\relax }}{31}
+\contentsline {table}{\numberline {22}{\ignorespaces Performance measures for estimates of Cov[A_1, B_1]\relax }}{31}
+\contentsline {table}{\numberline {23}{\ignorespaces Performance measures for estimates of Corr[A_1, B_1]\relax }}{31}
+\contentsline {table}{\numberline {24}{\ignorespaces Panel regressions\relax }}{33}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {25}{\ignorespaces Blood type probabilities in the ABO environment\relax }}{68}
+\contentsline {table}{\numberline {26}{\ignorespaces \textbf {Performance of statistical methods as classifiers} We experiment with three variations on the \emph {direct prediction} method by implementing it using different statistical. Here we see their performance as classifiers, that is, how well they are able to predict that the node was chosen to be matched by an offline algorithm. \relax }}{69}
+\contentsline {table}{\numberline {27}{\ignorespaces \textbf {Gradient Boosting (no graph information)} \relax }}{70}
+\contentsline {table}{\numberline {28}{\ignorespaces \textbf {Gradient Boosting (augmented with graph information)} \relax }}{71}
+\contentsline {table}{\numberline {29}{\ignorespaces \textbf {Logistic Regression (no graph information)} \relax }}{72}
+\contentsline {table}{\numberline {30}{\ignorespaces \textbf {Logistic Regression (augmented with graph information)} \relax }}{73}
+\contentsline {table}{\numberline {31}{\ignorespaces \textbf {Random Forests (no graph information)} \relax }}{74}
+\contentsline {table}{\numberline {32}{\ignorespaces \textbf {Random Forests (augmented with graph information)} \relax }}{75}
+\contentsline {table}{\numberline {33}{\ignorespaces \textbf {Multi-armed bandit algorithm UCB1} \textsc {Environ} is the environment used for simulation. \textsc {Entry} and \textsc {Death} are the Poisson entry rate of entry and the the Geometric rate of departure (times 100), respectively. \textsc {Mean} and \textsc {Std} refers to the average number of matched patients over 750 periods (after 250 periods of burn-in). \textsc {Difference} and \textsc {Ratio} compare the average improvement between the algorithm and \textsc {Myopic}. \textsc {N} is the number of 1000-period simulations that used that particular configuration. Tables for other bandits are similar, and can be found in the online supplement that will be available online.\relax }}{76}
+\contentsline {table}{\numberline {34}{\ignorespaces \textbf {Multi-armed bandit algorithm Thompson Sampling} \textsc {Environ} is the environment used for simulation. \textsc {Entry} and \textsc {Death} are the Poisson entry rate of entry and the the Geometric rate of departure (times 100), respectively. \textsc {Mean} and \textsc {Std} refers to the average number of matched patients over 750 periods (after 250 periods of burn-in). \textsc {Difference} and \textsc {Ratio} compare the average improvement between the algorithm and \textsc {Myopic}. \textsc {N} is the number of 1000-period simulations that used that particular configuration.\relax }}{77}
