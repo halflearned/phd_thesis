@@ -83,15 +83,6 @@ An \emph{exchange} is an ordered tuple of nodes $m = (v_{i_1}, \cdots, v_{i_{k}}
 An \emph{environment} is, informally speaking, a collection of rules governing which pairs are deemed compatible, the entry and death processes that govern the evolution of the pool, and which vertex characteristics are observable in and relevant to the problem. More formally, it can be defined as the conditional probability distribution between two kidney exchange pools, given the current pool $G_t$ and $G_t'$, given a matching $M_t$. We will expand on this below. Finally, a \emph{dynamic matching algorithm} is a procedure that selects matchings $M_t$ at every period. Once a matching $M_t$ is selected, all vertices and their edges are removed from the kidney exchange pool.
 
 
-%It includes the rules for which pairs are deemed compatible, the entry and death processes that govern the evolution of the pool, which characteristics are observable to the algorithm at each period, and the reward observed by the agent as sequentially matches and clears pairs. More rigorously, at each period an environment is described bu tuple $(G, u)$, where:
-
-% 
-% \begin{itemize}
-%   \item $G = (V, A, X, \pi)$ is a graph with vertex set $V$, adjacency matrix $A$, vertex characteristic matrix $X$, and $\pi: \mathbb{N} \times V \rightarrow \{0, 1\}$ is a function that maps a period $t \in \mathbb{N}$ and a vertex $v \in V$ to whether that vertex was alive on period $t$ (1) or not (0). \footnote{We decided to model dynamic graphs in this manner as it is closer to our simulation code. Note that all the information about entries and exits can be expressed by the function $\pi$.}
-%   \item $u: 2^V \rightarrow \mathbb{R} \cup \{-\infty\} $ is the reward associated with matching subset of $V$. Infeasible exchanges receive reward $-\infty$.
-% \end{itemize}
-
-
 \subsection{Environments}
 
 Our paper presents three environments inspired by previous works on dynamic kidney exchange. All three have the following assumptions in common. 
@@ -123,6 +114,7 @@ In the \emph{OPTN environment}, we use historical data collected by the United N
   \item Patients that were registered for more than one organ (including those who were simultaneously waiting for kidney and pancreas)
   \item Patients that were not waiting for their first kidney transplant
   \item Donors and patients with incomplete tissue-type profile information.
+\end{itemize}
   
 The resulting dataset contained 117813 patients and 9337 living donors. We call this the ``historical dataset".
 
@@ -132,7 +124,7 @@ The resulting dataset contained 117813 patients and 9337 living donors. We call 
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cPRA.pdf}
-\caption{\textbf{Patient and donor cPRA} \\
+\caption[Patient and donor cPRA]{\textbf{Patient and donor cPRA} \\
     Computed from historical data. Our patient cPRA is the frequency of living donors that exhibit antigens that are unacceptable to the patient. We also define a donor cPRA by calculating the frequency of patients that have antibodies against the donors antigens.}
 \label{fig:cpra}
 \end{figure}
@@ -171,7 +163,7 @@ We are interested in how our new methods perform relative to the following two b
 \centering
 \hspace*{-3.5cm}
 \includegraphics[width=1.4\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf}
-\caption{\textbf{Comparing \textsc{Myopic} and \textsc{OPT}}  \\
+\caption[Comparing \textsc{Myopic} and \textsc{OPT}]{\textbf{Comparing \textsc{Myopic} and \textsc{OPT}}  \\
 Ratio of average per-period matched pairs for different entry and death rates, over 3000 periods (darker hues are better). \texttt{Myopic} has better chances of achieving performances similar to \texttt{OPT} when the death rate is high (moving rightwards on the graphs), or when entry rate is high (moving downwards on the graphs).}
 \label{fig:greedy_opt_comparison}
 \end{figure}
@@ -197,7 +189,7 @@ The procedure is formalized in Algorithm \ref{alg:direct_prediction}, and also i
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf}.
-\caption{\textbf{Direct prediction method} \\ One period of simulation using direct prediction methods to choose cycles. See Algorithm \ref{alg:direct_prediction} for details.}
+\caption[Direct prediction method]{\textbf{Direct prediction method} \\ One period of simulation using direct prediction methods to choose cycles. See Algorithm \ref{alg:direct_prediction} for details.}
 \label{fig:direct_prediction}
 \end{figure}
 
@@ -378,14 +370,14 @@ This simple algorithm can be shown to be optimal in terms of attaining a asympto
    }
  	\caption{Function \texttt{choose\_cycle}}
  	\label{alg:choose_cycle}
- \end{algorithm}
+ \end{algorithm} 
 
 
  \begin{figure}[htbp]
   \centering
   %\hspace{-1cm}
   \includegraphics[width=1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf}
-  \caption{\textbf{Multi-armed bandit methods} \\ 
+  \caption[Multi-armed bandit methods (one-period)]{\textbf{Multi-armed bandit methods} \\ 
   One period of simulation using multi-armed bandit methods to choose cycles.}
   \label{fig:mab}
   \end{figure}
@@ -394,7 +386,7 @@ This simple algorithm can be shown to be optimal in terms of attaining a asympto
   \centering
   %\hspace*{-0.5cm}
   \includegraphics[width=1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf}
-  \caption{\textbf{Function} \textsc{get\_pseudo\_reward} \\ Multi-armed bandits evaluate if a cycle should be cleared by checking if there is a high chance that the cycle will be used in the future. Such cycles get a \emph{lower} reward, and are left for later.}
+  \caption[Function \textsc{get\_pseudo\_reward}]{\textbf{Function} \textsc{get\_pseudo\_reward} \\ Multi-armed bandits evaluate if a cycle should be cleared by checking if there is a high chance that the cycle will be used in the future. Such cycles get a \emph{lower} reward, and are left for later.}
   \label{fig:get_pseudo_reward}
   \end{figure}
 
@@ -438,7 +430,7 @@ Unfortunately, as we predicted in the beginning of the section, the poor predict
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_grb}
-\caption{\textbf{Performance of gradient boosting in direct prediction method} \\
+\caption[Performance of gradient boosting in direct prediction method]{\textbf{Performance of gradient boosting in direct prediction method} \\
     Ratio of average matched patients against \textsc{Myopic}. Simulations ran over 750 periods (after a 250-period burn-in sequence). Lower row is when data was augmented with information about graph.}
 \label{fig:traditional_ml_mdp_algo_grb}
 \end{figure}
@@ -446,7 +438,7 @@ Unfortunately, as we predicted in the beginning of the section, the poor predict
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_lr}
-\caption{\textbf{Performance of logistic regression in direct prediction method} \\
+\caption[Performance of logistic regression in direct prediction method]{\textbf{Performance of logistic regression in direct prediction method} \\
     Similar to gradient boosting shown in Figure \ref{fig:traditional_ml_mdp_algo_grb}, logistic regression is only able to perform better than \textsc{Myopic} when the death rate is large.}
 \label{fig:traditional_ml_mdp_algo_lr}
 \end{figure}
@@ -454,7 +446,7 @@ bb
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_rf}
-\caption{\textbf{Performance of random forests in direct prediction method} \\
+\caption[Performance of random forests in direct prediction method]{\textbf{Performance of random forests in direct prediction method} \\
     Random Forests's poor performance is likely due to its low accuracy, as we show on Table \ref{tab:tradional_ml_classifier}.}
 \label{fig:traditional_ml_mdp_algo_rf}
 \end{figure}
@@ -476,7 +468,7 @@ In sparser environments ($RSU$ and $OPTN$), for particular entry and death rate 
 \includegraphics[width=1.1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_RSU.pdf}
 \hspace*{-1.6cm}
 \includegraphics[width=1.1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_OPTN.pdf}
-\caption{\textbf{Performance multi-armed bandit methods across environments} \\
+\caption[Performance of multi-armed bandit across environments]{\textbf{Performance multi-armed bandit methods across environments} \\
 Average percent improvement by the \emph{multi-armed bandit} method over \textsc{Myopic}. Averages were taken over 750 periods, after a 250-period burn-in sequence. See also Tables \ref{tab:ucb1}-\ref{tab:exp3}. \\
 {\scriptsize Note: In $RSU$ row, white entries are missing (they are not zero).}}
 \label{fig:mab}
@@ -499,6 +491,7 @@ First, the relatively weak performance of our \emph{direct prediction} method co
 
 Second, the \emph{direct prediction} method produces a probability for every pair, but it does not consider correlations between multiple pairs in the same kidney exchange pool. This is unrealistic, as it should be often the case that pairs in the same exchange should have roughly equally high or low probability of being matched. In order to rectify this shortcoming of our approach, we would like to train our statistical estimator using the sequence-to-sequence models of recurrent neural networks studied by \cite{sutskever2014sequence} (see also  \citep{lecun2015deep} for an overview). The idea in those models 
 
+[[[Other loss functions]]]
 
 . We will be turning our attention to these methods next.
 
@@ -536,7 +529,8 @@ This work was supported in part by Health Resources and Services Administration 
   \singlespacing
   \hspace*{-0.5cm}
   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/traditional_ml_classifier.tex}
-   \caption{\textbf{Performance of statistical methods as classifiers} \\ 
+   \caption[Performance of statistical methods as classifiers]{
+   \textbf{Performance of statistical methods as classifiers} \\ 
    We experiment with three variations on the \emph{direct prediction} method by implementing it using different statistical. Here we see their performance as classifiers, that is, how well they are able to predict that the node was chosen to be matched by an offline algorithm. \\
   }
   \label{tab:traditional_ml_classifier}
@@ -547,7 +541,7 @@ This work was supported in part by Health Resources and Services Administration 
   \singlespacing
   \hspace*{-0.5cm}
   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/traditional_mdp_grb_none.tex}
-   \caption{\textbf{Gradient Boosting (no graph information)} \\ }
+  \caption[Performance of direct prediction method with gradient boosting (1)]{\textbf{Performance of direct prediction method with gradient boosting} Not using information about graph.}
   \label{tab:grb_none}
 \end{table}
 
@@ -557,7 +551,7 @@ This work was supported in part by Health Resources and Services Administration 
   \singlespacing
   \hspace*{-0.5cm}
   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/traditional_mdp_grb_networkx.tex}
-   \caption{\textbf{Gradient Boosting (augmented with graph information)} \\ }
+  \caption[Performance of direct prediction method with gradient boosting (2)]{\textbf{Performance of direct prediction method with gradient boosting} Using information about graph.}
   \label{tab:grb_networkx}
 \end{table}
 
@@ -567,7 +561,7 @@ This work was supported in part by Health Resources and Services Administration 
   \singlespacing
   \hspace*{-0.5cm}
   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/traditional_mdp_lr_none.tex}
-   \caption{\textbf{Logistic Regression (no graph information)} \\ }
+  \caption[Performance of direct prediction method with logistic regression (1)]{\textbf{Performance of direct prediction method with logistic regression} Not using information about graph.}
   \label{tab:lr_none}
 \end{table}
 
@@ -577,7 +571,7 @@ This work was supported in part by Health Resources and Services Administration 
   \singlespacing
   \hspace*{-0.5cm}
   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/traditional_mdp_lr_networkx.tex}
-   \caption{\textbf{Logistic Regression (augmented with graph information)} \\ }
+  \caption[Performance of direct prediction method with logistic regression (2)]{\textbf{Performance of direct prediction method with logistic regression} Using information about graph.}
   \label{tab:lr_networkx}
 \end{table}
 
@@ -587,7 +581,7 @@ This work was supported in part by Health Resources and Services Administration 
   \singlespacing
   \hspace*{-0.5cm}
   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/traditional_mdp_rf_none.tex}
-   \caption{\textbf{Random Forests (no graph information)} \\ }
+  \caption[Performance of direct prediction method with random forests (1)]{\textbf{Performance of direct prediction method with random forests} Not using information about graph.}
   \label{tab:rf_none}
 \end{table}
 
@@ -597,7 +591,7 @@ This work was supported in part by Health Resources and Services Administration 
   \singlespacing
   \hspace*{-0.5cm}
   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/traditional_mdp_rf_networkx.tex}
-   \caption{\textbf{Random Forests (augmented with graph information)} \\ }
+  \caption[Performance of direct prediction method with random forests (2)]{\textbf{Performance of direct prediction method with random forests} Using information about graph.}
   \label{tab:rf_networkx}
 \end{table}
 
@@ -608,7 +602,7 @@ This work was supported in part by Health Resources and Services Administration 
   \singlespacing
   \hspace*{-0.5cm}
   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/mab_UCB1.tex}
-   \caption{\textbf{Multi-armed bandit algorithm UCB1} \\ 
+   \caption[Performance of multi-armed bandit method using UCB1]{\textbf{Multi-armed bandit algorithm UCB1} \\ 
   \textsc{Environ} is the environment used for simulation. \textsc{Entry} and \textsc{Death} are the Poisson entry rate of entry and the the Geometric rate of departure (times 100), respectively.  \textsc{Mean} and \textsc{Std} refers to the average number of matched patients over 750 periods (after 250 periods of burn-in). \textsc{Difference} and \textsc{Ratio} compare the average improvement between the algorithm and \textsc{Myopic}. \textsc{N} is the number of 1000-period simulations that used that particular configuration. Tables for other bandits are similar, and can be found in the online supplement that will be available online.}
   \label{tab:ucb1}
 \end{table}
@@ -619,7 +613,7 @@ This work was supported in part by Health Resources and Services Administration 
   \singlespacing
   \hspace*{-0.5cm}
   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/mab_Thompson.tex}
-  \caption{\textbf{Multi-armed bandit algorithm Thompson Sampling} \\ 
+   \caption[Performance of multi-armed bandit method using Thompson sampling]{\textbf{Multi-armed bandit algorithm Thompson Sampling} \\ 
  \textsc{Environ} is the environment used for simulation. \textsc{Entry} and \textsc{Death} are the Poisson entry rate of entry and the the Geometric rate of departure (times 100), respectively.  \textsc{Mean} and \textsc{Std} refers to the average number of matched patients over 750 periods (after 250 periods of burn-in). \textsc{Difference} and \textsc{Ratio} compare the average improvement between the algorithm and \textsc{Myopic}. \textsc{N} is the number of 1000-period simulations that used that particular configuration.}
   \label{tab:thompson}
 \end{table}

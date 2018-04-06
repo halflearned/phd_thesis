@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  3 APR 2018 23:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  5 APR 2018 22:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -683,19 +683,19 @@ Package caption Info: End \AtBeginDocument code.
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 145.
  (./titlepage.tex
-./titlepage.tex:41: Missing number, treated as zero.
+./titlepage.tex:21: Missing number, treated as zero.
 <to be read again> 
                    d
-l.41 d
+l.21 d
       egree of Doctor of Philosophy \vskip
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./titlepage.tex:41: Illegal unit of measure (pt inserted).
+./titlepage.tex:21: Illegal unit of measure (pt inserted).
 <to be read again> 
                    d
-l.41 de
+l.21 de
        gree of Doctor of Philosophy \vskip
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -704,19 +704,19 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-./titlepage.tex:42: Missing number, treated as zero.
+./titlepage.tex:22: Missing number, treated as zero.
 <to be read again> 
                    \endcentering 
-l.42 \end{centering}
+l.22 \end{centering}
                     
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./titlepage.tex:42: Illegal unit of measure (pt inserted).
+./titlepage.tex:22: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \endcentering 
-l.42 \end{centering}
+l.22 \end{centering}
                     
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -725,19 +725,19 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-./titlepage.tex:48: Missing number, treated as zero.
+./titlepage.tex:28: Missing number, treated as zero.
 <to be read again> 
                    M
-l.48 	M
+l.28 	M
        orrissey College of Arts and Sciences \vskip
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./titlepage.tex:48: Illegal unit of measure (pt inserted).
+./titlepage.tex:28: Illegal unit of measure (pt inserted).
 <to be read again> 
                    M
-l.48 	Mo
+l.28 	Mo
         rrissey College of Arts and Sciences \vskip
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -746,19 +746,19 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-./titlepage.tex:49: Missing number, treated as zero.
+./titlepage.tex:29: Missing number, treated as zero.
 <to be read again> 
                    G
-l.49 	G
+l.29 	G
        raduate school
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-./titlepage.tex:49: Illegal unit of measure (pt inserted).
+./titlepage.tex:29: Illegal unit of measure (pt inserted).
 <to be read again> 
                    G
-l.49 	G
+l.29 	G
        raduate school
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -807,33 +807,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [5] [6
 
-] (./main.lof
-
-LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 7.
-
-
-LaTeX Warning: Reference `tab:tradional_ml_classifier' on page 63 undefined on input line 14.
-
-
-LaTeX Warning: Reference `tab:exp3' on page 65 undefined on input line 15.
-
-
-Overfull \hbox (5.66684pt too wide) in paragraph at lines 15--15
- [][] []\OT1/cmr/bx/sc/12 Performance multi-armed ban-dit meth-ods across en-vi-ron-ments 
- []
-
-)
+] (./main.lof)
 \tf@lof=\write4
 \openout4 = `main.lof'.
 
  [7
 
-] [8] (./main.lot
+] (./main.lot
 ./main.lot:15: Missing $ inserted.
 <inserted text> 
                 $
-l.15 ...sures for estimates of E[U_2]\relax }}{28}
+l.15 ...sures for estimates of E[U_2]\relax }}{29}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -841,7 +825,7 @@ you left one out. Proceed, with fingers crossed.
 ./main.lot:15: Extra }, or forgotten $.
 <argument> ...ures for estimates of E[U_2]\relax }
                                                   
-l.15 ...sures for estimates of E[U_2]\relax }}{28}
+l.15 ...sures for estimates of E[U_2]\relax }}{29}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -852,7 +836,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:15: Extra }, or forgotten $.
 \l@table ...eak \hskip -\leftskip {\cfttabfont #1}
                                                   \nobreak \cfttabfillnum {#...
-l.15 ...sures for estimates of E[U_2]\relax }}{28}
+l.15 ...sures for estimates of E[U_2]\relax }}{29}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -863,7 +847,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:15: Missing $ inserted.
 <inserted text> 
                 $
-l.15 ...sures for estimates of E[U_2]\relax }}{28}
+l.15 ...sures for estimates of E[U_2]\relax }}{29}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -876,7 +860,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--15
 ./main.lot:16: Missing $ inserted.
 <inserted text> 
                 $
-l.16 ...sures for estimates of E[V_2]\relax }}{28}
+l.16 ...sures for estimates of E[V_2]\relax }}{29}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -884,7 +868,7 @@ you left one out. Proceed, with fingers crossed.
 ./main.lot:16: Extra }, or forgotten $.
 <argument> ...ures for estimates of E[V_2]\relax }
                                                   
-l.16 ...sures for estimates of E[V_2]\relax }}{28}
+l.16 ...sures for estimates of E[V_2]\relax }}{29}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -895,7 +879,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:16: Extra }, or forgotten $.
 \l@table ...eak \hskip -\leftskip {\cfttabfont #1}
                                                   \nobreak \cfttabfillnum {#...
-l.16 ...sures for estimates of E[V_2]\relax }}{28}
+l.16 ...sures for estimates of E[V_2]\relax }}{29}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -906,7 +890,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:16: Missing $ inserted.
 <inserted text> 
                 $
-l.16 ...sures for estimates of E[V_2]\relax }}{28}
+l.16 ...sures for estimates of E[V_2]\relax }}{29}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -919,7 +903,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--16
 ./main.lot:17: Missing $ inserted.
 <inserted text> 
                 $
-l.17 ...res for estimates of Std[U_2]\relax }}{28}
+l.17 ...res for estimates of Std[U_2]\relax }}{30}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -927,7 +911,7 @@ you left one out. Proceed, with fingers crossed.
 ./main.lot:17: Extra }, or forgotten $.
 <argument> ...es for estimates of Std[U_2]\relax }
                                                   
-l.17 ...res for estimates of Std[U_2]\relax }}{28}
+l.17 ...res for estimates of Std[U_2]\relax }}{30}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -938,7 +922,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:17: Extra }, or forgotten $.
 \l@table ...eak \hskip -\leftskip {\cfttabfont #1}
                                                   \nobreak \cfttabfillnum {#...
-l.17 ...res for estimates of Std[U_2]\relax }}{28}
+l.17 ...res for estimates of Std[U_2]\relax }}{30}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -949,7 +933,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:17: Missing $ inserted.
 <inserted text> 
                 $
-l.17 ...res for estimates of Std[U_2]\relax }}{28}
+l.17 ...res for estimates of Std[U_2]\relax }}{30}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -962,7 +946,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--17
 ./main.lot:18: Missing $ inserted.
 <inserted text> 
                 $
-l.18 ...res for estimates of Std[B_2]\relax }}{29}
+l.18 ...res for estimates of Std[B_2]\relax }}{30}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -970,7 +954,7 @@ you left one out. Proceed, with fingers crossed.
 ./main.lot:18: Extra }, or forgotten $.
 <argument> ...es for estimates of Std[B_2]\relax }
                                                   
-l.18 ...res for estimates of Std[B_2]\relax }}{29}
+l.18 ...res for estimates of Std[B_2]\relax }}{30}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -981,7 +965,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:18: Extra }, or forgotten $.
 \l@table ...eak \hskip -\leftskip {\cfttabfont #1}
                                                   \nobreak \cfttabfillnum {#...
-l.18 ...res for estimates of Std[B_2]\relax }}{29}
+l.18 ...res for estimates of Std[B_2]\relax }}{30}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -992,7 +976,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:18: Missing $ inserted.
 <inserted text> 
                 $
-l.18 ...res for estimates of Std[B_2]\relax }}{29}
+l.18 ...res for estimates of Std[B_2]\relax }}{30}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1005,7 +989,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--18
 ./main.lot:19: Missing $ inserted.
 <inserted text> 
                 $
-l.19 ...or estimates of Cov[U_2, V_2]\relax }}{29}
+l.19 ...or estimates of Cov[U_2, V_2]\relax }}{30}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1013,7 +997,7 @@ you left one out. Proceed, with fingers crossed.
 ./main.lot:19: Extra }, or forgotten $.
 <argument> ...r estimates of Cov[U_2, V_2]\relax }
                                                   
-l.19 ...or estimates of Cov[U_2, V_2]\relax }}{29}
+l.19 ...or estimates of Cov[U_2, V_2]\relax }}{30}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1024,7 +1008,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:19: Extra }, or forgotten $.
 \l@table ...eak \hskip -\leftskip {\cfttabfont #1}
                                                   \nobreak \cfttabfillnum {#...
-l.19 ...or estimates of Cov[U_2, V_2]\relax }}{29}
+l.19 ...or estimates of Cov[U_2, V_2]\relax }}{30}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1035,7 +1019,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:19: Missing $ inserted.
 <inserted text> 
                 $
-l.19 ...or estimates of Cov[U_2, V_2]\relax }}{29}
+l.19 ...or estimates of Cov[U_2, V_2]\relax }}{30}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1048,7 +1032,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--19
 ./main.lot:20: Missing $ inserted.
 <inserted text> 
                 $
-l.20 ...r estimates of Corr[U_2, V_2]\relax }}{29}
+l.20 ...r estimates of Corr[U_2, V_2]\relax }}{31}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1056,7 +1040,7 @@ you left one out. Proceed, with fingers crossed.
 ./main.lot:20: Extra }, or forgotten $.
 <argument> ... estimates of Corr[U_2, V_2]\relax }
                                                   
-l.20 ...r estimates of Corr[U_2, V_2]\relax }}{29}
+l.20 ...r estimates of Corr[U_2, V_2]\relax }}{31}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1067,7 +1051,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:20: Extra }, or forgotten $.
 \l@table ...eak \hskip -\leftskip {\cfttabfont #1}
                                                   \nobreak \cfttabfillnum {#...
-l.20 ...r estimates of Corr[U_2, V_2]\relax }}{29}
+l.20 ...r estimates of Corr[U_2, V_2]\relax }}{31}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1078,7 +1062,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:20: Missing $ inserted.
 <inserted text> 
                 $
-l.20 ...r estimates of Corr[U_2, V_2]\relax }}{29}
+l.20 ...r estimates of Corr[U_2, V_2]\relax }}{31}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1091,7 +1075,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--20
 ./main.lot:21: Missing $ inserted.
 <inserted text> 
                 $
-l.21 ...sures for estimates of E[A_1]\relax }}{30}
+l.21 ...sures for estimates of E[A_1]\relax }}{31}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1099,7 +1083,7 @@ you left one out. Proceed, with fingers crossed.
 ./main.lot:21: Extra }, or forgotten $.
 <argument> ...ures for estimates of E[A_1]\relax }
                                                   
-l.21 ...sures for estimates of E[A_1]\relax }}{30}
+l.21 ...sures for estimates of E[A_1]\relax }}{31}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1110,7 +1094,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:21: Extra }, or forgotten $.
 \l@table ...eak \hskip -\leftskip {\cfttabfont #1}
                                                   \nobreak \cfttabfillnum {#...
-l.21 ...sures for estimates of E[A_1]\relax }}{30}
+l.21 ...sures for estimates of E[A_1]\relax }}{31}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1121,7 +1105,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:21: Missing $ inserted.
 <inserted text> 
                 $
-l.21 ...sures for estimates of E[A_1]\relax }}{30}
+l.21 ...sures for estimates of E[A_1]\relax }}{31}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1134,7 +1118,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--21
 ./main.lot:22: Missing $ inserted.
 <inserted text> 
                 $
-l.22 ...sures for estimates of E[B_1]\relax }}{30}
+l.22 ...sures for estimates of E[B_1]\relax }}{31}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1142,7 +1126,7 @@ you left one out. Proceed, with fingers crossed.
 ./main.lot:22: Extra }, or forgotten $.
 <argument> ...ures for estimates of E[B_1]\relax }
                                                   
-l.22 ...sures for estimates of E[B_1]\relax }}{30}
+l.22 ...sures for estimates of E[B_1]\relax }}{31}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1153,7 +1137,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:22: Extra }, or forgotten $.
 \l@table ...eak \hskip -\leftskip {\cfttabfont #1}
                                                   \nobreak \cfttabfillnum {#...
-l.22 ...sures for estimates of E[B_1]\relax }}{30}
+l.22 ...sures for estimates of E[B_1]\relax }}{31}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1164,7 +1148,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:22: Missing $ inserted.
 <inserted text> 
                 $
-l.22 ...sures for estimates of E[B_1]\relax }}{30}
+l.22 ...sures for estimates of E[B_1]\relax }}{31}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1177,7 +1161,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--22
 ./main.lot:23: Missing $ inserted.
 <inserted text> 
                 $
-l.23 ...res for estimates of Std[A_1]\relax }}{30}
+l.23 ...res for estimates of Std[A_1]\relax }}{32}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1185,7 +1169,7 @@ you left one out. Proceed, with fingers crossed.
 ./main.lot:23: Extra }, or forgotten $.
 <argument> ...es for estimates of Std[A_1]\relax }
                                                   
-l.23 ...res for estimates of Std[A_1]\relax }}{30}
+l.23 ...res for estimates of Std[A_1]\relax }}{32}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1196,7 +1180,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:23: Extra }, or forgotten $.
 \l@table ...eak \hskip -\leftskip {\cfttabfont #1}
                                                   \nobreak \cfttabfillnum {#...
-l.23 ...res for estimates of Std[A_1]\relax }}{30}
+l.23 ...res for estimates of Std[A_1]\relax }}{32}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1207,7 +1191,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:23: Missing $ inserted.
 <inserted text> 
                 $
-l.23 ...res for estimates of Std[A_1]\relax }}{30}
+l.23 ...res for estimates of Std[A_1]\relax }}{32}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1220,7 +1204,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--23
 ./main.lot:24: Missing $ inserted.
 <inserted text> 
                 $
-l.24 ...res for estimates of Std[B_1]\relax }}{31}
+l.24 ...res for estimates of Std[B_1]\relax }}{32}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1228,7 +1212,7 @@ you left one out. Proceed, with fingers crossed.
 ./main.lot:24: Extra }, or forgotten $.
 <argument> ...es for estimates of Std[B_1]\relax }
                                                   
-l.24 ...res for estimates of Std[B_1]\relax }}{31}
+l.24 ...res for estimates of Std[B_1]\relax }}{32}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1239,7 +1223,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:24: Extra }, or forgotten $.
 \l@table ...eak \hskip -\leftskip {\cfttabfont #1}
                                                   \nobreak \cfttabfillnum {#...
-l.24 ...res for estimates of Std[B_1]\relax }}{31}
+l.24 ...res for estimates of Std[B_1]\relax }}{32}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1250,7 +1234,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:24: Missing $ inserted.
 <inserted text> 
                 $
-l.24 ...res for estimates of Std[B_1]\relax }}{31}
+l.24 ...res for estimates of Std[B_1]\relax }}{32}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1263,7 +1247,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--24
 ./main.lot:25: Missing $ inserted.
 <inserted text> 
                 $
-l.25 ...or estimates of Cov[A_1, B_1]\relax }}{31}
+l.25 ...or estimates of Cov[A_1, B_1]\relax }}{32}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1271,7 +1255,7 @@ you left one out. Proceed, with fingers crossed.
 ./main.lot:25: Extra }, or forgotten $.
 <argument> ...r estimates of Cov[A_1, B_1]\relax }
                                                   
-l.25 ...or estimates of Cov[A_1, B_1]\relax }}{31}
+l.25 ...or estimates of Cov[A_1, B_1]\relax }}{32}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1282,7 +1266,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:25: Extra }, or forgotten $.
 \l@table ...eak \hskip -\leftskip {\cfttabfont #1}
                                                   \nobreak \cfttabfillnum {#...
-l.25 ...or estimates of Cov[A_1, B_1]\relax }}{31}
+l.25 ...or estimates of Cov[A_1, B_1]\relax }}{32}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1293,7 +1277,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:25: Missing $ inserted.
 <inserted text> 
                 $
-l.25 ...or estimates of Cov[A_1, B_1]\relax }}{31}
+l.25 ...or estimates of Cov[A_1, B_1]\relax }}{32}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1306,7 +1290,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--25
 ./main.lot:26: Missing $ inserted.
 <inserted text> 
                 $
-l.26 ...r estimates of Corr[A_1, B_1]\relax }}{31}
+l.26 ...r estimates of Corr[A_1, B_1]\relax }}{33}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1314,7 +1298,7 @@ you left one out. Proceed, with fingers crossed.
 ./main.lot:26: Extra }, or forgotten $.
 <argument> ... estimates of Corr[A_1, B_1]\relax }
                                                   
-l.26 ...r estimates of Corr[A_1, B_1]\relax }}{31}
+l.26 ...r estimates of Corr[A_1, B_1]\relax }}{33}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1325,7 +1309,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:26: Extra }, or forgotten $.
 \l@table ...eak \hskip -\leftskip {\cfttabfont #1}
                                                   \nobreak \cfttabfillnum {#...
-l.26 ...r estimates of Corr[A_1, B_1]\relax }}{31}
+l.26 ...r estimates of Corr[A_1, B_1]\relax }}{33}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1336,7 +1320,7 @@ deleted material, e.g., by typing `I$}'.
 ./main.lot:26: Missing $ inserted.
 <inserted text> 
                 $
-l.26 ...r estimates of Corr[A_1, B_1]\relax }}{31}
+l.26 ...r estimates of Corr[A_1, B_1]\relax }}{33}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1346,7 +1330,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 26--26
  [][] []\OT1/cmr/m/n/12 Performance mea-sures for es-ti-mates of Corr[A$[]\OML/cmm/m/it/12 ; B[]\OT1/cmr/m/n/12 ][][]$  
  []
 
-[9
+[8
 
 ])
 \tf@lot=\write5
@@ -1617,7 +1601,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-[10] (./abbreviations.tex) [11
+[9] (./abbreviations.tex) [10
 
 ] [1
 
@@ -1625,58 +1609,68 @@ my insertion and my current dilemma will both disappear.
 ] (./chapter1/chapter1.tex
 Chapter 1.
 LaTeX Font Info:    Font shape `OT1/qpl/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/qpl/b/n' tried instead on input line 5.
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no à in font cmr12!
-Missing character: There is no í in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no à in font cmr12!
-Missing character: There is no í in font cmr12!
+(Font)              Font shape `OT1/qpl/b/n' tried instead on input line 9.
+
+LaTeX Warning: Reference `' on page 2 undefined on input line 17.
+
+
+LaTeX Warning: Reference `' on page 2 undefined on input line 17.
+
+
+LaTeX Warning: Reference `' on page 2 undefined on input line 17.
+
 [2
 
-] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/panel_data_models.pdf, id=54, 722.7pt x 722.7pt>
-File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/panel_data_models.pdf Graphic file (type pdf)
- <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/panel_data_models.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/panel_data_models.pdf used on input line 50.
-(pdftex.def)             Requested size: 433.62001pt x 433.62334pt.
- [3] [4 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/panel_data_models.pdf>]
+] [3] [4]
+
+Package natbib Warning: Citation `???' on page 5 undefined on input line 57.
+
+
+Package natbib Warning: Citation `???' on page 5 undefined on input line 57.
+
+[5]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no à in font cmr12!
 Missing character: There is no í in font cmr12!
- [5] [6] [7]
+ </Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/panel_data_models.pdf, id=64, 722.7pt x 722.7pt>
+File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/panel_data_models.pdf Graphic file (type pdf)
+ <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/panel_data_models.pdf>
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/panel_data_models.pdf used on input line 97.
+(pdftex.def)             Requested size: 433.62001pt x 433.62334pt.
+ [6] [7 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/panel_data_models.pdf>] [8]
 LaTeX Font Info:    Font shape `OT1/qpl/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/qpl/b/n' tried instead on input line 172.
+(Font)              Font shape `OT1/qpl/b/n' tried instead on input line 170.
 
 
-LaTeX Warning: Reference `' on page 8 undefined on input line 187.
+LaTeX Warning: Reference `' on page 9 undefined on input line 183.
 
-[8]
+[9]
 
-LaTeX Warning: Reference `a:full_rank' on page 9 undefined on input line 215.
+LaTeX Warning: Reference `a:full_rank' on page 10 undefined on input line 205.
 
-[9] [10]
+[10] [11] [12]
 
-./chapter1/chapter1.tex:355: LaTeX Error: \begin{document} ended by \end{definition}.
+./chapter1/chapter1.tex:333: LaTeX Error: \begin{document} ended by \end{definition}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.355 \end{definition}
+l.333 \end{definition}
                       
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./chapter1/chapter1.tex:355: Extra \endgroup.
+./chapter1/chapter1.tex:333: Extra \endgroup.
 <recently read> \endgroup 
                           
-l.355 \end{definition}
+l.333 \end{definition}
                       
 Things are pretty mixed up, but I think the worst is over.
 
-./chapter1/chapter1.tex:360: Undefined control sequence.
-l.360   \textot
+./chapter1/chapter1.tex:338: Undefined control sequence.
+l.338   \textot
                {Shocks are r\textsuperscript{th}-moment independent from all...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1684,29 +1678,27 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[11] [12]
+[13]
 Missing character: There is no ‚ in font cmr8!
 Missing character: There is no à in font cmr8!
 Missing character: There is no í in font cmr8!
 Missing character: There is no ‚ in font cmr8!
 Missing character: There is no à in font cmr8!
 Missing character: There is no í in font cmr8!
- [13]
+ [14] [15]
 
-LaTeX Warning: Reference `eq:first_moment_inversion' on page 14 undefined on input line 456.
+LaTeX Warning: Reference `eq:first_moment_inversion' on page 16 undefined on input line 434.
 
 
-LaTeX Warning: Reference `eq:second_moment_inversion' on page 14 undefined on input line 456.
+LaTeX Warning: Reference `eq:second_moment_inversion' on page 16 undefined on input line 434.
 
-[14]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no à in font cmr12!
-
-./chapter1/chapter1.tex:467: Undefined control sequence.
+./chapter1/chapter1.tex:445: Undefined control sequence.
 <argument> \asymptotic 
                        _results
-l.467 ...hown in section \ref{\asymptotic_results}
+l.445 ...hown in section \ref{\asymptotic_results}
                                                   , the optimal thresholds c...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1714,11 +1706,11 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./chapter1/chapter1.tex:467: Undefined control sequence.
+./chapter1/chapter1.tex:445: Undefined control sequence.
 <write> 
 LaTeX Warning: Reference `\asymptotic 
                                                _results' on page \thepage \s...
-l.467 ...hown in section \ref{\asymptotic_results}
+l.445 ...hown in section \ref{\asymptotic_results}
                                                   , the optimal thresholds c...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1727,36 +1719,35 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `_results' on page 15 undefined on input line 467.
+LaTeX Warning: Reference `_results' on page 16 undefined on input line 445.
 
-[15]
+[16] [17]
 
-./chapter1/chapter1.tex:531: LaTeX Error: Unknown float option `d'.
+./chapter1/chapter1.tex:509: LaTeX Error: Unknown float option `d'.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.531 \begin{table}[htdp]
+l.509 \begin{table}[htdp]
                          
 Option `d' ignored and `p' used.
 
-[16]
 
-Package caption Warning: \label without proper \caption on input line 613.
+Package caption Warning: \label without proper \caption on input line 605.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:simulation_shocks' on page 17 undefined on input line 548.
+LaTeX Warning: Reference `fig:simulation_shocks' on page 18 undefined on input line 526.
 
 
-Package caption Warning: \label without proper \caption on input line 619.
+Package caption Warning: \label without proper \caption on input line 612.
 See the caption package documentation for explanation.
 
 
-LaTeX Warning: Reference `fig:simulation_random_coefficients' on page 17 undefined on input line 548.
+LaTeX Warning: Reference `fig:simulation_random_coefficients' on page 18 undefined on input line 526.
 
-(./chapter1/tables/bs_coverage_shocks.tex) [17] (./chapter1/tables/bs_conditional_coverage.tex
+[18] (./chapter1/tables/bs_coverage_shocks.tex) (./chapter1/tables/bs_conditional_coverage.tex
 ./chapter1/tables/bs_conditional_coverage.tex:3: Missing $ inserted.
 <inserted text> 
                 $
@@ -1776,57 +1767,67 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-) (./chapter1/tables/bs_coverage_random_coefficients.tex) [18] (./chapter1/tables/bootstrap_shock_empirical.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 1--593
+) (./chapter1/tables/bs_coverage_random_coefficients.tex) [19] (./chapter1/tables/bootstrap_shock_empirical.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 1--585
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--593
+Underfull \hbox (badness 10000) in paragraph at lines 1--585
 
  []
 
 (./chapter1/tables/bootstrap_random_coefficients_1_empirical.tex)
-Overfull \hbox (3.90843pt too wide) in paragraph at lines 1--599
+Overfull \hbox (3.90843pt too wide) in paragraph at lines 1--591
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--599
+Underfull \hbox (badness 10000) in paragraph at lines 1--591
 
  []
 
-(./chapter1/tables/bootstrap_random_coefficients_2_empirical.tex)
-Overfull \hbox (3.90843pt too wide) in paragraph at lines 1--605
+[20] (./chapter1/tables/bootstrap_random_coefficients_2_empirical.tex)
+Overfull \hbox (3.90843pt too wide) in paragraph at lines 1--597
 [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1--605
+Underfull \hbox (badness 10000) in paragraph at lines 1--597
 
  []
 
-[19] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_shocks.pdf, id=148, 722.7pt x 722.7pt>
+</Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_shocks.pdf, id=149, 722.7pt x 722.7pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_shocks.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_shocks.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_shocks.pdf used on input line 612.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_shocks.pdf used on input line 604.
 (pdftex.def)             Requested size: 520.3436pt x 520.34598pt.
 
-Overfull \hbox (86.72359pt too wide) in paragraph at lines 612--614
+Overfull \hbox (86.72359pt too wide) in paragraph at lines 604--606
  [][] 
  []
 
-</Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_random_coefficients.pdf, id=149, 722.7pt x 722.7pt>
+</Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_random_coefficients.pdf, id=150, 722.7pt x 722.7pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_random_coefficients.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_random_coefficients.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_random_coefficients.pdf used on input line 618.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_random_coefficients.pdf used on input line 611.
 (pdftex.def)             Requested size: 520.3436pt x 520.34598pt.
 
-Overfull \hbox (86.72359pt too wide) in paragraph at lines 618--620
+Overfull \hbox (86.72359pt too wide) in paragraph at lines 611--613
  [][] 
  []
 
-</Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc1_empirical.pdf, id=150, 722.7pt x 722.7pt>
+</Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/shocks_empirical.pdf, id=151, 722.7pt x 722.7pt>
+File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/shocks_empirical.pdf Graphic file (type pdf)
+ <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/shocks_empirical.pdf>
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/shocks_empirical.pdf used on input line 618.
+(pdftex.def)             Requested size: 520.3436pt x 520.34598pt.
+
+Overfull \hbox (86.72359pt too wide) in paragraph at lines 618--619
+ [][] 
+ []
+
+</Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc1_empirical.pdf, id=152, 722.7pt x 722.7pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc1_empirical.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc1_empirical.pdf>
 Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc1_empirical.pdf used on input line 625.
@@ -1836,258 +1837,273 @@ Overfull \hbox (86.72359pt too wide) in paragraph at lines 625--626
  [][] 
  []
 
-</Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc2_empirical.pdf, id=151, 722.7pt x 722.7pt>
+</Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc2_empirical.pdf, id=153, 722.7pt x 722.7pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc2_empirical.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc2_empirical.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc2_empirical.pdf used on input line 630.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc2_empirical.pdf used on input line 631.
 (pdftex.def)             Requested size: 520.3436pt x 520.34598pt.
 
-Overfull \hbox (86.72359pt too wide) in paragraph at lines 630--631
+Overfull \hbox (86.72359pt too wide) in paragraph at lines 631--632
  [][] 
  []
 
-</Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/shocks_empirical.pdf, id=152, 722.7pt x 722.7pt>
-File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/shocks_empirical.pdf Graphic file (type pdf)
- <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/shocks_empirical.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/shocks_empirical.pdf used on input line 636.
-(pdftex.def)             Requested size: 520.3436pt x 520.34598pt.
+[21] [22 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_shocks.pdf>] [23 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_random_coefficients.pdf>] [24 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/shocks_empirical.pdf>] [25 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc1_empirical.pdf>] [26 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc2_empirical.pdf>]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ¢ in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ¢ in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no í in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no í in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no à in font cmr12!
+Missing character: There is no í in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ¢ in font cmr12!
+ (./chapter1/tables/summary_statistics_raw1.tex) (./chapter1/tables/summary_statistics_raw2.tex) [27
 
-Overfull \hbox (86.72359pt too wide) in paragraph at lines 636--637
- [][] 
- []
-
-[20] [21 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_shocks.pdf>] [22 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_random_coefficients.pdf>] [23 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc1_empirical.pdf>] [24 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc2_empirical.pdf>] [25 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/shocks_empirical.pdf>] (./chapter1/tables/summary_statistics_raw1.tex) (./chapter1/tables/summary_statistics_raw2.tex) (./chapter1/tables/summary_statistics_processed1.tex) [26
-
-] (./chapter1/tables/summary_statistics_processed2.tex)
-./chapter1/chapter1.tex:686: Missing $ inserted.
+] (./chapter1/tables/summary_statistics_processed1.tex) (./chapter1/tables/summary_statistics_processed2.tex) [28]
+./chapter1/chapter1.tex:700: Missing $ inserted.
 <inserted text> 
                 $
-l.686 ...ormance measures for estimates of E[U_2]}
+l.700 ...ormance measures for estimates of E[U_2]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./chapter1/chapter1.tex:686: Missing $ inserted.
+./chapter1/chapter1.tex:700: Missing $ inserted.
 <inserted text> 
                 $
-l.686 ...ormance measures for estimates of E[U_2]}
+l.700 ...ormance measures for estimates of E[U_2]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-(./chapter1/tables/simulation_statistics_EU.tex) [27]
-./chapter1/chapter1.tex:692: Missing $ inserted.
+(./chapter1/tables/simulation_statistics_EU.tex)
+./chapter1/chapter1.tex:706: Missing $ inserted.
 <inserted text> 
                 $
-l.692 ...ormance measures for estimates of E[V_2]}
+l.706 ...ormance measures for estimates of E[V_2]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./chapter1/chapter1.tex:692: Missing $ inserted.
+./chapter1/chapter1.tex:706: Missing $ inserted.
 <inserted text> 
                 $
-l.692 ...ormance measures for estimates of E[V_2]}
+l.706 ...ormance measures for estimates of E[V_2]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 (./chapter1/tables/simulation_statistics_EV.tex)
-./chapter1/chapter1.tex:698: Missing $ inserted.
+./chapter1/chapter1.tex:712: Missing $ inserted.
 <inserted text> 
                 $
-l.698 ...mance measures for estimates of Std[U_2]}
+l.712 ...mance measures for estimates of Std[U_2]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./chapter1/chapter1.tex:698: Missing $ inserted.
+./chapter1/chapter1.tex:712: Missing $ inserted.
 <inserted text> 
                 $
-l.698 ...mance measures for estimates of Std[U_2]}
+l.712 ...mance measures for estimates of Std[U_2]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-(./chapter1/tables/simulation_statistics_SU.tex)
-./chapter1/chapter1.tex:704: Missing $ inserted.
+(./chapter1/tables/simulation_statistics_SU.tex) [29]
+./chapter1/chapter1.tex:718: Missing $ inserted.
 <inserted text> 
                 $
-l.704 ...mance measures for estimates of Std[B_2]}
+l.718 ...mance measures for estimates of Std[B_2]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./chapter1/chapter1.tex:704: Missing $ inserted.
+./chapter1/chapter1.tex:718: Missing $ inserted.
 <inserted text> 
                 $
-l.704 ...mance measures for estimates of Std[B_2]}
+l.718 ...mance measures for estimates of Std[B_2]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-(./chapter1/tables/simulation_statistics_SB.tex) [28]
-./chapter1/chapter1.tex:710: Missing $ inserted.
+(./chapter1/tables/simulation_statistics_SB.tex)
+./chapter1/chapter1.tex:724: Missing $ inserted.
 <inserted text> 
                 $
-l.710 ... measures for estimates of Cov[U_2, V_2]}
+l.724 ... measures for estimates of Cov[U_2, V_2]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./chapter1/chapter1.tex:710: Missing $ inserted.
+./chapter1/chapter1.tex:724: Missing $ inserted.
 <inserted text> 
                 $
-l.710 ... measures for estimates of Cov[U_2, V_2]}
+l.724 ... measures for estimates of Cov[U_2, V_2]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 (./chapter1/tables/simulation_statistics_CUV.tex)
-./chapter1/chapter1.tex:716: Missing $ inserted.
+./chapter1/chapter1.tex:730: Missing $ inserted.
 <inserted text> 
                 $
-l.716 ...measures for estimates of Corr[U_2, V_2]}
+l.730 ...measures for estimates of Corr[U_2, V_2]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./chapter1/chapter1.tex:716: Missing $ inserted.
+./chapter1/chapter1.tex:730: Missing $ inserted.
 <inserted text> 
                 $
-l.716 ...measures for estimates of Corr[U_2, V_2]}
+l.730 ...measures for estimates of Corr[U_2, V_2]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-(./chapter1/tables/simulation_statistics_CorrUV.tex)
-./chapter1/chapter1.tex:725: Missing $ inserted.
+(./chapter1/tables/simulation_statistics_CorrUV.tex) [30]
+./chapter1/chapter1.tex:739: Missing $ inserted.
 <inserted text> 
                 $
-l.725 ...ormance measures for estimates of E[A_1]}
+l.739 ...ormance measures for estimates of E[A_1]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./chapter1/chapter1.tex:725: Missing $ inserted.
+./chapter1/chapter1.tex:739: Missing $ inserted.
 <inserted text> 
                 $
-l.725 ...ormance measures for estimates of E[A_1]}
+l.739 ...ormance measures for estimates of E[A_1]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-(./chapter1/tables/simulation_statistics_EA.tex) [29]
-./chapter1/chapter1.tex:731: Missing $ inserted.
+(./chapter1/tables/simulation_statistics_EA.tex)
+./chapter1/chapter1.tex:745: Missing $ inserted.
 <inserted text> 
                 $
-l.731 ...ormance measures for estimates of E[B_1]}
+l.745 ...ormance measures for estimates of E[B_1]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./chapter1/chapter1.tex:731: Missing $ inserted.
+./chapter1/chapter1.tex:745: Missing $ inserted.
 <inserted text> 
                 $
-l.731 ...ormance measures for estimates of E[B_1]}
+l.745 ...ormance measures for estimates of E[B_1]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 (./chapter1/tables/simulation_statistics_EB.tex)
-./chapter1/chapter1.tex:737: Missing $ inserted.
+./chapter1/chapter1.tex:751: Missing $ inserted.
 <inserted text> 
                 $
-l.737 ...mance measures for estimates of Std[A_1]}
+l.751 ...mance measures for estimates of Std[A_1]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./chapter1/chapter1.tex:737: Missing $ inserted.
+./chapter1/chapter1.tex:751: Missing $ inserted.
 <inserted text> 
                 $
-l.737 ...mance measures for estimates of Std[A_1]}
+l.751 ...mance measures for estimates of Std[A_1]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-(./chapter1/tables/simulation_statistics_SA.tex)
-./chapter1/chapter1.tex:743: Missing $ inserted.
+(./chapter1/tables/simulation_statistics_SA.tex) [31]
+./chapter1/chapter1.tex:757: Missing $ inserted.
 <inserted text> 
                 $
-l.743 ...mance measures for estimates of Std[B_1]}
+l.757 ...mance measures for estimates of Std[B_1]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./chapter1/chapter1.tex:743: Missing $ inserted.
+./chapter1/chapter1.tex:757: Missing $ inserted.
 <inserted text> 
                 $
-l.743 ...mance measures for estimates of Std[B_1]}
+l.757 ...mance measures for estimates of Std[B_1]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-(./chapter1/tables/simulation_statistics_SB.tex) [30]
-./chapter1/chapter1.tex:749: Missing $ inserted.
+(./chapter1/tables/simulation_statistics_SB.tex)
+./chapter1/chapter1.tex:763: Missing $ inserted.
 <inserted text> 
                 $
-l.749 ... measures for estimates of Cov[A_1, B_1]}
+l.763 ... measures for estimates of Cov[A_1, B_1]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./chapter1/chapter1.tex:749: Missing $ inserted.
+./chapter1/chapter1.tex:763: Missing $ inserted.
 <inserted text> 
                 $
-l.749 ... measures for estimates of Cov[A_1, B_1]}
+l.763 ... measures for estimates of Cov[A_1, B_1]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 (./chapter1/tables/simulation_statistics_CAB.tex)
-./chapter1/chapter1.tex:755: Missing $ inserted.
+./chapter1/chapter1.tex:769: Missing $ inserted.
 <inserted text> 
                 $
-l.755 ...measures for estimates of Corr[A_1, B_1]}
+l.769 ...measures for estimates of Corr[A_1, B_1]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./chapter1/chapter1.tex:755: Missing $ inserted.
+./chapter1/chapter1.tex:769: Missing $ inserted.
 <inserted text> 
                 $
-l.755 ...measures for estimates of Corr[A_1, B_1]}
+l.769 ...measures for estimates of Corr[A_1, B_1]}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-(./chapter1/tables/simulation_statistics_CorrAB.tex)
+(./chapter1/tables/simulation_statistics_CorrAB.tex) [32]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 760.
- [31] [32] (./chapter1/tables/panel_lm_table.tex)
-Overfull \hbox (3.25847pt too wide) in paragraph at lines 5--771
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 774.
+ [33] (./chapter1/tables/panel_lm_table.tex)
+Overfull \hbox (3.25847pt too wide) in paragraph at lines 5--785
 [][]
  []
 
-[33
+[34
 
 
-]) [34
+]) [35
 
 
 ] (./Chapter2/Chapter2.tex
 Chapter 2.
-[35
+[36
 
-] [36] [37] [38] [39] [40] [41] [42] [43]
-Overfull \hbox (6.87625pt too wide) in paragraph at lines 99--100
+] [37] [38] [39] [40] [41] [42] [43] [44]
+Overfull \hbox (6.87625pt too wide) in paragraph at lines 90--91
 []\OT1/cmr/m/n/12 First, the num-ber of new in-com-ing pairs in each pe-riod is drawn from the $\OML/cmm/m/it/12 Poisson\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 r\OT1/cmr/m/n/12 )$
  []
 
-[44] [45] [46]
-./Chapter2/Chapter2.tex:129: Undefined control sequence.
-l.129 ...nor \cite{cecka2010calculated}, our \meph
+[45] [46] [47]
+./Chapter2/Chapter2.tex:121: Undefined control sequence.
+l.121 ...nor \cite{cecka2010calculated}, our \meph
                                                   {donor cPRA} is a novel me...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2098,252 +2114,257 @@ and I'll forget about whatever was undefined.
 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cPRA.pdf, id=503, 867.24pt x 289.08pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cPRA.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cPRA.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cPRA.pdf used on input line 134.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cPRA.pdf used on input line 126.
 (pdftex.def)             Requested size: 433.62001pt x 144.53964pt.
- [47] [48 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cPRA.pdf>] [49] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf, id=540, 1300.86pt x 361.35pt>
+ [48] [49 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/computed_cPRA.pdf>]
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
+(Font)              using `OT1/cmr/bx/n' instead on input line 156.
+
+[50] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf, id=540, 1300.86pt x 361.35pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf used on input line 173.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf used on input line 165.
 (pdftex.def)             Requested size: 607.06535pt x 168.63252pt.
 
-Overfull \hbox (76.47179pt too wide) in paragraph at lines 172--175
+Overfull \hbox (76.47179pt too wide) in paragraph at lines 164--167
  []|  [] 
  []
 
-[50 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf>] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf, id=602, 569.25975pt x 136.01515pt>
+[51 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/greedy_opt_comparison_mcl2_2.pdf>] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf, id=602, 569.25975pt x 136.01515pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf used on input line 199.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf used on input line 191.
 (pdftex.def)             Requested size: 433.62001pt x 103.6071pt.
 
-Overfull \hbox (3.26385pt too wide) in paragraph at lines 199--200
+Overfull \hbox (3.26385pt too wide) in paragraph at lines 191--192
  [][]\OT1/cmr/m/n/12 . 
  []
 
 
-./Chapter2/Chapter2.tex:227: LaTeX Error: There's no line here to end.
+./Chapter2/Chapter2.tex:219: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.227   }
+l.219   }
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Chapter2/Chapter2.tex:227: Missing $ inserted.
+./Chapter2/Chapter2.tex:219: Missing $ inserted.
 <inserted text> 
                 $
-l.227   }
+l.219   }
          
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./Chapter2/Chapter2.tex:227: LaTeX Error: There's no line here to end.
+./Chapter2/Chapter2.tex:219: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.227   }
+l.219   }
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Chapter2/Chapter2.tex:227: Missing $ inserted.
+./Chapter2/Chapter2.tex:219: Missing $ inserted.
 <inserted text> 
                 $
-l.227   }
+l.219   }
          
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./Chapter2/Chapter2.tex:227: LaTeX Error: There's no line here to end.
+./Chapter2/Chapter2.tex:219: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.227   }
+l.219   }
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Chapter2/Chapter2.tex:227: Missing $ inserted.
+./Chapter2/Chapter2.tex:219: Missing $ inserted.
 <inserted text> 
                 $
-l.227   }
+l.219   }
          
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./Chapter2/Chapter2.tex:227: Missing $ inserted.
+./Chapter2/Chapter2.tex:219: Missing $ inserted.
 <inserted text> 
                 $
-l.227   }
-         
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-./Chapter2/Chapter2.tex:227: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.227   }
-         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./Chapter2/Chapter2.tex:227: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.227   }
-         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./Chapter2/Chapter2.tex:227: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.227   }
-         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[51 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf>] [52]
-
-LaTeX Warning: Reference `fig:mab_step' on page 53 undefined on input line 244.
-
-[53] [54] [55]
-./Chapter2/Chapter2.tex:310: Missing $ inserted.
-<inserted text> 
-                $
-l.310   }
-         
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./Chapter2/Chapter2.tex:310: Missing $ inserted.
-<inserted text> 
-                $
-l.310   }
+l.219   }
          
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./Chapter2/Chapter2.tex:310: LaTeX Error: There's no line here to end.
+./Chapter2/Chapter2.tex:219: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.310   }
+l.219   }
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Chapter2/Chapter2.tex:310: Missing $ inserted.
+
+./Chapter2/Chapter2.tex:219: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219   }
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./Chapter2/Chapter2.tex:219: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.219   }
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[52 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/direct_prediction.pdf>] [53]
+
+LaTeX Warning: Reference `fig:mab_step' on page 54 undefined on input line 236.
+
+[54] [55] [56]
+./Chapter2/Chapter2.tex:302: Missing $ inserted.
 <inserted text> 
                 $
-l.310   }
+l.302   }
+         
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapter2/Chapter2.tex:302: Missing $ inserted.
+<inserted text> 
+                $
+l.302   }
          
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./Chapter2/Chapter2.tex:310: LaTeX Error: There's no line here to end.
+./Chapter2/Chapter2.tex:302: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.310   }
+l.302   }
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Chapter2/Chapter2.tex:310: Missing $ inserted.
+./Chapter2/Chapter2.tex:302: Missing $ inserted.
 <inserted text> 
                 $
-l.310   }
+l.302   }
          
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./Chapter2/Chapter2.tex:310: LaTeX Error: There's no line here to end.
+./Chapter2/Chapter2.tex:302: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.310   }
+l.302   }
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-
-./Chapter2/Chapter2.tex:310: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.310   }
-         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./Chapter2/Chapter2.tex:310: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.310   }
-         
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./Chapter2/Chapter2.tex:310: Missing $ inserted.
+./Chapter2/Chapter2.tex:302: Missing $ inserted.
 <inserted text> 
                 $
-l.310   }
+l.302   }
          
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./Chapter2/Chapter2.tex:310: Extra }, or forgotten $.
+
+./Chapter2/Chapter2.tex:302: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.302   }
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./Chapter2/Chapter2.tex:302: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.302   }
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./Chapter2/Chapter2.tex:302: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.302   }
+         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Chapter2/Chapter2.tex:302: Missing $ inserted.
+<inserted text> 
+                $
+l.302   }
+         
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapter2/Chapter2.tex:302: Extra }, or forgotten $.
 \algocf@Vsline ...}\vtop {\algocf@addskiptotal #1}
                                                   }}\algocf@pop {\skiprule }...
-l.310   }
+l.302   }
          
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2351,10 +2372,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./Chapter2/Chapter2.tex:310: Extra }, or forgotten $.
+./Chapter2/Chapter2.tex:302: Extra }, or forgotten $.
 \algocf@Vsline ...\vtop {\algocf@addskiptotal #1}}
                                                   }\algocf@pop {\skiprule }\...
-l.310   }
+l.302   }
          
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2362,10 +2383,10 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./Chapter2/Chapter2.tex:310: Extra }, or forgotten $.
+./Chapter2/Chapter2.tex:302: Extra }, or forgotten $.
 \algocf@Vsline ...vtop {\algocf@addskiptotal #1}}}
                                                   \algocf@pop {\skiprule }\a...
-l.310   }
+l.302   }
          
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2373,31 +2394,31 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./Chapter2/Chapter2.tex:310: Missing $ inserted.
+./Chapter2/Chapter2.tex:302: Missing $ inserted.
 <inserted text> 
                 $
-l.310   }
+l.302   }
          
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./Chapter2/Chapter2.tex:310: LaTeX Error: There's no line here to end.
+./Chapter2/Chapter2.tex:302: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.310   }
+l.302   }
          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Chapter2/Chapter2.tex:313: Missing } inserted.
+./Chapter2/Chapter2.tex:305: Missing } inserted.
 <inserted text> 
                 }
-l.313 \end{algorithm}
+l.305 \end{algorithm}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2405,10 +2426,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./Chapter2/Chapter2.tex:313: Missing } inserted.
+./Chapter2/Chapter2.tex:305: Missing } inserted.
 <inserted text> 
                 }
-l.313 \end{algorithm}
+l.305 \end{algorithm}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2417,14 +2438,14 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (6.27493pt too wide) detected at line 313
+Overfull \hbox (6.27493pt too wide) detected at line 305
 [][]
  []
 
-./Chapter2/Chapter2.tex:313: Missing } inserted.
+./Chapter2/Chapter2.tex:305: Missing } inserted.
 <inserted text> 
                 }
-l.313 \end{algorithm}
+l.305 \end{algorithm}
                      
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2433,421 +2454,421 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-./Chapter2/Chapter2.tex:335: LaTeX Error: There's no line here to end.
+./Chapter2/Chapter2.tex:327: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.335    }
+l.327    }
           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Chapter2/Chapter2.tex:335: Missing $ inserted.
+./Chapter2/Chapter2.tex:327: Missing $ inserted.
 <inserted text> 
                 $
-l.335    }
+l.327    }
           
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./Chapter2/Chapter2.tex:335: LaTeX Error: There's no line here to end.
+./Chapter2/Chapter2.tex:327: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.335    }
+l.327    }
           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Chapter2/Chapter2.tex:335: Missing $ inserted.
+./Chapter2/Chapter2.tex:327: Missing $ inserted.
 <inserted text> 
                 $
-l.335    }
+l.327    }
           
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./Chapter2/Chapter2.tex:335: LaTeX Error: There's no line here to end.
+./Chapter2/Chapter2.tex:327: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.335    }
+l.327    }
           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Chapter2/Chapter2.tex:335: Missing $ inserted.
+./Chapter2/Chapter2.tex:327: Missing $ inserted.
 <inserted text> 
                 $
-l.335    }
+l.327    }
           
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./Chapter2/Chapter2.tex:335: LaTeX Error: There's no line here to end.
+./Chapter2/Chapter2.tex:327: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.335    }
+l.327    }
           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Chapter2/Chapter2.tex:335: Missing $ inserted.
+./Chapter2/Chapter2.tex:327: Missing $ inserted.
 <inserted text> 
                 $
-l.335    }
+l.327    }
           
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./Chapter2/Chapter2.tex:335: LaTeX Error: There's no line here to end.
+./Chapter2/Chapter2.tex:327: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.335    }
+l.327    }
           
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./Chapter2/Chapter2.tex:377: LaTeX Error: There's no line here to end.
+./Chapter2/Chapter2.tex:369: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.377      }
+l.369      }
             
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Chapter2/Chapter2.tex:377: Missing $ inserted.
+./Chapter2/Chapter2.tex:369: Missing $ inserted.
 <inserted text> 
                 $
-l.377      }
+l.369      }
             
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./Chapter2/Chapter2.tex:377: LaTeX Error: There's no line here to end.
+./Chapter2/Chapter2.tex:369: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.377      }
+l.369      }
             
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Chapter2/Chapter2.tex:377: Missing $ inserted.
+./Chapter2/Chapter2.tex:369: Missing $ inserted.
 <inserted text> 
                 $
-l.377      }
+l.369      }
             
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./Chapter2/Chapter2.tex:377: Missing $ inserted.
+./Chapter2/Chapter2.tex:369: Missing $ inserted.
 <inserted text> 
                 $
-l.377      }
+l.369      }
             
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./Chapter2/Chapter2.tex:377: LaTeX Error: There's no line here to end.
+./Chapter2/Chapter2.tex:369: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.377      }
+l.369      }
             
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Chapter2/Chapter2.tex:377: Missing $ inserted.
+./Chapter2/Chapter2.tex:369: Missing $ inserted.
 <inserted text> 
                 $
-l.377      }
+l.369      }
             
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./Chapter2/Chapter2.tex:377: Missing $ inserted.
+./Chapter2/Chapter2.tex:369: Missing $ inserted.
 <inserted text> 
                 $
-l.377      }
+l.369      }
             
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./Chapter2/Chapter2.tex:377: LaTeX Error: There's no line here to end.
+./Chapter2/Chapter2.tex:369: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.377      }
+l.369      }
             
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./Chapter2/Chapter2.tex:377: Missing $ inserted.
+./Chapter2/Chapter2.tex:369: Missing $ inserted.
 <inserted text> 
                 $
-l.377      }
+l.369      }
             
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./Chapter2/Chapter2.tex:377: LaTeX Error: There's no line here to end.
+./Chapter2/Chapter2.tex:369: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.377      }
-            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./Chapter2/Chapter2.tex:377: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.377      }
-            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./Chapter2/Chapter2.tex:377: Missing $ inserted.
-<inserted text> 
-                $
-l.377      }
-            
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-./Chapter2/Chapter2.tex:377: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.377      }
-            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./Chapter2/Chapter2.tex:377: Missing $ inserted.
-<inserted text> 
-                $
-l.377      }
-            
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-./Chapter2/Chapter2.tex:377: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.377      }
-            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./Chapter2/Chapter2.tex:377: Missing $ inserted.
-<inserted text> 
-                $
-l.377      }
-            
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-./Chapter2/Chapter2.tex:377: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.377      }
-            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./Chapter2/Chapter2.tex:377: Missing $ inserted.
-<inserted text> 
-                $
-l.377      }
-            
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./Chapter2/Chapter2.tex:377: Missing $ inserted.
-<inserted text> 
-                $
-l.377      }
-            
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-./Chapter2/Chapter2.tex:377: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.377      }
-            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./Chapter2/Chapter2.tex:377: Missing $ inserted.
-<inserted text> 
-                $
-l.377      }
-            
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./Chapter2/Chapter2.tex:377: Missing $ inserted.
-<inserted text> 
-                $
-l.377      }
-            
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-./Chapter2/Chapter2.tex:377: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.377      }
-            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./Chapter2/Chapter2.tex:377: Missing $ inserted.
-<inserted text> 
-                $
-l.377      }
-            
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-./Chapter2/Chapter2.tex:377: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.377      }
-            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./Chapter2/Chapter2.tex:377: Missing $ inserted.
-<inserted text> 
-                $
-l.377      }
-            
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-./Chapter2/Chapter2.tex:377: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.377      }
-            
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-./Chapter2/Chapter2.tex:377: Missing $ inserted.
-<inserted text> 
-                $
-l.377      }
-            
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-./Chapter2/Chapter2.tex:377: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.377      }
+l.369      }
             
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (5.22217pt too wide) detected at line 381
+./Chapter2/Chapter2.tex:369: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369      }
+            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Chapter2/Chapter2.tex:369: Missing $ inserted.
+<inserted text> 
+                $
+l.369      }
+            
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Chapter2/Chapter2.tex:369: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369      }
+            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Chapter2/Chapter2.tex:369: Missing $ inserted.
+<inserted text> 
+                $
+l.369      }
+            
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Chapter2/Chapter2.tex:369: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369      }
+            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Chapter2/Chapter2.tex:369: Missing $ inserted.
+<inserted text> 
+                $
+l.369      }
+            
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Chapter2/Chapter2.tex:369: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369      }
+            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Chapter2/Chapter2.tex:369: Missing $ inserted.
+<inserted text> 
+                $
+l.369      }
+            
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapter2/Chapter2.tex:369: Missing $ inserted.
+<inserted text> 
+                $
+l.369      }
+            
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Chapter2/Chapter2.tex:369: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369      }
+            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Chapter2/Chapter2.tex:369: Missing $ inserted.
+<inserted text> 
+                $
+l.369      }
+            
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./Chapter2/Chapter2.tex:369: Missing $ inserted.
+<inserted text> 
+                $
+l.369      }
+            
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Chapter2/Chapter2.tex:369: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369      }
+            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Chapter2/Chapter2.tex:369: Missing $ inserted.
+<inserted text> 
+                $
+l.369      }
+            
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Chapter2/Chapter2.tex:369: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369      }
+            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Chapter2/Chapter2.tex:369: Missing $ inserted.
+<inserted text> 
+                $
+l.369      }
+            
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Chapter2/Chapter2.tex:369: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369      }
+            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./Chapter2/Chapter2.tex:369: Missing $ inserted.
+<inserted text> 
+                $
+l.369      }
+            
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+./Chapter2/Chapter2.tex:369: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.369      }
+            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (5.22217pt too wide) detected at line 373
 [][] [] []
  []
 
-./Chapter2/Chapter2.tex:381: Extra }, or forgotten \endgroup.
+./Chapter2/Chapter2.tex:373: Extra }, or forgotten \endgroup.
 \@algocf@finish ... {\skipalgocfslide }}{}\egroup 
                                                   \end {lrbox}\algocf@maketh...
-l.381  \end{algorithm}
+l.373  \end{algorithm}
                       
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2858,18 +2879,21 @@ deleted material, e.g., by typing `I$}'.
 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf, id=693, 520.6411pt x 135.80737pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf used on input line 387.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf used on input line 379.
 (pdftex.def)             Requested size: 433.62001pt x 113.10966pt.
  </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf, id=694, 488.59137pt x 149.45135pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf used on input line 396.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf used on input line 388.
 (pdftex.def)             Requested size: 433.62001pt x 132.64183pt.
- [56] [57 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf>] [58 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf>] [59] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf, id=878, 376.68932pt x 54.09259pt>
-./Chapter2/Chapter2.tex:410: Illegal unit of measure (pt inserted).
+ [57] [58] [59 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab.pdf> </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf
+
+pdfTeX warning: pdflatex (file /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_step.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [60] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf, id=878, 376.68932pt x 54.09259pt>
+./Chapter2/Chapter2.tex:402: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \relax 
-l.410 ...esis/figures/pseudo_reward_intuition.pdf}
+l.402 ...esis/figures/pseudo_reward_intuition.pdf}
                                                   
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2878,10 +2902,10 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-./Chapter2/Chapter2.tex:410: Illegal unit of measure (pt inserted).
+./Chapter2/Chapter2.tex:402: Illegal unit of measure (pt inserted).
 <to be read again> 
                    \relax 
-l.410 ...esis/figures/pseudo_reward_intuition.pdf}
+l.402 ...esis/figures/pseudo_reward_intuition.pdf}
                                                   
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2892,142 +2916,139 @@ two letters. (See Chapter 27 of The TeXbook.)
 
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf Graphic file (type pdf)
 <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf used on input line 410.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf used on input line 402.
 (pdftex.def)             Requested size: 600.0pt x 86.15948pt.
- [60
+ [61
 
  </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf>]
 
-LaTeX Warning: Reference `fig:traditional_ml_mdp_algo_grb, fig:traditional_ml_mdp_algo_lr, fig:traditional_ml_mdp_algo_rf' on page 61 undefined on input line 433.
+LaTeX Warning: Reference `fig:traditional_ml_mdp_algo_grb, fig:traditional_ml_mdp_algo_lr, fig:traditional_ml_mdp_algo_rf' on page 62 undefined on input line 425.
 
 
-LaTeX Warning: Reference `Traditional tables are also available as part of the Supplementary Materials. They will be made available online later.' on page 61 undefined on input line 433.
+LaTeX Warning: Reference `Traditional tables are also available as part of the Supplementary Materials. They will be made available online later.' on page 62 undefined on input line 425.
 
-[61
+[62
 
 ] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_grb.pdf, id=920, 578.16pt x 289.08pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_grb.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_grb.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_grb.pdf used on input line 440.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_grb.pdf used on input line 432.
 (pdftex.def)             Requested size: 433.62001pt x 216.80946pt.
  </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_lr.pdf, id=921, 578.16pt x 289.08pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_lr.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_lr.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_lr.pdf used on input line 448.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_lr.pdf used on input line 440.
 (pdftex.def)             Requested size: 433.62001pt x 216.80946pt.
  </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_rf.pdf, id=922, 578.16pt x 289.08pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_rf.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_rf.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_rf.pdf used on input line 456.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_rf.pdf used on input line 448.
 (pdftex.def)             Requested size: 433.62001pt x 216.80946pt.
 
 
-LaTeX Warning: Reference `tab:tradional_ml_classifier' on page 62 undefined on input line 458.
+LaTeX Warning: Reference `tab:tradional_ml_classifier' on page 63 undefined on input line 450.
 
 
-LaTeX Warning: Reference `tab:exp3' on page 62 undefined on input line 466.
+LaTeX Warning: Reference `tab:exp3' on page 63 undefined on input line 458.
 
-[62 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_grb.pdf>] [63 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_lr.pdf> </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_rf.pdf
+[63 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_grb.pdf>] [64 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_lr.pdf> </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_rf.pdf
 
 pdfTeX warning: pdflatex (file /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_rf.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_ABO.pdf, id=1128, 1300.86pt x 361.35pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_ABO.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_ABO.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_ABO.pdf used on input line 474.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_ABO.pdf used on input line 466.
 (pdftex.def)             Requested size: 476.98465pt x 132.4954pt.
  </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_RSU.pdf, id=1129, 1300.86pt x 361.35pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_RSU.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_RSU.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_RSU.pdf used on input line 476.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_RSU.pdf used on input line 468.
 (pdftex.def)             Requested size: 476.98465pt x 132.4954pt.
  </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_OPTN.pdf, id=1130, 1300.86pt x 361.35pt>
 File: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_OPTN.pdf Graphic file (type pdf)
  <use /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_OPTN.pdf>
-Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_OPTN.pdf used on input line 478.
+Package pdftex.def Info: /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_OPTN.pdf used on input line 470.
 (pdftex.def)             Requested size: 476.98465pt x 132.4954pt.
 
 
-LaTeX Warning: Reference `tab:exp3' on page 64 undefined on input line 481.
+LaTeX Warning: Reference `tab:exp3' on page 65 undefined on input line 473.
 
-[64] [65 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_ABO.pdf> </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_RSU.pdf
+[65] [66 </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_ABO.pdf> </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_RSU.pdf
 
 pdfTeX warning: pdflatex (file /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_RSU.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > </Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_OPTN.pdf
 
 pdfTeX warning: pdflatex (file /Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/mab_OPTN.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [66] [67] (/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/abo_probability.tex) (/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/traditional_ml_classifier.tex)
-Overfull \hbox (114.70995pt too wide) in paragraph at lines 537--541
+>] [67] (/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/abo_probability.tex) [68] (/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/traditional_ml_classifier.tex)
+Overfull \hbox (114.70995pt too wide) in paragraph at lines 530--535
  []|  [] 
  []
 
 (/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/traditional_mdp_grb_none.tex)
-Overfull \hbox (74.81645pt too wide) in paragraph at lines 548--550
+Overfull \hbox (74.81645pt too wide) in paragraph at lines 542--544
  []|  [] 
  []
 
 (/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/traditional_mdp_grb_networkx.tex)
-Overfull \hbox (74.81645pt too wide) in paragraph at lines 558--560
+Overfull \hbox (74.81645pt too wide) in paragraph at lines 552--554
  []|  [] 
  []
 
 (/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/traditional_mdp_lr_none.tex)
-Overfull \hbox (74.81645pt too wide) in paragraph at lines 568--570
+Overfull \hbox (74.81645pt too wide) in paragraph at lines 562--564
  []|  [] 
  []
 
 (/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/traditional_mdp_lr_networkx.tex)
-Overfull \hbox (74.81645pt too wide) in paragraph at lines 578--580
+Overfull \hbox (74.81645pt too wide) in paragraph at lines 572--574
  []|  [] 
  []
 
 (/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/traditional_mdp_rf_none.tex)
-Overfull \hbox (74.81645pt too wide) in paragraph at lines 588--590
+Overfull \hbox (74.81645pt too wide) in paragraph at lines 582--584
  []|  [] 
  []
 
 (/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/traditional_mdp_rf_networkx.tex)
-Overfull \hbox (74.81645pt too wide) in paragraph at lines 598--600
+Overfull \hbox (74.81645pt too wide) in paragraph at lines 592--594
  []|  [] 
  []
 
 (/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/mab_UCB1.tex)
-Overfull \hbox (74.81645pt too wide) in paragraph at lines 609--612
+Overfull \hbox (74.81645pt too wide) in paragraph at lines 603--606
  []|  [] 
  []
 
 (/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/mab_Thompson.tex)
-Overfull \hbox (74.81645pt too wide) in paragraph at lines 620--623
+Overfull \hbox (74.81645pt too wide) in paragraph at lines 614--617
  []|  [] 
  []
 
-) [68] [69] [70] [71] [72] [73] [74] [75] [76] [77] (./main.bbl
+) [69] [70] [71] [72] [73] [74] [75] [76] [77] [78] (./main.bbl
 LaTeX Font Info:    Font shape `OT1/qpl/bx/n' in size <29.86> not available
 (Font)              Font shape `OT1/qpl/b/n' tried instead on input line 1.
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no î in font cmr12!
- [78
+ [79
 
 
-] [79]
+]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ú in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ù in font cmr12!
+ [80]
 Missing character: There is no ‚ in font cmti12!
 Missing character: There is no Ä in font cmti12!
 Missing character: There is no î in font cmti12!
- [80])
+ [81])
 
-./main.tex:191: LaTeX Error: \begin{itemize} on input line 122 ended by \end{document}.
+Package natbib Warning: There were undefined citations.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.191 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[81] (./main.aux)
+[82] (./main.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 4.98pt have occurred.
@@ -3041,23 +3062,19 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
- )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 122 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 9206 strings out of 493089
- 148894 string characters out of 6134842
- 347029 words of memory out of 5000000
- 12377 multiletter control sequences out of 15000+600000
- 42816 words of font info for 85 fonts, out of 8000000 for 9000
+ 9233 strings out of 493089
+ 149659 string characters out of 6134842
+ 344572 words of memory out of 5000000
+ 12404 multiletter control sequences out of 15000+600000
+ 43117 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,19n,43p,1827b,694s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (92 pages, 3912184 bytes).
+ 36i,19n,43p,1827b,593s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/tex-gyre/q-rm.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtcsc10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/tex-gyre/qplb.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (92 pages, 3915613 bytes).
 PDF statistics:
  1416 PDF objects out of 1440 (max. 8388607)
  587 compressed objects within 6 object streams

@@ -39,6 +39,12 @@ Anderson, R., Ashlagi, I., Gamarnik, D., and Roth, A.~E. (2015).
 \newblock {\em Proceedings of the National Academy of Sciences},
   112(3):663--668.
 
+\bibitem[Arellano and Bonhomme, 2011]{arellano2011identifying}
+Arellano, M. and Bonhomme, S. (2011).
+\newblock Identifying distributional characteristics in random coefficients
+  panel data models.
+\newblock {\em The Review of Economic Studies}, 79(3):987--1020.
+
 \bibitem[Ashlagi et~al., 2012]{ashlagi2012need}
 Ashlagi, I., Gamarnik, D., Rees, M.~A., and Roth, A.~E. (2012).
 \newblock The need for (long) chains in kidney exchange.
@@ -71,6 +77,11 @@ Breiman, L. (2001).
 \newblock Random forests.
 \newblock {\em Machine learning}, 45(1):5--32.
 
+\bibitem[Browning et~al., 2007]{browning2007heterogeneity}
+Browning, M., Carro, J., et~al. (2007).
+\newblock Heterogeneity and microeconometrics modeling.
+\newblock {\em Econometric Society Monographs}, 43:47.
+
 \bibitem[Buitinck et~al., 2013]{sklearn_api}
 Buitinck, L., Louppe, G., Blondel, M., Pedregosa, F., Mueller, A., Grisel, O.,
   Niculae, V., Prettenhofer, P., Gramfort, A., Grobler, J., Layton, R.,
@@ -85,6 +96,11 @@ Cecka, J. (2010).
 \newblock Calculated pra (cpra): the new measure of sensitization for
   transplant candidates.
 \newblock {\em American journal of transplantation}, 10(1):26--29.
+
+\bibitem[Cunha et~al., 2005]{cunha2005separating}
+Cunha, F., Heckman, J., and Navarro, S. (2005).
+\newblock Separating uncertainty from heterogeneity in life cycle earnings.
+\newblock {\em oxford Economic papers}, 57(2):191--261.
 
 \bibitem[Defferrard et~al., 2016]{defferrard2016convolutional}
 Defferrard, M., Bresson, X., and Vandergheynst, P. (2016).
@@ -122,10 +138,21 @@ Friedman, J.~H. (2001).
 \newblock Greedy function approximation: a gradient boosting machine.
 \newblock {\em Annals of statistics}, pages 1189--1232.
 
+\bibitem[Graham and Powell, 2012]{graham2012identification}
+Graham, B.~S. and Powell, J.~L. (2012).
+\newblock Identification and estimation of average partial effects in
+  “irregular” correlated random coefficient panel data models.
+\newblock {\em Econometrica}, 80(5):2105--2152.
+
 \bibitem[Hoderlein et~al., 2010]{hoderlein2010analyzing}
 Hoderlein, S., Klemel{\"a}, J., and Mammen, E. (2010).
 \newblock Analyzing the random coefficient model nonparametrically.
 \newblock {\em Econometric Theory}, 26(3):804--837.
+
+\bibitem[Hsieh and Klenow, 2009]{hsieh2009misallocation}
+Hsieh, C.-T. and Klenow, P.~J. (2009).
+\newblock Misallocation and manufacturing tfp in china and india.
+\newblock {\em The Quarterly journal of economics}, 124(4):1403--1448.
 
 \bibitem[Kaelbling et~al., 1996]{kaelbling1996reinforcement}
 Kaelbling, L.~P., Littman, M.~L., and Moore, A.~W. (1996).
@@ -222,6 +249,22 @@ Shuman, D.~I., Narang, S.~K., Frossard, P., Ortega, A., and Vandergheynst, P.
 \newblock The emerging field of signal processing on graphs: Extending
   high-dimensional data analysis to networks and other irregular domains.
 \newblock {\em IEEE Signal Processing Magazine}, 30(3):83--98.
+
+\bibitem[Sutskever et~al., 2014]{sutskever2014sequence}
+Sutskever, I., Vinyals, O., and Le, Q.~V. (2014).
+\newblock Sequence to sequence learning with neural networks.
+\newblock In {\em Advances in neural information processing systems}, pages
+  3104--3112.
+
+\bibitem[Syverson, 2004]{syverson2004product}
+Syverson, C. (2004).
+\newblock Product substitutability and productivity dispersion.
+\newblock {\em Review of Economics and Statistics}, 86(2):534--550.
+
+\bibitem[Syverson, 2011]{syverson2011determines}
+Syverson, C. (2011).
+\newblock What determines productivity?
+\newblock {\em Journal of Economic literature}, 49(2):326--65.
 
 \bibitem[Thompson, 1933]{thompson1933likelihood}
 Thompson, W.~R. (1933).

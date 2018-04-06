@@ -1,90 +1,101 @@
 \chapter{Heterogenous Production Functions, Panel Data, and Productivity Dispersion}
+\begin{center}
+\large
+\textsc{Jeremy Fox, Vitor Hadad, Stefan Hoderlein} \\ \textsc{Amil Petrin, Robert Sherman}
+\end{center}
 
 \doublespacing
 
 \section{Introduction}
 
-[Primary motivations of panel data: controlling for unobserved heterogeneity]
+% [One or two sentences providing basic introduction to the field, comprehensible to any economist]
+Econometricians often need control for unobserved heterogeneity, 
 
-[Correlated random coefficients]
+%[Two to three sentences of a more detailed background, comprehensible to econometricians]
 
-[]
-Random coefficients
- Consumer panels with heterogeneous consumers
- Production function parameters (A,B) vary across firms in
-same industry
+%[One sentence clearly stating the general problem being addressed by this particular study]
+In the context of panel data, it has become standard to controlling for unobserved heterogeneity via a \emph{fixed effects} approach, where we do not impose restrictions the distribution of latent heterogeneity parameters conditional on observable characteristics \citet{wooldridge2010econometric}. However, this flexibility often comes at a cost in terms of statistical modeling: the most ubiquitous fixed effects strategy in panel data is via the introduction of a time-invariant random intercept.[\ref{}, \ref{}, \ref{}], but there are many instances of economic problems where this is might not be appropriate (e.g. [QUICK EXAMPLE]).
+
+%[One sentence summarizing main result]
+Here, we present constructive identification and estimation results for the moments and marginal distribution of random coefficients in a linear panel data model with \emph{two} random coefficients
+\begin{align}
+  Y_{it} = A_{it} + X_{it}B_{it} + Z_{it}^{T}\beta_{t}
+\end{align}
+
+\noindent where the intercept $A_{it}$ and slope $B_{it}$ follow a specific autoregressive process but are otherwise allowed to be arbitrarily correlated with all regressors, and $Z_{it}$ is a (potentially large) vector of covariates associated with individual-invariant coefficients $\beta$.
 
 
-Random coefficients (A,B) can be correlated with inputs (X1,X2)
-  Estimator allows arbitrary correlations of production function parameters (A1,B1) with inputs (X1,X2)
-  Timing assumptions with random coefficients (A,B)
-  Input decisions made in period t − 1 with knowledge of t − 1
-production function
-  Estimation, consistency: censoring for unconditional means
-  India: log TFP dispersion increases in random coefficients vs OLS
+% [Two or three sentences explaining what the main results reveals in direct comparison to what was thought to be case previously, or how the main result adds to previous knowledge]
+% [One sentence to put the results into more general context]
+Our results develop upon and extend the results of earlier work by \cite{graham2012identification}, who only focus on the first moments of the random coefficients and have stricter timing assumptions than ours. Another paper is \cite{arellano2011identifying}, who, like us, provide a method for identification and estimation of higher moments and distributional characteristics of random coefficients, but they maintain certain regularity assumptions that we do not impose.  Our model also permits that lagged dependent variables to be regressors. More broadly, this paper contributes to the larger literature of panel data models with unobserved heterogeneity, as we discuss below.
+
+
+% [Two to three sentences to provide a broader perspective, readily comprehensible to a scientist in any discipline..]
+In our particular application, we take $Y_{it}$ to be value-added log-production, while the two random coefficients represent total factor productivity (TFP) and the elasticity of one of the inputs in a Cobb-Douglas model of production. There is strong evidence for heterogeneity in this setting, where it is known as \emph{productivity dispersion}. In the United States, \cite{syverson2004product} finds large plant-level discrepancies in TFP, noting that within four-digit SIC industries ``the plant at the 90th percentile of the productivity distribution makes almost twice as much output with the same measured inputs as the 10th percentile plant", and a later survey by \cite{syverson2011determines} confirms this to be a typical finding. In fact, other work by \citep{hsieh2009misallocation} indicates that this gap may be small compared to other countries. In our work we note, however, that the large observed variation in TFP might be a product of restrictive statistical models: when only the intercept is able to vary, it may end up absorbing most the heterogeneity in the data, leading to inflated estimates of the standard deviation. On the other hand, we remark that our specific model and data differ from the ones above so we cannot directly comparison our results, but leave it as a suggestion for future research.
+
+
+
+% ----------------------
+% LITERATURE REVIEW 
+% ----------------------
 
 \section{Literature review}
 
-In its most general form, the basic linear panel model used in econometrics can be described as
-
+In full generality, panel data models can be represented as
 \begin{align}
-  Y_{it} = A_{it} + \sum_{k=1}^{K} X_{it}^{(k)}B_{it}^{(k)}
+  Y_{it} = m(H_{it}, X_{it}, U_{it}) \label{eq:full_generality_panel}
 \end{align}
 
-\noindent where $Y_{it}, X_{it}, \{A_{it}, B_{it}\}_{k=1}^{K}$ are random variables associated with individual $i$ at period $t$. The parameters $B_{it}^{(k)}$ represent the causal effect of an increase in their associated regressor, while $A_{it}$ is a disturbance term whose interpretation depends on the specific application. When they have a nondegerate probability distribution, they receive various names in the literature, such as ``\emph{unobserved component}, \emph{latent variable}, or \emph{unobserved heterogeneity}"\citep[~p.251]{wooldridge2010econometric}.
+\noindent where $Y_{it}$ is the dependent variable of interest for unit $i$ at period $t$, $H_{it}$ is an individual-specific, possibly infinite-dimensional object often called the \emph{unobserved heterogeneity} component, $X_{it}$ are observable characteristics, and $U_{it}$ is an idiosyncratic error term. For example, $Y_{it}$ might represent an individual's wages over time, $X_{it}$ a vector of characteristics that includes educational attainment, $H_{it}$ a measure of their cognitive or manual ability, and $U_{it}$ measurement error. The econometrician is usually interested in some functional of this object, such as the causal average effect of on $Y_{t}$ of a change in $X_{it}$ (known as the \emph{average partial effect} of education on wages). 
 
- but here we call them \emph{random coefficients}.
+Particular care must be taken with the \emph{unobserved heterogeneity} parameter $H_{it}$. \citet[~p.2]{browning2007heterogeneity} define \emph{heterogeneity} as ``the dispersion in factors that are relevant and known to individual agents when making a particular decision"\footnote{Browning \textit{et al} were, in turn, paraphrasing \cite{cunha2005separating}}. The qualifier \emph{unobserved} serves to emphasize that the econometrician does not have access to information about such factors. This is problematic because, even when $H_{it}$ itself is not of interest, it may preclude the identification of causal objects To continue our running example: even if we observe that workers with higher educational attainment receive higher wages, we cannot a priori claim that we have found a causal effect of $X_{it}$, as it may be that high-ability ($H_{it}$) workers are able to self-select into higher-paying jobs.
 
-Without further restrictions, nothing can be said about the objects $A_{it}$ and $B_{it}$, or even its moments. In the linear panel data literature, common identifying assumptions include the following three.
+One of the foremost advantages of dealing with panel data is that, under specific assumptions, we are able to control for the unobserved heterogeneity component. However, without further assumptions, however, nothing can be said. Therefore, econometricians have posited a number of restrictions on the model above, each producing different identification strategies.
 
-\begin{enumerate}
-  \item $A_{it} = a + \epsilon_{it}$ and $B_{it} = b$, where $a, b$ are constants and $E[\epsilon_{it}|X_{it}] = 0 \forall t$.
-  \item $A_{it} = A_{i} + \epsilon_{it}$ and $B_{it} = b$, where $b$ is a constant and $E[\epsilon_{it}|X_{is}] = 0 \forall t, s$.
-  \item $A_{it} = A_{i} + \epsilon_{it}$ and $B_{it} = b$, where $b$ is a constant and $E[\epsilon_{it}|X_{is}] \neq 0 \forall t, s$.
-\end{enumerate}
+Econometric applications (such as \cite{???}, \cite{???} often to cite a few) assume that $m$ is a linear function.
+\begin{align}
+  Y_{it} = A_{it} + X_{it}^{T}B_{it} + U_{it}
+\end{align}
 
-The first one is the standard linear model that can be consistently estimated by simply running a standard linear regression of $Y_{it}$ on $X_{it}$. The second and third are called \emph{random} and \emph{fixed} panel data models, and have received a great deal of attention in the literature (see [???] for a review). Figure \ref{fig:panel_data_models} illustrates the difference between them.
+\noindent where $H_{it} = [A_{it}, B_{it}]$, a vector of \emph{random coefficients}. Furthermore, they will often impose additionally that 
+\begin{align}
+  Y_{it} = A_{i} + X_{it}^{T}\beta + U_{it}
+\end{align}
+
+and that unobserved heterogeneity appears only as an intercept.
+
+% One of the main objectives is to model heterogeneity
 
 
-\begin{figure}
-  \includegraphics[width=1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/panel_data_models.pdf}
-  \caption[Linear panel data models]{\textbf{Linear panel data models} \\ Different assumptions leading to different panel data models. Each different marker type and color indicates a different individual. \emph{Pooled}: all observations share same intercept and slope; \emph{Random effects}: each observation possesses their own time-invariant slope, but all share the same slope; \emph{Fixed effects}: same as random effects, but intercept and regressors can be correlated (figure shows positive correlation); \emph{FHHPS}: our paper generalizes the model by 1) allowing for intercept and slope to be correlated with regressors, and 2) allowing both intercept and slope to drift according to a specific Markovian process.}
-  \label{fig:panel_data_models}
-\end{figure}
+% Importance of controlling for heterogeneity
+
+Imposing different restrictions will give rise to different identification strategies. As recounted by \cite{graham2012identification}, the \emph{fixed effects} method implies restrictions on the functional form $m$ and on the conditional distribution of the idiosyncratic shocks $F(U_{it}|X_{\cdot}, A_{\cdot})$, but leaves the conditional distribution of unobserved heterogeneity $F(A|X)$ unrestricted. A related method, named \emph{random effects}, entails imposing an independence assumption between $A_{\cdot}$ and $X_{\cdot}$, but that usually leads to models that are harder to motivate economically.
+
+
+
+Further restrictions can be imposed for simplicity.
+
+Figure \ref{fig:panel_data_models} illustrates the difference between them.
+
+[[[These APEs are essentially derivatives of the average structural function of Blundell and Powell (2004).]]]
 
 
 In this paper we focus on the more general case where we allow for more than one random coefficient, and also allow them to be correlated with the regressor. The literature dealing with this more general case is substantially smaller. \citet{hoderlein2010analyzing} analyzed a for any number of random coefficients, but required the stronger assumption that the coefficients are independent from the regressors. 
 
-> [Chamberlain (1982), Arellano and Bonhomme (2011), Graham
-and Powell (2012), Evdokimov (2011)]
+% Closest works are Chamberlain (1982), Arellano and Bonhomme (2011), Graham nd Powell (2012), Evdokimov (2011)]
 
+
+% Production function estimation
 > Recent papers on heterogeneous production functions Kasahara, Shrimpf and Suzuki (2016), Balat, Brambilla and Sazaki (2016)
   Extend proxy variable approaches but require variables to be chosen in period t − 1 with only static considerations, as in FOCs. Ackerberg and Hahn (2016)
   Scalar unobservable enters into nonparametric production function
-  
-  
-  
-  Cobb-Douglas
-  Yi,t =Ai,t +BKKi,t +BLLi,t
-    Productivity dispersion: standard deviation of Ai,t across plants or firms in same industry
-    Syverson (2011) surveys empirical findings on dispersion
-    Typical finding: some plants produce more than twice as much
-  output for same inputs
-    Assuming  BK,BL  is the same across plants in a 4- or 2-digit industry classification may be too restrictive
-    If BK,BL  varybyplanti andtimet andabove i,t i,t
-  specification is estimated, much of this heterogeneity enters into Ai,t
-  
-  
-  Estimate BK as expenditure share on capital input i,t
-  Based on static profit maximizing FOC for Cobb-Douglas
-  Treats input as having no adjustment costs, opposite of our
-approach
-  Based on strong conduct assumption: static profit maximization
-  We do not impose profit maximization, important for studying unproductive firms
-  We allow unobservables outside production function to affect input choice
-  Firm-specific input prices
-  Adjustment costs
-  Product demand
+
+
+  \begin{figure}
+    \includegraphics[width=1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/panel_data_models.pdf}
+    \caption[Linear panel data models]{\textbf{Linear panel data models} \\ Different assumptions leading to different panel data models. Each different marker type and color indicates a different individual. \emph{Pooled}: all observations share same intercept and slope; \emph{Random effects}: each observation possesses their own time-invariant slope, but all share the same slope; \emph{Fixed effects}: same as random effects, but intercept and regressors can be correlated (figure shows positive correlation); \emph{FHHPS}: our paper generalizes the model by 1) allowing for intercept and slope to be correlated with regressors, and 2) allowing both intercept and slope to drift according to a specific Markovian process.}
+    \label{fig:panel_data_models}
+  \end{figure}
 
 
 \section{Model and assumptions}
@@ -93,21 +104,11 @@ In order to reduce clutter we will drop the $i$ subscript. For $1 \leq t \leq T$
 \begin{align*}
 Y_{t} &= A_{t} + B_{t}X_{t}
 \end{align*}
-%$Z_{t}$ (a $k \times 1$ vector)
-%and $\beta_t$  is a $k \times 1$ vector of fixed coefficients, 
 where $X_{t}$ is a scalar, and $A_{t}, B_{t}$ are scalar random coefficients that evolve according to an AR(1) Markov process.
 \begin{align}
   A_{t} &= A_{t-1} + U_{t} \\
   B_{t} &= B_{t-1} + V_{t}  
 \end{align}
-% 
-% Let $r$ be a positive integer and for $t \geq 2$ define $W_t = (X_{t-1}, X_{t})$. We will say that $(U_t, V_t)$ are \emph{r\textsuperscript{th}-moment independent} of $W_t$ if 
-%   \begin{align}
-%     \text{For }1 \leq j \leq r,
-%     \quad     
-%     E[U_{t}^{r-j} V_{t}^{j} | W_t] = E[U_{t}^{r-j} V_{t}^{j}]
-%   \end{align}
-% \end{definition}
 
 We will make the following sufficient assumptions for identifiability. Some of these are known to be stronger than necessary, and we will mention how to relax them later on. For ease of notation, let us denote $W_t = [X_t, X_{t-1}]^{T}$
 
@@ -123,11 +124,6 @@ We will make the following sufficient assumptions for identifiability. Some of t
 
 \begin{assumption}{} \label{a:sequentialindependence}
   Shocks are sequentially independent from all covariates
-  % \begin{align}
-  %   \text{For }1 \leq j \leq r,
-  %   \quad     
-  %   E[U_{t}^{r-j} V_{t}^{j} | W_t] = E[U_{t}^{r-j} V_{t}^{j}]
-  % \end{align}
   \begin{align}
     \forall t, \qquad U_t, V_t \perp (X_{1}, \cdots, X_{T})
   \end{align}
@@ -177,8 +173,6 @@ Let us start with the first moment ($r = 1$). In this case, we are required to h
 We begin by simply reminding ourselves of the system of equations for these two periods.
 \begin{align}
   \begin{cases}
-    %Y_{1} = A_{1} + B_{1}X_{1} + Z_1^{T}\beta_1 \\ 
-    %Y_{2} = A_{2} + B_{2}X_{2} + Z_2^{T}\beta_2
     Y_{1} = A_{1} + B_{1}X_{1} \\ 
     Y_{2} = A_{2} + B_{2}X_{2} 
   \end{cases}
@@ -187,8 +181,6 @@ We begin by simply reminding ourselves of the system of equations for these two 
 Let's expand the coefficients according to our model equations \ref{}.
 \begin{align}
   \begin{cases}
-    %Y_{1} = A_{1} + B_{1}X_{1}  + Z_1^{T}\beta_1 \\ 
-    %Y_{2} = A_{1} + U_{2} + B_{1}X_{2} + V_{2}X_{t} + Z_2^{T}\beta_2 \label{eq:expanded}
     Y_{1} = A_{1} + B_{1}X_{1} \\ 
     Y_{2} = A_{1} + U_{2} + B_{1}X_{2} + V_{2}X_{t} \label{eq:expanded}
   \end{cases}
@@ -197,8 +189,6 @@ Let's expand the coefficients according to our model equations \ref{}.
 
 \paragraph{Step 1} In order to identify shocks, we consider the expectation of the difference between the two periods, conditioning on some point $W_2 = w_2 = (x, x)$.
 \begin{align}
-  %E[Y_{2} - Y_{1} \ | \  W_{2} = w_{2}] = 
-  %E[U_{2}] + E[V_{2}]x_2 + z_2^{T}\beta_2 - z_1^{T}\beta_{1}
   E[Y_{2} - Y_{1} \ | \  W_{2} = w_{2}] = 
   E[U_{2}] + E[V_{2}]x
 \end{align}
@@ -207,9 +197,7 @@ Let's expand the coefficients according to our model equations \ref{}.
 
 Now, note that the moments $E[U_2]$ and $E[V_2]$ on the right-hand side are solutions to this minimization problem
 \begin{align}
-%\min_{a, b, \beta_1, \beta_2}
   \min_{\theta_u, \theta_v}  
-  %E[(Y_{2} - Y_{1} - a - bx_2 - z_2^{T}\beta_2 + z_1^{T}\beta_{1})^2 | W_2 = w_2]
   E[(Y_{2} - Y_{1} - \theta_u -  x\theta_v)^2 \  | \ W_2 = w_2]
 \end{align}
 \noindent and that the solution is unique, by virtue of the strict convexity of the quadratic function and the full rank assumption \ref{a:full_rank}. It follows that the shock moments $E[U_2]$ and $E[V_2]$ are generically identified, and so are $\beta_1$ and $\beta_2$.
@@ -218,10 +206,6 @@ Now, note that the moments $E[U_2]$ and $E[V_2]$ on the right-hand side are solu
 \paragraph{Step 2} For this step, we simply have to take expectations of \ref{eq:expanded}, now conditioning on $W_2 = w_2 = (x_1, x_2)$. (Note we have dropped the constraint $X_1 = X_2$).
 \begin{align}
   \begin{cases}
-    % E[Y_{1}|W_{2}]
-    %   = E[A_{1}|W_{2}] + E[B_{1}|W_{2}]x_{1} + z_1^{T}\beta_1 \\ 
-    % E[Y_{2}|W_{2}]
-    %   = E[A_{1}|W_{2}] + E[U_{2}] + E[B_{1}|W_{2}]x_{2} + E[V_{2}]x_{t} + z_2^{T}\beta_2
       E[Y_{1}|W_{2}]
         = E[A_{1}|W_{2}] + E[B_{1}|W_{2}]x_{1} \\ 
       E[Y_{2}|W_{2}]
@@ -232,8 +216,6 @@ Now, note that the moments $E[U_2]$ and $E[V_2]$ on the right-hand side are solu
 \paragraph{Step 3} Writing the previous equation in matrices after a little rearranging, we get:
 \begin{align}
   \begin{bmatrix}
-   %  E[Y_{1}|W_{2}] - z_1^{T}\beta_1 \\  
-  %  E[Y_{2}|W_{2}] - E[U_{2}] -  E[V_{2}]x_{t} - z_2^{T}\beta_1
     E[Y_{1}|W_{2}] \\  
     E[Y_{2}|W_{2}] - E[U_{2}] -  E[V_{2}]x_{t} 
   \end{bmatrix}
@@ -260,8 +242,6 @@ Now, note that the moments $E[U_2]$ and $E[V_2]$ on the right-hand side are solu
     1 & x_2  
   \end{bmatrix}^{-1}
   \begin{bmatrix}
-    % E[Y_{1}|W_{2}]  - z_1^{T}\beta_1  \\  
-    % E[Y_{2}|W_{2}] - E[U_{2}] -  E[V_{2}]x_{t} - z_2^{T}\beta_1
     E[Y_{1}|W_{2}] \\  
     E[Y_{2}|W_{2}] - E[U_{2}] -  E[V_{2}]x_{2}  \label{eq:inversion}
   \end{bmatrix}
@@ -281,18 +261,14 @@ Conditional second-period moments are also automatically identified, since due t
 
 \paragraph{Step 1} Identify shock second moments on the diagonal $W_2 = w_2 = (x, x)$ using the following equation
 \begin{align}
-  %E[Y_{2} - Y_{1} \ | \  W_{2} = w_{2}] = 
-  %E[U_{2}] + E[V_{2}]x_2 + z_2^{T}\beta_2 - z_1^{T}\beta_{1}
   E[(Y_{2} - Y_{1})^2 \ | \  W_{2} = w_{2}] = 
   E[U_{2}^2] + E[V_{2}^2]x^2 + 2E[U_{2}V_{2}]x
 \end{align}
 
 \noindent The analogous minimization procedure is
 \begin{align}
-%\min_{a, b, \beta_1, \beta_2}
 E[U_2^2], E[V_2^2], E[U_2V_2] =
   \min_{\theta_{uu}, \theta_{vv}, \theta_{uv}}  
-  %E[(Y_{2} - Y_{1} - a - bx_2 - z_2^{T}\beta_2 + z_1^{T}\beta_{1})^2 | W_2 = w_2]
   E[(Y_{2} - Y_{1} - \theta_{uu} -  x^2\theta_{vv} - 2x\theta_{uv})^2 \  | \ W_2 = w_2]
 \end{align}
 
@@ -584,7 +560,21 @@ In addition to the variables above, we generate our model variables:
 \end{align}
 \noindent where $Y_{t}$ represents production value-added after sales normalized by wages, and $X_t$ represents normalized capital. 
 
-[[Interpretation]]
+% Interpretation
+
+;;Comparison to static FOCS:
+;; Estimate BK as expenditure share on capital input i,t
+;; Based on static profit maximizing FOC for Cobb-Douglas
+;;Treats input as having no adjustment costs, opposite of our
+approach
+;;; Based on strong conduct assumption: static profit maximization
+
+We do not impose profit maximization, important for studying unproductive firms
+We allow unobservables outside production function to affect input choice
+Firm-specific input prices
+Adjustment costs
+Product demand
+
 
 \begin{table}[H]
   \singlespacing
@@ -611,33 +601,55 @@ In addition to the variables above, we generate our model variables:
   \centering
   \includegraphics[height=0.8\textheight]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_shocks.pdf}
   \label{fig:simulation_shocks}
+  \caption[Shock estimates in simulated data]{Shock estimates in simulated data}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[height=0.8\textheight]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/simulation_random_coefficients.pdf}
   \label{fig:simulation_random_coefficients}
+  \caption[Random coefficient estimates in simulated data]{Random coefficient estimates in simulated data}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[height=0.8\textheight]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/shocks_empirical.pdf}
+  \caption[Shock estimates using ASI data]{Shock estimates using ASI data}
 \end{figure}
 
 
 \begin{figure}
   \centering
   \includegraphics[height=0.8\textheight]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc1_empirical.pdf}
+  \caption[Random coefficient estimates using ASI data (2008)]{Random coefficient estimates using ASI data (2008)}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[height=0.8\textheight]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/rc2_empirical.pdf}
+    \caption[Random coefficient estimates using ASI data (2009)]{Random coefficient estimates using ASI data (2009)}
 \end{figure}
 
 
-\begin{figure}
-  \centering
-  \includegraphics[height=0.8\textheight]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/shocks_empirical.pdf}
-\end{figure}
+
 
 
 \clearpage
+
+
+\section{Conclusion and future work}
+
+
+What if T > 2? The approach generalizes but seems to become more complicated (as for example U2,V2 are correlated with X3,X4,...).
+• It would be useful to see how strict the timing assumptions are (in standard linear panel models different timing assumptions can be dealt with by changing the set of instruments). For example: what if U2 independent of X1 but not of X2,X3,...?
+• The authors’ setup could be used to learn about the firms’ ob- jectives, by estimating the determinants of input choice: Xit given
+Ai,t−1, Bi,t−1, Xi,t−1, ....
+• Looking ahead: nonlinear models? Example: CES.
+
+
+% ------------
+% APPENDIX
+% ----------
 
 \section{Appendix}
 
