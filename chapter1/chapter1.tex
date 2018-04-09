@@ -1,4 +1,5 @@
-\chapter{Heterogenous Production Functions, Panel Data, and Productivity Dispersion}
+\chapter*{Heterogenous Production Functions, Panel Data, and Productivity Dispersion}
+\addcontentsline{toc}{chapter}{Heterogenous Production Functions, Panel Data, and Productivity Dispersion}
 \begin{center}
 \large
 \textsc{Jeremy Fox, Vitor Hadad, Stefan Hoderlein} \\ \textsc{Amil Petrin, Robert Sherman}
@@ -9,12 +10,9 @@
 \section{Introduction}
 
 % [One or two sentences providing basic introduction to the field, comprehensible to any economist]
-Econometricians often need control for unobserved heterogeneity, 
-
-%[Two to three sentences of a more detailed background, comprehensible to econometricians]
-
-%[One sentence clearly stating the general problem being addressed by this particular study]
-In the context of panel data, it has become standard to controlling for unobserved heterogeneity via a \emph{fixed effects} approach, where we do not impose restrictions the distribution of latent heterogeneity parameters conditional on observable characteristics \citet{wooldridge2010econometric}. However, this flexibility often comes at a cost in terms of statistical modeling: the most ubiquitous fixed effects strategy in panel data is via the introduction of a time-invariant random intercept.[\ref{}, \ref{}, \ref{}], but there are many instances of economic problems where this is might not be appropriate (e.g. [QUICK EXAMPLE]).
+Appropriately modelling unobserved heterogeneity is one of the foremost challenges faced by econometricians.
+%[Two to three sentences of a more detailed background, comprehensible to econometricians]  %[One sentence clearly stating the general problem being addressed by this particular study]
+In the context of panel data, it has become standard to controlling for unobserved heterogeneity via a \emph{fixed effects} approach, where we do not impose restrictions the distribution of latent heterogeneity parameters conditional on observable characteristics \citet{wooldridge2010econometric}. However, this flexibility often comes at a cost in terms of statistical modeling: the most ubiquitous fixed effects strategy in panel data is via the introduction of a time-invariant random intercept \citep{arellano2003panel}, but there are many instances of economic problems where this is might not be appropriate \citep{browning2007heterogeneity}.
 
 %[One sentence summarizing main result]
 Here, we present constructive identification and estimation results for the moments and marginal distribution of random coefficients in a linear panel data model with \emph{two} random coefficients
@@ -31,76 +29,87 @@ Our results develop upon and extend the results of earlier work by \cite{graham2
 
 
 % [Two to three sentences to provide a broader perspective, readily comprehensible to a scientist in any discipline..]
-In our particular application, we take $Y_{it}$ to be value-added log-production, while the two random coefficients represent total factor productivity (TFP) and the elasticity of one of the inputs in a Cobb-Douglas model of production. There is strong evidence for heterogeneity in this setting, where it is known as \emph{productivity dispersion}. In the United States, \cite{syverson2004product} finds large plant-level discrepancies in TFP, noting that within four-digit SIC industries ``the plant at the 90th percentile of the productivity distribution makes almost twice as much output with the same measured inputs as the 10th percentile plant", and a later survey by \cite{syverson2011determines} confirms this to be a typical finding. In fact, other work by \citep{hsieh2009misallocation} indicates that this gap may be small compared to other countries. In our work we note, however, that the large observed variation in TFP might be a product of restrictive statistical models: when only the intercept is able to vary, it may end up absorbing most the heterogeneity in the data, leading to inflated estimates of the standard deviation. On the other hand, we remark that our specific model and data differ from the ones above so we cannot directly comparison our results, but leave it as a suggestion for future research.
-
+In our particular application, we take $Y_{it}$ to be value-added log-production, while the two random coefficients represent total factor productivity (TFP) and the elasticity of one of the inputs in a Cobb-Douglas model of production. There is strong evidence for heterogeneity in this setting, where it is known as \emph{productivity dispersion}. In the United States, \cite{syverson2004product} finds large plant-level discrepancies in TFP, noting that within four-digit SIC industries ``the plant at the 90th percentile of the productivity distribution makes almost twice as much output with the same measured inputs as the 10th percentile plant", and a later survey by \cite{syverson2011determines} confirms this to be a typical finding. In fact, other work by \citep{hsieh2009misallocation} indicates that this gap may be small compared to other countries. In our work we note, however, that the large observed variation in TFP might be a product of restrictive statistical models: when only the intercept is able to vary, it may end up absorbing most the heterogeneity in the data, leading to inflated estimates of the standard deviation. On the other hand, we remark that our specific model and data differ from the ones above so we cannot directly compare our results, but leave it as a suggestion for future research.
 
 
 % ----------------------
 % LITERATURE REVIEW 
 % ----------------------
 
-\section{Literature review}
+\section{Background and literature review}
 
-In full generality, panel data models can be represented as
+% The class of problems we're interested in
+\paragraph{Panel data and heterogeneity} In full generality, panel data models can be represented as
 \begin{align}
   Y_{it} = m(H_{it}, X_{it}, U_{it}) \label{eq:full_generality_panel}
 \end{align}
 
-\noindent where $Y_{it}$ is the dependent variable of interest for unit $i$ at period $t$, $H_{it}$ is an individual-specific, possibly infinite-dimensional object often called the \emph{unobserved heterogeneity} component, $X_{it}$ are observable characteristics, and $U_{it}$ is an idiosyncratic error term. For example, $Y_{it}$ might represent an individual's wages over time, $X_{it}$ a vector of characteristics that includes educational attainment, $H_{it}$ a measure of their cognitive or manual ability, and $U_{it}$ measurement error. The econometrician is usually interested in some functional of this object, such as the causal average effect of on $Y_{t}$ of a change in $X_{it}$ (known as the \emph{average partial effect} of education on wages). 
+\noindent where $Y_{it}$ is the dependent variable of interest for unit $i$ at period $t$, $H_{it}$ is an individual-specific, possibly infinite-dimensional object often called the \emph{unobserved heterogeneity} component, $X_{it}$ are observed characteristics, and $U_{it}$ is an idiosyncratic error term.  For example, $Y_{it}$ might represent an individual's wages over time, $X_{it}$ a vector of characteristics that includes educational attainment, $H_{it}$ a measure of their cognitive or manual ability, and $U_{it}$ measurement error. The econometrician is usually interested in some functional of this object, such as the average effect of a change in $X_{it}$ on $Y_{t}$ while keeping everything else fixed -- known as the \emph{average partial effect} (APE) \citet{blundell2003endogeneity}. 
 
-Particular care must be taken with the \emph{unobserved heterogeneity} parameter $H_{it}$. \citet[~p.2]{browning2007heterogeneity} define \emph{heterogeneity} as ``the dispersion in factors that are relevant and known to individual agents when making a particular decision"\footnote{Browning \textit{et al} were, in turn, paraphrasing \cite{cunha2005separating}}. The qualifier \emph{unobserved} serves to emphasize that the econometrician does not have access to information about such factors. This is problematic because, even when $H_{it}$ itself is not of interest, it may preclude the identification of causal objects To continue our running example: even if we observe that workers with higher educational attainment receive higher wages, we cannot a priori claim that we have found a causal effect of $X_{it}$, as it may be that high-ability ($H_{it}$) workers are able to self-select into higher-paying jobs.
+% What is heterogeneity
+Particular care must be taken with the \emph{unobserved heterogeneity} parameter $H_{it}$. \citet[~p.2]{browning2007heterogeneity} define \emph{heterogeneity} as ``the dispersion in factors that are relevant and known to individual agents when making a particular decision"\footnote{Browning \textit{et al} were, in turn, paraphrasing \cite{cunha2005separating}}. The qualifier \emph{unobserved} serves to emphasize that the econometrician does not have access to information about such factors. This is problematic because, even when $H_{it}$ itself is not of interest, it may preclude the identification of causal parameters. To continue our running example: even if we observe that workers with higher educational attainment receive higher wages, we cannot a priori claim that we have found a causal effect of $X_{it}$, as it may be that high-ability ($H_{it}$) workers are able to self-select into higher-paying jobs.
 
-One of the foremost advantages of dealing with panel data is that, under specific assumptions, we are able to control for the unobserved heterogeneity component. However, without further assumptions, however, nothing can be said. Therefore, econometricians have posited a number of restrictions on the model above, each producing different identification strategies.
-
-Econometric applications (such as \cite{???}, \cite{???} often to cite a few) assume that $m$ is a linear function.
-\begin{align}
-  Y_{it} = A_{it} + X_{it}^{T}B_{it} + U_{it}
-\end{align}
-
-\noindent where $H_{it} = [A_{it}, B_{it}]$, a vector of \emph{random coefficients}. Furthermore, they will often impose additionally that 
+% Panel data models help with heterogeneity
+One of the foremost advantages of dealing with panel data is that, under certain conditions, the econometrician may be able to leverage the existence of multiple observations per unit of analysis to control for this unobserved heterogeneity. This is possible, for example, if the researcher additionally imposes that $m$ is linear, and that all the unobserved heterogeneity can be explained by an individual but time-invariant shift, as in:
 \begin{align}
   Y_{it} = A_{i} + X_{it}^{T}\beta + U_{it}
 \end{align}
 
-and that unobserved heterogeneity appears only as an intercept.
-
-% One of the main objectives is to model heterogeneity
+\noindent where all the heterogeneity $H_{it}$ is entirely subsumed in the random scalar intercept coefficient $A_{i}$. Such linear panel data models are the econometric ``workhorse in empirical studies" \citet{wooldridge2005fixed}.
 
 
-% Importance of controlling for heterogeneity
+% Fixed effects vs random effects
+The average partial effect in this case is represented by components of the shared coefficient $\beta$, which can be identified under additional restrictions on the stochastic process governing $U_{it}$. In common econometric parlance, identification strategies that allow for $Cov(X_{it}, A_{it}) \neq 0$ are named \emph{fixed effects} models, while those that additionally impose that this covariance must be zero are called \emph{random effect} models.\citet{wooldridge2010econometric, arellano2003panel}.
 
-Imposing different restrictions will give rise to different identification strategies. As recounted by \cite{graham2012identification}, the \emph{fixed effects} method implies restrictions on the functional form $m$ and on the conditional distribution of the idiosyncratic shocks $F(U_{it}|X_{\cdot}, A_{\cdot})$, but leaves the conditional distribution of unobserved heterogeneity $F(A|X)$ unrestricted. A related method, named \emph{random effects}, entails imposing an independence assumption between $A_{\cdot}$ and $X_{\cdot}$, but that usually leads to models that are harder to motivate economically.
+% Intercept not enough
+More generally, \cite{graham2012identification} define the class of \emph{fixed effects} methods as one that implies restrictions on the functional form of $m$ and on the conditional distribution of the idiosyncratic shocks $F(U_{it}|X_{\cdot}, A_{\cdot})$, but leaves the conditional distribution of unobserved heterogeneity $F(A_{it}|X_{it})$ unrestricted. A stronger class of \emph{random effects} methods additionally imposes an independence assumption between $A_{\cdot}$ and $X_{\cdot}$. While facilitating identification and estimation, the latter is harder to motivate economically -- it would mean, in our example, that workers' wages were unrelated to their unobserved ability (see \cite{griliches1977estimating} for a discussion).
+
+\paragraph{Random coefficients} In the model above, all the heterogeneity is subsumed into one random scalar that entering additively. However, the ubiquitousness of such models may be explained more for their convenience than for their economic realism. As put by \citet[~p.11]{browning2007heterogeneity},
+
+\begin{quote}
+\singlespacing
+Almost always decisions on how to include allowance for heterogeneity are made using conventional schemes that have been designed by statisticians to put in the heterogeneity in such a way that we can immediately take it out again. 
+\end{quote}
+
+% Therefore random coeffs
+Therefore, in this paper we focus on partially rolling back some of the assumptions above and allow for a more general case with more than one correlated random coefficient. We will be working with a specific version of this general \emph{random coefficients} model
+
+\begin{align}
+  Y_{it} = A_{it} + X_{it}^T B_{it} + Z_{it}^T \beta
+\end{align}
+
+\noindent where now  $H_{it} = [A_{it}, B_{it}^T]^T$, so that now we have \emph{vector-valued heterogeneity}. Moreover, we will be principally interest with the case when $A_{it}, B_{it}$ are \emph{endogenous}, that is, not independent of $X_{it}$ (in the opposite case we say that the random coefficients are \emph{exogenous}).
+
+The econometric literature dealing with this more general case is substantially smaller. Early work by \cite{swamy1970efficient} studied a panel data model with exogenous, stationary random coefficients and produced a feasible GLS estimator for random coefficient averages. \cite{mundlak1978models} and \cite{chamberlain1984panel} were one of the first to study panel data models with correlated random coefficients and derived efficient estimators under parametric assumptions about the distribution of random coefficients and errors. \cite{chamberlain1992efficiency} derived an efficient semiparametric estimator of the first moment of random coefficient under regularity assumptions. Later, \cite{arellano2011identifying} produced identification results for higher moments of the distribution of random coefficients under similar conditions, while \cite{graham2012identification} extended his approach to obtain the first moment in the \emph{irregular} case when such assumptions are not satisfied. As we will see, the main feature of irregular identification is convergence rates smaller than root-n \citep{lewbel2016identification}, which in turn happens due to the dependence on aspects of ``small" subpopulations defined on measure-zero sets. Our paper can be seen as a further development of these last two papers, as we identify all moments of the distribution of random coefficients under irregularity.
+
+It should also be noted that even without panel data, there may be instances where aspects of random coefficients may be identified by if the variation in $X_{it}$ can be explained by variation in a set exogenous excluded variables. Examples of this \emph{triangular} model include \cite{heckman1998instrumental}, \cite{hoderlein2010analyzing}, and \cite{hoderlein2017triangular}.
+
+\begin{figure}
+  \includegraphics[width=1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/panel_data_models.pdf}
+  \caption[Linear panel data models]{\textbf{Linear panel data models} \\ Different assumptions leading to different panel data models. Each different marker type and color indicates a different individual. \emph{Pooled}: all observations share same intercept and slope; \emph{Random effects}: each observation possesses their own time-invariant slope, but all share the same slope; \emph{Fixed effects}: same as random effects, but intercept and regressors can be correlated (figure shows positive correlation); \emph{FHHPS}: our paper generalizes the model by 1) allowing for intercept and slope to be correlated with regressors, and 2) allowing both intercept and slope to drift according to a specific Markovian process.}
+  \label{fig:panel_data_models}
+\end{figure}
+
+
+\paragraph{Production function estimation} Our illustrative empirical application will involve the identification and estimation of a production function, so that $Y_{it}$ will represent output and $X_{it}$ inputs to production. This is a vast and comprehensive field on its own, so here we will simply note that two issues are pervasive throughout the literature and relevant to our paper.
+
+First, there is a need to take heterogeneity into account when estimating production functions. The recognition of this fact goes at least as far back as \cite{marschak1944random} who note that [p. 145]
+\begin{quote} 
+\singlespacing
+[T]he production function will change, even within the same industry, from firm to firm and from year to year, depending on the technical knowledge, the will, effort, and luck of a given entrepreneur: these factors (...) may be represented by one or more random parameters.
+\end{quote}
+
+Second, that this heterogeneity is plausibly endogenous, since a firm's choice of inputs is likely correlated with their own (unobserved) productivity \citep{gandhi2011identification}. Empirical applications usually address this issue via a dynamic panel approach (as in \cite{arellano1991some}) or via proxy variable approaches (as in \cite{levinsohn2003estimating}). 
+
+In allowing for correlated random coefficients, our paper will incorporate a flexible form of vector-valued heterogeneity that takes the endogeneity problem into account.
 
 
 
-Further restrictions can be imposed for simplicity.
-
-Figure \ref{fig:panel_data_models} illustrates the difference between them.
-
-[[[These APEs are essentially derivatives of the average structural function of Blundell and Powell (2004).]]]
-
-
-In this paper we focus on the more general case where we allow for more than one random coefficient, and also allow them to be correlated with the regressor. The literature dealing with this more general case is substantially smaller. \citet{hoderlein2010analyzing} analyzed a for any number of random coefficients, but required the stronger assumption that the coefficients are independent from the regressors. 
-
-% Closest works are Chamberlain (1982), Arellano and Bonhomme (2011), Graham nd Powell (2012), Evdokimov (2011)]
-
-
-% Production function estimation
-> Recent papers on heterogeneous production functions Kasahara, Shrimpf and Suzuki (2016), Balat, Brambilla and Sazaki (2016)
-  Extend proxy variable approaches but require variables to be chosen in period t − 1 with only static considerations, as in FOCs. Ackerberg and Hahn (2016)
-  Scalar unobservable enters into nonparametric production function
-
-
-  \begin{figure}
-    \includegraphics[width=1\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter1/figures/panel_data_models.pdf}
-    \caption[Linear panel data models]{\textbf{Linear panel data models} \\ Different assumptions leading to different panel data models. Each different marker type and color indicates a different individual. \emph{Pooled}: all observations share same intercept and slope; \emph{Random effects}: each observation possesses their own time-invariant slope, but all share the same slope; \emph{Fixed effects}: same as random effects, but intercept and regressors can be correlated (figure shows positive correlation); \emph{FHHPS}: our paper generalizes the model by 1) allowing for intercept and slope to be correlated with regressors, and 2) allowing both intercept and slope to drift according to a specific Markovian process.}
-    \label{fig:panel_data_models}
-  \end{figure}
 
 
 \section{Model and assumptions}
 
-In order to reduce clutter we will drop the $i$ subscript. For $1 \leq t \leq T$, define
+From now on, in order to reduce clutter we will drop the $i$ subscript. For $1 \leq t \leq T$, define
 \begin{align*}
 Y_{t} &= A_{t} + B_{t}X_{t}
 \end{align*}
@@ -142,18 +151,18 @@ We will make the following sufficient assumptions for identifiability. Some of t
   \begin{align}
     \text{For }2 \leq t \leq T ,
     \quad     
-    E[W_tW_t^{T}] \text{is nonsingular}
+    E[W_tW_t^{T} | X_1 = X_2] \qquad \text{is nonsingular}
   \end{align}
 \end{assumption}
 
 
-We should note that assumptions \ref{a:timeindependence} and \ref{a:sequentialindependence} allow for future regressors to be correlated with past shocks. In the context of firm profit maximization, this means that a firm is allowed to choose future inputs based on their previous productivity. In a different context, they would also allow for a dynamic model with $X_t = Y_{t-1}$. Crucially, we have not made any assumptions about contemporaneous independence between random coefficients and regressors, thus allowing for a unobserved heterogeneity of a general type.
+We should note that assumptions \ref{a:timeindependence} and \ref{a:sequentialindependence} allow for future regressors to be correlated with past shocks. In the context of firm profit maximization, this means that a firm is allowed to choose future inputs based on their previous productivity. In a different context, this model would also allow for a dynamic model with $X_t = Y_{t-1}$. Crucially, we do not make any assumptions of contemporaneous independence between random coefficients and regressors.
 
 Assumption \ref{a:support} is a simplifying ``no-stayer" assumption that will facilitate some of the asymptotic derivations below. Assumption \ref{a:fullrank} is a common technical assumption often used for generic identification in linear models.
 
 \section{Identifying random coefficient moments}
 
-In this section, we show how to identify the $r^{th}$ moments of the random coefficients $(A_{t}, B_{t})$. Broadly, our identification strategy will follow the next steps.
+In this section, we show how to identify the $r^{th}$ moments of the random coefficients $(A_{t}, B_{t})$. Broadly, our identification strategy will be constructive, and follow these four steps.
 
 \begin{enumerate}
   \item Identify shock moments $E[U_{t}^{\ell}V_{t}^{r-\ell}]$ 
@@ -164,6 +173,8 @@ In this section, we show how to identify the $r^{th}$ moments of the random coef
   
   \item Integrate out to get unconditional moments $E[A_{t}^{\ell}B_{t}^{r-\ell}]$
 \end{enumerate}
+
+
 
 \subsection{First period moments}
 
@@ -333,7 +344,7 @@ The argument above generalizes for arbitrary moments. In fact, if we are only af
 We can replace assumption \ref{a:sequentialindependence} by the following weaker assumption.
 
 \paragraph{Assumption 3.1'} \label{a:sequentialindependence}
-  \textot{Shocks are r\textsuperscript{th}-moment independent from all covariates}
+  \textit{Shocks are r\textsuperscript{th}-moment independent from all covariates}
   \begin{align}
     \text{For }1 \leq j \leq r,
     \quad     
@@ -360,7 +371,53 @@ and the argument follows for the same reasons that were previously explained. On
 
 \subsection{Identifying the marginal distribution of random coefficients}
 
-In this section we will prove that we can identify the marginal density of random coefficients $f_{A_tB_t}$. We begin by strengthening the 
+In this section we will prove that we can identify the marginal density of random coefficients $f_{A_tB_t}$. We begin by strengthening some of the assumption above.
+
+\paragraph{Assumption 1.1'} \label{a:sequentialindependence}
+\textit{Shocks are jointly independent of past shocks and current and past regressors}
+\begin{align}
+  \text{For }1 \leq j \leq r,
+  \quad     
+  (U_{t}, V_{t}) \perp (U_{1}, V_{1}, \cdots, U_{t-1}, V_{t-1}, X_{1}, \cdots, X_{t-1})
+\end{align}
+
+\paragraph{Assumption 1.5} \label{a:}
+\textit{The joint distribution of shocks is positive everywhere}
+\begin{align}
+  \text{For }1 \leq j \leq r,
+  \quad     
+  \phi_{U_t, V_t}(s_1, s_2) := E[\exp(i[s_1 U_{t_1} + s_{2} V_{t_2}])] > 0 \qquad \forall t \in \mathbb{R}^2
+\end{align}  
+
+\begin{theorem}[Nonparametric identification] If Assumptions 1.1', 1.3, 1.4 and 1.5 are satisfied, then the joint distribution of random coefficients $f_{A_t, B_t}$ is identified for all $t$.
+\end{theorem}
+
+\paragraph{Proof sketch} Consider two adjacent periods, here denoted by $t = 1,2$. Let $\phi_{Y_{1}, Y_{2}}(s_1, s_2| x_{1},x_{2}) := E[\exp(i[s_1 Y_{1} + s_{2} Y_{2}])| X_{1} = x_{1}, X_{2} = x_{2}]$ be the joint characteristic function of the dependent variable conditional on observable covariates. We can identify the characteristic function of shocks by evaluating this characteristic function at the ``diagonal" $X_1 = X_2 = x$ with $s_{2} = -s_{1} = s$.
+\begin{align}
+\phi_{Y_{1}, Y_{2}}(-s, s| x, x) &= E[\exp(i[sY_{2} - sY_{1}])| X_{1} = X_{2} = x] \\
+                          &= E[\exp(i[sU_{2} - sxV_{2}])| X_{1} = X_{2} = x] \\ 
+                          &= E[\exp(i[sU_{2} - sxV_{2}])] \qquad \because \text{Assumption 1.1'}    \\
+                          &=: \phi_{U_{2},V_{2}}(s, s') \qquad s' := sx          
+\end{align}
+
+Applying the inverse Fourier transform to the joint characteristic function of the shocks $\phi_{U_{2},V_{2}}$, we retrieve their distribution $f_{U_{2}, V_{2}}$. Note that the full support Assumption 1.3 was used in the inversion step.
+
+Next, as in the moment identification discussion, write
+\begin{align}
+  \begin{bmatrix} Y_{1} \\ Y_{2} \end{bmatrix}
+  =
+  \Gamma_1(x_1, x_2) \begin{bmatrix} A_{1} \\ B_{1} \end{bmatrix} +
+  \Gamma_2(x_1, x_2) \begin{bmatrix} U_{2} \\ V_{2} \end{bmatrix}  
+\end{align}
+\noindent for appropriate matrices $\Gamma_1$ and $\Gamma_2$. Now choose $t_1 = s^{T}\Gamma_{1}$ and $t_2 = t\Gamma_{1}^{-1}(x_1, x_2)\Gamma_2(x_1, x_2)$. Note that this exists whenever $x_1 \neq x_2$. The conditional characteristic function of $Y_{1}, Y_{2}$ then decomposes multiplicatively:
+\begin{align}
+\phi_{Y_{1}, Y_{2}}(t_1, t_2| x_1, x_2) &= E[\exp(it_1^{T}Y_{1} + it_2^{T}Y_{2}])  | X_{1} = x_1, X_{2} = x_2] \\
+          &= E[\exp(is\cdot [A_1, B_1] - it_2 \cdot [U_2, V_2] ) | X_{1} = x_1, X_{2} = x_2] \\    
+          &= E[\exp(is\cdot [A_1, B_1] | X_{1} = x_1, X_{2} = x_2]\cdot E[\exp(it_2 \cdot [U_2, V_2] )] \\
+          &=: \phi_{A_1, B_1}(s_1, s_2 |x_1, x_2)\cdot  \phi_{U_2, V_2}(t_2) \label{eq:decomposition}
+\end{align}
+
+Since we have already identified $\phi_{U_2, V_2}(s)$ for all $s \in \mathbb{R}^2$, we can retrieve $\phi_{Y_1, Y_2}(t_2|x_1, x_2)$ by dividing both sides of Equation \ref{eq:decomposition} by $\phi_{U_2, V_2}(t_2)$ whenever $t_2$ exists. This implies that we can retrieve the conditional density function $f{A_1, B_1}(a_1, b_1 | x_1, x_2)$ by applying the inverse Fourier transform to the ratio $\frac{\phi_{Y_1, Y_2}(t_2|x_1, x_2)}{\phi_{U_2, V_2}(t_2)}$. Finally, averaging over $X_1, X_2$, we can retrieve the marginal density $f{A_1, B_1}$.\footnote{We are glossing over the fact that we have not identified the characteristic function over the diagonal $x_1 = x_2$. For the complete argument please see a supplementary note.}
 
 
 %--------------
@@ -434,14 +491,82 @@ Naturally, once we have uncentered second moments and first moments, we can comp
 
 \subsection*{Unconditional random coefficient moments}
 
-In this final step, we must exclude observations near the diagonal $X_1 ≈ X_2$, and then average the conditional moments associated with the remaining observations. According to our asymptotic results, included observations must satisfy the following conditions:
-\begin{align}
-  |\Delta X_{2i}| &> c_{cens1} \hat{\sigma}_{X_2} n^{-\alpha_{cens1}} \quad \text{ for first moments}\\
-  |\Delta X_{2i}| &> c_{cens1} \hat{\sigma}_{X_2} n^{-\alpha_{cens2}} \quad \text{ for second moments}
-\end{align}
-  
-As shown in section \ref{\asymptotic_results}, the optimal thresholds can be shown to be associated with exponents $\alpha_{cens1} = \frac{1}{4}$ and $\alpha_{cens2} = \frac{1}{8}$. However, theory gives us no guidance regarding the choice of constants $c_{cens1}$ and $c_{cens2}$, so we resort to experimentation in the next section.
+In this final step, we must exclude observations near the diagonal $X_1 ≈ X_2$, and then average the conditional moments associated with the remaining observations. For the first moment of the intercept, we compute 
 
+\begin{align}
+  \hat{E}[A_1] = \frac{\sum_{i=1}^{n} \hat{E}[A_1] | X_{1i}, X_{2i} \cdot 1\{ |X_{2i} - X_{2i}| > t_{1}(n) \} }
+                      {\sum_{i=1}^{n} 1\{ |X_{2i} - X_{2i}| > t_1(n) \} }
+\end{align}
+
+\noindent and analogously for the slope and for higher moments. Here, $t_{1}(n)$ and $t_2(n)$ (for second moments) are \emph{censoring threshold} functions that vanish asymptotically. Consistency and asymptotic normality of the resulting estimates are ensured provided that
+\begin{align}
+ t_1(n) \equiv c_{cens1} \hat{\sigma}_{X_2} n^{-\frac{1}{4}} \quad \text{ for first moments}\\
+ t_2(n) \equiv c_{cens1} \hat{\sigma}_{X_2} n^{-\frac{1}{4}} \quad \text{ for second moments}
+\end{align}
+
+\noindent where $c_{cens1}$, $c_{cens2}$ are constants that are not pinned down by theory. In order to choose these constants, we resort to experimentation as shown in section \ref{sec:simulation}.
+
+
+%-------------------
+% Asymptotic results
+%--------------------
+
+\section{Asymptotic results}
+
+In this section we present an abridged version of our asymptotic results without proof.\footnote{For an elaborated discussion, please see supplementary material available upon request.)}  
+
+\begin{definition} Define the following objective functions
+  \begin{align}
+    \hat{G}_{n}(\alpha) &= \frac{1}{n} \sum_{i=1}^{n} \left [\left( \hat{E}(A_1|X_1, X_2) - \alpha \right)^2 1\{ | X_2 - X1 | > h_n \} \right] \label{eq:hat_g} \\ 
+    G_{n}(\alpha) &= E\left [\left( \hat{E}(A_1|X_1, X_2) - \alpha \right)^2 1\{ | X_2 - X1 | > h_n \} \right]  \\ 
+    \Gamma(\alpha) &= E\left [\left( \hat{E}(A_1|X_1, X_2) - \alpha \right)^2 \right]  \label{eq:gamma}
+  \end{align}
+  and let $\hat{\alpha}$ and $\alpha_{0}$ be the minimizers of \ref{eq:hat_g} and \ref{eq:gamma}. Explicitly:
+  \begin{align}
+    \hat{\alpha} &= \frac{ \sum_{i=1}^{n} \hat{E}[A_{1} | X_{i1}, X_{2i}] 1\{| X_{2i} - X_{1i}| > h_{n}\}  } { \sum_{i=1}^{n} 1\{ |X_{2i} - X_{1i}| > h_{n} \} } \\
+    \alpha_{0} &= E[E[(A_1 | X_{1}, X_{2})]] = E[A_{1}]
+  \end{align}
+\end{definition}
+
+
+
+\begin{theorem}[Consistency] If the following two conditions hold 
+  \begin{enumerate}
+    \item $\sup_{\alpha} \left| \hat{G}_{n}(\alpha) - \Gamma(\alpha) \right| \in o_{p}(1)$
+      \item For each $\delta > 0$, $\inf_{\alpha: |\alpha - \alpha_{0}| \Gamma(\alpha) > \Gamma(\alpha_0)}$ 
+  \end{enumerate}
+  Then $|\hat{\alpha} - \alpha_{0}| \in o_{p}(1)$
+\end{theorem}
+
+
+\begin{theorem}[Asymptotic Normality for conditional moments] Suppose that $x_1 \neq x_2$ and $f(x_1, x_2) > 0$. If the following conditions hold
+  \begin{enumerate}
+    \item For $k \in \{0, 1\}$, the function $r_{k}(x_1, x_2, \theta)$ defined below has continuous second partial derivative with respect to $x_1$.
+    \begin{align}
+      r_{k}(x_1, x_2, \theta) = E[(Y_2  - Y_1 - EU_2 - EV_2X_2)X_2^{k} | X_1 = x_1, X_2 = x_2]f(X_1 = x=1, X_2 = x_2)
+    \end{align}
+    \item The function $s_t(x_1, x_2) = E[Y_1 | X_1 = x_1, X_2 = x_2]f(X_2 = x_2 | X_1 = x_1)$ is twice continuously differentiable
+    \item The marginal density of the first regressor $f(x_1)$ is twice continuously differentiable
+    \item The conditional means of $Y_{1}$ and $Y_{2}$ are estimated with uniform kernels endowed with bandwidth $h_{nw}(n) \propto n^{-\alpha_{nw}}$, where $\frac{1}{5} < \alpha_{nw} < \frac{1}{2}$
+    \item The censoring threshold functions decay as the following rates $t_1(n) \propto n^{-\frac{1}{4}}$ and $t_2 \propto n^{-\frac{1}{8}}$
+  \end{enumerate}
+\noindent 
+Then the estimates of conditional first and second moments are asymptotically normal.
+% \begin{align}
+%   \sqrt{nh_n^2}
+%   \begin{bmatrix}
+%     \widehat{E}[A_{1} | X_1 = x_1, X_2 = x_2] - E[A_1 | X_1 = x_1, X_2 = x_2] \\
+%     \widehat{E}[A_{1} | X_1 = x_1, X_2 = x_2] - E[B_1 | X_1 = x_1, X_2 = x_2] 
+%   \end{bmatrix}
+%   \rightarrow^{D}
+%   \mathcal{N}
+%     \left(
+%     \begin{bmatrix} 0 \\ \end{bmatrix},
+%     V(x_1, x_2)
+%     \right)
+% \end{align}
+% \noindent for a given matrix $V(x_1, x_2)$. A similar result holds for 
+\end{theorem}
 
 
 
@@ -502,7 +627,7 @@ application. The implied correlation matrix has a very simple structure.
 
 The remaining variables were created from these in the obvious manner. In order to understand how our estimator behaves as the number of observation increases, we used $n \in \{500, 2000, 5000, 10000, 20000 \}$.
 
-As seen in Section \ref{sec:estimation}, our method requires the careful tuning of many different parameters. Since our methods are not amenable to cross-validation, we simulated the model in section 1 over a large grid of parameter combinations, which were then compared according to their RMSE against the true value. The RMSE-minimizing parameter configuration for each number of observations is shown on Table \ref{tab:best_parameters}.
+As seen in Section \ref{sec:estimation}, our method requires the careful tuning of many different parameters. Since our methods are not amenable to cross-validation, we simulated the model in section 1 over a large grid of parameter combinations, which were then compared according to their RMSE against the true value. The RMSE-minimizing parameter configuration for each number of observations is shown on Table \ref{tab:best_parameters}. 
 
 \begin{table}[htdp]
   \centering
@@ -521,7 +646,7 @@ As seen in Section \ref{sec:estimation}, our method requires the careful tuning 
  
 Note that the best parameters remain fairly stable as we increase the number of observations. The most notable variation is in $\alpha_{nw}$: intuitively, when the number observations is large enough, a much smaller bandwidth is preferred, and that is translated into a more aggressive choice of exponent. We will use these numbers to guide our choice of tuning parameters in our empirical application in the next section.
 
-The performance of our estimators is illustrated on Figures \ref{fig:simulation_shocks} and \ref{fig:simulation_random_coefficients} and on the accompanying tables on the Appendix. We observe that indeed the distribution tends to collapse to its true value as the number of observations increases. 
+The performance of our estimators is illustrated on Figures \ref{fig:simulation_shocks} and \ref{fig:simulation_random_coefficients} and on the accompanying tables on the Appendix. We observe that indeed the distribution tends to concentrate around its true value as the number of observations increases. 
 
 
 \subsection{Bootstrap coverage}
@@ -551,29 +676,23 @@ Tables \ref{tab:bs_coverage_shocks}-\ref{tab:bs_coverage_random_coefficients} sh
 
 \section{Empirical application}
 
-Now we provide an illustration of our methods by estimating a Cobb-Douglas production function with random elasticity for a large number of Indian plants. We will be using the Annual Survey of Industries (ASI) dataset, released by the Central Statistical Organization of India for the years 2008 and 2009. This yearly survey collects data from sampled Indian economic units of production (individual factories, workshops, and establishments, hereafter called ``plants") that employ more than 10 regular workers. From this data we extract four variables: \emph{gross sale value} (value of the products sold by the plant, as purchased by their clients) $S_{t}$; \emph{capital} (fixed assets with a productive life of more than one year) $K_{t}$; \emph{wages} $W_{t}$; and production \emph{materials} $M_{t}$. All variables are in 2005 rupees. We keep only observations that we present in both years of analysis, and we are left with 13298 observations. Summary statistics are in subsection \ref{sec:summary_statistics} in the Appendix.
+Now we provide an illustration of our methods by estimating a Cobb-Douglas production function with random coefficients for a large number of Indian plants. We will be using the Annual Survey of Industries (ASI) dataset, released by the Central Statistical Organization of India for the years 2008 and 2009. This yearly survey collects data from sampled Indian economic units of production (individual factories, workshops, and establishments, hereafter called ``plants") that employ more than 10 regular workers. 
+
+From the ASI dataset we extract four variables: \emph{gross sale value} (value of the products sold by the plant, as purchased by their clients) $S_{t}$; \emph{capital} (fixed assets with a productive life of more than one year) $K_{t}$; \emph{wages} $W_{t}$; and production \emph{materials} $M_{t}$. All variables are in 2005 rupees. We keep only observations that we present in both years of analysis, and we are left with 13298 observations.\footnote{Additional information about data cleaning and manipulation is available as Jupyter Notebook at \url{https://github.com/halflearned/FHHPS/blob/master/empirical/FHHPS_data_cleaning.html}}
 
 
 In addition to the variables above, we generate our model variables:
 \begin{align}
   Y_{t} = \log\left( \frac{S_{t} - M_{t}}{W_{t}}\right) \qquad X_{t} = \log \left( \frac{K_{t}}{W_{t}} \right)
 \end{align}
-\noindent where $Y_{t}$ represents production value-added after sales normalized by wages, and $X_t$ represents normalized capital. 
+\noindent where $Y_{t}$ represents production value-added after sales normalized by wages, and $X_t$ represents normalized capital. Summary statistics for all variance can be found in subsection \ref{sec:summary_statistics} in the Appendix. 
 
-% Interpretation
+\paragraph{Interpretation} Each plant's output is modeled as a Hicks-neutral Cobb-Douglas function. Therefore, the random variable $A_{t}$ represents \emph{total factor productivity}, while $B_{t}$ represents the expenditure share on capital inputs.å
 
-;;Comparison to static FOCS:
-;; Estimate BK as expenditure share on capital input i,t
-;; Based on static profit maximizing FOC for Cobb-Douglas
-;;Treats input as having no adjustment costs, opposite of our
-approach
-;;; Based on strong conduct assumption: static profit maximization
+Included in the modeling decision above there are several assumptions. First, timing: we are assuming that each firm observes the entire history of past inputs and outputs $(Y_{1}, X_{1}, \cdots, Y_{t-1}, X_{t-1})$, as well as the values of their own TFP and capital share $(A_{1}, B_{1}, \cdots, A_{t-1}, B_{t-1})$. Based on this information, they choose this period's inputs $X_{t}$. Once the decision is taken, this period's shocks $U_{t}, V_{t}$ are revealed, and production $Y_{t}$ is realized.
 
-We do not impose profit maximization, important for studying unproductive firms
-We allow unobservables outside production function to affect input choice
-Firm-specific input prices
-Adjustment costs
-Product demand
+Second, we have left the stochastic process governing the evolution of $X_{t}$ unrestricted. In particular, we do not impose the assumption that firms are profit-maximizers -- although they may be. This is important for studying unproductive firms as well.
+
 
 
 \begin{table}[H]

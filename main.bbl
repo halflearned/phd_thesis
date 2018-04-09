@@ -1,10 +1,5 @@
 \begin{thebibliography}{}
 
-\bibitem[sli, 2011]{slivkins2018introduction}
- (2011).
-\newblock In {\em Advances in neural information processing systems}, pages
-  2249--2257.
-
 \bibitem[Abdulkadiro{\u{g}}lu and S{\"o}nmez, 1999]{abdulkadirouglu1999house}
 Abdulkadiro{\u{g}}lu, A. and S{\"o}nmez, T. (1999).
 \newblock House allocation with existing tenants.
@@ -39,6 +34,17 @@ Anderson, R., Ashlagi, I., Gamarnik, D., and Roth, A.~E. (2015).
 \newblock {\em Proceedings of the National Academy of Sciences},
   112(3):663--668.
 
+\bibitem[Arellano, 2003]{arellano2003panel}
+Arellano, M. (2003).
+\newblock {\em Panel data econometrics}.
+\newblock Oxford university press.
+
+\bibitem[Arellano and Bond, 1991]{arellano1991some}
+Arellano, M. and Bond, S. (1991).
+\newblock Some tests of specification for panel data: Monte carlo evidence and
+  an application to employment equations.
+\newblock {\em The review of economic studies}, 58(2):277--297.
+
 \bibitem[Arellano and Bonhomme, 2011]{arellano2011identifying}
 Arellano, M. and Bonhomme, S. (2011).
 \newblock Identifying distributional characteristics in random coefficients
@@ -72,6 +78,11 @@ Awasthi, P. and Sandholm, T. (2009).
   exchange.
 \newblock In {\em IJCAI}, volume~9, pages 405--411.
 
+\bibitem[Blundell and Powell, 2003]{blundell2003endogeneity}
+Blundell, R. and Powell, J.~L. (2003).
+\newblock Endogeneity in nonparametric and semiparametric regression models.
+\newblock {\em Econometric society monographs}, 36:312--357.
+
 \bibitem[Breiman, 2001]{breiman2001random}
 Breiman, L. (2001).
 \newblock Random forests.
@@ -96,6 +107,24 @@ Cecka, J. (2010).
 \newblock Calculated pra (cpra): the new measure of sensitization for
   transplant candidates.
 \newblock {\em American journal of transplantation}, 10(1):26--29.
+
+\bibitem[Chamberlain, 1984]{chamberlain1984panel}
+Chamberlain, G. (1984).
+\newblock Panel data.
+\newblock {\em Handbook of econometrics}, 2:1247--1318.
+
+\bibitem[Chamberlain, 1992]{chamberlain1992efficiency}
+Chamberlain, G. (1992).
+\newblock Efficiency bounds for semiparametric regression.
+\newblock {\em Econometrica: Journal of the Econometric Society}, pages
+  567--596.
+
+\bibitem[Cho et~al., 2014]{cho2014learning}
+Cho, K., Van~Merri{\"e}nboer, B., Gulcehre, C., Bahdanau, D., Bougares, F.,
+  Schwenk, H., and Bengio, Y. (2014).
+\newblock Learning phrase representations using rnn encoder-decoder for
+  statistical machine translation.
+\newblock {\em arXiv preprint arXiv:1406.1078}.
 
 \bibitem[Cunha et~al., 2005]{cunha2005separating}
 Cunha, F., Heckman, J., and Navarro, S. (2005).
@@ -138,11 +167,33 @@ Friedman, J.~H. (2001).
 \newblock Greedy function approximation: a gradient boosting machine.
 \newblock {\em Annals of statistics}, pages 1189--1232.
 
+\bibitem[Gandhi et~al., 2011]{gandhi2011identification}
+Gandhi, A., Navarro, S., and Rivers, D.~A. (2011).
+\newblock On the identification of production functions: How heterogeneous is
+  productivity?
+
 \bibitem[Graham and Powell, 2012]{graham2012identification}
 Graham, B.~S. and Powell, J.~L. (2012).
 \newblock Identification and estimation of average partial effects in
   “irregular” correlated random coefficient panel data models.
 \newblock {\em Econometrica}, 80(5):2105--2152.
+
+\bibitem[Griliches, 1977]{griliches1977estimating}
+Griliches, Z. (1977).
+\newblock Estimating the returns to schooling: Some econometric problems.
+\newblock {\em Econometrica: Journal of the Econometric Society}, pages 1--22.
+
+\bibitem[Heckman and Vytlacil, 1998]{heckman1998instrumental}
+Heckman, J. and Vytlacil, E. (1998).
+\newblock Instrumental variables methods for the correlated random coefficient
+  model: Estimating the average rate of return to schooling when the return is
+  correlated with schooling.
+\newblock {\em Journal of Human Resources}, pages 974--987.
+
+\bibitem[Hoderlein et~al., 2017]{hoderlein2017triangular}
+Hoderlein, S., Holzmann, H., and Meister, A. (2017).
+\newblock The triangular model with random coefficients.
+\newblock {\em Journal of Econometrics}, 201(1):144--169.
 
 \bibitem[Hoderlein et~al., 2010]{hoderlein2010analyzing}
 Hoderlein, S., Klemel{\"a}, J., and Mammen, E. (2010).
@@ -158,6 +209,12 @@ Hsieh, C.-T. and Klenow, P.~J. (2009).
 Kaelbling, L.~P., Littman, M.~L., and Moore, A.~W. (1996).
 \newblock Reinforcement learning: A survey.
 \newblock {\em Journal of artificial intelligence research}, 4:237--285.
+
+\bibitem[Kalchbrenner and Blunsom, 2013]{kalchbrenner2013recurrent}
+Kalchbrenner, N. and Blunsom, P. (2013).
+\newblock Recurrent continuous translation models.
+\newblock In {\em Proceedings of the 2013 Conference on Empirical Methods in
+  Natural Language Processing}, pages 1700--1709.
 
 \bibitem[Kaufmann et~al., 2012]{kaufmann2012thompson}
 Kaufmann, E., Korda, N., and Munos, R. (2012).
@@ -184,6 +241,23 @@ LeCun, Y., Bengio, Y., and Hinton, G. (2015).
 \newblock Deep learning.
 \newblock {\em nature}, 521(7553):436.
 
+\bibitem[Levinsohn and Petrin, 2003]{levinsohn2003estimating}
+Levinsohn, J. and Petrin, A. (2003).
+\newblock Estimating production functions using inputs to control for
+  unobservables.
+\newblock {\em The Review of Economic Studies}, 70(2):317--341.
+
+\bibitem[Lewbel, 2016]{lewbel2016identification}
+Lewbel, A. (2016).
+\newblock The identification zoo-meanings of identification in econometrics.
+\newblock {\em Forthcoming on Journal of Economic Literature}, 7.
+
+\bibitem[Marschak and Andrews, 1944]{marschak1944random}
+Marschak, J. and Andrews, W.~H. (1944).
+\newblock Random simultaneous equations and the theory of production.
+\newblock {\em Econometrica, Journal of the Econometric Society}, pages
+  143--205.
+
 \bibitem[Montgomery et~al., 2006]{montgomery2006domino}
 Montgomery, R.~A., Gentry, S.~E., Marks, W.~H., Warren, D.~S., Hiller, J.,
   Houp, J., Zachary, A.~A., Melancon, J.~K., Maley, W.~R., Rabb, H., et~al.
@@ -191,6 +265,11 @@ Montgomery, R.~A., Gentry, S.~E., Marks, W.~H., Warren, D.~S., Hiller, J.,
 \newblock Domino paired kidney donation: a strategy to make best use of live
   non-directed donation.
 \newblock {\em The Lancet}, 368(9533):419--421.
+
+\bibitem[Mundlak, 1978]{mundlak1978models}
+Mundlak, Y. (1978).
+\newblock Models with variable coefficients: integration and extension.
+\newblock In {\em Annales de l'INSEE}, pages 483--509. JSTOR.
 
 \bibitem[{Organ Procurement and Transplantation Network}, 2013]{optn2013cpra}
 {Organ Procurement and Transplantation Network} (2013).
@@ -231,6 +310,11 @@ Roth, A.~E., S{\"o}nmez, T., and {\"U}nver, M.~U. (2007).
   compatibility-based preferences.
 \newblock {\em American Economic Review}, 97(3):828--851.
 
+\bibitem[Russo et~al., 2017]{russo2017tutorial}
+Russo, D., Van~Roy, B., Kazerouni, A., and Osband, I. (2017).
+\newblock A tutorial on thompson sampling.
+\newblock {\em arXiv preprint arXiv:1707.02038}.
+
 \bibitem[Saidman et~al., 2006]{saidman2006increasing}
 Saidman, S.~L., Roth, A.~E., S{\"o}nmez, T., {\"U}nver, M.~U., and Delmonico,
   F.~L. (2006).
@@ -250,11 +334,23 @@ Shuman, D.~I., Narang, S.~K., Frossard, P., Ortega, A., and Vandergheynst, P.
   high-dimensional data analysis to networks and other irregular domains.
 \newblock {\em IEEE Signal Processing Magazine}, 30(3):83--98.
 
+\bibitem[Slivkins, 2018]{slivkins2018introduction}
+Slivkins, A. (2018).
+\newblock Introduction to multi-armed bandits.
+\newblock Available at http://slivkins.com/work/MAB-book.pdf. Retrieved on Jan
+  11, 2018.
+
 \bibitem[Sutskever et~al., 2014]{sutskever2014sequence}
 Sutskever, I., Vinyals, O., and Le, Q.~V. (2014).
 \newblock Sequence to sequence learning with neural networks.
 \newblock In {\em Advances in neural information processing systems}, pages
   3104--3112.
+
+\bibitem[Swamy, 1970]{swamy1970efficient}
+Swamy, P.~A. (1970).
+\newblock Efficient inference in a random coefficient regression model.
+\newblock {\em Econometrica: Journal of the Econometric Society}, pages
+  311--323.
 
 \bibitem[Syverson, 2004]{syverson2004product}
 Syverson, C. (2004).
@@ -283,6 +379,12 @@ Tonelli, M., Wiebe, N., Knoll, G., Bello, A., Browne, S., Jadhav, D.,
 {\"U}nver, M.~U. (2010).
 \newblock Dynamic kidney exchange.
 \newblock {\em The Review of Economic Studies}, 77(1):372--414.
+
+\bibitem[Wooldridge, 2005]{wooldridge2005fixed}
+Wooldridge, J.~M. (2005).
+\newblock Fixed-effects and related estimators for correlated
+  random-coefficient and treatment-effect panel data models.
+\newblock {\em Review of Economics and Statistics}, 87(2):385--390.
 
 \bibitem[Wooldridge, 2010]{wooldridge2010econometric}
 Wooldridge, J.~M. (2010).

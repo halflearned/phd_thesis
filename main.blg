@@ -3,96 +3,89 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
 The style file: apalike.bst
 Database file #1: references.bib
-Repeated entry---line 224 of file references.bib
- : @misc{slivkins2018introduction
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 303 of file references.bib
+Repeated entry---line 468 of file references.bib
  : @article{agrawal1995sample
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 314 of file references.bib
+Repeated entry---line 479 of file references.bib
  : @article{auer2002finite
  :                        ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 358 of file references.bib
+I was expecting a `,' or a `}'---line 523 of file references.bib
  :   
  :   author = {{Organ Procurement and Transplantation Network}},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--entry type for "optn2013cpra" isn't style-file defined
---line 366 of file references.bib
+--line 531 of file references.bib
 Warning--entry type for "lattimore2018bandits" isn't style-file defined
---line 376 of file references.bib
-Repeated entry---line 540 of file references.bib
+--line 541 of file references.bib
+Repeated entry---line 705 of file references.bib
  : @inproceedings{dickerson2016position
  :                                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 726 of file references.bib
+Repeated entry---line 891 of file references.bib
  : @techreport{ashlagi2012need
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 756 of file references.bib
+Repeated entry---line 921 of file references.bib
  : @inproceedings{rapaport1986case
  :                                ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 782 of file references.bib
+Repeated entry---line 947 of file references.bib
  : @article{saidman2006increasing
  :                               ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 804 of file references.bib
+Repeated entry---line 969 of file references.bib
  : @article{ashlagi2011nonsimultaneous
  :                                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 816 of file references.bib
+Repeated entry---line 981 of file references.bib
  : @article{ashlagi2013kidney
  :                           ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "???"
-Warning--to sort, need author or key in slivkins2018introduction
-Warning--empty author in slivkins2018introduction
-Warning--empty title in slivkins2018introduction
 Warning--empty journal in akbarpour2017thickness
+Warning--empty journal in gandhi2011identification
 Warning--can't use both volume and number fields in rapaport1986case
-You've used 53 entries,
+You've used 71 entries,
             1935 wiz_defined-function locations,
-            785 strings with 12967 characters,
-and the built_in function-call counts, 23521 in all, are:
-= -- 2344
-> -- 974
-< -- 38
-+ -- 340
-- -- 332
-* -- 2018
-:= -- 3940
-add.period$ -- 158
-call.type$ -- 53
-change.case$ -- 426
-chr.to.int$ -- 53
-cite$ -- 59
-duplicate$ -- 897
-empty$ -- 1642
-format.name$ -- 406
-if$ -- 4673
+            879 strings with 15907 characters,
+and the built_in function-call counts, 30721 in all, are:
+= -- 3085
+> -- 1212
+< -- 59
++ -- 422
+- -- 408
+* -- 2559
+:= -- 5160
+add.period$ -- 213
+call.type$ -- 71
+change.case$ -- 554
+chr.to.int$ -- 71
+cite$ -- 74
+duplicate$ -- 1195
+empty$ -- 2149
+format.name$ -- 513
+if$ -- 6122
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 52
-newline$ -- 264
-num.names$ -- 156
-pop$ -- 399
+missing$ -- 70
+newline$ -- 354
+num.names$ -- 213
+pop$ -- 500
 preamble$ -- 1
-purify$ -- 428
+purify$ -- 556
 quote$ -- 0
-skip$ -- 690
+skip$ -- 951
 stack$ -- 0
-substring$ -- 1792
-swap$ -- 169
-text.length$ -- 15
+substring$ -- 2348
+swap$ -- 235
+text.length$ -- 21
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 314
-warning$ -- 5
-while$ -- 203
+type$ -- 420
+warning$ -- 3
+while$ -- 271
 width$ -- 0
-write$ -- 679
-(There were 10 error messages)
+write$ -- 910
+(There were 9 error messages)

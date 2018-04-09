@@ -8,8 +8,7 @@
 \usepackage{natbib}
 \usepackage{amsmath}
 \usepackage[space]{grffile}
-\usepackage[font=small,label
-font=bf]{caption}
+\usepackage[font=small,labelfont=bf]{caption}
 \usepackage{array}
 \usepackage{textgreek}
 \usepackage{booktabs}
@@ -29,6 +28,11 @@ font=bf]{caption}
 \usepackage{textcomp}
 \usepackage{lscape}
 \usepackage[usenames, dvipsnames]{color}
+\usepackage[]{hyperref}
+
+\makeatletter
+\@addtoreset{chapter}{part}å
+\makeatother  
 
 \usepackage[ruled]{algorithm2e} % For algorithms
 
@@ -127,6 +131,7 @@ font=bf]{caption}
 %--------
 
 \newtheorem{theorem}{Theorem}
+
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[section]
 
@@ -156,7 +161,6 @@ font=bf]{caption}
 \tableofcontents
  
 %\listoffigures
-\clearpage
 \phantomsection
 \addcontentsline{toc}{chapter}{\listfigurename}
 \listoffigures
@@ -173,15 +177,25 @@ font=bf]{caption}
 
  
 \mainmatter
-\part{Heterogeneous}
+\part{Dynamic kidney exchange}
+\input{Chapter2/Chapter2.tex}
+
+\part{Econometrics}
 % %\input{Introduction}
 \input{chapter1/chapter1.tex}
-\part{Kidney Exchange}
-\input{Chapter2/Chapter2.tex}
+
 
  
 \appendix
 \backmatter
+
+
+%\singlespacing
+\begingroup
+\renewcommand{\chapter}[2]{}%
+\begin{center}
+  {\vspace*{-1cm}\fontfamily{qpl}\selectfont\huge\bfseries  Bibliography}
+\end{center}
 
 \singlespacing
 \bibliographystyle{apalike}

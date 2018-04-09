@@ -1,4 +1,11 @@
-\chapter{Two novel algorithms for dynamic kidney exchange}
+\chapter*{Two novel algorithms for dynamic kidney exchange}
+\addcontentsline{toc}{chapter}{Two novel algorithms for dynamic kidney exchange}
+\begin{center}
+\large
+\textsc{Vitor Hadad}
+\end{center}
+
+
 
 \doublespacing
 
@@ -397,14 +404,18 @@ The pseudo-reward associated with cycle $c$ is a random variable whose expectati
 Pseudo-rewards are a natural way for us to control which patients should be matched today. Pairs that are easy to match will likely belong to many cycles, so by removing them we will be incurring a large cost in terms of future cycles that will become unavailable. But that means that the pseudo-reward associated with cycles that involve them will be lower, making them less attractive. On the other hand, patients that are harder to match will not participate many future exchange, so the price we pay for matching them today is low, and their average pseudo-reward is high. 
 
 \begin{landscape}
+\vspace*{2cm}
 \begin{figure}[h]
 \centering
 \includegraphics[width=600]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/pseudo_reward_intuition.pdf}
 \caption[Intuition for pseudo-rewards]{\textbf{Intuition for pseudo-rewards} \\
-  In the example above, at time $t$ we have three available cycles to choose from: $(1,2)$, $(1,3)$ and $(3,4)$, and we are contemplating choosing cycle $(1,2)$ at $t$. If we  constrain ourselves to do so, several other future cycles become unavailable (in red). Nevertheless, in three out of our four simulations we were able to clear the same number of cycles in the constrained scenario, so the running pseudo-reward average is $\frac{3}{4}$. 
+  Each row in the example above, is supposed to represent one simulation. The three tuples on the left, $(1,2)$, $(1,3)$ and $(3,4)$, represent the three cycles that are available to be matched today. The tuples to the right indicate cycles that appear once we simulate $h$ periods into the future. In this example, we are contemplating selecting and clearing cycle $(1,2)$ at $t$. \\
+  As explained in Figure \ref{fig:get_pseudo_reward}, at each simulation we solve the problem twice: once where all cycles between $t$ and $t+h$ are available, and a second time where we are constrained to match cycle $(1,2)$ at $t$. In the constrained case, all other cycles that involve pair $1$ or pair $2$ become unavailable (in red). \\ 
+  In three out of our four simulations we were able to clear the same number of cycles in the constrained scenario, so the running pseudo-reward average is $\frac{3}{4}$. This indicates that, more often than not, removing the cycle $(1,2)$ today will not decrease the overall long-run payoff, so matching it today is desirable.
 }
 \label{fig:pseudo_reward_intuition}
 \end{figure}
+\vspace*{\fill}
 \end{landscape}
 
 
@@ -442,7 +453,7 @@ Unfortunately, as we predicted in the beginning of the section, the poor predict
     Similar to gradient boosting shown in Figure \ref{fig:traditional_ml_mdp_algo_grb}, logistic regression is only able to perform better than \textsc{Myopic} when the death rate is large.}
 \label{fig:traditional_ml_mdp_algo_lr}
 \end{figure}
-bb
+
 \begin{figure}
 \centering
 \includegraphics[width=\textwidth]{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/figures/traditional_ml_mdp_algo_rf}
@@ -481,25 +492,54 @@ Our methods suggest a variety of extensions.
 
 \paragraph{Improving the direct prediction method}
 
-First, the relatively weak performance of our \emph{direct prediction} method could be improved in two ways. First, by improving our ability to use information about graph structure when predicting if a node should be matched or not. This could be done using new statistical methods that are applicable to non-euclidean spaces\citep{shuman2013emerging}. In particular, recent years have seen the emergence of interest in generalizing neural networks to model with structured datasets such as graphs. A promising approach is the one taken by \cite{kipf2016semi}, who build on earlier work by \cite{defferrard2016convolutional} to create a very simple recurrence relation for graph embedding:
+First, the relatively weak performance of our \emph{direct prediction} method could be improved in two ways. First, by improving our ability to use information about graph structure when predicting if a node should be matched or not. This could be done using new statistical methods that are applicable to non-euclidean spaces\citep{shuman2013emerging}. In particular, recent years have seen the emergence of interest in generalizing neural networks to model with structured datasets such as graphs. A promising approach is the one taken by \cite{kipf2016semi}, who build on earlier work by \cite{defferrard2016convolutional} to derive a very simple recurrence relation for graph embedding:
 \begin{align}
-  H^{\ell + 1} = \sigma((A_{t} + I) H^{\ell}W^{\ell}) \qquad \text{with} \quad H^{\ell} = X_{t}
+  H^{\ell + 1} = \sigma((A_{t} + I) H^{\ell}W^{\ell}) \qquad \text{with} \quad H^{0} = X_{t}
 \end{align}
 
-\noindent where $X_{t}$ is the matrix of observable characteristics, $W^{\ell}$ is a matrix of coefficients, $A_{t}$ is the adjacency matrix associated with the kidney exchange pool at $t$, $I$ is a comformable identity matrix, and $\sigma$ is a nonlinear function such as the inverse logistic CDF or ReLU\footnote{$ReLU(x) = \max(x, 0)$}. The authors prove that this can be interpreted as a differentiable version of the Weisfeiler-Lehman algorithm for graph isomorphism tests. For us, it is an especially convenient method because the input graphs need not be the same size throughout. 
+\noindent where $X_{t}$ is the matrix of observable characteristics, $W^{\ell}$ is a matrix of coefficients, $A_{t}$ is the adjacency matrix associated with the kidney exchange pool at $t$, $I$ is a comformable identity matrix, and $\sigma$ is a nonlinear function such as the inverse logistic CDF or ReLU\footnote{$ReLU(x) = \max(x, 0)$}. The authors prove that this can be interpreted as a differentiable version of the Weisfeiler-Lehman algorithm for graph isomorphism tests. For us, it is an especially convenient method because the input graphs need not be the same size throughout the analysis. 
 
 
-Second, the \emph{direct prediction} method produces a probability for every pair, but it does not consider correlations between multiple pairs in the same kidney exchange pool. This is unrealistic, as it should be often the case that pairs in the same exchange should have roughly equally high or low probability of being matched. In order to rectify this shortcoming of our approach, we would like to train our statistical estimator using the sequence-to-sequence models of recurrent neural networks studied by \cite{sutskever2014sequence} (see also  \citep{lecun2015deep} for an overview). The idea in those models 
+Second, when the \emph{direct prediction} method computes a selection probability for each pair, it does not consider correlations between multiple pairs in the same kidney exchange pool. However, intuition suggests that it should be often the case that pairs in the same exchange have similar probabilities of being matched. In order to rectify this shortcoming of our approach, we would like to train our statistical estimator using the sequence-to-sequence (\emph{seq2seq}) models of recurrent neural networks studied by \cite{sutskever2014sequence}, \cite{kalchbrenner2013recurrent} and \cite{cho2014learning}. Sequence-to-sequence models are a relatively new paradigm that allows for variable length inputs (needed here because different pools have different sizes), and correlated outcomes of variable length. (See also  \citep{lecun2015deep} for an overview)
+ 
 
-[[[Other loss functions]]]
 
-. We will be turning our attention to these methods next.
+\paragraph{Improving the MAB algorithm}
 
-Second, while we see that the performance of our \emph{multi-armed bandit} methods was already satisfactory, we note that it uses only simulations and no data to decide which exchange to clear at each period. In that sense, it worked in a diametrically opposite way to the \emph{direct prediction} method that used only data and no simulations. In fact, an intermediate approach, using \emph{contextual bandits} \citep{lattimore2018bandits} could be used, blending information about data and simulations.
+Our \emph{multi-armed bandit} method can be quite computationally intensive, requiring multiple simulations per exchange. When the exchange pool or the set of available actions is large, it may be difficult to scale. It is important to consider extensions to deal with this issue.
 
-Thirdly, we would like to experiment with different objective functions, since, in reality, different exchanges may have different levels of desirability or priority. For example, it is common for pediatric patients and previous organ donors receive higher priority, as do \emph{ABDR0} exchanges involving ``perfectly matched" patients and donors.
+First, note how our MAB algorithm only makes use of simulations to select exchange that will be clear, and it makes no use explicit use of information about pairs characteristics, or about the structure of the graph. However, it is intuitive that pairs endowed with similar characteristics should have similar probabilities of being matched. In terms of the model discussed in this paper, this would translate into correlated pseudo-rewards among pairs, where the strength of the correlation should be proportional to how similar two pairs are deemed to be. The generalized versions of the Thompson Sampling algorithm (See \citet{russo2017tutorial}) are able to deal with this, and could be employed.
 
-Lastly, we remark that there still remains a moderately large gap between what could be optimally achieved if we could perfectly predict the evolution of the pool. It is conceivable that as better predictive methods arise, this gap will become smaller. 
+% A principled way of going about this extension would be to 
+% 
+% 
+% 
+% \begin{algorithm}[htbp]
+%   \SetAlgoLined
+%   \DontPrintSemicolon
+%   \KwData{Horizon $h$; Number of iterations $L$; Threshold $thres$; \\
+%     Environment simulator object \textsc{Env};
+%     Multi-armed bandit algorithm object \textsc{MAB};
+%   }
+% 
+%   \SetKwFunction{FChoose}{\texttt{extended\_mab}}
+%   \SetKwProg{Fn}{Function}{:}{}
+% 
+%   \Fn{\FChoose{\textsc{Env},\ \texttt{h}, \ $thres$ }}{
+%     \tcp{Begin iterations} \\
+%     \For{$i\gets0$ \KwTo $L$}{
+%       \tcp{} \\
+%       $S_{t} = \arg\max_{C \subset \mathcal{C}} \sum_{c} {w_c}$
+%       \tcp{a} \\
+%       $b$
+%     }
+%   }
+%  \caption{Function \texttt{extended\_mab}}
+%  \label{alg:extended_mab}
+% \end{algorithm} 
+
+
+\paragraph{Other extensions} We would like to experiment with different objective functions, since, in reality, different exchanges may have different levels of desirability or priority. For example, it is common for pediatric patients and previous organ donors receive higher priority, as do \emph{ABDR0} exchanges involving ``perfectly matched" patients and donors.
 
 
 \section{Conclusion}
@@ -517,7 +557,7 @@ This work was supported in part by Health Resources and Services Administration 
 
 \begin{table}[H]
   \singlespacing
-  \caption{Blood type probabilities in the ABO environment}
+  \caption{Blood type probabilities in the ABO and RSU environments}
   \input{/Users/vitorhadad/Documents/kidney/matching/phd_thesis/chapter2/tables/abo_probability.tex}
   \label{tab:abo_blood_type}
 \end{table}

@@ -1,20 +1,18 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Linear panel data models}}{7}
-\contentsline {figure}{\numberline {2}{\ignorespaces Shock estimates in simulated data}}{22}
-\contentsline {figure}{\numberline {3}{\ignorespaces Random coefficient estimates in simulated data}}{23}
-\contentsline {figure}{\numberline {4}{\ignorespaces Shock estimates using ASI data}}{24}
-\contentsline {figure}{\numberline {5}{\ignorespaces Random coefficient estimates using ASI data (2008)}}{25}
-\contentsline {figure}{\numberline {6}{\ignorespaces Random coefficient estimates using ASI data (2009)}}{26}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {7}{\ignorespaces Patient and donor cPRA}}{49}
-\contentsline {figure}{\numberline {8}{\ignorespaces Comparing \textsc {Myopic} and \textsc {OPT}}}{51}
-\contentsline {figure}{\numberline {9}{\ignorespaces Direct prediction method}}{52}
-\contentsline {figure}{\numberline {10}{\ignorespaces Multi-armed bandit methods (one-period)}}{59}
-\contentsline {figure}{\numberline {11}{\ignorespaces Function \textsc {get\_pseudo\_reward}}}{59}
-\contentsline {figure}{\numberline {12}{\ignorespaces Intuition for pseudo-rewards}}{61}
-\contentsline {figure}{\numberline {13}{\ignorespaces Performance of gradient boosting in direct prediction method}}{63}
-\contentsline {figure}{\numberline {14}{\ignorespaces Performance of logistic regression in direct prediction method}}{64}
-\contentsline {figure}{\numberline {15}{\ignorespaces Performance of random forests in direct prediction method}}{64}
-\contentsline {figure}{\numberline {16}{\ignorespaces Performance of multi-armed bandit across environments}}{66}
+\contentsline {figure}{\numberline {1}{\ignorespaces Patient and donor cPRA}}{15}{figure.caption.16}
+\contentsline {figure}{\numberline {2}{\ignorespaces Comparing \textsc {Myopic} and \textsc {OPT}}}{17}{figure.caption.23}
+\contentsline {figure}{\numberline {3}{\ignorespaces Direct prediction method}}{18}{figure.caption.24}
+\contentsline {figure}{\numberline {4}{\ignorespaces Multi-armed bandit methods (one-period)}}{25}{figure.caption.32}
+\contentsline {figure}{\numberline {5}{\ignorespaces Function \textsc {get\_pseudo\_reward}}}{25}{figure.caption.33}
+\contentsline {figure}{\numberline {6}{\ignorespaces Intuition for pseudo-rewards}}{27}{figure.caption.35}
+\contentsline {figure}{\numberline {7}{\ignorespaces Performance of gradient boosting in direct prediction method}}{29}{figure.caption.36}
+\contentsline {figure}{\numberline {8}{\ignorespaces Performance of logistic regression in direct prediction method}}{30}{figure.caption.37}
+\contentsline {figure}{\numberline {9}{\ignorespaces Performance of random forests in direct prediction method}}{30}{figure.caption.38}
+\contentsline {figure}{\numberline {10}{\ignorespaces Performance of multi-armed bandit across environments}}{32}{figure.caption.39}
+\contentsline {figure}{\numberline {11}{\ignorespaces Linear panel data models}}{52}{figure.caption.56}
+\contentsline {figure}{\numberline {12}{\ignorespaces Shock estimates in simulated data}}{72}{figure.caption.81}
+\contentsline {figure}{\numberline {13}{\ignorespaces Random coefficient estimates in simulated data}}{73}{figure.caption.82}
+\contentsline {figure}{\numberline {14}{\ignorespaces Shock estimates using ASI data}}{74}{figure.caption.83}
+\contentsline {figure}{\numberline {15}{\ignorespaces Random coefficient estimates using ASI data (2008)}}{75}{figure.caption.84}
+\contentsline {figure}{\numberline {16}{\ignorespaces Random coefficient estimates using ASI data (2009)}}{76}{figure.caption.85}

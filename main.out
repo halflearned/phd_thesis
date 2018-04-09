@@ -1,0 +1,47 @@
+\BOOKMARK [0][-]{chapter*.1}{Abstract}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{Acknowledgements}{}% 2
+\BOOKMARK [0][-]{section*.3}{List of Figures}{}% 3
+\BOOKMARK [0][-]{section*.4}{List of Tables}{}% 4
+\BOOKMARK [0][-]{section*.4}{List of Abbreviations}{}% 5
+\BOOKMARK [-1][-]{part.1}{I Dynamic kidney exchange}{}% 6
+\BOOKMARK [0][-]{chapter*.5}{Two novel algorithms for dynamic kidney exchange}{part.1}% 7
+\BOOKMARK [1][-]{section.1.0.1}{Introduction}{chapter*.5}% 8
+\BOOKMARK [2][-]{subsection.1.0.1.1}{Related literature}{section.1.0.1}% 9
+\BOOKMARK [1][-]{section.1.0.2}{Background and definitions}{chapter*.5}% 10
+\BOOKMARK [2][-]{subsection.1.0.2.1}{Environments}{section.1.0.2}% 11
+\BOOKMARK [2][-]{subsection.1.0.2.2}{ABO Environment}{section.1.0.2}% 12
+\BOOKMARK [2][-]{subsection.1.0.2.3}{RSU Environment}{section.1.0.2}% 13
+\BOOKMARK [2][-]{subsection.1.0.2.4}{OPTN Environment}{section.1.0.2}% 14
+\BOOKMARK [1][-]{section.1.0.3}{Methods}{chapter*.5}% 15
+\BOOKMARK [2][-]{subsection.1.0.3.1}{Objective and benchmarks}{section.1.0.3}% 16
+\BOOKMARK [1][-]{section.1.0.4}{Algorithms}{chapter*.5}% 17
+\BOOKMARK [2][-]{subsection.1.0.4.1}{Direct prediction}{section.1.0.4}% 18
+\BOOKMARK [2][-]{subsection.1.0.4.2}{Multi-armed bandit methods}{section.1.0.4}% 19
+\BOOKMARK [1][-]{section.1.0.5}{Results}{chapter*.5}% 20
+\BOOKMARK [2][-]{subsection.1.0.5.1}{Direct prediction methods}{section.1.0.5}% 21
+\BOOKMARK [2][-]{subsection.1.0.5.2}{Multi-armed bandit methods}{section.1.0.5}% 22
+\BOOKMARK [1][-]{section.1.0.6}{Extensions and future work}{chapter*.5}% 23
+\BOOKMARK [1][-]{section.1.0.7}{Conclusion}{chapter*.5}% 24
+\BOOKMARK [1][-]{section.1.0.8}{Tables}{chapter*.5}% 25
+\BOOKMARK [-1][-]{part.2}{II Econometrics}{}% 26
+\BOOKMARK [0][-]{chapter*.53}{Heterogenous Production Functions, Panel Data, and Productivity Dispersion}{part.2}% 27
+\BOOKMARK [1][-]{section.2.0.1}{Introduction}{chapter*.53}% 28
+\BOOKMARK [1][-]{section.2.0.2}{Background and literature review}{chapter*.53}% 29
+\BOOKMARK [1][-]{section.2.0.3}{Model and assumptions}{chapter*.53}% 30
+\BOOKMARK [1][-]{section.2.0.4}{Identifying random coefficient moments}{chapter*.53}% 31
+\BOOKMARK [2][-]{subsection.2.0.4.1}{First period moments}{section.2.0.4}% 32
+\BOOKMARK [2][-]{subsection.2.0.4.2}{Second period moments}{section.2.0.4}% 33
+\BOOKMARK [2][-]{subsection.2.0.4.3}{Identifying further moments}{section.2.0.4}% 34
+\BOOKMARK [2][-]{subsection.2.0.4.4}{Extension: fixed coefficients}{section.2.0.4}% 35
+\BOOKMARK [2][-]{subsection.2.0.4.5}{Identifying the marginal distribution of random coefficients}{section.2.0.4}% 36
+\BOOKMARK [1][-]{section.2.0.5}{Estimation}{chapter*.53}% 37
+\BOOKMARK [1][-]{section.2.0.6}{Asymptotic results}{chapter*.53}% 38
+\BOOKMARK [1][-]{section.2.0.7}{Simulations}{chapter*.53}% 39
+\BOOKMARK [2][-]{subsection.2.0.7.1}{Bootstrap coverage}{section.2.0.7}% 40
+\BOOKMARK [1][-]{section.2.0.8}{Empirical application}{chapter*.53}% 41
+\BOOKMARK [1][-]{section.2.0.9}{Conclusion and future work}{chapter*.53}% 42
+\BOOKMARK [1][-]{section.2.0.10}{Appendix}{chapter*.53}% 43
+\BOOKMARK [2][-]{subsection.2.0.10.1}{Summary statistics}{section.2.0.10}% 44
+\BOOKMARK [2][-]{subsection.2.0.10.2}{Simulation results}{section.2.0.10}% 45
+\BOOKMARK [2][-]{subsection.2.0.10.3}{Python module FHHPS}{section.2.0.10}% 46
+\BOOKMARK [0][-]{table.caption.102}{Bibliography}{part.2}% 47
