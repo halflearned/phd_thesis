@@ -1,2 +1,19 @@
 \chapter{Abstract}
 
+\doublespacing
+This dissertation is divided into two parts.
+
+\paragraph{Part I - Dynamic Kidney Exchange} In recent years, kidney paired donation (KPD) has an emerged as an attractive alternative for end-stage renal disease patients with incompatible living donors. However, we argue that the matching algorithm currently used by organ clearinghouses is inefficient, in the sense that a larger number of patients may be reached if kidney transplant centers take into consideration how their pool of patients and donors will evolve over time. In our work \emph{Two Novel Algorithms for Dynamic Kidney Exchange}, we explore this claim and propose new computational algorithms to increase the cardinality of matchings in a discrete-time dynamic kidney exchange model with Poisson entries and Geometric deaths. 
+
+Our algorithms are classified into \emph{direct prediction} methods and \emph{multi-armed} bandit methods. In the \emph{direct prediction method}, we use machine learning estimator to produce a probability that each patient-donor pair should be matched today, as opposed to being left for a future matching. The estimators are trained on offline optimal solutions. In contrast, in \emph{multi-armed bandit} methods, we use simulations to evaluate the desirability of different matchings. Since the amount of different matchings is enormous, multi-armed bandits (MAB) are employed to decrease order to decrease the computational burden.
+
+Our methods are evaluated using simulations in a variety of simulation configurations. We find that the performance of at least one of our methods, based on multi-armed bandit algorithms, is able to uniformly dominate the myopic method that is used by kidney transplants in practice.
+
+We restrict our experiments to pairwise kidney exchange, but the methods described here are easily extensible, computational constraints permitting. 
+
+\paragraph{Part II - Econometrics}  In our econometric paper \emph{Heterogenous Production Functions, Panel Data, and Productivity}, we present methods for identification of moments and nonparametric marginal distributions of endogenous random coefficient models in fixed-$T$ linear panel data models. 
+
+Our identification strategy is constructive, immediately leading to relatively simple estimators that can be shown to be consistent and asymptotically normal. Because our strategy makes use of special properties of ``small" (measure-zero) subpopulations, our estimators are \emph{irregularly} identified: they can be shown to be consistent and asymptotically Normal, but converge at rates slower than root-n.
+
+We provide an illustration of our methods by estimating first and second moments of random Cobb-Douglas coefficients in production functions, using Indian plant-level microdata. 
+
