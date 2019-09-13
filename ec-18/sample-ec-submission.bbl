@@ -62,7 +62,7 @@ Retrieved February 28, 2008 from
   \bibinfo{pages}{36--44}.
 \newblock
 \showDOI{%
-\url{http://dx.doi.org/10.1145/1188913.1188915}}
+\url{https://doi.org/10.1145/1188913.1188915}}
 
 
 \bibitem[\protect\citeauthoryear{Adya, Bahl, Padhye, A.Wolman, and Zhou}{Adya
@@ -114,7 +114,7 @@ Retrieved February 28, 2008 from
   \bibinfo{pages}{226--236}.
 \newblock
 \showDOI{%
-\url{http://dx.doi.org/10.1145/567752.567774}}
+\url{https://doi.org/10.1145/567752.567774}}
 
 
 \bibitem[\protect\citeauthoryear{Anisi}{Anisi}{2003}]%
@@ -172,7 +172,7 @@ Retrieved February 28, 2008 from
   \bibinfo{year}{2007}), \bibinfo{numpages}{50}~pages.
 \newblock
 \showDOI{%
-\url{http://dx.doi.org/10.1145/1219092.1219093}}
+\url{https://doi.org/10.1145/1219092.1219093}}
 
 
 \bibitem[\protect\citeauthoryear{CROSSBOW}{CROSSBOW}{2008}]%
@@ -213,7 +213,7 @@ CROSSBOW \bibinfo{year}{2008}\natexlab{}.
   \bibinfo{pages}{368--394}.
 \newblock
 \showDOI{%
-\url{http://dx.doi.org/10.1007/3-540-65193-4_29}}
+\url{https://doi.org/10.1007/3-540-65193-4_29}}
 
 
 \bibitem[\protect\citeauthoryear{Editor}{Editor}{2007}]%
@@ -227,7 +227,7 @@ CROSSBOW \bibinfo{year}{2008}\natexlab{}.
   \bibinfo{address}{Chicago}.
 \newblock
 \showDOI{%
-\url{http://dx.doi.org/10.1007/3-540-09237-4}}
+\url{https://doi.org/10.1007/3-540-09237-4}}
 
 
 \bibitem[\protect\citeauthoryear{Editor}{Editor}{2008}]%
@@ -240,7 +240,7 @@ CROSSBOW \bibinfo{year}{2008}\natexlab{}.
   \bibinfo{address}{Chicago}, Chapter 100.
 \newblock
 \showDOI{%
-\url{http://dx.doi.org/10.1007/3-540-09237-4}}
+\url{https://doi.org/10.1007/3-540-09237-4}}
 
 
 \bibitem[\protect\citeauthoryear{Gundy, Balzarotti, and Vigna}{Gundy
@@ -281,7 +281,7 @@ CROSSBOW \bibinfo{year}{2008}\natexlab{}.
   NY}.
 \newblock
 \showDOI{%
-\url{http://dx.doi.org/10.1007/3-540-09237-4}}
+\url{https://doi.org/10.1007/3-540-09237-4}}
 
 
 \bibitem[\protect\citeauthoryear{Harvard CodeBlue}{Harvard CodeBlue}{2008}]%
@@ -339,7 +339,7 @@ Harvard CodeBlue \bibinfo{year}{2008}\natexlab{}.
 \newblock
 \showISSN{0097-5397}
 \showDOI{%
-\url{http://dx.doi.org/10.1137/080734467}}
+\url{https://doi.org/10.1137/080734467}}
 
 
 \bibitem[\protect\citeauthoryear{Knuth}{Knuth}{1997}]%
@@ -372,7 +372,7 @@ Harvard CodeBlue \bibinfo{year}{2008}\natexlab{}.
   \bibinfo{articleno}{4} (\bibinfo{date}{Jan.-March} \bibinfo{year}{2005}).
 \newblock
 \showDOI{%
-\url{http://dx.doi.org/10.1145/1057270.1057278}}
+\url{https://doi.org/10.1145/1057270.1057278}}
 
 
 \bibitem[\protect\citeauthoryear{Natarajan, Motani, de~Silva, Yap, and
@@ -400,7 +400,7 @@ Harvard CodeBlue \bibinfo{year}{2008}\natexlab{}.
   Press}, \bibinfo{address}{New York, NY}, \bibinfo{pages}{4}.
 \newblock
 \showDOI{%
-\url{http://dx.doi.org/99.9999/woot07-S422}}
+\url{https://doi.org/99.9999/woot07-S422}}
 
 
 \bibitem[\protect\citeauthoryear{Obama}{Obama}{2008}]%
@@ -492,7 +492,7 @@ Retrieved June 7, 2006 from \url{http://www.poker-edge.com/stats.php}}
   \bibinfo{pages}{422--431}.
 \newblock
 \showDOI{%
-\url{http://dx.doi.org/99.9999/woot07-S422}}
+\url{https://doi.org/99.9999/woot07-S422}}
 
 
 \bibitem[\protect\citeauthoryear{Spector}{Spector}{1990}]%
@@ -506,7 +506,7 @@ Retrieved June 7, 2006 from \url{http://www.poker-edge.com/stats.php}}
   York, NY}, \bibinfo{pages}{19--33}.
 \newblock
 \showDOI{%
-\url{http://dx.doi.org/10.1145/90417.90738}}
+\url{https://doi.org/10.1145/90417.90738}}
 
 
 \bibitem[\protect\citeauthoryear{Thornburg}{Thornburg}{2001}]%
